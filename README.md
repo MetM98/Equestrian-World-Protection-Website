@@ -26,3 +26,7 @@ Il sito deve essere multilingua:
 1) Italiano
 2) Inglese
 3) Arabo
+
+
+Creatori del sito: Matteo & Emanuele
+```
