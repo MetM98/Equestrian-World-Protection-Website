@@ -18,3 +18,75 @@
 html {
     font-family: var(--fontPlayfair), sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+/* ------------ HEADER ------------ */
+#brand_name {
+    text-align: center;
+    z-index: 1;
+}
+
+#brand_spot {
+    text-align: center;
+    z-index: 1;
+}
+
+#logo {
+    position: relative;
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 0;
+    margin-inline: auto;
+}
+
+/* ------------ HEADER PARALLAX ------------ */
+/*Solo nella Homepage del sito si ha un effetto parallasse, con una Hero più ampia che comprende anche uno slogan e una CTA*/
+
+#header_parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#header_parallax #logo{
+    position: relative;
+    max-width: 8em;
+    max-height: 8em;
+    z-index: 1;
+    display: block;
+    margin: 0;
+}
+
+#header_parallax #brand_name {
+    position: relative;
+    text-align: center;
+}
+
+#header_parallax #brand_spot {
+    position: relative;
+    text-align: center;
+}
