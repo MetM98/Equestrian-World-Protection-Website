@@ -25,6 +25,100 @@ body {
     min-height: 100vh;
 }
 
+h1, h2, h3 {
+    font-family: var(--fontPlayfair), sans-serif;
+
+}
+
+h2, h3, h4, h5, li, a{
+    color: var(--PrimaryColor);
+}
+
+h1.colored{
+    color: var(--PrimaryColor);
+}
+
+h3.blank{
+    color: var(--White);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+    letter-spacing: 0.075rem;
+}
+
+h2.bold{
+    font-weight: bold;
+}
+
+h2.montserrat{
+    font-family: var(--fontMontserrat), sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 1.5vw + 0.75rem, 2rem);
+    letter-spacing: 0.05rem;
+}
+
+h4 {
+    font-family: var(--fontPlayfair), sans-serif;
+}
+
+h4.montserrat{
+    font-family: var(--fontMontserrat), sans-serif;
+}
+
+h4.trenta{
+    font-size: 30px;
+}
+
+h4.white {
+    color: var(--White);
+    font: var(--fontMontserrat);
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+h5.white{
+    color: var(--White);
+}
+
+h5.montserrat{
+    font-family: var(--fontMontserrat), sans-serif;
+}
+
+h5.small{
+    font-size: 12px;
+}
+
+p {
+    letter-spacing: 0.00875rem;
+}
+
+p.white{
+    color: var(--White);
+}
+
+p.black{
+    color: black;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+p.montserrat{
+    font-family: var(--fontMontserrat), sans-serif;
+}
+
+p.dic{
+    font-size: 18px;
+}
+
 
 
 
@@ -89,4 +183,53 @@ body {
 #header_parallax #brand_spot {
     position: relative;
     text-align: center;
+}
+
+/* ----------- CARD Servizi + BUTTON ------------ */
+.service-card{
+    width: auto;
+    height: auto;
+}
+
+.service-card .img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.card_background_trat{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.button-card {
+    background-color: rgba(255, 255, 255, 0.3); /* Nero trasparente al 30% */
+    color: white; /* Colore del testo bianco */
+    border: none; /* Rimuove il bordo predefinito */
+    padding: 15px 32px; /* Spazio intorno al testo */
+    text-align: center; /* Allinea il testo al centro */
+    text-decoration: none; /* Rimuove il sottolineato */
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px; /* Angoli arrotondati */
+}
+
+.button-card:hover {
+    background-color: var(--PrimaryColor);
+}
+
+.button-card:hover::before,
+.button-card:hover::after {
+    content: ''; /* Contenuto vuoto per rendere gli pseudo-elementi visibili */
+    background-color: var(--PrimaryColor);
+    /* Altre proprietà CSS a piacere per personalizzare gli pseudo-elementi */
+}
+
+.button-card:active {
+    background-color: var(--PrimaryColor);
 }
