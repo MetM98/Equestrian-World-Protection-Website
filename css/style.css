@@ -191,6 +191,19 @@ p.dic{
     height: auto;
 }
 
+/* Media query per far sì che all'hover da desktop le card dei servizi a cui è applicata la classe serviceCard-grow si ingrandiscano*/
+@media(hover: hover) and (pointer: fine) and (min-width: 1385px) {
+    .serviceCard-grow:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
+
+    .serviceCard-grow:not(:hover){
+        transform: scale(1);
+        transition: transform 0.5s ease;
+    }
+}
+
 .service-card .img{
     height: 100%;
     width: 100%;
