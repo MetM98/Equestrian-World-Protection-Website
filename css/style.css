@@ -10,7 +10,7 @@
 
     /* COLORS */
     --White: #EEEDE7;
-    --PrimaryColor: #728878;
+    --PrimaryColor: #2a5a38;
 }
 
 /* ------------ ASSEGNAZIONE FONTS E COLORI------------ */
@@ -27,6 +27,7 @@ body {
 
 h1, h2, h3 {
     font-family: var(--fontPlayfair), sans-serif;
+    color: var(--White);
 
 }
 
@@ -141,6 +142,12 @@ p.dic{
     margin-top: 10%;
     margin-bottom: 0;
     margin-inline: auto;
+}
+
+.custom-logo {
+    width: clamp(450px, 35vw, 800px); /* Min 330px, 35vw preferito per desktop, max 650px */
+    max-width: 100%;  /* Impedisce che l'immagine superi il contenitore */
+    height: auto;  /* Mantiene il rapporto d'aspetto */
 }
 
 /* ------------ HEADER PARALLAX ------------ */
