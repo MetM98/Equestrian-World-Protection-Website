@@ -9,8 +9,9 @@
     --fontMontserrat : 'Montserrat Display', sans-serif;
 
     /* COLORS */
-    --White: #391b0f;
+    --White: #F6F6F9;
     --PrimaryColor: #2a5a38;
+    --SecondaryColor: #391b0f;
 }
 
 /* ------------ ASSEGNAZIONE FONTS E COLORI------------ */
@@ -27,7 +28,7 @@ body {
 
 h1, h2, h3 {
     font-family: var(--fontPlayfair), sans-serif;
-    color: var(--White);
+    color: var(--SecondaryColor);
 
 }
 
@@ -40,7 +41,7 @@ h1.colored{
 }
 
 h3.blank{
-    color: var(--White);
+    color: var(--SecondaryColor);
 }
 
 h2 {
@@ -75,7 +76,7 @@ h4.trenta{
 }
 
 h4.white {
-    color: var(--White);
+    color: var(--SecondaryColor);
     font: var(--fontMontserrat);
     font-weight: bold;
 }
@@ -85,7 +86,7 @@ h5 {
 }
 
 h5.white{
-    color: var(--White);
+    color: var(--SecondaryColor);
 }
 
 h5.montserrat{
@@ -101,7 +102,7 @@ p {
 }
 
 p.white{
-    color: var(--White);
+    color: var(--SecondaryColor);
 }
 
 p.black{
