@@ -217,7 +217,7 @@ p.dic{
 }
 
 .dropdown-item:hover {
-    background-color: var(--PrimaryColor);
+    background-color: var(--SecondaryColor);
     color: var(--White);
 }
 
