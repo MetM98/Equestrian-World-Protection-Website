@@ -1,225 +1,332 @@
 <!--Da mettere sempre sulle pagine HTML-->
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <!--INFO BROWSER-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!--INFO BROWSER-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>World Equestrian Protection - testo da completare </title> <!--todo completare-->
-        <meta name="author" content ="Matteo Munafò">
-        <meta name="author" content ="Emanuele Dubini">
+    <title>World Equestrian Protection - Protezione e Servizi per il Mondo Equestre</title> <!--todo completare-->
+    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
 
-        <!-- Meta Keywords -->
-        <meta name="keywords" content=""> <!--todo completare-->
-        <!-- Meta Description -->
-        <meta name="description" content=""> <!--todo completare-->
-
-        <!-- Favicon icon -->
-        <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg"> <!--todo controllare se funziona correttamente-->
+    <!-- Meta Keywords --> <!--todo completare-->
+    <meta name="keywords" content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
+    <!-- Meta Description --> <!--todo completare-->
+    <meta name="description" content="World Equestrian Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre.">
 
 
-            <style>
-                /* todo inserire nel css */
-                /*
-                .center{
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto ;
-                }
-                #website_title{
-                    text-align: center;
-                    size: 30px;
-                    font-family: 'Times New Roman', Times, serif ;
-                }
-                #website_subtitle{
-                    text-align: center;
-                    size: 20px;
-                    font-family: 'Times New Roman', Times, serif;
-                    font-style: oblique;
-                }*/
-            </style>
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
+    <!--todo controllare se funziona correttamente e inserire formato icon o png-->
 
 
+    <style>
+        /* todo inserire nel css */
+        /*
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto ;
+        }
+        #website_title{
+            text-align: center;
+            size: 30px;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        #website_subtitle{
+            text-align: center;
+            size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }*/
+    </style>
 
-        <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <!--link versionebootstrap5.3.2-->
-        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <!-- Main CSS File -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-
-    <body> <!--CONTENUTO-->
     <!--link versionebootstrap5.3.2-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
 
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-
-    <!-- HEADER con effetto Parallasse -->
-    <header id="header_parallax">
-            <img src="images/bg_img.jpg" id="bg" alt="World Equestrian Protection Logo">
-
-            <div class="container-fluid">
-                <div class="row justify-content-end">
-                    <div class="col-12 col-lg-6">
-                        <img class= "img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png" alt="World Equestrian Protection Logo">
-                    </div>
-                    <div class="row justify-content-end">
-                    <div class="col-12 col-lg-6">
-                        <h1 id ="brand_name">World Equestrian Protection</h1>
-                        <h2 class="mt-2" id="brand_spot">We'll protect you and your horses <br class="d-none d-lg-block"><b>everywhere</b></h2>
-                    </div>
-                    </div>
-                </div>
+<body>
+<!-- Navbar -->
+<!--<nav class="navbar navbar-expand-xxl fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">World Equestrian Protection</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">World Equestrian Protection</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-            <!--<h1 id="website_title">WORLD EQUESTRIAN PROTECTION</h1>
-            <h2 id="website_subtitle">We'll protect you and your horses everywhere</h2>-->
-    </header>
-
-    <main>
-        <section class="mt-5 pt-5">
-            <!--TEXT INTRO-->
-            <div class="container-fluid">
-                <div class="row px-2 px-md-5 mb-5 mt-lg-5 text-center">
-                    <div class="col-12 col-xl-12 py-2">
-                        <h3 >Inserire titolo home page! <br class="d-sm-block d-md-none"></h3>
-                    </div>
-                    <div class="col-12 col-xl-12 py-2 my-2">
-                        <p class="black">Con passione e competenza, ti offriamo una vasta gamma di servizi dedicati per i tuoi cavalli, per migliorarne la salute e promuovere il benessere generale.</p>
-                        <p class="black">Altro testo da inserire a piacimento.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!--SERVICES-->
-            <div class="container-fluid justify-content-around">
-                <div class="row px-md-5 mt-5 align-items-center text-center">
-                    <div class="col-12 col-xl-12 py-2">
-                        <h2 class="bold" id="anchor_trattamenti">Scopri nostri servizi</h2>
-                    </div>
-                    <div class="col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center p-lg-0">
-                        <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
-                            <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Servizi Card">
-                            <div class="card_background_trat"></div>
-                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
-                                <h2 class="card-title montserrat">Servizi</h2>
-                                <a href="Servizi.html" class="button-card mt-4">Scopri di più <img src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);" alt="scopri di più"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 d-flex justify-content-center p-lg-0">
-                        <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
-                            <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
-                            <div class="card_background_trat"></div>
-                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
-                                <h2 class="card-title montserrat">Risk <br> Management</h2>
-                                <a href="Risk_Management.html" class="mt-4 button-card">Scopri di più <img src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);" alt="scopri di più"></a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center p-lg-0">
-                        <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
-                            <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
-                            <div class="card_background_trat"></div>
-                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
-                                <h2 class="card-title montserrat">Assicurazioni</h2>
-                                <a href="Assicurazioni.html" class="mt-4 button-card">Scopri di più <img src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);" alt="scopri di più"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row px-md-5 mb-5">
-                    <div class="col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center p-lg-0">
-                        <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
-                            <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
-                            <div class="card_background_trat"></div>
-                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
-                                <h2 class="card-title montserrat">Wealth management</h2>
-                                <a href="Private_Wealth_Management.html" class="mt-4 button-card">Scopri di più <img src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);" alt="scopri di più"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 d-flex justify-content-center p-lg-0">
-                        <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
-                            <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
-                            <div class="card_background_trat"></div>
-                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
-                                <h2 class="card-title montserrat">Servizi <br> Finanziari</h2>
-                                <a href="Servizi_Finanziari.html" class="mt-4 button-card">Scopri di più <img src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);" alt="scopri di più"></a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center p-lg-0">
-                        <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
-                            <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
-                            <div class="card_background_trat"></div>
-                            <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
-                                <h2 class="card-title montserrat">Servizi <br> Legali</h2>
-                                <a href="Servizi_Legali.html" class="mt-4 button-card">Scopri di più <img src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);" alt="scopri di più"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    <!-- NAVBAR -->
-    <nav>
-        <ul>
-            <li><a href="#">Chi siamo</a></li>
-            <li><a href="#">Servizi</a></li>
-            <li><a href="#">Risk Management</a></li>
-            <li>
-                <a href="#">Assicurazioni</a>
-                <ul>
-                    <li><a href="#">Assicurazione cavalli</a></li>
-                    <li><a href="#">Assicurazione infortuni</a></li>
-                    <li><a href="#">Assicurazione scuderia</a></li>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Risk Management</a>
+                    </li>
+                    &lt;!&ndash; Dropdown Menu for Assicurazioni &ndash;&gt;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Assicurazioni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
+                            <li><a class="dropdown-item" href="#">Assicurazione Cavalli</a></li>
+                            <li><a class="dropdown-item" href="#">Assicurazione Infortuni</a></li>
+                            <li><a class="dropdown-item" href="#">Assicurazione Scuderia</a></li>
+                        </ul>
+                    </li>
+                    &lt;!&ndash; End Dropdown Menu &ndash;&gt;
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Wealth management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi finanziari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi legali</a>
+                    </li>
                 </ul>
-            </li>
-            <li><a href="#">Wealth management</a></li>
-            <li><a href="#">Servizi finanziari</a></li>
-            <li><a href="#">Servizi legali</a></li>
-        </ul>
-    </nav>
+            </div>
+        </div>
+        &lt;!&ndash; Bottone login &ndash;&gt;
+        &lt;!&ndash;<a href="#" class="login-button">Login</a>&ndash;&gt;
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>-->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-xxl fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">World Equestrian Protection</a>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">World Equestrian Protection</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Risk Management</a>
+                    </li>
+                    <!-- Dropdown Menu for Assicurazioni -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Assicurazioni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
+                            <li><a class="dropdown-item" href="#">Assicurazione Cavalli</a></li>
+                            <li><a class="dropdown-item" href="#">Assicurazione Infortuni</a></li>
+                            <li><a class="dropdown-item" href="#">Assicurazione Scuderia</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Dropdown Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Wealth Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi Finanziari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi Legali</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Offcanvas Menu -->
+    </div>
+</nav>
+<!-- End Navbar -->
+<!-- End Navbar -->
 
 
-        </section>
-        <!--LINK OTHER PAGES-->
-    </main>
+<!--CONTENUTO-->
+<!--link versionebootstrap5.3.2-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 
-    <hr style="height: 2px; color: black; background-color: black;">
+<!-- HEADER con effetto Parallasse -->
+<header id="header_parallax">
+    <img src="images/bg_img.jpg" id="bg" alt="World Equestrian Protection Logo">
+
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
+                     alt="World Equestrian Protection Logo">
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6">
+                    <h1 id="brand_name">World Equestrian Protection</h1>
+                    <h2 class="mt-2" id="brand_spot">We'll protect you and your horses <br class="d-none d-lg-block"><b>everywhere</b>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<h1 id="website_title">WORLD EQUESTRIAN PROTECTION</h1>
+    <h2 id="website_subtitle">We'll protect you and your horses everywhere</h2>-->
+</header>
+
+<main>
+    <section class="mt-5 pt-5">
+        <!--TEXT INTRO-->
+        <div class="container-fluid">
+            <div class="row px-2 px-md-5 mb-5 mt-lg-5 text-center">
+                <div class="col-12 col-xl-12 py-2">
+                    <h3>Inserire titolo home page! <br class="d-sm-block d-md-none"></h3>
+                </div>
+                <div class="col-12 col-xl-12 py-2 my-2">
+                    <p class="black">Con passione e competenza, ti offriamo una vasta gamma di servizi dedicati per i
+                        tuoi cavalli, per migliorarne la salute e promuovere il benessere generale.</p>
+                    <p class="black">Altro testo da inserire a piacimento.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--SERVICES-->
+        <div class="container-fluid justify-content-around">
+            <div class="row px-md-5 mt-5 align-items-center text-center">
+                <div class="col-12 col-xl-12 py-2">
+                    <h2 class="bold" id="anchor_trattamenti">Scopri nostri servizi</h2>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center p-lg-0">
+                    <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
+                        <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Servizi Card">
+                        <div class="card_background_trat"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="card-title montserrat">Servizi</h2>
+                            <a href="Servizi.html" class="button-card mt-4">Scopri di più <img
+                                    src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);"
+                                    alt="scopri di più"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 d-flex justify-content-center p-lg-0">
+                    <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
+                        <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
+                        <div class="card_background_trat"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="card-title montserrat">Risk <br> Management</h2>
+                            <a href="Risk_Management.html" class="mt-4 button-card">Scopri di più <img
+                                    src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);"
+                                    alt="scopri di più"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center p-lg-0">
+                    <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
+                        <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
+                        <div class="card_background_trat"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="card-title montserrat">Assicurazioni</h2>
+                            <a href="Assicurazioni.html" class="mt-4 button-card">Scopri di più <img
+                                    src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);"
+                                    alt="scopri di più"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row px-md-5 mb-5">
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center p-lg-0">
+                    <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
+                        <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
+                        <div class="card_background_trat"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="card-title montserrat">Wealth management</h2>
+                            <a href="Private_Wealth_Management.html" class="mt-4 button-card">Scopri di più <img
+                                    src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);"
+                                    alt="scopri di più"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 d-flex justify-content-center p-lg-0">
+                    <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
+                        <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
+                        <div class="card_background_trat"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="card-title montserrat">Servizi <br> Finanziari</h2>
+                            <a href="Servizi_Finanziari.html" class="mt-4 button-card">Scopri di più <img
+                                    src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);"
+                                    alt="scopri di più"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-start justify-content-center p-lg-0">
+                    <div class="card text-white my-2 m-0 p-0 d-flex align-items-center justify-content-center service-card serviceCard-grow">
+                        <img src="images/cardImages/ServiziCard.png" class="card-img img" alt="Riabilitazione Card">
+                        <div class="card_background_trat"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="card-title montserrat">Servizi <br> Legali</h2>
+                            <a href="Servizi_Legali.html" class="mt-4 button-card">Scopri di più <img
+                                    src="images/svg/Chevron_R.svg" style="transform: translateY(-5%);"
+                                    alt="scopri di più"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+    </section>
+    <!--LINK OTHER PAGES-->
+</main>
 
-    <!-- Script per parallax -->
-    <script>
-        let bg = document.getElementById("bg");
-        let brand_name = document.getElementById("brand_name");
-        let brand_spot = document.getElementById("brand_spot");
-        let logo = document.getElementById("logo");
 
-        window.addEventListener('scroll', function (){
-            var value = window.scrollY;
-            bg.style.top = value * 0.5 + 'px';
-            brand_name.style.top = value * 0.4 + 'px';
-            brand_spot.style.top = value * 0.4 + 'px';
-            logo.style.top = value * 0.4 + 'px';
-        })
-    </script>
-    </body>
+<hr style="height: 2px; color: black; background-color: black;">
+
+<!-- Bootstrap JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script per parallax -->
+<script>
+    let bg = document.getElementById("bg");
+    let brand_name = document.getElementById("brand_name");
+    let brand_spot = document.getElementById("brand_spot");
+    let logo = document.getElementById("logo");
+
+    window.addEventListener('scroll', function () {
+        var value = window.scrollY;
+        bg.style.top = value * 0.5 + 'px';
+        brand_name.style.top = value * 0.4 + 'px';
+        brand_spot.style.top = value * 0.4 + 'px';
+        logo.style.top = value * 0.4 + 'px';
+    })
+</script>
+</body>
 </html>
 

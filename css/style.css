@@ -6,10 +6,11 @@
 :root{
     /* FONT */
     --fontPlayfair: 'Playfair Display', sans-serif;
-    --fontMontserrat : 'Montserrat Display', sans-serif;
+    --fontMontserrat : 'Montserrat', sans-serif;
 
     /* COLORS */
     --White: #F6F6F9;
+    --Black: #0c0c0c;
     --PrimaryColor: #2a5a38;
     --SecondaryColor: #391b0f;
 }
@@ -122,7 +123,103 @@ p.dic{
 }
 
 
+/* ------------ Navbar ------------ */
+.navbar {
+    background-color: var(--White);
+    height: 80px;
+    margin: 20px; /*per rendere staccata la navbar rimuovere margine */
+    border-radius: 16px;
+    /*padding: 0.5rem;*/
 
+    padding: 0.5rem 1rem;
+
+}
+
+.navbar-brand {
+    font-family: var(--fontMontserrat), sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--SecondaryColor);
+    transition: 0.3s color;
+}
+
+/* classe non usata, inserire per login button */
+.login-button {
+    background-color: var(--SecondaryColor);
+    color: var(--White);
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+/* classe non usata, inserire per login button */
+.login-button:hover {
+    background-color: var(--PrimaryColor);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #666777;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--Black);
+}
+
+.offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--SecondaryColor);
+}
+
+@media (min-width: 991px) {
+    .nav-link:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--PrimaryColor); /*todo sistemare colore*/
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        background-color: var(--SecondaryColor);
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    background-color: var(--White);
+}
+
+.dropdown-item {
+    color: var(--SecondaryColor);
+}
+
+.dropdown-item:hover {
+    background-color: var(--PrimaryColor);
+    color: var(--White);
+}
 
 
 
