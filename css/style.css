@@ -12,7 +12,7 @@
     --White: #F6F6F9;
     --Black: #0c0c0c;
     --PrimaryColor: #2a5a38;
-    --SecondaryColor: #560319; /*#391b0f;*/
+    --SecondaryColor: #6d071a /*red #560319;*/ /*#391b0f;*/
 }
 
 /* ------------ ASSEGNAZIONE FONTS E COLORI------------ */
@@ -125,7 +125,7 @@ p.dic{
 
 /* ------------ Navbar ------------ */
 .navbar {
-    background-color: var(--White);
+    background-color: #fffff0/*var(--White)*/;
     height: 80px;
     margin: 20px; /*per rendere staccata la navbar rimuovere margine */
     border-radius: 16px;
