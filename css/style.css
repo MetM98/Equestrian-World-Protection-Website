@@ -125,10 +125,12 @@ p.dic{
 
 /* ------------ Navbar ------------ */
 .navbar {
-    background-color: #fffff0/*var(--White)*/;
+    background-color: var(--PrimaryColor)/*var(--White)*/;
     height: 80px;
     margin: 20px; /*per rendere staccata la navbar rimuovere margine */
     border-radius: 16px;
+    border-width: 5px;
+    border-color: var(--SecondaryColor);
     /*padding: 0.5rem;*/
 
     padding: 0.5rem 1rem;
