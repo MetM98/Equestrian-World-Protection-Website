@@ -129,8 +129,9 @@ p.dic{
     height: 80px;
     margin: 20px; /*per rendere staccata la navbar rimuovere margine */
     border-radius: 16px;
-    border-width: 20px;
-    border-color: var(--SecondaryColor);
+/*ho provato ad aggiungere un bordo allo sfondo della navbar perchè quando si scrolla va a fare un brutto effetto con il bianco dello sfondo della pagina*/
+/*    border-width: 20px;
+    border-color: var(--SecondaryColor); */
     /*padding: 0.5rem;*/
 
     padding: 0.5rem 1rem;
