@@ -21,11 +21,6 @@ html {
     font-family: var(--fontPlayfair), sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 h1, h2, h3 {
     font-family: var(--fontPlayfair), sans-serif;
@@ -353,4 +348,99 @@ p.dic{
 
 .button-card:active {
     background-color: var(--PrimaryColor);
+}
+
+
+
+/* ------------ Footer ------------ */
+.footer-section {
+    background-color: var(--SecondaryColor);
+    color: var(--White);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
+.footer-section h5 {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+    color: var(--White);
+    font-size: 0.85rem;
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--PrimaryColor);
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li i {
+    margin-right: 5px;
+    color: var(--PrimaryColor);
+}
+
+.footer-section hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Stile per i loghi dei partner */
+.partner-logos {
+    display: flex;
+    align-items: center;
+}
+
+.partner-logos a {
+    margin-right: 10px;
+}
+
+.partner-logo {
+    width: 80px;
+    height: auto;
+}
+
+.partner-logo:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .footer-section .col-6 {
+        margin-bottom: 0;
+    }
+    .footer-section h5 {
+        font-size: 0.9rem;
+    }
+    .footer-section p, .footer-section li, .footer-section a {
+        font-size: 0.8rem;
+    }
+    .footer-section .partner-logos {
+        justify-content: flex-start;
+    }
 }
