@@ -346,10 +346,10 @@ p.dic{
 .button-card:hover::before,
 .button-card:hover::after {
     content: ''; /* Contenuto vuoto per rendere gli pseudo-elementi visibili */
-    background-color: var(--PrimaryColor);
+    background-color: var(--SecondaryColor);/*var(--PrimaryColor);*/
     /* Altre proprietà CSS a piacere per personalizzare gli pseudo-elementi */
 }
 
 .button-card:active {
-    background-color: var(--PrimaryColor);
+    background-color: var(--SecondaryColor);/*var(--PrimaryColor);*/
 }
