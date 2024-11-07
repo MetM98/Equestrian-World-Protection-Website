@@ -329,7 +329,7 @@ p.dic{
 
 .button-card {
     background-color: rgba(255, 255, 255, 0.3); /* Nero trasparente al 30% */
-    color: white; /* Colore del testo bianco */
+    color: var(--SecondaryColor); /*white;*/ /* Colore del testo bianco */
     border: none; /* Rimuove il bordo predefinito */
     padding: 15px 32px; /* Spazio intorno al testo */
     text-align: center; /* Allinea il testo al centro */
@@ -346,10 +346,10 @@ p.dic{
 .button-card:hover::before,
 .button-card:hover::after {
     content: ''; /* Contenuto vuoto per rendere gli pseudo-elementi visibili */
-    background-color: var(--SecondaryColor);/*var(--PrimaryColor);*/
+    background-color: var(--PrimaryColor);
     /* Altre proprietà CSS a piacere per personalizzare gli pseudo-elementi */
 }
 
 .button-card:active {
-    background-color: var(--SecondaryColor);/*var(--PrimaryColor);*/
+    background-color: var(--PrimaryColor);
 }
