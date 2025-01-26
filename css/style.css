@@ -127,6 +127,10 @@ li.colored{
     color: var(--SecondaryColor);
 }
 
+li.black{
+    color: black;
+}
+
 b.colored{
     color: var(--SecondaryColor);
 }
