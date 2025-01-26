@@ -1,12 +1,206 @@
+<!--Da mettere sempre sulle pagine HTML-->
 <!DOCTYPE html>
-<html>
-    <head> <!--INFO BROWSER-->
-        <title>EQUESTRIAN WORLD PROTECTION</title>
-    </head>
-    <body> <!--CONTENUTO-->
-        <h1>
+<html lang="it">
+<head>
+    <!--INFO BROWSER-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Equestrian World Protection - Protezione e Servizi per il Mondo Equestre</title> <!--todo completare-->
+    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
+
+    <!-- Meta Keywords --> <!--todo completare-->
+    <meta name="keywords" content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
+    <!-- Meta Description --> <!--todo completare-->
+    <meta name="description" content="Equestrian World Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre.">
+
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
+    <!--todo controllare se funziona correttamente e inserire formato icon o png-->
+
+
+    <style>
+        /* todo inserire nel css */
+        /*
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto ;
+        }
+        #website_title{
+            text-align: center;
+            size: 30px;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        #website_subtitle{
+            text-align: center;
+            size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+        }*/
+    </style>
+
+
+    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Icone Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--link versionebootstrap5.3.2-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<!--<nav class="navbar navbar-expand-xxl fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">World Equestrian Protection</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">World Equestrian Protection</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Risk Management</a>
+                    </li>
+                    &lt;!&ndash; Dropdown Menu for Assicurazioni &ndash;&gt;
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Assicurazioni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
+                            <li><a class="dropdown-item" href="#">Assicurazione Cavalli</a></li>
+                            <li><a class="dropdown-item" href="#">Assicurazione Infortuni</a></li>
+                            <li><a class="dropdown-item" href="#">Assicurazione Scuderia</a></li>
+                        </ul>
+                    </li>
+                    &lt;!&ndash; End Dropdown Menu &ndash;&gt;
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Wealth management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi finanziari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="#">Servizi legali</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        &lt;!&ndash; Bottone login &ndash;&gt;
+        &lt;!&ndash;<a href="#" class="login-button">Login</a>&ndash;&gt;
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>-->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-xxl fixed-top"> <!--todo la navbar deve diventare in versione mobile a 1500px oppure 1784px in base a come si preferisce il comportamento-->
+    <div class="container-fluid px-0">
+        <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
+        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active text-xxl-center" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="chi_siamo_it.html">Chi siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Risk_Management.html">Risk Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
+                    </li>
+                    <!-- Dropdown Menu for language -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            IT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
+                            <li><a class="dropdown-item" href="#">EN</a></li> <!--todo inserire pagine in href-->
+                        </ul>
+                    </li>
+                    <!-- End Dropdown Menu -->
+                </ul>
+            </div>
+        </div>
+        <!-- End Offcanvas Menu -->
+    </div>
+</nav>
+<!-- End Navbar -->
+
+
+<!--CONTENUTO-->
+
+<!-- HEADER con effetto Parallasse -->
+<header id="header_parallax">
+    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Logo">
+
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
+                     alt="World Equestrian Protection Logo">
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6">
+                    <h1 id="brand_name" class="d-none d-lg-block">Equestrian World Protection</h1>
+                    <h2 class="mt-2" id="brand_spot">We'll protect you and your horses <br class="d-none d-lg-block"><strong><b>everywhere</b></strong>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<h1 id="website_title">WORLD EQUESTRIAN PROTECTION</h1>
+    <h2 id="website_subtitle">We'll protect you and your horses everywhere</h2>-->
+</header>
+
+<main>
+    <section class="mt-5 pt-5">
+        <!--TEXT INTRO-->
+	    <body> <!--CONTENUTO-->
+        <h2 class="pagetitle">
             Servizi
-        </h1>
+        </h2>
         <p>
             Il cavallo è un animale maestoso, dotato di straordinaria forza fisica. Quest'aspetto determina a volte dei risvolti pratici non sempre positivi. <br>
             Ad esempio, per allontanare un insetto molesto, il cavallo potrebbe, pur senza volere, ferire con un calcio, in modo persino letale, un essere umano. <br>
@@ -24,4 +218,119 @@
             Il tutto viene svolto a livello internazionale, con particolare riferimento all'UE, al Medio Oriente ed al Nord Africa.
         </p>
     </body>
+
+    </section>
+    <!--LINK OTHER PAGES-->
+</main>
+
+
+
+
+<!-- Footer -->
+<footer class="footer-section py-3">
+    <div class="container">
+        <div class="row align-items-start justify-content-around justify-content-md-around">
+            <!-- Logo e Partner - non mostrado da md in poi -->
+            <div class="col-5 col-md-3 text-center d-md-none">
+                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo mb-2">
+                <p class="mb-0">Equestrian World Protection</p>
+
+            </div>
+            <!-- Logo - mostrado da md in poi -->
+            <div class="col-md-3 text-center d-none d-md-block">
+                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo my-2">
+                <h5 class="mt-3">Equestrian World Protection</h5>
+                <p class="mb-0">We'll protect you and your horses<br class="d-md-none"> everywhere</p>
+            </div>
+            <!-- Contatti -->
+            <div class="col-5 col-md-auto offset-md-1">
+                <h5 class="text-uppercase mb-3">Contatti</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br>
+                        <a href="tel:+390550948303">+39 055 0948303</a>
+                    </li>
+                    <li class="mt-2">
+                        <span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br>
+                        <a href="tel:+393401234567">+39 340 1234567</a>
+                    </li>
+                    <li class="mt-2">
+                        <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
+                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per contattarci</a>
+                        <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navigazione Rapida (nascosta su mobile) -->
+            <div class="col-md-auto d-none d-md-block">
+                <h5 class="text-uppercase mb-3">Navigazione</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Chi_Siamo.html">Chi Siamo</a></li>
+                    <li><a href="Servizi.html">Servizi</a></li>
+                    <li><a href="Risk_Management.html">Risk Management</a></li>
+                    <li><a href="Assicurazioni.html">Assicurazioni</a></li>
+                    <li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
+                    <li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
+                    <li><a href="Servizi_Legali.html">Servizi Legali</a></li>
+                </ul>
+            </div>
+            <!-- La nostra sede - mostrato da lg in poi -->
+            <div class="col-md-auto d-none d-lg-block">
+                <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br> <!--oppure usare questa icona class="bi bi-building" -->
+                        Borgo San Frediano 4,<br>
+                        50124 Firenze (FI)
+                    </li>
+                    <li class="mt-2">
+                        <span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br>
+                        Riceviamo solo su appuntamento
+                    </li>
+                    <!--<li class="mt-2">
+                        <span><i class="bi bi-building"></i> <strong>Sede Legale:</strong></span><br>
+                        Via [Indirizzo Legale], [Città], [CAP]
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <hr class="my-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <!-- Versione per desktop e tablet -->
+                <p class="mb-0 d-none d-sm-block">
+                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI 62923
+                </p>
+                <!-- Versione per mobile -->
+                <p class="mb-0 d-block d-sm-none">
+                    &copy; 2024 Equestrian World Protection. Tutti i diritti riservati<br>
+                    <span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Bootstrap JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<!-- Script per parallax -->
+<script>
+    let bg = document.getElementById("bg");
+    let brand_name = document.getElementById("brand_name");
+    let brand_spot = document.getElementById("brand_spot");
+    let logo = document.getElementById("logo");
+
+    window.addEventListener('scroll', function () {
+        var value = window.scrollY;
+        bg.style.top = value * 0.5 + 'px';
+        brand_name.style.top = value * 0.4 + 'px';
+        brand_spot.style.top = value * 0.4 + 'px';
+        logo.style.top = value * 0.4 + 'px';
+    })
+</script>
+</body>
 </html>
