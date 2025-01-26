@@ -127,6 +127,10 @@ li.colored{
     color: var(--SecondaryColor);
 }
 
+b.colored{
+    color: var(--SecondaryColor);
+}
+
 /* ------------ Navbar ------------ */
 .navbar {
     background-color: var(--PrimaryColor)/*var(--White)*/;
