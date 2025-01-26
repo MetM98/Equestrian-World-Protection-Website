@@ -121,8 +121,9 @@ p.dic{
 /* ------------ Navbar ------------ */
 .navbar {
     background-color: var(--PrimaryColor)/*var(--White)*/;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 80px;
-    margin: 20px; /*per rendere staccata la navbar rimuovere margine */
+    margin: 20px; /*per rendere staccata la navbar è stato aggiunto il margine */
     border-radius: 16px;
 /*ho provato ad aggiungere un bordo allo sfondo della navbar perchè quando si scrolla va a fare un brutto effetto con il bianco dello sfondo della pagina*/
 /*    border-width: 20px;
@@ -135,7 +136,8 @@ p.dic{
 
 .navbar-brand {
     font-family: var(--fontMontserrat), sans-serif;
-    font-size: 26px;
+    /*font-size: 26px;*/
+    font-size: clamp(0.95rem, 1.5vw + 0.75rem, 1.7rem);
     font-weight: 700;
     color: var(--SecondaryColor);
     transition: 0.3s color;
