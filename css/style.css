@@ -123,6 +123,9 @@ p.dic{
     font-size: 18px;
 }
 
+ul.colored{
+    color: var(--SecondaryColor);
+}
 
 /* ------------ Navbar ------------ */
 .navbar {
