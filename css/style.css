@@ -224,6 +224,11 @@ b.colored{
     }
 }
 
+
+
+
+
+
 /* Dropdown Menu Styles */
 .dropdown-menu {
     background-color: var(--White);
@@ -305,7 +310,10 @@ b.colored{
 #header_parallax #brand_spot {
     position: relative;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+
 
 /* ----------- CARD Servizi + BUTTON ------------ */
 .service-card{
