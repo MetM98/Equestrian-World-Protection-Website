@@ -342,7 +342,8 @@ b.colored{
 }
 
 .card_background_trat{
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.15);*/ /* Nero trasparente al 15% */
+    background-color: var(--SecondaryColor); /*per modificare il colore di sfondo della card*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -352,19 +353,19 @@ b.colored{
 }
 
 .button-card {
-    background-color: rgba(255, 255, 255, 0.3); /* Nero trasparente al 30% */
+    background-color: rgba(255, 255, 255, 0.6); /* Nero trasparente al 60% */
     color: var(--SecondaryColor); /*white;*/ /* Colore del testo bianco */
     border: none; /* Rimuove il bordo predefinito */
     padding: 15px 32px; /* Spazio intorno al testo */
     text-align: center; /* Allinea il testo al centro */
     text-decoration: none; /* Rimuove il sottolineato */
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px; /*todo capire se bisogna definire il font in base al viewport con clamp*/
     border-radius: 25px; /* Angoli arrotondati */
 }
 
 .button-card:hover {
-    background-color: var(--PrimaryColor);
+    background-color: var(--TertiaryColor);
 }
 
 .button-card:hover::before,
@@ -377,6 +378,8 @@ b.colored{
 .button-card:active {
     background-color: var(--PrimaryColor);
 }
+
+
 
 
 
