@@ -6,40 +6,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Equestrian World Protection - Protezione e Servizi per il Mondo Equestre</title> <!--todo completare-->
+    <title>Equestrian World Protection - Chi Siamo</title>
     <meta name="author" content="Matteo Munafò, Emanuele Dubini">
 
     <!-- Meta Keywords --> <!--todo completare-->
     <meta name="keywords" content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
     <!-- Meta Description --> <!--todo completare-->
-    <meta name="description" content="Equestrian World Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre.">
+    <meta name="description" content="Scopri chi siamo: professionisti qualificati nel settore equestre con esperienza in risk management, assicurazioni, e servizi finanziari per il mondo dei cavalli.">
 
 
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
     <!--todo controllare se funziona correttamente e inserire formato icon o png-->
-
-
-    <style>
-        /* todo inserire nel css */
-        /*
-        .center{
-            display: block;
-            margin-left: auto;
-            margin-right: auto ;
-        }
-        #website_title{
-            text-align: center;
-            size: 30px;
-            font-family: 'Times New Roman', Times, serif ;
-        }
-        #website_subtitle{
-            text-align: center;
-            size: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            font-style: oblique;
-        }*/
-    </style>
 
 
     <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
@@ -53,61 +31,12 @@
 
     <!-- Main CSS File -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-<!-- Navbar -->
-<!--<nav class="navbar navbar-expand-xxl fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="#">World Equestrian Protection</a>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">World Equestrian Protection</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="#">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="#">Risk Management</a>
-                    </li>
-                    &lt;!&ndash; Dropdown Menu for Assicurazioni &ndash;&gt;
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2" href="#" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Assicurazioni
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
-                            <li><a class="dropdown-item" href="#">Assicurazione Cavalli</a></li>
-                            <li><a class="dropdown-item" href="#">Assicurazione Infortuni</a></li>
-                            <li><a class="dropdown-item" href="#">Assicurazione Scuderia</a></li>
-                        </ul>
-                    </li>
-                    &lt;!&ndash; End Dropdown Menu &ndash;&gt;
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="#">Wealth management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="#">Servizi finanziari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="#">Servizi legali</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        &lt;!&ndash; Bottone login &ndash;&gt;
-        &lt;!&ndash;<a href="#" class="login-button">Login</a>&ndash;&gt;
-        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>-->
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-xxl fixed-top"> <!--todo la navbar deve diventare in versione mobile a 1500px oppure 1784px in base a come si preferisce il comportamento-->
@@ -126,10 +55,10 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="index.html">Home</a>
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" aria-current="page" href="chi_siamo_it.html">Chi siamo</a>
+                        <a class="nav-link mx-lg-2 active text-xxl-center" aria-current="page" href="chi_siamo_it.html">Chi siamo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
@@ -172,7 +101,7 @@
 
 <!-- HEADER con effetto Parallasse -->
 <header id="header_parallax">
-    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Logo">
+    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Background">
 
     <div class="container-fluid">
         <div class="row justify-content-end">
@@ -189,9 +118,6 @@
             </div>
         </div>
     </div>
-
-    <!--<h1 id="website_title">WORLD EQUESTRIAN PROTECTION</h1>
-    <h2 id="website_subtitle">We'll protect you and your horses everywhere</h2>-->
 </header>
 
 <main>
@@ -215,7 +141,208 @@
     </body>
 
     </section>
-    <!--LINK OTHER PAGES-->
+
+    <!-- Sezione Introduttiva -->
+    <section class="mt-5 pt-5">
+        <div class="container">
+            <div class="row px-2 px-md-2 mb-5 mt-lg-2 text-center">
+                <div class="col-12 col-xl-12 py-2" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="pagetitle mb-4">LA NOSTRA IDENTITÀ</h2>
+                    <p class="montserrat fs-5 mb-4">
+                        Siamo professionisti qualificati, amanti dei cavalli, con esperienza in diversi settori.
+                    </p>
+                    <p class="montserrat fs-5 mb-4">
+                        Abbiamo l'obiettivo di diffondere le nostre conoscenze specialistiche nel mondo equestre che non può prescindere da un'adeguata gestione del rischio.
+                    </p>
+                    <p class="montserrat fs-5">
+                        Affianchiamo, quindi, il Cliente nei più disparati contesti di questo mondo: quando vive la sua passione equestre, nei suoi business a essa collegati e, infine, nella tutela di quelle straordinarie creature che sono i cavalli.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione I Nostri Valori -->
+    <section class="why-choose-us py-5">
+        <div class="container position-relative">
+            <div class="row mb-5 text-center">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="bold montserrat mb-4">I NOSTRI VALORI</h2>
+                    <p class="montserrat fs-5 mb-0">
+                        Ci impegniamo ogni giorno per garantire protezione e sicurezza nel mondo equestre, seguendo principi fondamentali che guidano il nostro operato.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="feature-card h-100 p-4">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-bg">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-center">Protezione</h4>
+                        <p>
+                            Mettiamo la protezione al centro di ogni nostra azione. Che si tratti di tutelare cavalli, cavalieri o investimenti, la sicurezza è sempre la nostra priorità assoluta.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Soluzioni assicurative personalizzate</li>
+                            <li>Strategie preventive di rischio</li>
+                            <li>Supporto continuativo ai clienti</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="feature-card h-100 p-4">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-bg">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-center">Competenza</h4>
+                        <p>
+                            La nostra esperienza nel settore equestre si combina con competenze finanziarie, legali e assicurative di alto livello, offrendo un servizio realmente completo.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Team multidisciplinare qualificato</li>
+                            <li>Formazione continua e aggiornamento</li>
+                            <li>Conoscenza approfondita del settore</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="feature-card h-100 p-4">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-bg">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-center">Passione</h4>
+                        <p>
+                            La passione per i cavalli e il mondo equestre guida ogni nostra decisione. Comprendiamo profondamente il legame speciale tra cavalieri e cavalli.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Amore autentico per il mondo equestre</li>
+                            <li>Comprensione delle esigenze specifiche</li>
+                            <li>Dedizione alla sicurezza animale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione La Nostra Missione -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="/api/placeholder/600/400" alt="La nostra missione" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <h2 class="pagetitle mb-4">LA NOSTRA MISSIONE</h2>
+                    <p class="montserrat fs-5 mb-4">
+                        Il nostro obiettivo è creare un ambiente più sicuro e protetto per tutti coloro che operano nel mondo equestre, dai cavalieri amatoriali ai professionisti, dai proprietari di cavalli alle strutture equestri.
+                    </p>
+                    <p class="montserrat fs-5 mb-4">
+                        Attraverso un approccio innovativo e personalizzato alla gestione del rischio, miriamo a:
+                    </p>
+                    <ul class="montserrat fs-5">
+                        <li class="mb-2 black">Ridurre i rischi associati alle attività equestri</li>
+                        <li class="mb-2 black">Proteggere il benessere dei cavalli e dei loro proprietari</li>
+                        <li class="mb-2 black">Offrire soluzioni finanziarie e legali su misura</li>
+                        <li class="black">Promuovere una cultura della prevenzione nel settore</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Il Nostro Team -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="pagetitle mb-4">IL NOSTRO TEAM</h2>
+                    <p class="montserrat fs-5">
+                        Il nostro team è composto da professionisti con diverse competenze uniti dalla passione per il mondo equestre e dall'impegno per l'eccellenza.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Membro Team 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="text-center pt-4">
+                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+                            </div>
+                            <h4 class="card-title">Mario Rossi</h4>
+                            <p class="text-muted">Risk Manager</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Specialista nella valutazione e mitigazione dei rischi nel settore equestre con oltre 15 anni di esperienza.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membro Team 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="text-center pt-4">
+                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+                            </div>
+                            <h4 class="card-title">Laura Bianchi</h4>
+                            <p class="text-muted">Consulente Legale</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Esperta di diritto equestre e consulenza legale specializzata per proprietari di cavalli e strutture equestri.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membro Team 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="text-center pt-4">
+                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+                            </div>
+                            <h4 class="card-title">Giovanni Verdi</h4>
+                            <p class="text-muted">Wealth Manager</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">Consulente finanziario specializzato in soluzioni di investimento dedicate al mondo equestre e alla protezione patrimoniale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Call to Action -->
+    <section class="py-5" style="background-color: var(--TertiaryColor);">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="bold montserrat mb-4">PRONTO A SCOPRIRE DI PIÙ?</h2>
+                    <p class="montserrat fs-5 mb-4">
+                        Contattaci per una consulenza personalizzata e scopri come possiamo aiutarti a proteggere ciò che più ami.
+                    </p>
+                    <a href="#" class="btn btn-cta">CONTATTACI ORA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 
@@ -310,6 +437,12 @@
 
 <!-- Bootstrap JavaScript Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 
 <!-- Script per parallax --> <!--todo migliorare codice parallasse come su index.html-->

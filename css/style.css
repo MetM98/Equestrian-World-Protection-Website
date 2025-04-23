@@ -320,25 +320,28 @@ b.colored{
 .service-card{
     width: auto;
     height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.service-card .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 /* Media query per far sì che all'hover da desktop le card dei servizi a cui è applicata la classe serviceCard-grow si ingrandiscano*/
 @media(hover: hover) and (pointer: fine) and (min-width: 1385px) {
     .serviceCard-grow:hover{
         transform: scale(1.05);
-        transition: transform 0.5s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
-    .serviceCard-grow:not(:hover){
-        transform: scale(1);
-        transition: transform 0.5s ease;
+    .serviceCard-grow:hover .img {
+        transform: scale(1.1);
     }
-}
-
-.service-card .img{
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
 }
 
 .card_background_trat{
