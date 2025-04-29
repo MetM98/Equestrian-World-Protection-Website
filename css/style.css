@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@500&display=swap');
 
 /* todo assegnare dimensioni caratteri per ogni elemento h1, p, ...*/
+/* todo in ogni pagina assegnare lo stesso stile ai titoli e agli altri elementi della pagina*/
 
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root{
@@ -104,6 +105,7 @@ h5.small{
 
 p {
     letter-spacing: 0.00875rem;
+    font-family: var(--fontMontserrat), sans-serif;
 }
 
 p.white{
@@ -116,10 +118,6 @@ p.black{
 
 p.bold{
     font-weight: bold;
-}
-
-p.montserrat{
-    font-family: var(--fontMontserrat), sans-serif;
 }
 
 p.dic{
@@ -229,10 +227,6 @@ b.colored{
 }
 
 
-
-
-
-
 /* Dropdown Menu Styles */
 .dropdown-menu {
     background-color: var(--White);
@@ -246,6 +240,9 @@ b.colored{
     background-color: var(--SecondaryColor);
     color: var(--White);
 }
+
+
+
 
 
 
