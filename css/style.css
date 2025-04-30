@@ -95,6 +95,7 @@ h4.white {
 
 h5 {
     font-weight: normal;
+    font-family: var(--fontPlayfair), sans-serif;
 }
 
 h5.white{
@@ -141,6 +142,11 @@ li.black{
 b.colored{
     color: var(--SecondaryColor);
 }
+
+.secondaryColor{
+    color: var(--SecondaryColor);
+}
+
 
 /* ------------ Navbar ------------ */
 .navbar {
