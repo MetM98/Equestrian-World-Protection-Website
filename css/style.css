@@ -21,6 +21,12 @@
 
 /* ------------ ASSEGNAZIONE FONTS E COLORI------------ */
 
+/*classe css di debug per vedere contorno degli elementi*/
+/** {
+    outline: 1px solid red;
+    overflow-x: hidden;
+}*/
+
 html {
     font-family: var(--fontPlayfair), sans-serif;
 }
