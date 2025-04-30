@@ -79,10 +79,6 @@ h4 {
     color: var(--SecondaryColor);
 }
 
-h4.montserrat{
-    font-family: var(--fontMontserrat), sans-serif;
-}
-
 h4.trenta{
     font-size: 30px;
 }
@@ -102,9 +98,6 @@ h5.white{
     color: var(--SecondaryColor);
 }
 
-h5.montserrat{
-    font-family: var(--fontMontserrat), sans-serif;
-}
 
 h5.small{
     font-size: 12px;
@@ -145,6 +138,10 @@ b.colored{
 
 .secondaryColor{
     color: var(--SecondaryColor);
+}
+
+.montserrat{
+    font-family: var(--fontMontserrat), sans-serif;
 }
 
 
@@ -570,6 +567,54 @@ b.colored{
         font-size: 14px;
     }
 }
+
+
+
+
+
+/* Stili di base per la timeline */
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--SecondaryColor);
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+}
+
+/* Per mobile: pallini centrati */
+@media (max-width: 767.98px) {
+    .timeline-dot-left, .timeline-dot-right {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+}
+
+/* Per desktop: pallini posizionati sulla linea centrale */
+@media (min-width: 768px) {
+    .timeline-dot-left {
+        right: -11px;
+        top: 20px;
+    }
+
+    .timeline-dot-right {
+        left: -11px;
+        top: 20px;
+    }
+}
+
+/* Assicura che le card siano distanziate correttamente sul mobile */
+@media (max-width: 767.98px) {
+    .timeline-card {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
 
 
 

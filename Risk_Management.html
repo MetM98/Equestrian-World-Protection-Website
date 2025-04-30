@@ -6,16 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Equestrian World Protection - Risk Management per il Mondo Equestre</title> <!--todo completare anche nelle altre pagine-->
+    <title>Equestrian World Protection - Risk Management per il Mondo Equestre</title>
+    <!--todo completare anche nelle altre pagine-->
     <meta name="author" content="Matteo Munafò, Emanuele Dubini">
 
     <!-- Meta Keywords --> <!--todo completare-->
-    <meta name="keywords" content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
+    <meta name="keywords"
+          content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
     <!-- Meta Description --> <!--todo completare-->
-<!--
-    <meta name="description" content="Equestrian World Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre.">
--->
-    <meta name="description" content="Servizi di Risk Management per il mondo equestre: analisi dei rischi, soluzioni per centri ippici, associazioni sportive, allevamenti e professionisti del settore.">
+    <!--
+        <meta name="description" content="Equestrian World Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre.">
+    -->
+    <meta name="description"
+          content="Servizi di Risk Management per il mondo equestre: analisi dei rischi, soluzioni per centri ippici, associazioni sportive, allevamenti e professionisti del settore.">
 
 
     <!-- Favicon icon -->
@@ -23,9 +26,9 @@
     <!--todo controllare se funziona correttamente e inserire formato icon o png-->
 
 
-
     <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Icone Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -40,10 +43,12 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top"> <!--todo la navbar deve diventare in versione mobile a 1500px oppure 1784px in base a come si preferisce il comportamento-->
+<nav class="navbar navbar-expand-xxl fixed-top">
+    <!--todo la navbar deve diventare in versione mobile a 1500px oppure 1784px in base a come si preferisce il comportamento-->
     <div class="container-fluid px-0">
         <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
-        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,7 +56,8 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
@@ -65,23 +71,27 @@
                         <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Risk_Management.html">Risk Management</a>
+                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Risk_Management.html">Risk
+                            Management</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth Management</a>
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth
+                            Management</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi
+                            Finanziari</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
                     </li>
                     <!-- Dropdown Menu for language -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown"
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             IT
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
@@ -123,85 +133,122 @@
 <main>
 
 
-
-
-
     <!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
     <section class="mt-5 pt-5">
         <!--TEXT INTRO-->
-	<div class="container-fluid">
-        	<div class="row px-2 px-md-2 mb-2 mt-lg-2 text-center">
-                	<div class="col-12 col-xl-12 py-2">
-        			<h2 class="pagetitle">
-            				RISK MANAGEMENT
-        			</h2>
+        <div class="container-fluid">
+            <div class="row px-2 px-md-2 mb-2 mt-lg-2 text-center">
+                <div class="col-12 col-xl-12 py-2">
+                    <h2 class="pagetitle">
+                        RISK MANAGEMENT
+                    </h2>
                     <p>
-        			    In questo scenario, sempre più complesso soprattutto in ambito legislativo, <b>ci poniamo al servizio di centri ippici, associazioni sportive dilettantistiche, allevamenti e professionisti del settore</b>, per analizzare e cercare valide e specifiche forme di trasferimento del rischio alle Compagnie assicurative, soggetti evidentemente più forti economicamente, capaci di risarcire, al posto dell'utente, quei danni che, da solo, non potrebbe sopportare. <br>
-                        Spesso, in modo semplicistico, il consulente è identificato con colui che reperisce la miglior soluzione al costo più vantaggioso. <br>
-                        Il nostro approcio al rischio porta, al contrario, la consulenza ad elemento preventivo e primario: solo in un secondo momento, e sempre che vi sia necessità, effettuiamo il contratto di assicurazione, come termine ultimo di un articolato percorso tecnico di analisi circa le necessità del cliente, sia esso persona fisica, azienda o ente pubblico. <br>
-                        Pertanto, perseguendo l'interesse dell'utente, qualora occorra, negoziamo coperture assicurative con le primarie Compagnie italiane ed estere, tra cui i Lloyd's of London. <br>
-                        Per questo motivo, nell'ottica di fornire un servizio integrato e completo, collaboriamo con broker, legali, periti, con professionisti specializzati in particolari settori di intervento, che consentono di fornire un servizio qualitativo. <br>
-                        Vi affianchiamo così in un mercato complesso, in continua evoluzione dove ci sono già consulenti importanti. <b>Ma portiamo con noi un valore aggiunto: la nostra passione per questo settore e la nostra competenza specialistica forniscono le corrette risposte ai Vostri bisogni, senza perdere di vista</b> <b class="colored">IL VALORE SOCIALE DELL'ASSICURAZIONE</b>, aspetto essenziale. <br> <br>
-                        Analizziamo accadimento lesivi e le loro conseguenze, qualora si realizzassero. Definiamo per mitigare e trasferire i rischi identificati. <br>            
+                        In questo scenario, sempre più complesso soprattutto in ambito legislativo, <b>ci poniamo al
+                        servizio di centri ippici, associazioni sportive dilettantistiche, allevamenti e professionisti
+                        del settore</b>, per analizzare e cercare valide e specifiche forme di trasferimento del rischio
+                        alle Compagnie assicurative, soggetti evidentemente più forti economicamente, capaci di
+                        risarcire, al posto dell'utente, quei danni che, da solo, non potrebbe sopportare. <br>
+                        Spesso, in modo semplicistico, il consulente è identificato con colui che reperisce la miglior
+                        soluzione al costo più vantaggioso. <br>
+                        Il nostro approcio al rischio porta, al contrario, la consulenza ad elemento preventivo e
+                        primario: solo in un secondo momento, e sempre che vi sia necessità, effettuiamo il contratto di
+                        assicurazione, come termine ultimo di un articolato percorso tecnico di analisi circa le
+                        necessità del cliente, sia esso persona fisica, azienda o ente pubblico. <br>
+                        Pertanto, perseguendo l'interesse dell'utente, qualora occorra, negoziamo coperture assicurative
+                        con le primarie Compagnie italiane ed estere, tra cui i Lloyd's of London. <br>
+                        Per questo motivo, nell'ottica di fornire un servizio integrato e completo, collaboriamo con
+                        broker, legali, periti, con professionisti specializzati in particolari settori di intervento,
+                        che consentono di fornire un servizio qualitativo. <br>
+                        Vi affianchiamo così in un mercato complesso, in continua evoluzione dove ci sono già consulenti
+                        importanti. <b>Ma portiamo con noi un valore aggiunto: la nostra passione per questo settore e
+                        la nostra competenza specialistica forniscono le corrette risposte ai Vostri bisogni, senza
+                        perdere di vista</b> <b class="colored">IL VALORE SOCIALE DELL'ASSICURAZIONE</b>, aspetto
+                        essenziale. <br> <br>
+                        Analizziamo accadimento lesivi e le loro conseguenze, qualora si realizzassero. Definiamo per
+                        mitigare e trasferire i rischi identificati. <br>
                     </p>
                     <h2 class="pagetitle">
                         METODO OPERATIVO
                     </h2>
                     <p>
-                        L'instaurazione ed il mantenimento del rapporto professionale con la Clientela sono esplicati nelle seguenti fasi operative:
-                        <ol>
-                            <li class="colored"><b>ANALISI DEI RISCHI E DEL PORTAFOGLIO ASSICURATIVO IN ESSERE:</b>
-                                <ul>
-                                    <li class="black">
-                                        Insieme al Cliente, anche con eventuale supporto esterno di risk managers, società di valutazione e stima preventiva, periti e legali specializzati, procediamo ad un'analisi approfondita dell'attività caratteristica dell'azienda, o delle attività professionali prestate, per identificare gli ambiti di rischio esistenti. <br>
-                                        Questo studio è la base per poi analizzare nel dettaglio i contratti assicurativi in essere, con particolare riguardo alle garanzie ed alle clausole che li compongono, per ottimizzare il tutto, anche l'aspetto economico di ciascuna polizza. <br>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="colored"><b>ELABORAZIONE ED ATTUAZIONE DEL PROGRAMMA ASSICURATIVO:</b>
-                                <ul>
-                                    <li class="black">
-                                        <b>Predisposizione</b> di un <b>programma assicurativo</b> teso ad ottimizzare il grado di copertura previsto per ogni polizza, in rapporto al profilo giuridico ed economico, ottenuto mediante la collaborazione con le migliori Compagnie italiane ed estere.
-                                    </li>
-                                    <li class="black">
-                                        <b>Analisi</b>, <b>valutazione</b> e <b>decisione</b>, in <b>accordo con il Cliente</b>, delle modalità di attuazione della soluzione assicurativa proposta.
-                                    </li>
-                                    <li class="black">
-                                        <b>Gestione</b> dei <b>contratti assicurativi</b> e di <b>eventuali sinistri</b>, anche non giunti a definizione.
-                                    </li>
-                                    <li class="black">
-                                        <b>Elaborazione</b> periodica di <b>report sintetici</b> sullo stato del portafoglio assicurativo.
-                                    </li>
-                                    <li class="black">
-                                        Costante <b>monitoraggio</b> dei contratti assicurativi. Li <b>aggiorniamo</b> perchè nel tempo abbiano contenuti sempre attuali, in base allo sviluppo delle attività garantite, all'aumentare o diminuire dei rischi e all'evoluzione delle disposizioni legislative.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="colored"><b>GESTIONE DEI SINISTRI:</b>
-                                <ul>
-                                    <li class="black">
-                                        L'accadimento del sinistro e la sua gestione fino alla liquidazione rappresenta il momento di <b>verifica</b> di efficacia ed efficienza, delle soluzioni assicurative studiate. <br>
-                                        Tale è il rilievo di questa fase che abbiamo riservato un ufficio, con avvocato e personale specializzato, impegnato ogni giorno nella gestione dei rapporti tra cliente e legali, liquidatori, periti coinvolti nel processo di risarcimento del danno.
-                                    </li>
-                                </ul>
-                            </li>
-                        </ol>
-                        <br>
-                        Quindi, come si può facilmente capire, il ruolo dell'Assicurazione di pagare i danni quando si verificano, è determinante. <br>
-                        Ma altrettanto importante è mirare anche a prevenire o almeno ridurre i rischi. <br>
-                        Evitare gli eventi lesivi, infatti, permette attività più serene, ad operatori del settore e a chi pratica l'equitazione, per esempio, non cadendo in lunghe e complesse cause legali, attraverso protocolli e pratiche di gestione circa cui Vi terremo informati.
-                        <br>
-                        <br>
-                        <br>
-                        <b class="colored">PROTOCOLLI E PRATICHE DI GESTIONE <br>
-                            CONSULENZE IN MATERIA ASSICURATIVA <br>
-                            ASSICURAZIONI CREDITI COMMERCIALI <br>
-                        </b>
-                        Copertura dal rischio di perdita in presenza di insolvenza e/o mancato pagamento di crediti a seguito di contratto di fornitura o prestazione di servizi tra aziende.
+                        L'instaurazione ed il mantenimento del rapporto professionale con la Clientela sono esplicati
+                        nelle seguenti fasi operative:
+                    <ol>
+                        <li class="colored"><b>ANALISI DEI RISCHI E DEL PORTAFOGLIO ASSICURATIVO IN ESSERE:</b>
+                            <ul>
+                                <li class="black">
+                                    Insieme al Cliente, anche con eventuale supporto esterno di risk managers, società
+                                    di valutazione e stima preventiva, periti e legali specializzati, procediamo ad
+                                    un'analisi approfondita dell'attività caratteristica dell'azienda, o delle attività
+                                    professionali prestate, per identificare gli ambiti di rischio esistenti. <br>
+                                    Questo studio è la base per poi analizzare nel dettaglio i contratti assicurativi in
+                                    essere, con particolare riguardo alle garanzie ed alle clausole che li compongono,
+                                    per ottimizzare il tutto, anche l'aspetto economico di ciascuna polizza. <br>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="colored"><b>ELABORAZIONE ED ATTUAZIONE DEL PROGRAMMA ASSICURATIVO:</b>
+                            <ul>
+                                <li class="black">
+                                    <b>Predisposizione</b> di un <b>programma assicurativo</b> teso ad ottimizzare il
+                                    grado di copertura previsto per ogni polizza, in rapporto al profilo giuridico ed
+                                    economico, ottenuto mediante la collaborazione con le migliori Compagnie italiane ed
+                                    estere.
+                                </li>
+                                <li class="black">
+                                    <b>Analisi</b>, <b>valutazione</b> e <b>decisione</b>, in <b>accordo con il
+                                    Cliente</b>, delle modalità di attuazione della soluzione assicurativa proposta.
+                                </li>
+                                <li class="black">
+                                    <b>Gestione</b> dei <b>contratti assicurativi</b> e di <b>eventuali sinistri</b>,
+                                    anche non giunti a definizione.
+                                </li>
+                                <li class="black">
+                                    <b>Elaborazione</b> periodica di <b>report sintetici</b> sullo stato del portafoglio
+                                    assicurativo.
+                                </li>
+                                <li class="black">
+                                    Costante <b>monitoraggio</b> dei contratti assicurativi. Li <b>aggiorniamo</b>
+                                    perchè nel tempo abbiano contenuti sempre attuali, in base allo sviluppo delle
+                                    attività garantite, all'aumentare o diminuire dei rischi e all'evoluzione delle
+                                    disposizioni legislative.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="colored"><b>GESTIONE DEI SINISTRI:</b>
+                            <ul>
+                                <li class="black">
+                                    L'accadimento del sinistro e la sua gestione fino alla liquidazione rappresenta il
+                                    momento di <b>verifica</b> di efficacia ed efficienza, delle soluzioni assicurative
+                                    studiate. <br>
+                                    Tale è il rilievo di questa fase che abbiamo riservato un ufficio, con avvocato e
+                                    personale specializzato, impegnato ogni giorno nella gestione dei rapporti tra
+                                    cliente e legali, liquidatori, periti coinvolti nel processo di risarcimento del
+                                    danno.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <br>
+                    Quindi, come si può facilmente capire, il ruolo dell'Assicurazione di pagare i danni quando si
+                    verificano, è determinante. <br>
+                    Ma altrettanto importante è mirare anche a prevenire o almeno ridurre i rischi. <br>
+                    Evitare gli eventi lesivi, infatti, permette attività più serene, ad operatori del settore e a chi
+                    pratica l'equitazione, per esempio, non cadendo in lunghe e complesse cause legali, attraverso
+                    protocolli e pratiche di gestione circa cui Vi terremo informati.
+                    <br>
+                    <br>
+                    <br>
+                    <b class="colored">PROTOCOLLI E PRATICHE DI GESTIONE <br>
+                        CONSULENZE IN MATERIA ASSICURATIVA <br>
+                        ASSICURAZIONI CREDITI COMMERCIALI <br>
+                    </b>
+                    Copertura dal rischio di perdita in presenza di insolvenza e/o mancato pagamento di crediti a
+                    seguito di contratto di fornitura o prestazione di servizi tra aziende.
                     </p>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Hero Section con sfondo colorato e introduzione -->
@@ -211,9 +258,12 @@
                 <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="bold montserrat mb-4">IL NOSTRO APPROCCIO</h2>
                     <p class="fs-5">
-                        In uno scenario sempre più complesso, soprattutto in ambito legislativo, <strong>ci poniamo al servizio di centri ippici,
-                        associazioni sportive dilettantistiche, allevamenti e professionisti del settore</strong>, per analizzare e cercare valide
-                        e specifiche forme di trasferimento del rischio alle Compagnie assicurative, soggetti evidentemente più forti economicamente,
+                        In uno scenario sempre più complesso, soprattutto in ambito legislativo, <strong>ci poniamo al
+                        servizio di centri ippici,
+                        associazioni sportive dilettantistiche, allevamenti e professionisti del settore</strong>, per
+                        analizzare e cercare valide
+                        e specifiche forme di trasferimento del rischio alle Compagnie assicurative, soggetti
+                        evidentemente più forti economicamente,
                         capaci di risarcire, al posto dell'utente, quei danni che, da solo, non potrebbe sopportare.
                     </p>
                 </div>
@@ -222,17 +272,19 @@
     </section>
 
 
-
     <!-- Sezione Consulenza come Elemento Preventivo -->
     <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-2 mb-4 mb-md-0" data-aos="fade-up" data-aos-duration="1000">
                     <div class="bg-light p-4 rounded-3 shadow-sm">
-                        <blockquote class="blockquote fs-5 border-start border-secondary ps-4 py-2" style="border-left-width: 4px !important;">
+                        <blockquote class="blockquote fs-5 border-start border-secondary ps-4 py-2"
+                                    style="border-left-width: 4px !important;">
                             <p class="mb-0"> <!--todo poi non fare vedere da mobile-->
-                                "Il nostro approccio al rischio porta la consulenza ad elemento preventivo e primario: solo in un secondo momento,
-                                e sempre che vi sia necessità, effettuiamo il contratto di assicurazione, come termine ultimo di un articolato percorso
+                                "Il nostro approccio al rischio porta la consulenza ad elemento preventivo e primario:
+                                solo in un secondo momento,
+                                e sempre che vi sia necessità, effettuiamo il contratto di assicurazione, come termine
+                                ultimo di un articolato percorso
                                 tecnico di analisi circa le necessità del cliente."
                             </p>
                         </blockquote>
@@ -241,15 +293,19 @@
                 <div class="col-md-6 order-md-1" data-aos="fade-up" data-aos-duration="1000">
                     <h3 class="blank mb-4">Oltre la Semplice Consulenza</h3>
                     <p class="fs-5 mb-4">
-                        Spesso, in modo semplicistico, il consulente è identificato con colui che reperisce la miglior soluzione al costo più vantaggioso.
+                        Spesso, in modo semplicistico, il consulente è identificato con colui che reperisce la miglior
+                        soluzione al costo più vantaggioso.
                     </p>
                     <p class="fs-5 mb-4">
-                        Il nostro approcio al rischio porta, al contrario, la consulenza ad elemento preventivo e primario: solo in un secondo momento,
-                        e sempre che vi sia necessità, effettuiamo il contratto di assicurazione, come termine ultimo di un articolato percorso tecnico
+                        Il nostro approcio al rischio porta, al contrario, la consulenza ad elemento preventivo e
+                        primario: solo in un secondo momento,
+                        e sempre che vi sia necessità, effettuiamo il contratto di assicurazione, come termine ultimo di
+                        un articolato percorso tecnico
                         di analisi circa le necessità del cliente, sia esso persona fisica, azienda o ente pubblico.
                     </p>
                     <p class="fs-5">
-                        Pertanto, perseguendo l'interesse dell'utente, qualora occorra, negoziamo coperture assicurative con le primarie Compagnie
+                        Pertanto, perseguendo l'interesse dell'utente, qualora occorra, negoziamo coperture assicurative
+                        con le primarie Compagnie
                         italiane ed estere, tra cui i Lloyd's of London.
                     </p>
                 </div>
@@ -264,17 +320,21 @@
                 <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="pagetitle mb-4">IL NOSTRO VALORE AGGIUNTO</h2>
                     <p class="fs-5 w-lg-75 mx-auto">
-                        Nell'ottica di fornire un servizio integrato e completo, collaboriamo con broker, legali, periti, e con professionisti
-                        specializzati in particolari settori di intervento, che consentono di fornire un servizio qualitativo. Vi affianchiamo così in un mercato complesso, in continua evoluzione
-                        dove ci sono già consulenti importanti.
+                        Nell'ottica di fornire un servizio integrato e completo, collaboriamo con broker, legali,
+                        periti, e con professionisti
+                        specializzati in particolari settori di intervento, che consentono di fornire un servizio
+                        qualitativo.
                     </p>
-                    <!--todo la frase "Vi affianchiamo così in un mercato complesso, in continua evoluzione dove ci sono già consulenti importanti." va inserita assieme a "Ma portiamo con noi un valore aggiunto: la nostra passione per questo settore e la nostra competenza specialistica
-                            forniscono le corrette risposte ai Vostri bisogni,..."-->
                     <div class="mt-4">
-                        <p class="fs-4 fw-bold text-secondary">
-                            Ma portiamo con noi un valore aggiunto: la nostra passione per questo settore e la nostra competenza specialistica
-                            forniscono le corrette risposte ai Vostri bisogni, senza perdere di vista <span class="colored">IL VALORE SOCIALE DELL'ASSICURAZIONE</span>,
-                            aspetto essenziale.
+                        <p class="fs-5">
+                            Vi affianchiamo così in un mercato complesso, in continua evoluzione dove ci sono già
+                            consulenti importanti.
+                            <span class="d-block fs-4 fw-bold text-secondary mt-2">
+                                Ma portiamo con noi un valore aggiunto: la nostra passione per questo settore e la nostra competenza specialistica
+                                forniscono le corrette risposte ai Vostri bisogni, senza perdere di vista <span
+                                    class="colored">IL VALORE SOCIALE DELL'ASSICURAZIONE</span>,
+                                aspetto essenziale.
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -284,39 +344,45 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                     <div class="d-flex">
                         <div class="flex-shrink-0">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary" style="width: 60px; height: 60px;">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary"
+                                 style="width: 60px; height: 60px;">
                                 <i class="bi bi-shield-check text-white fs-3"></i>
                             </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
                             <h4 class="mb-2">Competenza Specialistica</h4>
-                            <p>Conosciamo a fondo il mondo equestre e le sue peculiarità, offrendo soluzioni davvero mirate.</p>
+                            <p>Conosciamo a fondo il mondo equestre e le sue peculiarità, offrendo soluzioni davvero
+                                mirate.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="d-flex">
                         <div class="flex-shrink-0">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary" style="width: 60px; height: 60px;">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary"
+                                 style="width: 60px; height: 60px;">
                                 <i class="bi bi-heart text-white fs-3"></i>
                             </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
                             <h4 class="mb-2">Passione Autentica</h4>
-                            <p>La nostra passione per i cavalli ci permette di comprendere a fondo le vostre esigenze.</p>
+                            <p>La nostra passione per i cavalli ci permette di comprendere a fondo le vostre
+                                esigenze.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <div class="d-flex">
                         <div class="flex-shrink-0">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary" style="width: 60px; height: 60px;">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary"
+                                 style="width: 60px; height: 60px;">
                                 <i class="bi bi-people text-white fs-3"></i>
                             </div>
                         </div>
                         <div class="flex-grow-1 ms-3">
                             <h4 class="mb-2">Rete di Professionisti</h4>
-                            <p>Collaboriamo con esperti del settore per offrirti un servizio davvero completo e integrato.</p>
+                            <p>Collaboriamo con esperti del settore per offrirti un servizio davvero completo e
+                                integrato.</p>
                         </div>
                     </div>
                 </div>
@@ -331,7 +397,8 @@
                 <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="pagetitle mb-4">IL NOSTRO METODO OPERATIVO</h2>
                     <p class="fs-5">
-                        L'instaurazione ed il mantenimento del rapporto professionale con la Clientela sono esplicati nelle seguenti fasi operative:
+                        L'instaurazione ed il mantenimento del rapporto professionale con la Clientela sono esplicati
+                        nelle seguenti fasi operative:
                     </p>
                 </div>
             </div>
@@ -341,25 +408,31 @@
                 <div class="col-12">
                     <div class="position-relative py-4">
                         <!-- Linea verticale della timeline -->
-                        <div class="position-absolute top-0 bottom-0 start-50 translate-middle-x" style="width: 2px; background-color: var(--SecondaryColor);"></div>
+                        <div class="position-absolute top-0 bottom-0 start-50 translate-middle-x"
+                             style="width: 2px; background-color: var(--SecondaryColor);"></div>
 
                         <!-- Fase 1 -->
                         <div class="row mb-5" data-aos="fade-up" data-aos-duration="1000">
                             <div class="col-md-6 position-relative">
-                                <div class="position-absolute top-0 end-0 translate-middle-y d-none d-md-block" style="right: -10px !important;">
-                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary" style="width: 20px; height: 20px; z-index: 1;"></div>
-                                </div>
-                                <div class="bg-light rounded-3 shadow-sm p-4 me-md-4 mb-4 mb-md-0 h-100">
+                                <!-- Pallino posizionato responsive -->
+                                <div class="timeline-dot timeline-dot-left"></div>
+                                <div class="bg-light rounded-3 shadow-sm p-4 me-md-4 mb-4 mb-md-0 h-100 timeline-card">
                                     <h4 class="mb-3 text-secondary">FASE 1</h4>
-                                    <h5 class="mb-3 secondaryColor">ANALISI DEI RISCHI E DEL PORTAFOGLIO ASSICURATIVO IN ESSERE</h5>
+                                    <h5 class="mb-3 secondaryColor">ANALISI DEI RISCHI E DEL PORTAFOGLIO ASSICURATIVO IN
+                                        ESSERE</h5>
                                     <p>
-                                        Insieme al Cliente, anche con eventuale supporto esterno di risk managers, società di valutazione e stima preventiva,
-                                        periti e legali specializzati, procediamo ad un'analisi approfondita dell'attività caratteristica dell'azienda,
-                                        o delle attività professionali prestate, per identificare gli ambiti di rischio esistenti.
+                                        Insieme al Cliente, anche con eventuale supporto esterno di risk managers,
+                                        società di valutazione e stima preventiva,
+                                        periti e legali specializzati, procediamo ad un'analisi approfondita
+                                        dell'attività caratteristica dell'azienda,
+                                        o delle attività professionali prestate, per identificare gli ambiti di rischio
+                                        esistenti.
                                     </p>
                                     <p>
-                                        Questo studio è la base per poi analizzare nel dettaglio i contratti assicurativi in essere, con particolare riguardo
-                                        alle garanzie ed alle clausole che li compongono, per ottimizzare il tutto, anche l'aspetto economico di ciascuna polizza.
+                                        Questo studio è la base per poi analizzare nel dettaglio i contratti
+                                        assicurativi in essere, con particolare riguardo
+                                        alle garanzie ed alle clausole che li compongono, per ottimizzare il tutto,
+                                        anche l'aspetto economico di ciascuna polizza.
                                     </p>
                                 </div>
                             </div>
@@ -374,21 +447,24 @@
                                 <!-- Colonna vuota per l'allineamento -->
                             </div>
                             <div class="col-md-6 position-relative">
-                                <!--todo su mobile non vengono visualizzati i pallini sulla linea del tempo-->
-                                <div class="position-absolute top-0 start-0 translate-middle-y d-none d-md-block" style="left: -10px !important;">
-                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary" style="width: 20px; height: 20px; z-index: 1;"></div>
-                                </div>
-                                <div class="bg-light rounded-3 shadow-sm p-4 ms-md-4 h-100">
+                                <!-- Pallino posizionato responsive -->
+                                <div class="timeline-dot timeline-dot-right"></div>
+                                <div class="bg-light rounded-3 shadow-sm p-4 ms-md-4 h-100 timeline-card">
                                     <h4 class="mb-3 text-secondary">FASE 2</h4>
-                                    <h5 class="mb-3 secondaryColor">ELABORAZIONE ED ATTUAZIONE DEL PROGRAMMA ASSICURATIVO</h5>
+                                    <h5 class="mb-3 secondaryColor">ELABORAZIONE ED ATTUAZIONE DEL PROGRAMMA
+                                        ASSICURATIVO</h5>
                                     <ul class="list-unstyled">
                                         <li class="mb-3">
                                             <div class="d-flex">
                                                 <div class="flex-shrink-0">
                                                     <i class="bi bi-check-circle-fill text-secondary me-2"></i>
                                                 </div>
-                                                <div> <!--todo questa scritta rimane bianca e non si vede-->
-                                                    <strong>Predisposizione</strong> di un <strong>programma assicurativo</strong> teso ad ottimizzare il grado di copertura previsto per ogni polizza, in rapporto al profilo giuridico ed economico, ottenuto mediante la collaborazione con le migliori Compagnie italiane ed estere.
+                                                <div class="text-dark montserrat">
+                                                    <strong>Predisposizione</strong> di un <strong>programma
+                                                    assicurativo</strong> teso ad ottimizzare il grado di copertura
+                                                    previsto per ogni polizza, in rapporto al profilo giuridico ed
+                                                    economico, ottenuto mediante la collaborazione con le migliori
+                                                    Compagnie italiane ed estere.
                                                 </div>
                                             </div>
                                         </li>
@@ -397,8 +473,10 @@
                                                 <div class="flex-shrink-0">
                                                     <i class="bi bi-check-circle-fill text-secondary me-2"></i>
                                                 </div>
-                                                <div> <!--todo questa scritta rimane bianca e non si vede-->
-                                                    <strong>Analisi</strong>, <strong>valutazione</strong> e <strong>decisione</strong>, in <strong>accordo con il Cliente</strong>, delle modalità di attuazione della soluzione assicurativa proposta.
+                                                <div class="text-dark montserrat">
+                                                    <strong>Analisi</strong>, <strong>valutazione</strong> e <strong>decisione</strong>,
+                                                    in <strong>accordo con il Cliente</strong>, delle modalità di
+                                                    attuazione della soluzione assicurativa proposta.
                                                 </div>
                                             </div>
                                         </li>
@@ -407,8 +485,10 @@
                                                 <div class="flex-shrink-0">
                                                     <i class="bi bi-check-circle-fill text-secondary me-2"></i>
                                                 </div>
-                                                <div> <!--todo questa scritta rimane bianca e non si vede-->
-                                                    <strong>Gestione</strong> dei <strong>contratti assicurativi</strong> e di <strong>eventuali sinistri</strong>, anche non giunti a definizione.
+                                                <div class="text-dark montserrat">
+                                                    <strong>Gestione</strong> dei <strong>contratti
+                                                    assicurativi</strong> e di <strong>eventuali sinistri</strong>,
+                                                    anche non giunti a definizione.
                                                 </div>
                                             </div>
                                         </li>
@@ -417,8 +497,9 @@
                                                 <div class="flex-shrink-0">
                                                     <i class="bi bi-check-circle-fill text-secondary me-2"></i>
                                                 </div>
-                                                <div> <!--todo questa scritta rimane bianca e non si vede-->
-                                                    <strong>Elaborazione</strong> periodica di <strong>report sintetici</strong> sullo stato del portafoglio assicurativo.
+                                                <div class="text-dark montserrat">
+                                                    <strong>Elaborazione</strong> periodica di <strong>report
+                                                    sintetici</strong> sullo stato del portafoglio assicurativo.
                                                 </div>
                                             </div>
                                         </li>
@@ -427,8 +508,12 @@
                                                 <div class="flex-shrink-0">
                                                     <i class="bi bi-check-circle-fill text-secondary me-2"></i>
                                                 </div>
-                                                <div> <!--todo questa scritta rimane bianca e non si vede-->
-                                                    Costante <strong>monitoraggio</strong> dei contratti assicurativi. Li <strong>aggiorniamo</strong> perchè nel tempo abbiano contenuti sempre attuali, in base allo sviluppo delle attività garantite, all'aumentare o diminuire dei rischi e all'evoluzione delle disposizioni legislative.
+                                                <div class="text-dark montserrat">
+                                                    Costante <strong>monitoraggio</strong> dei contratti assicurativi.
+                                                    Li <strong>aggiorniamo</strong> perchè nel tempo abbiano contenuti
+                                                    sempre attuali, in base allo sviluppo delle attività garantite,
+                                                    all'aumentare o diminuire dei rischi e all'evoluzione delle
+                                                    disposizioni legislative.
                                                 </div>
                                             </div>
                                         </li>
@@ -440,19 +525,21 @@
                         <!-- Fase 3 -->
                         <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <div class="col-md-6 position-relative">
-                                <div class="position-absolute top-0 end-0 translate-middle-y d-none d-md-block" style="right: -10px !important;">
-                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-secondary" style="width: 20px; height: 20px; z-index: 1;"></div>
-                                </div>
-                                <div class="bg-light rounded-3 shadow-sm p-4 me-md-4 mb-4 mb-md-0 h-100">
+                                <!-- Pallino posizionato responsive -->
+                                <div class="timeline-dot timeline-dot-left"></div>
+                                <div class="bg-light rounded-3 shadow-sm p-4 me-md-4 mb-4 mb-md-0 h-100 timeline-card">
                                     <h4 class="mb-3 text-secondary">FASE 3</h4>
                                     <h5 class="mb-3 secondaryColor">GESTIONE DEI SINISTRI</h5>
                                     <p>
-                                        L'accadimento del sinistro e la sua gestione fino alla liquidazione rappresenta il momento di <strong>verifica</strong>
+                                        L'accadimento del sinistro e la sua gestione fino alla liquidazione rappresenta
+                                        il momento di <strong>verifica</strong>
                                         di efficacia ed efficienza, delle soluzioni assicurative studiate.
                                     </p>
                                     <p>
-                                        Tale è il rilievo di questa fase che abbiamo riservato un ufficio, con avvocato e personale specializzato,
-                                        impegnato ogni giorno nella gestione dei rapporti tra cliente e legali, liquidatori, periti coinvolti nel processo
+                                        Tale è il rilievo di questa fase che abbiamo riservato un ufficio, con avvocato
+                                        e personale specializzato,
+                                        impegnato ogni giorno nella gestione dei rapporti tra cliente e legali,
+                                        liquidatori, periti coinvolti nel processo
                                         di risarcimento del danno.
                                     </p>
                                 </div>
@@ -479,14 +566,17 @@
                 <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
                     <h3 class="mb-4">IMPORTANZA DELLA PREVENZIONE</h3>
                     <p class="fs-5 mb-4">
-                        Come si può facilmente capire, il ruolo dell'Assicurazione di pagare i danni quando si verificano, è determinante.
+                        Come si può facilmente capire, il ruolo dell'Assicurazione di pagare i danni quando si
+                        verificano, è determinante.
                     </p>
                     <p class="fs-5 mb-4">
                         Ma altrettanto importante è mirare anche a prevenire o almeno ridurre i rischi.
                     </p>
                     <p class="fs-5">
-                        Evitare gli eventi lesivi, infatti, permette attività più serene, ad operatori del settore e a chi pratica l'equitazione,
-                        per esempio, non cadendo in lunghe e complesse cause legali, attraverso protocolli e pratiche di gestione circa cui Vi terremo informati.
+                        Evitare gli eventi lesivi, infatti, permette attività più serene, ad operatori del settore e a
+                        chi pratica l'equitazione,
+                        per esempio, non cadendo in lunghe e complesse cause legali, attraverso protocolli e pratiche di
+                        gestione circa cui Vi terremo informati.
                     </p>
                 </div>
             </div>
@@ -505,12 +595,14 @@
                 <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-body text-center p-4 d-flex flex-column">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center"
+                                 style="width: 80px; height: 80px;">
                                 <i class="bi bi-clipboard-check text-white" style="font-size: 40px;"></i>
                             </div>
                             <h4 class="card-title mb-3">Protocolli e Pratiche di Gestione</h4>
                             <p class="card-text flex-grow-1">
-                                Sviluppiamo protocolli personalizzati per la gestione dei rischi specifici di ogni struttura equestre.
+                                Sviluppiamo protocolli personalizzati per la gestione dei rischi specifici di ogni
+                                struttura equestre.
                             </p>
                         </div>
                     </div>
@@ -518,12 +610,14 @@
                 <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-body text-center p-4 d-flex flex-column">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center"
+                                 style="width: 80px; height: 80px;">
                                 <i class="bi bi-chat-left-text text-white" style="font-size: 40px;"></i>
                             </div>
                             <h4 class="card-title mb-3">Consulenze in Materia Assicurativa</h4>
                             <p class="card-text flex-grow-1">
-                                Offriamo consulenze specializzate per comprendere e ottimizzare le vostre coperture assicurative.
+                                Offriamo consulenze specializzate per comprendere e ottimizzare le vostre coperture
+                                assicurative.
                             </p>
                         </div>
                     </div>
@@ -531,12 +625,14 @@
                 <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-body text-center p-4 d-flex flex-column">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center"
+                                 style="width: 80px; height: 80px;">
                                 <i class="bi bi-currency-exchange text-white" style="font-size: 40px;"></i>
                             </div>
                             <h4 class="card-title mb-3">Assicurazioni Crediti Commerciali</h4>
                             <p class="card-text flex-grow-1">
-                                Copertura dal rischio di perdita in presenza di insolvenza e/o mancato pagamento di crediti a seguito di contratto di fornitura o prestazione di servizi tra aziende.
+                                Copertura dal rischio di perdita in presenza di insolvenza e/o mancato pagamento di
+                                crediti a seguito di contratto di fornitura o prestazione di servizi tra aziende.
                             </p>
                         </div>
                     </div>
@@ -552,7 +648,8 @@
                 <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="bold montserrat mb-4 secondaryColor">DESIDERI ANALIZZARE I TUOI RISCHI?</h2>
                     <p class="fs-5 mb-4">
-                        Contattaci per una valutazione personalizzata delle tue esigenze di risk management nel settore equestre.
+                        Contattaci per una valutazione personalizzata delle tue esigenze di risk management nel settore
+                        equestre.
                     </p>
                     <a href="#" class="btn btn-cta">RICHIEDI UNA CONSULENZA</a>
                 </div>
@@ -561,8 +658,6 @@
     </section>
 
 </main>
-
-
 
 
 <!-- Footer -->
@@ -595,7 +690,8 @@
                     </li>
                     <li class="mt-2">
                         <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per contattarci</a>
+                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per
+                            contattarci</a>
                         <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
                     </li>
                 </ul>
@@ -619,7 +715,8 @@
                 <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br> <!--oppure usare questa icona class="bi bi-building" -->
+                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br>
+                        <!--oppure usare questa icona class="bi bi-building" -->
                         Borgo San Frediano 4,<br>
                         50124 Firenze (FI)
                     </li>
@@ -639,7 +736,8 @@
             <div class="col-12 text-center">
                 <!-- Versione per desktop e tablet -->
                 <p class="mb-0 d-none d-sm-block">
-                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI 62923
+                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
+                    62923
                 </p>
                 <!-- Versione per mobile -->
                 <p class="mb-0 d-block d-sm-none">
