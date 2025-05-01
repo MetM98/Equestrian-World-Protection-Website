@@ -149,6 +149,70 @@ b.colored{
 }
 
 
+
+
+
+
+/* ==========================================================================
+   SISTEMA DI TITOLI STANDARDIZZATO
+   ========================================================================== */
+
+/* Titolo principale della pagina - usato nell'intestazione */
+.ewp-page-title {
+    color: var(--SecondaryColor);
+    font-weight: bold;
+    font-family: var(--fontPlayfair), sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+/* Titolo di sezione - usato per intestare le principali sezioni della pagina */
+.ewp-section-title {
+    color: var(--SecondaryColor);
+    font-weight: bold;
+    font-family: var(--fontPlayfair), sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+}
+
+/* Titolo di sottosezione - usato per elementi all'interno di una sezione principale */
+.ewp-subtitle {
+    color: var(--SecondaryColor);
+    font-weight: 600;
+    font-family: var(--fontPlayfair), sans-serif;
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 2vw, 1.75rem);
+}
+
+/* Variante del titolo con font Montserrat */
+.ewp-title-montserrat {
+    font-family: var(--fontMontserrat), sans-serif;
+}
+
+/* Variante del titolo centrato */
+.ewp-title-center {
+    text-align: center;
+}
+
+/* Titolo della card */
+.ewp-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--SecondaryColor);
+    text-align: center;
+}
+
+/* Titolo con sfondo colorato (ad esempio per sezioni con sfondo --TertiaryColor) */
+.ewp-title-light {
+    color: var(--White);
+}
+
+
+
+
+
 /* ------------ Navbar ------------ */
 .navbar {
     background-color: var(--PrimaryColor)/*var(--White)*/;
