@@ -6,6 +6,8 @@
 /* todo in ogni pagina assegnare lo stesso stile ai titoli e agli altri elementi della pagina*/
 /*todo togliere over delle card su mobile*/
 /*todo su mobile capire come orientare il testo delle varie pagine, se che parte da sinistra oppure centrato*/
+/*todo assegnare font size da css una sola volta per tutti gli elementi e non usare classe fs-  di bootstrap*/
+
 
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root{
@@ -574,7 +576,82 @@ b.colored{
 
 
 
-/* Stili di base per la timeline */
+
+
+
+
+/* ------------ Classi Sezione standard immagine-testo ------------ */
+.ewp-image-text-section {
+    padding: 5rem 0;
+}
+
+.ewp-image-text-section .section-title {
+    color: var(--SecondaryColor);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.ewp-image-text-section .section-title-white {
+    color: var(--PrimaryColor);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.ewp-image-text-section .section-image {
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ewp-image-text-section .image-container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ewp-image-text-section .content-container {
+    padding: 1.5rem;
+}
+
+.ewp-image-text-section p {
+    /*font-size: 1.1rem;*/
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.ewp-image-text-section ul {
+    margin-top: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.ewp-image-text-section ul li {
+    margin-bottom: 0.5rem;
+   /* font-size: 1.1rem;*/
+}
+
+/* Per controllare l'ordine delle colonne su dispositivi mobili */
+@media (max-width: 767.98px) {
+    .ewp-image-text-section .order-md-first {
+        order: -1;
+    }
+    .ewp-image-text-section .image-container {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------ Stili di base per la timeline pagina RIsk_Management.html ------------ */
 .timeline-dot {
     width: 20px;
     height: 20px;
