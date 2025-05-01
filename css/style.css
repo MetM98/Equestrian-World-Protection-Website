@@ -4,6 +4,8 @@
 
 /* todo assegnare dimensioni caratteri per ogni elemento h1, p, ...*/
 /* todo in ogni pagina assegnare lo stesso stile ai titoli e agli altri elementi della pagina*/
+/*todo togliere over delle card su mobile*/
+/*todo su mobile capire come orientare il testo delle varie pagine, se che parte da sinistra oppure centrato*/
 
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root{
@@ -576,7 +578,8 @@ b.colored{
 .timeline-dot {
     width: 20px;
     height: 20px;
-    background-color: var(--SecondaryColor);
+    /*background-color: var(--SecondaryColor);*/
+    background-color: #6C757D;
     border-radius: 50%;
     z-index: 1;
     position: absolute;
@@ -594,12 +597,12 @@ b.colored{
 /* Per desktop: pallini posizionati sulla linea centrale */
 @media (min-width: 768px) {
     .timeline-dot-left {
-        right: -11px;
+        right: -10px;
         top: 20px;
     }
 
     .timeline-dot-right {
-        left: -11px;
+        left: -10px;
         top: 20px;
     }
 }
