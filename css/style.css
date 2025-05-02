@@ -2,12 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@500&display=swap');
 
-/* todo assegnare dimensioni caratteri per ogni elemento h1, p, ...*/
-/* todo in ogni pagina assegnare lo stesso stile ai titoli e agli altri elementi della pagina*/
 /*todo togliere over delle card su mobile*/
 /*todo su mobile capire come orientare il testo delle varie pagine, se che parte da sinistra oppure centrato*/
 /*todo assegnare font size da css una sola volta per tutti gli elementi e non usare classe fs-  di bootstrap*/
-
+/*todo effettuare pulizia delle classi css che non sono usate*/
 
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root{
@@ -31,101 +29,84 @@
     overflow-x: hidden;
 }*/
 
+
+
+/* ------------ ASSEGNAZIONE FONTS E DIMENSIONI CARATTERI ------------ */
+
 html {
-    font-family: var(--fontPlayfair), sans-serif;
+    font-family: var(--fontMontserrat), sans-serif;
 }
 
-
-h1, h2, h3 {
+/* Titoli e intestazioni */
+h1 {
     font-family: var(--fontPlayfair), sans-serif;
     color: var(--SecondaryColor);
-
-}
-
-h2, h3, h4, h5, li, a{
-    color: var(--PrimaryColor);
-}
-
-h1.colored{
-    color: var(--PrimaryColor);
-}
-
-h3.blank{
-    color: var(--SecondaryColor);
+    font-size: clamp(2.2rem, 2.5vw + 1.5rem, 3rem);
+    letter-spacing: 0.1rem;
 }
 
 h2 {
+    font-family: var(--fontPlayfair), sans-serif;
+    color: var(--PrimaryColor);
     font-size: clamp(1.75rem, 2vw + 1rem, 2.5rem);
     letter-spacing: 0.075rem;
 }
 
-h2.bold{
-    font-weight: bold;
-}
-
-h2.montserrat{
-    font-family: var(--fontMontserrat), sans-serif;
-    font-weight: bold;
-}
-
-h2.pagetitle{
-    font-weight: bold;
-    color: var(--SecondaryColor);
-}
-
 h3 {
+    font-family: var(--fontPlayfair), sans-serif;
+    color: var(--PrimaryColor);
     font-size: clamp(1.5rem, 1.5vw + 0.75rem, 2rem);
     letter-spacing: 0.05rem;
 }
 
 h4 {
     font-family: var(--fontPlayfair), sans-serif;
-    color: var(--SecondaryColor);
-}
-
-h4.trenta{
-    font-size: 30px;
-}
-
-h4.white {
-    color: var(--SecondaryColor);
-    font: var(--fontMontserrat);
-    font-weight: bold;
+    color: var(--PrimaryColor);
+    font-size: clamp(1.25rem, 1vw + 0.75rem, 1.75rem);
+    letter-spacing: 0.025rem;
 }
 
 h5 {
-    font-weight: normal;
     font-family: var(--fontPlayfair), sans-serif;
+    color: var(--PrimaryColor);
+    font-size: clamp(1rem, 0.75vw + 0.75rem, 1.5rem);
+    letter-spacing: 0.01rem;
+    font-weight: normal;
 }
 
-h5.white{
-    color: var(--SecondaryColor);
-}
-
-
-h5.small{
-    font-size: 12px;
-}
-
+/* Testo normale */
 p {
-    letter-spacing: 0.00875rem;
     font-family: var(--fontMontserrat), sans-serif;
+    font-size: clamp(1rem, 0.5vw + 0.75rem, 1.25rem);
+    letter-spacing: 0.00875rem;
+    line-height: 1.6;
 }
 
-p.white{
-    color: var(--SecondaryColor);
+li {
+    /*font-family: var(--fontMontserrat), sans-serif;*/
+    font-size: clamp(1rem, 0.5vw + 0.75rem, 1.25rem);
+    line-height: 1.5;
+    color: var(--PrimaryColor);
+}
+
+a {
+    /*font-family: var(--fontMontserrat), sans-serif;*/
+    font-size: clamp(1rem, 0.5vw + 0.75rem, 1.25rem);
+    color: var(--PrimaryColor);
+}
+
+
+
+
+
+
+h2.montserrat{
+    font-family: var(--fontMontserrat), sans-serif;
+    font-weight: bold;
 }
 
 p.black{
     color: black;
-}
-
-p.bold{
-    font-weight: bold;
-}
-
-p.dic{
-    font-size: 18px;
 }
 
 li.colored{
@@ -146,6 +127,10 @@ b.colored{
 
 .montserrat{
     font-family: var(--fontMontserrat), sans-serif;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 
