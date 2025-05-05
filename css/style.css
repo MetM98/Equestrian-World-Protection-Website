@@ -746,6 +746,161 @@ b.colored{
 }
 
 
+/* ------------ Stili di base la pagina Private_Wealth_Management.html ------------ */
+.wealth-feature {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.wealth-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.wealth-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--SecondaryColor);
+    transition: all 0.3s ease;
+}
+
+.wealth-feature:hover .wealth-icon {
+    transform: scale(1.1);
+}
+
+.hexagon-feature {
+    position: relative;
+    width: 100%;
+    padding-bottom: 115%;
+    margin-bottom: 30px;
+}
+
+.hexagon-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: all 0.3s ease;
+}
+
+.hexagon-inner:hover {
+    background-color: var(--TertiaryColor);
+}
+
+.process-step {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--SecondaryColor);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wealth-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.wealth-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.wealth-card-header {
+    background-color: var(--SecondaryColor);
+    padding: 1.5rem;
+    color: white;
+}
+
+.wealth-card-body {
+    padding: 1.5rem;
+}
+
+.wealth-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wealth-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #333;
+}
+
+.wealth-list li:before {
+    content: "\F633"; /* Bootstrap icons check-circle */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0;
+    color: var(--SecondaryColor);
+}
+
+.bg-wealth {
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.bg-wealth:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(135deg, var(--TertiaryColor) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.testimonial-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-box:before {
+    content: "\F141"; /* Bootstrap icons quote */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 3rem;
+    color: var(--TertiaryColor);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+
 
 
 
