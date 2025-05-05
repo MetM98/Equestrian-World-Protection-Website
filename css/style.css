@@ -794,8 +794,18 @@ b.colored{
 }
 
 .hexagon-inner:hover {
-    background-color: var(--TertiaryColor);
+    background-color: var(--SecondaryColor);
+    /*transform: scale(1.02);*/
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
+
+.hexagon-inner:hover h4,
+.hexagon-inner:hover p,
+.hexagon-inner:hover .wealth-icon {
+    color: white !important;
+}
+
 
 .process-step {
     position: relative;
@@ -865,18 +875,6 @@ b.colored{
 .bg-wealth {
     background-color: #f8f9fa;
     position: relative;
-}
-
-.bg-wealth:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background-image: linear-gradient(135deg, var(--TertiaryColor) 0%, rgba(255,255,255,0) 100%);
-    opacity: 0.2;
-    z-index: 0;
 }
 
 .testimonial-box {
