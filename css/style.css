@@ -133,6 +133,10 @@ b.colored{
     font-weight: bold;
 }
 
+.reduced-text{
+    font-size: 0.85rem;
+}
+
 
 
 
