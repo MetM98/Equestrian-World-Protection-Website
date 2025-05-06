@@ -974,6 +974,125 @@ b.colored{
 
 
 
+/* ------------ Stili di base la pagina Servizi_Finanziari.html ------------ */
+
+/* Stili per la timeline finanziaria */
+.finance-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.finance-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background-color: var(--SecondaryColor);
+    transform: translateX(-50%);
+}
+
+.finance-timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 50%;
+}
+
+.finance-timeline-indicator {
+    position: absolute;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.finance-timeline-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-left: 30px;
+}
+
+/* Adattamento per il responsive */
+@media (max-width: 767.98px) {
+    .finance-timeline::before {
+        left: 30px;
+    }
+
+    .finance-timeline-item {
+        padding-left: 70px;
+        margin-left: 0;
+    }
+
+    .finance-timeline-indicator {
+        left: 30px;
+    }
+
+    .finance-timeline-content {
+        margin-left: 0;
+    }
+}
+
+/* Stili per la citazione finanziaria */
+.financial-quote {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.financial-quote-icon {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.financial-quote-icon i {
+    color: white;
+    font-size: 24px;
+}
+
+.financial-quote-text {
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--SecondaryColor);
+}
+
+.financial-quote-text p {
+    margin-bottom: 0;
+}
+
+.blockquote-footer {
+    color: var(--SecondaryColor);
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
 
 
 /* ------------ Footer ------------ */
