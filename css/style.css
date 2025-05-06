@@ -779,7 +779,7 @@ b.colored{
 
 .hexagon-inner {
     position: absolute;
-    top: 0;
+    top: -0rem;
     left: 0;
     width: 100%;
     height: 100%;
@@ -791,6 +791,28 @@ b.colored{
     padding: 15%;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: all 0.3s ease;
+}
+
+/* Media query per tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hexagon-inner {
+        padding: 8%; /* Riduciamo ulteriormente il padding per i tablet */
+    }
+
+    .hexagon-inner h4 {
+        font-size: 1.1rem; /* Riduciamo leggermente la dimensione del testo del titolo */
+        margin-bottom: 0.5rem;
+    }
+
+    .hexagon-inner p.small {
+        font-size: 0.75rem; /* Riduciamo leggermente la dimensione del testo del paragrafo */
+        margin-bottom: 0;
+    }
+
+    .wealth-icon {
+        font-size: 2rem; /* Riduciamo leggermente la dimensione dell'icona */
+        margin-bottom: 1rem;
+    }
 }
 
 .hexagon-inner:hover {
@@ -872,6 +894,56 @@ b.colored{
     color: var(--SecondaryColor);
 }
 
+/* Media query per tablet - correzione per le card di Corporate Advisory */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Aumentiamo la larghezza delle card su tablet */
+    .wealth-card {
+        max-width: 100%;
+    }
+
+    /* Adattiamo l'header delle card per ospitare il testo più lungo */
+    .wealth-card-header {
+        padding: 1rem 1.2rem;
+        min-height: 85px; /* Altezza minima per prevenire tagli */
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /* Riduciamo leggermente il testo dell'header su tablet */
+    .wealth-card-header h4.fs-5 {
+        font-size: 1rem !important;
+        line-height: 1.3;
+        margin-left: 10px; /* Distanziamento dall'icona */
+        flex: 1;
+        word-break: break-word; /* Permettiamo alle parole lunghe di andare a capo */
+    }
+
+    /* Riduciamo leggermente la dimensione dell'icona */
+    .wealth-card-header .rounded-circle {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+    }
+
+    .wealth-card-header .fs-4 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Adattiamo il corpo della card */
+    .wealth-card-body {
+        padding: 1.2rem;
+    }
+
+    /* Assicuriamo che le liste non vengano tagliate */
+    .wealth-list li {
+        padding: 8px 0;
+        padding-left: 25px;
+        font-size: 0.9rem;
+    }
+}
+
+
 .bg-wealth {
     background-color: #f8f9fa;
     position: relative;
@@ -894,7 +966,7 @@ b.colored{
     left: 10px;
     font-size: 3rem;
     color: var(--TertiaryColor);
-    opacity: 0.2;
+    opacity: 0.4;
     z-index: -1;
 }
 
