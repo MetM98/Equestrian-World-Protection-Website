@@ -1471,6 +1471,426 @@ b.colored{
 
 
 
+/* ------------ Stili specifici per la pagina Servizi_Legali.html ------------ */
+
+/* Stili Hero Section */
+.legal-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.legal-quote {
+    background-color: rgba(228, 209, 145, 0.2);
+    border-left: 5px solid var(--SecondaryColor);
+    padding: 1.5rem;
+}
+
+/* Stili per la navigazione a tab */
+.legal-nav-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.legal-nav {
+    gap: 10px;
+}
+
+.legal-nav-btn {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.legal-nav-btn i {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--SecondaryColor);
+}
+
+.legal-nav-btn.active {
+    background-color: var(--SecondaryColor);
+    color: white;
+}
+
+.legal-nav-btn.active i {
+    color: white;
+}
+
+/* Stili per i tab content */
+.legal-tab {
+    display: none;
+}
+
+.legal-tab.active {
+    display: block;
+}
+
+/* Stili per icone servizi legali */
+.legal-service-icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.legal-feature {
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.legal-feature:hover {
+    transform: translateX(5px);
+}
+
+.legal-entity {
+    background-color: #f8f9fa;
+    border-radius: 30px;
+    padding: 8px 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.legal-entity:hover {
+    background-color: var(--TertiaryColor);
+    transform: translateY(-3px);
+}
+
+.legal-process-step {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 25px;
+}
+
+.legal-process-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--SecondaryColor);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.legal-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legal-list li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #333;
+}
+
+.legal-list li:before {
+    content: "\F633"; /* Bootstrap icons check-circle */
+    font-family: "bootstrap-icons";
+    position: absolute;
+    left: 0;
+    color: var(--SecondaryColor);
+}
+
+.legal-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.legal-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.legal-benefit-icon {
+    background-color: var(--SecondaryColor);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.legal-benefit-text {
+    flex-grow: 1;
+}
+
+.legal-service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.legal-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.legal-card-icon {
+    background-color: #f8f9fa;
+    color: var(--SecondaryColor);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* Stili per la timeline legale */
+.legal-timeline-line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: var(--SecondaryColor);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.legal-timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.legal-timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--SecondaryColor);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.legal-timeline-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 45%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.legal-timeline-icon {
+    position: absolute;
+    top: -25px;
+    background-color: var(--SecondaryColor);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.legal-timeline-right {
+    justify-content: flex-end;
+}
+
+.legal-timeline-left {
+    justify-content: flex-start;
+}
+
+.legal-timeline-right .legal-timeline-icon {
+    left: 25px;
+}
+
+.legal-timeline-left .legal-timeline-icon {
+    right: 25px;
+}
+
+/* Adattamento per mobile */
+@media (max-width: 767.98px) {
+    .legal-timeline-line {
+        left: 20px;
+    }
+
+    .legal-timeline-item {
+        justify-content: flex-end;
+    }
+
+    .legal-timeline-dot {
+        left: 20px;
+    }
+
+    .legal-timeline-content {
+        width: calc(100% - 40px);
+    }
+
+    .legal-timeline-icon {
+        left: 25px !important;
+        right: auto !important;
+    }
+}
+
+/* Stile per citazione grande */
+.legal-big-quote {
+    position: relative;
+    padding: 40px 60px;
+}
+
+.legal-big-quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 5rem;
+    color: white;
+    opacity: 0.2;
+}
+
+.legal-big-quote-text {
+    position: relative;
+    z-index: 1;
+    color: var(--SecondaryColor);
+    margin: 0;
+}
+
+/* Stili per sezione competenza internazionale */
+.legal-international-feature {
+    margin-bottom: 25px;
+}
+
+.legal-international-feature i {
+    color: var(--SecondaryColor);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.legal-world-map {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.03);
+    border-radius: 10px;
+}
+
+.legal-region {
+    position: absolute;
+}
+
+.legal-region-dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--SecondaryColor);
+    border-radius: 50%;
+    position: relative;
+}
+
+.legal-region-dot.highlight {
+    background-color: var(--TertiaryColor);
+    width: 20px;
+    height: 20px;
+}
+
+.legal-region-dot::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--SecondaryColor);
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.legal-region-label {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.legal-region-label.highlight {
+    font-weight: bold;
+}
+
+.legal-region.europe {
+    top: 30%;
+    left: 45%;
+}
+
+.legal-region.mena {
+    top: 50%;
+    left: 55%;
+}
+
+.legal-region.italy {
+    top: 40%;
+    left: 48%;
+}
+
+/* Stili per la scheda di contatto */
+.legal-contact-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.legal-contact-info {
+    margin: 20px 0;
+}
+
+.legal-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.legal-contact-item i {
+    background-color: var(--SecondaryColor);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
 
 
 
