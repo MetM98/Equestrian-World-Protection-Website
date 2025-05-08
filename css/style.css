@@ -1666,6 +1666,602 @@ b.colored{
     flex-shrink: 0;
 }
 
+
+
+/* Stili per la nuova sezione Servizi Legali */
+.legal-filter-container {
+    position: sticky;
+    top: 80px;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+.legal-filter {
+    border-radius: 30px;
+    border: 2px solid var(--SecondaryColor);
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.legal-cards-nav {
+    margin-bottom: 30px;
+}
+
+.legal-nav-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.legal-nav-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--SecondaryColor);
+    transition: width 0.3s ease;
+}
+
+.legal-nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.legal-nav-card:hover::after {
+    width: 100%;
+}
+
+.legal-nav-card.active {
+    background-color: var(--SecondaryColor);
+}
+
+.legal-nav-card.active .legal-nav-icon,
+.legal-nav-card.active .legal-nav-title {
+    color: white;
+}
+
+.legal-nav-icon {
+    font-size: 2rem;
+    color: var(--SecondaryColor);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.legal-nav-title {
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.legal-content-panel {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.legal-content-panel.active {
+    display: block;
+}
+
+.legal-content-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.legal-content-header {
+    background-color: var(--SecondaryColor);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.legal-content-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.legal-content-title {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+
+.legal-content-body {
+    padding: 30px;
+}
+
+.legal-feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.legal-feature-item:hover {
+    transform: translateX(5px);
+}
+
+.legal-feature-item i {
+    color: var(--SecondaryColor);
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.legal-content-cta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.legal-content-cta .btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    border-color: var(--SecondaryColor);
+    color: var(--SecondaryColor);
+    transition: all 0.3s ease;
+}
+
+.legal-content-cta .btn:hover {
+    background-color: var(--SecondaryColor);
+    color: white;
+}
+
+/* Accordion styles for mobile */
+.legal-accordion .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.legal-accordion .accordion-button {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-weight: 600;
+}
+
+.legal-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--SecondaryColor);
+    color: white;
+}
+
+.legal-accordion .accordion-button:not(.collapsed) .legal-accordion-icon {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.legal-accordion-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(109, 7, 26, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--SecondaryColor);
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media queries */
+@media (max-width: 991.98px) {
+    .legal-nav-title {
+        font-size: 0.8rem;
+    }
+}
+
+/* Adattamento per mobile */
+@media (max-width: 767.98px) {
+    .legal-content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        /* Aumentiamo l'altezza minima del contenitore */
+        min-height: 130px;
+    }
+
+    .legal-content-header-icon {
+        position: static; /* Rimuove il posizionamento absolute */
+        transform: none;
+        margin-bottom: 20px; /* Aumentiamo lo spazio sotto l'icona */
+        left: auto;
+        top: auto;
+        /* Assicuriamoci che l'icona abbia dimensioni fisse */
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .legal-content-header h3 {
+        width: 100%;
+        text-align: center;
+        /* Diamo un margin-top per ulteriore separazione */
+        padding-top: 15px;
+        /* Assicuriamoci che il titolo non sia influenzato da altri stili */
+        position: static;
+    }
+
+    /* Se esiste una classe .ewp-title-light, aggiustiamo anche quella */
+    .legal-content-header h3.ewp-title-light {
+        margin-top: 10px;
+        position: static;
+    }
+
+    .legal-content-body {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Stili per la sezione Servizi Legali migliorata */
+
+/* Grid di selezione servizi legali */
+.legal-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .legal-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .legal-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Selettori di servizi legali */
+.legal-service-selector {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.legal-service-selector:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.legal-service-selector:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.legal-service-selector.active {
+    border: 1px solid #f8f8f8;
+}
+
+.legal-service-selector.active:before {
+    background-color: var(--SecondaryColor);
+}
+
+.legal-service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.legal-service-selector.active .legal-service-icon {
+    background-color: var(--SecondaryColor);
+}
+
+.legal-service-icon i {
+    font-size: 25px;
+    color: var(--SecondaryColor);
+    transition: all 0.3s ease;
+}
+
+.legal-service-selector.active .legal-service-icon i {
+    color: white;
+}
+
+.legal-service-selector h5 {
+    color: #333;
+    margin: 0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.legal-service-selector.active h5 {
+    color: var(--SecondaryColor);
+}
+
+/* Contenitore del contenuto dei servizi */
+.legal-service-content {
+    position: relative;
+    min-height: 300px;
+}
+
+.legal-content-item {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.legal-content-item.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card del contenuto */
+.legal-content-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.legal-content-header {
+    position: relative;
+    padding: 25px 25px 25px 100px;
+    /*background-color: #f8f9fa;*/
+    background-color: var(--SecondaryColor);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.legal-content-header-icon {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    /*background-color: var(--SecondaryColor);*/
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legal-content-header-icon i {
+    font-size: 28px;
+    /*color: white;*/
+    color: var(--SecondaryColor);
+}
+
+.legal-content-header h3 {
+    margin: 0;
+}
+
+.legal-content-body {
+    padding: 30px;
+}
+
+/* Grid di figure professionali in Responsabilità Civile */
+.legal-entities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.legal-entity {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.legal-entity:hover {
+    background-color: var(--TertiaryColor);
+    transform: translateY(-3px);
+}
+
+.legal-entity i {
+    color: var(--SecondaryColor);
+    font-size: 1.2rem;
+}
+
+/* Step numerati nella sezione Contenziosi */
+.legal-process-step {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 25px;
+    min-height: 40px;
+}
+
+.legal-process-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--SecondaryColor);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Stili per l'accordione Altri Servizi */
+.legal-accordion .accordion-item {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.legal-accordion .accordion-header {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.legal-accordion .accordion-button {
+    background-color: #f8f9fa;
+    color: var(--SecondaryColor);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 15px 20px;
+}
+
+.legal-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--SecondaryColor);
+    color: white;
+}
+
+.legal-accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.1);
+}
+
+.legal-accordion .accordion-button:not(.collapsed) i {
+    color: white;
+}
+
+.legal-accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236d071a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.legal-accordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Adattamento per tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .legal-content-header {
+        padding: 20px 20px 20px 90px;
+    }
+
+    .legal-content-header-icon {
+        width: 50px;
+        height: 50px;
+        left: 20px;
+    }
+
+    .legal-content-header h3 {
+        font-size: 1.4rem;
+    }
+
+    .legal-content-body {
+        padding: 25px;
+    }
+
+    .legal-entities-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+/* Adattamento per mobile */
+@media (max-width: 767.98px) {
+    .legal-content-header {
+        padding: 65px 20px 20px 20px;
+        text-align: center;
+    }
+
+    .legal-content-header-icon {
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+    }
+
+    .legal-content-body {
+        padding: 20px;
+    }
+
+    .legal-entities-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .legal-entity {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Stili per la timeline legale */
 .legal-timeline-line {
     position: absolute;
