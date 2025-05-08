@@ -2261,8 +2261,8 @@ b.colored{
 
 
 
-
-/* Stili per la timeline legale */
+/*!*todo una volta rimossa la timeline rimuovere*!
+!* Stili per la timeline legale *!
 .legal-timeline-line {
     position: absolute;
     width: 3px;
@@ -2329,7 +2329,7 @@ b.colored{
     right: 25px;
 }
 
-/* Adattamento per mobile */
+!* Adattamento per mobile *!
 @media (max-width: 767.98px) {
     .legal-timeline-line {
         left: 20px;
@@ -2351,7 +2351,351 @@ b.colored{
         left: 25px !important;
         right: auto !important;
     }
+}*/
+
+
+
+
+
+
+
+/* Stili per la nuova sezione "Il nostro Approccio" con esagoni interattivi */
+.legal-approach-section {
+    position: relative;
+    padding: 5rem 0;
+    background-color: #f9f9f9;
 }
+
+.approach-process-container {
+    position: relative;
+    margin: 3rem 0;
+    padding: 2rem 0;
+}
+
+.approach-process-flow {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Linee di connessione tra gli esagoni */
+.approach-connection-lines {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent 0%, var(--SecondaryColor) 15%, var(--SecondaryColor) 85%, transparent 100%);
+    z-index: 0;
+}
+
+/* Puntini decorativi sulla linea di connessione */
+.approach-connection-lines:before,
+.approach-connection-lines:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--SecondaryColor);
+}
+
+.approach-connection-lines:before {
+    left: 15%;
+}
+
+.approach-connection-lines:after {
+    right: 15%;
+}
+
+/* Step del processo */
+.approach-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 3rem;
+    z-index: 1;
+}
+
+/* quadrati arrotondati */
+.approach-hexagon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.approach-hexagon-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.approach-icon-wrapper {
+    margin-bottom: 10px;
+}
+
+.approach-hexagon i {
+    font-size: 2rem;
+    color: var(--SecondaryColor);
+    transition: all 0.3s ease;
+}
+
+.approach-hexagon h4 {
+    font-size: 1rem;
+    color: var(--SecondaryColor);
+    margin: 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Contenuto dello step */
+.approach-content {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    opacity: 0.7;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.approach-features {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.approach-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.approach-features li i {
+    color: var(--SecondaryColor);
+    margin-right: 10px;
+    font-size: 0.8rem;
+}
+
+/* Effetti di hover */
+.approach-step:hover .approach-hexagon {
+    transform: translateY(-10px);
+}
+
+.approach-step:hover .approach-hexagon-inner {
+    background-color: var(--SecondaryColor);
+}
+
+.approach-step:hover .approach-hexagon i,
+.approach-step:hover .approach-hexagon h4 {
+    color: white;
+}
+
+.approach-step:hover .approach-content {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Numeri degli step sugli esagoni */
+.approach-hexagon:before {
+    content: attr(data-step);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: var(--fontMontserrat), sans-serif;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.approach-step[data-step="1"] .approach-hexagon:before {
+    content: "1";
+}
+
+.approach-step[data-step="2"] .approach-hexagon:before {
+    content: "2";
+}
+
+.approach-step[data-step="3"] .approach-hexagon:before {
+    content: "3";
+}
+
+.approach-step[data-step="4"] .approach-hexagon:before {
+    content: "4";
+}
+
+/* Adattamento mobile */
+@media (max-width: 991.98px) {
+    .approach-step {
+        width: 50%;
+    }
+
+    .approach-connection-lines {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .approach-step {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .approach-hexagon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .approach-hexagon i {
+        font-size: 1.8rem;
+    }
+
+    .approach-hexagon h4 {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Stati attivi per gli step */
+.approach-step.active .approach-hexagon-inner {
+    background-color: var(--SecondaryColor);
+    transform: scale(1.05);
+}
+
+.approach-step.active .approach-hexagon i,
+.approach-step.active .approach-hexagon h4 {
+    color: white;
+}
+
+.approach-step.active .approach-content {
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Effetto pulsante sui quadrati arrotondati (solo su desktop) */
+@media (hover: hover) {
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0.4); }
+        70% { box-shadow: 0 0 0 15px rgba(109, 7, 26, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0); }
+    }
+
+    .approach-step.active .approach-hexagon {
+        animation: pulse 2s infinite;
+        border-radius: 11px;
+    }
+}
+
+/* Stile per il numero degli step */
+.approach-number {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    top: -10px;
+    right: -10px;
+    z-index: 10;
+    font-family: var(--fontMontserrat), sans-serif;
+}
+
+
+
+/* applica gli effetti hover solo su dispositivi che lo supportano */
+@media (hover: hover) {
+    /* Effetti di hover */
+    .approach-step:hover .approach-hexagon {
+        transform: translateY(-10px);
+    }
+
+    .approach-step:hover .approach-hexagon-inner {
+        background-color: var(--SecondaryColor);
+    }
+
+    .approach-step:hover .approach-hexagon i,
+    .approach-step:hover .approach-hexagon h4 {
+        color: white;
+    }
+
+    .approach-step:hover .approach-content {
+        opacity: 1;
+        transform: translateY(0);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Per dispositivi touch, mostrare sempre il contenuto */
+@media (hover: none) {
+    .approach-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Opzionalmente, puoi aggiungere uno stile attivo per il primo elemento su mobile */
+    .approach-step:first-child .approach-hexagon-inner {
+        background-color: var(--SecondaryColor);
+    }
+
+    .approach-step:first-child .approach-hexagon i,
+    .approach-step:first-child .approach-hexagon h4 {
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Stile per citazione grande */
 .legal-big-quote {
