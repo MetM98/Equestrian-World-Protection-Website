@@ -3188,6 +3188,234 @@ b.colored{
 
 
 
+/* Stili per la sezione CTA */
+.cta-section {
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-image: url('images/bg_img.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+/* Parte sinistra con features */
+.cta-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cta-feature {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cta-feature:hover {
+    transform: translateX(5px);
+}
+
+.cta-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background-color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(109, 7, 26, 0.2);
+}
+
+.cta-icon-wrapper i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.cta-feature p {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Card CTA a destra */
+.cta-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transform: translateY(0);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.cta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cta-card-content {
+    padding: 40px 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-card h3 {
+    color: var(--SecondaryColor);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.cta-card p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button CTA */
+.btn-cta {
+    background-color: var(--SecondaryColor);
+    color: white;
+    border: 2px solid var(--SecondaryColor);
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn-cta:hover {
+    color: var(--SecondaryColor);
+}
+
+.btn-cta:hover::before {
+    width: 100%;
+}
+
+.btn-lg {
+    padding: 15px 35px;
+}
+
+/* Decorazione card */
+.cta-card-decorator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, var(--SecondaryColor) 0%, var(--TertiaryColor) 100%);
+}
+
+.cta-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--TertiaryColor);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cta-card::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--SecondaryColor);
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .cta-feature {
+        margin-bottom: 15px;
+    }
+
+    .cta-icon-wrapper {
+        width: 45px;
+        height: 45px;
+    }
+
+    .cta-icon-wrapper i {
+        font-size: 1.3rem;
+    }
+
+    .cta-feature p {
+        font-size: 1rem;
+    }
+
+    .cta-card {
+        margin-top: 30px;
+    }
+
+    .cta-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .cta-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .cta-card-content {
+        padding: 30px 20px;
+    }
+
+    .btn-cta {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+
+    .btn-lg {
+        padding: 12px 30px;
+    }
+}
+
+
+
+
 
 
 /* ------------ Footer ------------ */
