@@ -2359,16 +2359,17 @@ b.colored{
 
 
 
-/* Stili per la nuova sezione "Il nostro Approccio" con esagoni interattivi */
+/* Stili per la sezione "Il nostro Approccio" con quadrati interattivi */
 .legal-approach-section {
     position: relative;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
     background-color: #f9f9f9;
 }
 
 .approach-process-container {
     position: relative;
-    margin: 3rem 0;
+    /*margin-bottom: 3rem;*/
     padding: 2rem 0;
 }
 
@@ -2379,59 +2380,8 @@ b.colored{
     justify-content: center;
 }
 
-/* Linee di connessione tra gli esagoni */
-.approach-connection-lines {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, transparent 0%, var(--SecondaryColor) 15%, var(--SecondaryColor) 85%, transparent 100%);
-    z-index: 0;
-}
 
-/* Puntini decorativi sulla linea di connessione */
-.approach-connection-lines:before,
-.approach-connection-lines:after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--SecondaryColor);
-}
-
-.approach-connection-lines:before {
-    left: 15%;
-}
-
-.approach-connection-lines:after {
-    right: 15%;
-}
-
-/* Step del processo */
-.approach-step {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
-    padding: 0 15px;
-    margin-bottom: 3rem;
-    z-index: 1;
-}
-
-/* quadrati arrotondati */
-.approach-hexagon {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 2rem;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-
+/* Stili comuni */
 .approach-hexagon-inner {
     position: absolute;
     top: 0;
@@ -2466,18 +2416,6 @@ b.colored{
     transition: all 0.3s ease;
 }
 
-/* Contenuto dello step */
-.approach-content {
-    background-color: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    opacity: 0.7;
-    transform: translateY(10px);
-    transition: all 0.4s ease;
-}
-
 .approach-features {
     list-style: none;
     padding-left: 0;
@@ -2498,86 +2436,133 @@ b.colored{
     font-size: 0.8rem;
 }
 
-/* Effetti di hover */
-.approach-step:hover .approach-hexagon {
-    transform: translateY(-10px);
-}
-
-.approach-step:hover .approach-hexagon-inner {
-    background-color: var(--SecondaryColor);
-}
-
-.approach-step:hover .approach-hexagon i,
-.approach-step:hover .approach-hexagon h4 {
-    color: white;
-}
-
-.approach-step:hover .approach-content {
-    opacity: 1;
-    transform: translateY(0);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Numeri degli step sugli esagoni */
-.approach-hexagon:before {
-    content: attr(data-step);
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--TertiaryColor);
-    color: var(--SecondaryColor);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-family: var(--fontMontserrat), sans-serif;
-    z-index: 2;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.approach-step[data-step="1"] .approach-hexagon:before {
-    content: "1";
-}
-
-.approach-step[data-step="2"] .approach-hexagon:before {
-    content: "2";
-}
-
-.approach-step[data-step="3"] .approach-hexagon:before {
-    content: "3";
-}
-
-.approach-step[data-step="4"] .approach-hexagon:before {
-    content: "4";
-}
-
-/* Adattamento mobile */
-@media (max-width: 991.98px) {
-    .approach-step {
-        width: 50%;
-    }
-
+/* Linee di connessione tra i quadrati */
+/* Desktop layout */
+@media (min-width: 992px) {
     .approach-connection-lines {
-        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, transparent 0%, var(--SecondaryColor) 15%, var(--SecondaryColor) 85%, transparent 100%);
+        z-index: 0;
     }
-}
 
-@media (max-width: 767.98px) {
+    .approach-connection-lines:before,
+    .approach-connection-lines:after {
+        content: '';
+        position: absolute;
+        top: -3px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--SecondaryColor);
+    }
+
+    .approach-connection-lines:before {
+        left: 15%;
+    }
+
+    .approach-connection-lines:after {
+        right: 15%;
+    }
+
     .approach-step {
-        width: 100%;
-        margin-bottom: 2.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 3rem;
+        z-index: 1;
     }
 
     .approach-hexagon {
-        width: 100px;
-        height: 100px;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        transition: all 0.4s ease;
     }
 
-    .approach-hexagon i {
-        font-size: 1.8rem;
+    .approach-content {
+        background-color: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        opacity: 0.7;
+        transform: translateY(10px);
+        transition: all 0.4s ease;
+    }
+}
+
+/* STILE PER TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+    .approach-connection-lines {
+        display: none;
+    }
+
+    .approach-process-flow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .approach-step {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Stile unificato card per tablet */
+    .approach-step {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .approach-hexagon {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .approach-content {
+        background-color: white;
+        border-radius: 12px;
+        padding: 2rem 1.5rem 1.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        margin-top: -40px;
+        padding-top: 50px;
+        opacity: 1;
+        transform: none;
+    }
+
+    .approach-hexagon-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--SecondaryColor);
+        border-radius: 15px;
+        transition: all 0.4s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .approach-hexagon i,
+    .approach-hexagon h4 {
+        color: white;
     }
 
     .approach-hexagon h4 {
@@ -2585,62 +2570,76 @@ b.colored{
     }
 }
 
-
-
-/* Stati attivi per gli step */
-.approach-step.active .approach-hexagon-inner {
-    background-color: var(--SecondaryColor);
-    transform: scale(1.05);
-}
-
-.approach-step.active .approach-hexagon i,
-.approach-step.active .approach-hexagon h4 {
-    color: white;
-}
-
-.approach-step.active .approach-content {
-    opacity: 1;
-    transform: translateY(0);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Effetto pulsante sui quadrati arrotondati (solo su desktop) */
-@media (hover: hover) {
-    @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0.4); }
-        70% { box-shadow: 0 0 0 15px rgba(109, 7, 26, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0); }
+/* STILE PER MOBILE */
+@media (max-width: 767px) {
+    .approach-connection-lines {
+        display: none;
     }
 
-    .approach-step.active .approach-hexagon {
-        animation: pulse 2s infinite;
-        border-radius: 11px;
+    .approach-process-flow {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .approach-step {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Stile unificato card per mobile */
+    .approach-step {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .approach-hexagon {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+
+    .approach-content {
+        background-color: white;
+        border-radius: 12px;
+        padding: 2rem 1.5rem 1.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        margin-top: -40px;
+        padding-top: 50px;
+        opacity: 1;
+        transform: none;
+    }
+
+    .approach-hexagon-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--SecondaryColor);
+        border-radius: 15px;
+        transition: all 0.4s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .approach-hexagon i,
+    .approach-hexagon h4 {
+        color: white;
     }
 }
 
-/* Stile per il numero degli step */
-.approach-number {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: var(--TertiaryColor);
-    color: var(--SecondaryColor);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    top: -10px;
-    right: -10px;
-    z-index: 10;
-    font-family: var(--fontMontserrat), sans-serif;
-}
 
 
-
-/* applica gli effetti hover solo su dispositivi che lo supportano */
-@media (hover: hover) {
-    /* Effetti di hover */
+/* Effetti di hover solo per desktop */
+@media (hover: hover) and (min-width: 992px) {
     .approach-step:hover .approach-hexagon {
         transform: translateY(-10px);
     }
@@ -2659,24 +2658,94 @@ b.colored{
         transform: translateY(0);
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0.4); }
+        70% { box-shadow: 0 0 0 15px rgba(109, 7, 26, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0); }
+    }
+
+    .approach-step.active .approach-hexagon {
+        animation: pulse 2s infinite;
+        border-radius: 15px;
+    }
 }
 
-/* Per dispositivi touch, mostrare sempre il contenuto */
-@media (hover: none) {
-    .approach-content {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Numeri degli step */
+.approach-step[data-step="1"] .approach-hexagon:before {
+    content: "1";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: var(--fontMontserrat), sans-serif;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
 
-    /* Opzionalmente, puoi aggiungere uno stile attivo per il primo elemento su mobile */
-    .approach-step:first-child .approach-hexagon-inner {
-        background-color: var(--SecondaryColor);
-    }
+.approach-step[data-step="2"] .approach-hexagon:before {
+    content: "2";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: var(--fontMontserrat), sans-serif;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
 
-    .approach-step:first-child .approach-hexagon i,
-    .approach-step:first-child .approach-hexagon h4 {
-        color: white;
-    }
+.approach-step[data-step="3"] .approach-hexagon:before {
+    content: "3";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: var(--fontMontserrat), sans-serif;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.approach-step[data-step="4"] .approach-hexagon:before {
+    content: "4";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: var(--fontMontserrat), sans-serif;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 
