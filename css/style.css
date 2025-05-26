@@ -4,10 +4,10 @@
 
 /*todo togliere over delle card su mobile*/
 /*todo su mobile capire come orientare il testo delle varie pagine, se che parte da sinistra oppure centrato*/
-/*todo assegnare font size da css una sola volta per tutti gli elementi e non usare classe fs-  di bootstrap*/
 /*todo effettuare pulizia delle classi css che non sono usate*/
 /*todo aggiungere pagina 404 non found*/
 /*todo tutti i componenti <li> sono associati alla classe black, capire se vanno resi dello stesso colore del testo p o vanno bene neri*/
+/*todo togliere tutte le parti commentate che non sono usate*/
 
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root{
