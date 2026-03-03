@@ -1,711 +1,653 @@
-<!--Da mettere sempre sulle pagine HTML-->
+﻿<!--Da mettere sempre sulle pagine HTML-->
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <!--INFO BROWSER-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Equestrian World Protection - Chi Siamo</title>
-    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
-
-    <!-- Meta Keywords --> <!--todo completare-->
-    <meta name="keywords"
-          content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
-    <!-- Meta Description --> <!--todo completare-->
-    <meta name="description"
-          content="Scopri chi siamo: professionisti qualificati nel settore equestre con esperienza in risk management, assicurazioni, e servizi finanziari per il mondo dei cavalli.">
-
-
-    <!-- Favicon icon -->
-    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
-    <!--todo controllare se funziona correttamente e inserire formato icon o png-->
-
-
-    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Icone Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!--link versionebootstrap5.3.2-->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
-
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--INFO BROWSER-->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Equestrian World Protection - Chi Siamo</title>
+<meta content="Matteo MunafÃ², Emanuele Dubini" name="author"/>
+<!-- Meta Keywords --> <!--todo completare-->
+<meta content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione" name="keywords"/>
+<!-- Meta Description --> <!--todo completare-->
+<meta content="Scopri chi siamo: professionisti qualificati nel settore equestre con esperienza in risk management, assicurazioni, e servizi finanziari per il mondo dei cavalli." name="description"/>
+<!-- Favicon icon -->
+<link href="images/logo/WEBSITELOGO.jpeg" rel="shortcut icon" type="x-icon"/>
+<!--todo controllare se funziona correttamente e inserire formato icon o png-->
+<!-- Link Bootstrap 5.3.3 & Jquery CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Icone Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<!--link versionebootstrap5.3.2-->
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+<!-- Main CSS File -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
-
 <body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top"> <!--todo la navbar deve diventare in versione mobile a 1500px oppure 1784px in base a come si preferisce il comportamento-->
-    <div class="container-fluid px-0">
-        <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
-        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Chi_siamo_it.html">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Risk_Management.html">Risk Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi Finanziari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
-                    </li>
-                    <!-- Dropdown Menu for language -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
+<!-- Modificato navbar-expand-xl per evitare che vada a capo -->
+<div class="container-fluid px-0">
+<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> <!-- Cambiato in collapse normale per pulizia su bootstrap 5 -->
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Collapse Menu -->
+<div class="collapse navbar-collapse" id="offcanvasNavbar">
+<ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+<li class="nav-item">
+<a aria-current="page" class="nav-link mx-xl-1 active text-center" data-i18n="nav_home" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_about" href="Chi_siamo_it.html">Chi
+                            siamo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_services" href="Servizi.html">Servizi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_risk" href="Risk_Management.html">Risk
+                            Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_legal" href="Servizi_Legali.html">Servizi
+                            Legali</a>
+</li>
+<!-- Dropdown Menu for language -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle mx-xl-1 text-center" data-bs-toggle="dropdown" id="languageDropdown" role="button">
                             IT
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
-                            <li><a class="dropdown-item" href="#">EN</a></li> <!--todo inserire pagine in href-->
-                        </ul>
-                    </li>
-                    <!-- End Dropdown Menu -->
-                </ul>
-            </div>
-        </div>
-        <!-- End Offcanvas Menu -->
-    </div>
+<ul aria-labelledby="languageDropdown" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" data-lang-switch="it" href="#">IT</a></li>
+<li><a class="dropdown-item" data-lang-switch="en" href="#">EN</a></li>
+</ul>
+</li>
+<!-- End Dropdown Menu -->
+</ul>
+</div>
+<!-- End Collapse Menu -->
+</div>
 </nav>
 <!-- End Navbar -->
-
-
 <!--CONTENUTO-->
-
 <!-- HEADER con effetto Parallasse -->
 <header id="header_parallax">
-    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Background">
-
-    <div class="container-fluid">
-        <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-12 col-lg-6">
-                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
-                     alt="World Equestrian Protection Logo">
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-12 col-lg-6">
-                    <h1 id="brand_name" class="d-none d-lg-block">Equestrian World Protection</h1>
-                    <h2 class="mt-2" id="brand_spot"><strong><b>CHI SIAMO</b></strong>
-                    </h2>
-                </div>
-            </div>
-        </div>
-    </div>
+<img alt="Equestrian World Protection Background" class="img-fluid" id="bg" src="images/bg_img.jpg"/>
+<div class="container-fluid">
+<div class="row justify-content-center justify-content-lg-end">
+<div class="col-12 col-lg-6">
+<img alt="World Equestrian Protection Logo" class="img-fluid mx-auto custom-logo" id="logo" src="images/logo/EWP_Logo.png" title="Link Home"/>
+</div>
+<div class="row justify-content-end">
+<div class="col-12 col-lg-6">
+<h1 class="d-none d-lg-block" data-i18n="chi_s_h1_1" id="brand_name">Equestrian World Protection</h1>
+<h2 class="mt-2" data-i18n="chi_s_h2_2" id="brand_spot"><strong><b>CHI SIAMO</b></strong>
+</h2>
+</div>
+</div>
+</div>
+</div>
 </header>
-
-
 <main>
-
-    <!-- Sezione Introduttiva -->
-    <section class="mt-2 pt-5">
-        <div class="container">
-            <div class="row px-2 px-md-2 mb-5 mt-lg-2 text-center">
-                <div class="col-12 py-2" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">LA NOSTRA IDENTITÀ</h2>
-                    <p class="mb-4">
+<!-- Sezione Introduttiva -->
+<section class="mt-2 pt-5">
+<div class="container">
+<div class="row px-2 px-md-2 mb-5 mt-lg-2 text-center">
+<div class="col-12 py-2" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="chi_s_h2_3">LA NOSTRA IDENTITÃ€</h2>
+<p class="mb-4" data-i18n="chi_s_p_4">
                         Siamo professionisti qualificati, amanti dei cavalli, con esperienza in diversi settori.
                     </p>
-                    <p class="mb-4">
+<p class="mb-4" data-i18n="chi_s_p_5">
                         Abbiamo l'obiettivo di diffondere le nostre conoscenze specialistiche nel mondo equestre che non
-                        può prescindere da un'adeguata gestione del rischio.
+                        puÃ² prescindere da un'adeguata gestione del rischio.
                     </p>
-                    <p class="">
-                        Affianchiamo, quindi, il Cliente nei più disparati contesti di questo mondo: quando vive la sua
+<p class="" data-i18n="chi_s_p_6">
+                        Affianchiamo, quindi, il Cliente nei piÃ¹ disparati contesti di questo mondo: quando vive la sua
                         passione equestre, nei suoi business a essa collegati e, infine, nella tutela di quelle
                         straordinarie creature che sono i cavalli.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Sezione I Nostri Valori-->
-    <section class="why-choose-us py-5">
-        <div class="container">
-            <div class="row mb-5 text-center">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-light ewp-title-center mb-4">I NOSTRI VALORI</h2>
-                    <p class="mb-0">
+</div>
+</div>
+</div>
+</section>
+<!--Sezione I Nostri Valori-->
+<section class="why-choose-us py-5">
+<div class="container">
+<div class="row mb-5 text-center">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-light ewp-title-center mb-4" data-i18n="chi_s_h2_7">I NOSTRI VALORI</h2>
+<p class="mb-0" data-i18n="chi_s_p_8">
                         Ci impegniamo ogni giorno per garantire protezione e sicurezza nel mondo equestre, seguendo
                         principi fondamentali che guidano il nostro operato.
                     </p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="feature-card h-100 p-4">
-                        <div class="feature-icon-wrapper">
-                            <div class="feature-icon-bg">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title">Protezione</h4>
-                        <p>
+</div>
+</div>
+<div class="row g-4">
+<!-- Card 1 -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="feature-card h-100 p-4">
+<div class="feature-icon-wrapper">
+<div class="feature-icon-bg">
+<i class="bi bi-shield-check"></i>
+</div>
+</div>
+<h4 class="ewp-card-title" data-i18n="chi_s_h4_9">Protezione</h4>
+<p data-i18n="chi_s_p_10">
                             Mettiamo la protezione al centro di ogni nostra azione. Che si tratti di tutelare cavalli,
-                            cavalieri o investimenti, la sicurezza è sempre la nostra priorità assoluta.
+                            cavalieri o investimenti, la sicurezza Ã¨ sempre la nostra prioritÃ  assoluta.
                         </p>
-                        <ul class="feature-list">
-                            <li>Soluzioni assicurative personalizzate</li>
-                            <li>Strategie preventive di rischio</li>
-                            <li>Supporto continuativo ai clienti</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="feature-card h-100 p-4">
-                        <div class="feature-icon-wrapper">
-                            <div class="feature-icon-bg">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title">Competenza</h4>
-                        <p>
+<ul class="feature-list">
+<li data-i18n="chi_s_li_11">Soluzioni assicurative personalizzate</li>
+<li data-i18n="chi_s_li_12">Strategie preventive di rischio</li>
+<li data-i18n="chi_s_li_13">Supporto continuativo ai clienti</li>
+</ul>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="feature-card h-100 p-4">
+<div class="feature-icon-wrapper">
+<div class="feature-icon-bg">
+<i class="bi bi-graph-up-arrow"></i>
+</div>
+</div>
+<h4 class="ewp-card-title" data-i18n="chi_s_h4_14">Competenza</h4>
+<p data-i18n="chi_s_p_15">
                             La nostra esperienza nel settore equestre si combina con competenze finanziarie, legali e
                             assicurative di alto livello, offrendo un servizio realmente completo.
                         </p>
-                        <ul class="feature-list">
-                            <li>Team multidisciplinare qualificato</li>
-                            <li>Formazione continua e aggiornamento</li>
-                            <li>Conoscenza approfondita del settore</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="feature-card h-100 p-4">
-                        <div class="feature-icon-wrapper">
-                            <div class="feature-icon-bg">
-                                <i class="bi bi-heart"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title">Passione</h4>
-                        <p>
+<ul class="feature-list">
+<li data-i18n="chi_s_li_16">Team multidisciplinare qualificato</li>
+<li data-i18n="chi_s_li_17">Formazione continua e aggiornamento</li>
+<li data-i18n="chi_s_li_18">Conoscenza approfondita del settore</li>
+</ul>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="feature-card h-100 p-4">
+<div class="feature-icon-wrapper">
+<div class="feature-icon-bg">
+<i class="bi bi-heart"></i>
+</div>
+</div>
+<h4 class="ewp-card-title" data-i18n="chi_s_h4_19">Passione</h4>
+<p data-i18n="chi_s_p_20">
                             La passione per i cavalli e il mondo equestre guida ogni nostra decisione. Comprendiamo
                             profondamente il legame speciale tra cavalieri e cavalli.
                         </p>
-                        <ul class="feature-list">
-                            <li>Amore autentico per il mondo equestre</li>
-                            <li>Comprensione delle esigenze specifiche</li>
-                            <li>Dedizione alla sicurezza animale</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione La Nostra Missione -->
-    <section class="ewp-image-text-section py-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-around">
-                <div class="col-md-5 image-container mb-4 mb-md-0 d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/logo/EWP_Logo.png" alt="La nostra missione" class="section-image">
-                </div>
-
-                <div class="col-12 col-md-5 content-container" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-section-title">LA NOSTRA MISSIONE</h3>
-                    <p>
-                        Il nostro obiettivo è creare un ambiente più sicuro e protetto per tutti coloro che operano nel
+<ul class="feature-list">
+<li data-i18n="chi_s_li_21">Amore autentico per il mondo equestre</li>
+<li data-i18n="chi_s_li_22">Comprensione delle esigenze specifiche</li>
+<li data-i18n="chi_s_li_23">Dedizione alla sicurezza animale</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione La Nostra Missione -->
+<section class="ewp-image-text-section py-5">
+<div class="container">
+<div class="row align-items-center justify-content-around">
+<div class="col-md-5 image-container mb-4 mb-md-0 d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
+<img alt="La nostra missione" class="section-image" src="images/logo/EWP_Logo.png"/>
+</div>
+<div class="col-12 col-md-5 content-container" data-aos="fade-up" data-aos-duration="1000">
+<h3 class="ewp-section-title" data-i18n="chi_s_h3_24">LA NOSTRA MISSIONE</h3>
+<p data-i18n="chi_s_p_25">
+                        Il nostro obiettivo Ã¨ creare un ambiente piÃ¹ sicuro e protetto per tutti coloro che operano nel
                         mondo equestre, dai cavalieri amatoriali ai professionisti, dai proprietari di cavalli alle
                         strutture equestri.
                     </p>
-                    <p>
+<p data-i18n="chi_s_p_26">
                         Attraverso un approccio innovativo e personalizzato alla gestione del rischio, miriamo a:
                     </p>
-                    <ul>
-                        <li class="black">Ridurre i rischi associati alle attività equestri</li>
-                        <li class="black">Proteggere il benessere dei cavalli e dei loro proprietari</li>
-                        <li class="black">Offrire soluzioni finanziarie e legali su misura</li>
-                        <li class="black">Promuovere una cultura della prevenzione nel settore</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Il Nostro Team -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">IL NOSTRO TEAM</h2>
-                    <p class="">
-                        Il nostro team è composto da professionisti con diverse competenze uniti dalla passione per il mondo equestre e dall'impegno per l'eccellenza.
+<ul>
+<li class="black" data-i18n="chi_s_li_27">Ridurre i rischi associati alle attivitÃ  equestri</li>
+<li class="black" data-i18n="chi_s_li_28">Proteggere il benessere dei cavalli e dei loro proprietari</li>
+<li class="black" data-i18n="chi_s_li_29">Offrire soluzioni finanziarie e legali su misura</li>
+<li class="black" data-i18n="chi_s_li_30">Promuovere una cultura della prevenzione nel settore</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Il Nostro Team -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row text-center mb-5">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="chi_s_h2_31">IL NOSTRO TEAM</h2>
+<p class="" data-i18n="chi_s_p_32">
+                        Il nostro team Ã¨ composto da professionisti con diverse competenze uniti dalla passione per il mondo equestre e dall'impegno per l'eccellenza.
                     </p>
-                </div>
-            </div>
-
-            <div class="row g-4 justify-content-center">
-                <!-- Membro Team 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="text-center pt-4">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
-                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
-                            </div>
-                            <h4 class="card-title">Mario Rossi</h4>
-                            <p class="text-muted">Risk Manager</p>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text">Specialista nella valutazione e mitigazione dei rischi nel settore equestre con oltre 15 anni di esperienza.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Membro Team 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="text-center pt-4">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
-                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
-                            </div>
-                            <h4 class="card-title">Mario Rossi</h4>
-                            <p class="text-muted">Risk Manager</p>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text">Specialista nella valutazione e mitigazione dei rischi nel settore equestre con oltre 15 anni di esperienza.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Membro Team 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="text-center pt-4">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
-                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
-                            </div>
-                            <h4 class="card-title">Giovanni Verdi</h4>
-                            <p class="text-muted">Wealth Manager</p>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text">Consulente finanziario specializzato in soluzioni di investimento dedicate al mondo equestre e alla protezione patrimoniale.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                <div class="row g-4 mt-0 justify-content-center">
-                <!-- Membro Team 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="text-center pt-4">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
-                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
-                            </div>
-                            <h4 class="card-title">Laura Bianchi</h4>
-                            <p class="text-muted">Consulente Legale</p>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text">Esperta di diritto equestre e consulenza legale specializzata per proprietari di cavalli e strutture equestri.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Membro Team 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="text-center pt-4">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
-                                <i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
-                            </div>
-                            <h4 class="card-title">Laura Bianchi</h4>
-                            <p class="text-muted">Consulente Legale</p>
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="card-text">Esperta di diritto equestre e consulenza legale specializzata per proprietari di cavalli e strutture equestri.</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-    </section>
-
-
-    <!-- Sezione Dove Siamo e Contatti -->
-    <section class="contact-international-section py-5 bg-light" id="contatti">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title mb-4">DOVE SIAMO</h2>
-                    <p class="w-lg-75 mx-auto">
+</div>
+</div>
+<div class="row g-4 justify-content-center">
+<!-- Membro Team 1 -->
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="text-center pt-4">
+<div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+<i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+</div>
+<h4 class="card-title" data-i18n="chi_s_h4_33">Mario Rossi</h4>
+<p class="text-muted" data-i18n="chi_s_p_34">Risk Manager</p>
+</div>
+<div class="card-body text-center">
+<p class="card-text" data-i18n="chi_s_p_35">Specialista nella valutazione e mitigazione dei rischi nel settore equestre con oltre 15 anni di esperienza.</p>
+</div>
+</div>
+</div>
+<!-- Membro Team 2 -->
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="text-center pt-4">
+<div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+<i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+</div>
+<h4 class="card-title" data-i18n="chi_s_h4_36">Mario Rossi</h4>
+<p class="text-muted" data-i18n="chi_s_p_37">Risk Manager</p>
+</div>
+<div class="card-body text-center">
+<p class="card-text" data-i18n="chi_s_p_38">Specialista nella valutazione e mitigazione dei rischi nel settore equestre con oltre 15 anni di esperienza.</p>
+</div>
+</div>
+</div>
+<!-- Membro Team 3 -->
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="text-center pt-4">
+<div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+<i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+</div>
+<h4 class="card-title" data-i18n="chi_s_h4_39">Giovanni Verdi</h4>
+<p class="text-muted" data-i18n="chi_s_p_40">Wealth Manager</p>
+</div>
+<div class="card-body text-center">
+<p class="card-text" data-i18n="chi_s_p_41">Consulente finanziario specializzato in soluzioni di investimento dedicate al mondo equestre e alla protezione patrimoniale.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row g-4 mt-0 justify-content-center">
+<!-- Membro Team 4 -->
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="text-center pt-4">
+<div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+<i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+</div>
+<h4 class="card-title" data-i18n="chi_s_h4_42">Laura Bianchi</h4>
+<p class="text-muted" data-i18n="chi_s_p_43">Consulente Legale</p>
+</div>
+<div class="card-body text-center">
+<p class="card-text" data-i18n="chi_s_p_44">Esperta di diritto equestre e consulenza legale specializzata per proprietari di cavalli e strutture equestri.</p>
+</div>
+</div>
+</div>
+<!-- Membro Team 5 -->
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="text-center pt-4">
+<div class="rounded-circle bg-secondary mx-auto mb-3" style="width: 120px; height: 120px; overflow: hidden;">
+<i class="bi bi-person-fill text-white" style="font-size: 80px; line-height: 120px;"></i>
+</div>
+<h4 class="card-title" data-i18n="chi_s_h4_45">Laura Bianchi</h4>
+<p class="text-muted" data-i18n="chi_s_p_46">Consulente Legale</p>
+</div>
+<div class="card-body text-center">
+<p class="card-text" data-i18n="chi_s_p_47">Esperta di diritto equestre e consulenza legale specializzata per proprietari di cavalli e strutture equestri.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Dove Siamo e Contatti -->
+<section class="contact-international-section py-5 bg-light" id="contatti">
+<div class="container">
+<div class="row">
+<div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title mb-4" data-i18n="chi_s_h2_48">DOVE SIAMO</h2>
+<p class="w-lg-75 mx-auto" data-i18n="chi_s_p_49">
                         La nostra sede principale si trova a Firenze, ma la nostra presenza internazionale ci permette di offrire
                         assistenza e consulenza in tutta Europa, nel Medio Oriente e in Nord Africa. Contattaci per scoprire come possiamo aiutarti.
                     </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- PARTE SINISTRA: Contatori statistici animati e informazioni di contatto -->
-                <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="international-stats-container">
-                        <!-- Contatori statistici animati -->
-                        <div class="international-counter-row">
-                            <div class="international-counter-item">
-                                <div class="counter-circle">
-                                    <div class="counter-value">
-                                        <span class="counter-number" data-count="15">0</span>
-                                        <span class="counter-plus">+</span>
-                                    </div>
-                                </div>
-                                <h5 class="secondaryColor">Paesi Serviti</h5>
-                            </div>
-                            <div class="international-counter-item">
-                                <div class="counter-circle">
-                                    <div class="counter-value">
-                                        <span class="counter-number" data-count="8">0</span>
-                                        <span class="counter-plus">+</span>
-                                    </div>
-                                </div>
-                                <h5 class="secondaryColor">Lingue</h5>
-                            </div>
-                            <div class="international-counter-item">
-                                <div class="counter-circle">
-                                    <div class="counter-value">
-                                        <span class="counter-number" data-count="120">0</span>
-                                        <span class="counter-plus">+</span>
-                                    </div>
-                                </div>
-                                <h5 class="secondaryColor">Partner</h5>
-                            </div>
-                        </div>
-
-                        <!-- Informazioni di contatto -->
-                        <div class="mt-5">
-                            <h4 class="secondaryColor mb-4">I Nostri Contatti</h4>
-                            <div class="contact-info-container">
-                                <div class="contact-info-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-geo-alt-fill"></i>
-                                    </div>
-                                    <div class="contact-text">
-                                        <h5 class="secondaryColor">Indirizzo</h5>
-                                        <p>Borgo San Frediano 4,<br>50124 Firenze (FI)</p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-info-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-telephone-fill"></i>
-                                    </div>
-                                    <div class="contact-text">
-                                        <h5 class="secondaryColor">Telefono</h5>
-                                        <p>Fisso: <a href="tel:+390550948303">+39 055 0948303</a><br>
+</div>
+</div>
+<div class="row">
+<!-- PARTE SINISTRA: Contatori statistici animati e informazioni di contatto -->
+<div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
+<div class="international-stats-container">
+<!-- Contatori statistici animati -->
+<div class="international-counter-row">
+<div class="international-counter-item">
+<div class="counter-circle">
+<div class="counter-value">
+<span class="counter-number" data-count="15">0</span>
+<span class="counter-plus" data-i18n="chi_s_span_50">+</span>
+</div>
+</div>
+<h5 class="secondaryColor" data-i18n="chi_s_h5_51">Paesi Serviti</h5>
+</div>
+<div class="international-counter-item">
+<div class="counter-circle">
+<div class="counter-value">
+<span class="counter-number" data-count="8">0</span>
+<span class="counter-plus" data-i18n="chi_s_span_52">+</span>
+</div>
+</div>
+<h5 class="secondaryColor" data-i18n="chi_s_h5_53">Lingue</h5>
+</div>
+<div class="international-counter-item">
+<div class="counter-circle">
+<div class="counter-value">
+<span class="counter-number" data-count="120">0</span>
+<span class="counter-plus" data-i18n="chi_s_span_54">+</span>
+</div>
+</div>
+<h5 class="secondaryColor" data-i18n="chi_s_h5_55">Partner</h5>
+</div>
+</div>
+<!-- Informazioni di contatto -->
+<div class="mt-5">
+<h4 class="secondaryColor mb-4" data-i18n="chi_s_h4_56">I Nostri Contatti</h4>
+<div class="contact-info-container">
+<div class="contact-info-item">
+<div class="contact-icon">
+<i class="bi bi-geo-alt-fill"></i>
+</div>
+<div class="contact-text">
+<h5 class="secondaryColor" data-i18n="chi_s_h5_57">Indirizzo</h5>
+<p data-i18n="chi_s_p_58">Borgo San Frediano 4,<br/>50124 Firenze (FI)</p>
+</div>
+</div>
+<div class="contact-info-item">
+<div class="contact-icon">
+<i class="bi bi-telephone-fill"></i>
+</div>
+<div class="contact-text">
+<h5 class="secondaryColor" data-i18n="chi_s_h5_59">Telefono</h5>
+<p data-i18n="chi_s_p_60">Fisso: <a href="tel:+390550948303">+39 055 0948303</a><br/>
                                             Mobile: <a href="tel:+393401234567">+39 340 1234567</a></p>
+</div>
+</div>
+<div class="contact-info-item">
+<div class="contact-icon">
+<i class="bi bi-envelope-fill"></i>
+</div>
+<div class="contact-text">
+<h5 class="secondaryColor" data-i18n="chi_s_h5_61">Email</h5>
+<p data-i18n="chi_s_p_62"><a href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a></p>
+</div>
+</div>
+<div class="contact-info-item">
+<div class="contact-icon">
+<i class="bi bi-clock-fill"></i>
+</div>
+<div class="contact-text">
+<h5 class="secondaryColor" data-i18n="chi_s_h5_63">Orari</h5>
+<p data-i18n="chi_s_p_64">Riceviamo solo su appuntamento</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PARTE DESTRA: Tab navigation aree operative -->
+<div class="col-lg-7 order-lg-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="simple-tab-container">
+<!-- Tab navigation -->
+<div class="simple-tab-nav">
+<div class="row">
+<div class="col-4">
+<button class="simple-tab-button active" data-target="italia">
+<div class="tab-icon"><i class="bi bi-building"></i></div>
+<div class="tab-label">Italia</div>
+</button>
+</div>
+<div class="col-4">
+<button class="simple-tab-button" data-target="europa">
+<div class="tab-icon"><i class="bi bi-globe-europe-africa"></i></div>
+<div class="tab-label">Europa</div>
+</button>
+</div>
+<div class="col-4">
+<button class="simple-tab-button" data-target="mena">
+<div class="tab-icon"><i class="bi bi-sun"></i></div>
+<div class="tab-label">MENA</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Contenuto dei tab -->
+<div class="simple-tab-content">
+<!-- Sezione Italia -->
+<div class="tab-pane active" id="italia">
+<div class="region-header">
+<h4 data-i18n="chi_s_h4_65">Italia <span class="region-badge">Sede Principale</span></h4>
+</div>
+<div class="region-image">
+<img alt="Italia - Sede Principale" class="img-fluid" src="images/bg_img.jpg"/>
+<div class="image-caption">Sede di Firenze</div>
+</div>
+<div class="region-description">
+<p data-i18n="chi_s_p_66">La nostra sede principale a Firenze rappresenta il centro di eccellenza per i servizi specializzati nel settore equestre. Da qui coordiniamo tutte le attivitÃ  di consulenza e supporto, garantendo competenza approfondita e soluzioni personalizzate per ogni esigenza del mondo equestre, sia a livello nazionale che internazionale.</p>
+<div class="region-services">
+<h5 data-i18n="chi_s_h5_67">Servizi principali:</h5>
+<ul>
+<li data-i18n="chi_s_li_68">Risk Management specializzato per il settore equestre</li>
+<li data-i18n="chi_s_li_69">Assicurazioni personalizzate per cavalli e strutture</li>
+<li data-i18n="chi_s_li_70">Wealth Management dedicato agli investimenti equestri</li>
+<li data-i18n="chi_s_li_71">Consulenza legale e finanziaria specialistica</li>
+</ul>
+</div>
+<div class="region-contact">
+<i class="bi bi-geo-alt"></i> Borgo San Frediano 4, 50124 Firenze (FI)
                                     </div>
-                                </div>
-
-                                <div class="contact-info-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-envelope-fill"></i>
+</div>
+</div>
+<!-- Sezione Europa -->
+<div class="tab-pane" id="europa">
+<div class="region-header">
+<h4 data-i18n="chi_s_h4_72">Europa <span class="region-badge">Partner Europei</span></h4>
+</div>
+<div class="region-image">
+<img alt="Europa - Partner Europei" class="img-fluid" src="images/bg_img.jpg"/>
+<div class="image-caption">OperativitÃ  Europea</div>
+</div>
+<div class="region-description">
+<p data-i18n="chi_s_p_73">Siamo operativi e forniamo assistenza specializzata in diversi paesi europei, garantendo supporto completo per le attivitÃ  equestri attraverso la collaborazione con professionisti qualificati del settore. La nostra competenza si estende alle diverse realtÃ  legislative e operative del panorama equestre europeo.</p>
+<div class="region-services">
+<h5 data-i18n="chi_s_h5_74">Servizi principali:</h5>
+<ul>
+<li data-i18n="chi_s_li_75">Gestione del rischio internazionale</li>
+<li data-i18n="chi_s_li_76">Assistenza multilingue specializzata</li>
+<li data-i18n="chi_s_li_77">Collaborazione con professionisti locali</li>
+<li data-i18n="chi_s_li_78">Supporto per attivitÃ  equestri europee</li>
+</ul>
+</div>
+<div class="region-contact">
+<i class="bi bi-globe"></i> Operativi nei principali paesi europei
                                     </div>
-                                    <div class="contact-text">
-                                        <h5 class="secondaryColor">Email</h5>
-                                        <p><a href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a></p>
+</div>
+</div>
+<!-- Sezione MENA -->
+<div class="tab-pane" id="mena">
+<div class="region-header">
+<h4 data-i18n="chi_s_h4_79">MENA <span class="region-badge">Partner Internazionali</span></h4>
+</div>
+<div class="region-image">
+<img alt="MENA - Partner Internazionali" class="img-fluid" src="images/bg_img.jpg"/>
+<div class="image-caption">Medio Oriente e Nord Africa</div>
+</div>
+<div class="region-description">
+<p data-i18n="chi_s_p_80">Siamo in grado di fornire servizi legali e assicurativi specializzati nelle aree del Medio Oriente e Nord Africa, regioni strategiche con mercati in rapida crescita per il settore equestre. La nostra competenza include supporto linguistico specializzato e approfondita conoscenza delle peculiaritÃ  normative e culturali locali.</p>
+<div class="region-services">
+<h5 data-i18n="chi_s_h5_81">Servizi principali:</h5>
+<ul>
+<li data-i18n="chi_s_li_82">Supporto professionale in lingua araba</li>
+<li data-i18n="chi_s_li_83">Consulenza specializzata nel settore equestre</li>
+<li data-i18n="chi_s_li_84">Conoscenza approfondita delle normative locali</li>
+<li data-i18n="chi_s_li_85">Assistenza per investimenti nel settore equestre</li>
+</ul>
+</div>
+<div class="region-contact">
+<i class="bi bi-globe-asia-australia"></i> Servizi specializzati per l'area MENA
                                     </div>
-                                </div>
-
-                                <div class="contact-info-item">
-                                    <div class="contact-icon">
-                                        <i class="bi bi-clock-fill"></i>
-                                    </div>
-                                    <div class="contact-text">
-                                        <h5 class="secondaryColor">Orari</h5>
-                                        <p>Riceviamo solo su appuntamento</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PARTE DESTRA: Tab navigation aree operative -->
-                <div class="col-lg-7 order-lg-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="simple-tab-container">
-                        <!-- Tab navigation -->
-                        <div class="simple-tab-nav">
-                            <div class="row">
-                                <div class="col-4">
-                                    <button class="simple-tab-button active" data-target="italia">
-                                        <div class="tab-icon"><i class="bi bi-building"></i></div>
-                                        <div class="tab-label">Italia</div>
-                                    </button>
-                                </div>
-                                <div class="col-4">
-                                    <button class="simple-tab-button" data-target="europa">
-                                        <div class="tab-icon"><i class="bi bi-globe-europe-africa"></i></div>
-                                        <div class="tab-label">Europa</div>
-                                    </button>
-                                </div>
-                                <div class="col-4">
-                                    <button class="simple-tab-button" data-target="mena">
-                                        <div class="tab-icon"><i class="bi bi-sun"></i></div>
-                                        <div class="tab-label">MENA</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Contenuto dei tab -->
-                        <div class="simple-tab-content">
-                            <!-- Sezione Italia -->
-                            <div class="tab-pane active" id="italia">
-                                <div class="region-header">
-                                    <h4>Italia <span class="region-badge">Sede Principale</span></h4>
-                                </div>
-                                <div class="region-image">
-                                    <img src="images/bg_img.jpg" alt="Italia - Sede Principale" class="img-fluid">
-                                    <div class="image-caption">Sede di Firenze</div>
-                                </div>
-                                <div class="region-description">
-                                    <p>La nostra sede principale a Firenze rappresenta il centro di eccellenza per i servizi specializzati nel settore equestre. Da qui coordiniamo tutte le attività di consulenza e supporto, garantendo competenza approfondita e soluzioni personalizzate per ogni esigenza del mondo equestre, sia a livello nazionale che internazionale.</p>
-
-                                    <div class="region-services">
-                                        <h5>Servizi principali:</h5>
-                                        <ul>
-                                            <li>Risk Management specializzato per il settore equestre</li>
-                                            <li>Assicurazioni personalizzate per cavalli e strutture</li>
-                                            <li>Wealth Management dedicato agli investimenti equestri</li>
-                                            <li>Consulenza legale e finanziaria specialistica</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="region-contact">
-                                        <i class="bi bi-geo-alt"></i> Borgo San Frediano 4, 50124 Firenze (FI)
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Sezione Europa -->
-                            <div class="tab-pane" id="europa">
-                                <div class="region-header">
-                                    <h4>Europa <span class="region-badge">Partner Europei</span></h4>
-                                </div>
-                                <div class="region-image">
-                                    <img src="images/bg_img.jpg" alt="Europa - Partner Europei" class="img-fluid">
-                                    <div class="image-caption">Operatività Europea</div>
-                                </div>
-                                <div class="region-description">
-                                    <p>Siamo operativi e forniamo assistenza specializzata in diversi paesi europei, garantendo supporto completo per le attività equestri attraverso la collaborazione con professionisti qualificati del settore. La nostra competenza si estende alle diverse realtà legislative e operative del panorama equestre europeo.</p>
-
-                                    <div class="region-services">
-                                        <h5>Servizi principali:</h5>
-                                        <ul>
-                                            <li>Gestione del rischio internazionale</li>
-                                            <li>Assistenza multilingue specializzata</li>
-                                            <li>Collaborazione con professionisti locali</li>
-                                            <li>Supporto per attività equestri europee</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="region-contact">
-                                        <i class="bi bi-globe"></i> Operativi nei principali paesi europei
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Sezione MENA -->
-                            <div class="tab-pane" id="mena">
-                                <div class="region-header">
-                                    <h4>MENA <span class="region-badge">Partner Internazionali</span></h4>
-                                </div>
-                                <div class="region-image">
-                                    <img src="images/bg_img.jpg" alt="MENA - Partner Internazionali" class="img-fluid">
-                                    <div class="image-caption">Medio Oriente e Nord Africa</div>
-                                </div>
-                                <div class="region-description">
-                                    <p>Siamo in grado di fornire servizi legali e assicurativi specializzati nelle aree del Medio Oriente e Nord Africa, regioni strategiche con mercati in rapida crescita per il settore equestre. La nostra competenza include supporto linguistico specializzato e approfondita conoscenza delle peculiarità normative e culturali locali.</p>
-
-                                    <div class="region-services">
-                                        <h5>Servizi principali:</h5>
-                                        <ul>
-                                            <li>Supporto professionale in lingua araba</li>
-                                            <li>Consulenza specializzata nel settore equestre</li>
-                                            <li>Conoscenza approfondita delle normative locali</li>
-                                            <li>Assistenza per investimenti nel settore equestre</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="region-contact">
-                                        <i class="bi bi-globe-asia-australia"></i> Servizi specializzati per l'area MENA
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--&lt;!&ndash; Call To Action &ndash;&gt;
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--&lt;!&ndash; Call To Action &ndash;&gt;
             <div class="row mt-5">
                 <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h4 class="secondaryColor mb-4">Vuoi saperne di più?</h4>
+                    <h4 class="secondaryColor mb-4">Vuoi saperne di piÃ¹?</h4>
                     <a href="mailto:info@equestrianworldprotection.com" class="btn btn-cta">CONTATTACI ORA</a>
                 </div>
             </div>-->
-        </div>
-    </section>
-
-    <!-- Sezione Call to Action -->
-    <section class="py-5" style="background-color: var(--TertiaryColor);">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-montserrat ewp-title-center ewp-title-light mb-4">Vuoi saperne di più?</h2>
-                    <p class="mb-4">
-                        Contattaci per una consulenza personalizzata e scopri come possiamo aiutarti a proteggere ciò che più ami.
+</div>
+</section>
+<!-- Sezione Call to Action -->
+<section class="py-5" style="background-color: var(--TertiaryColor);">
+<div class="container">
+<div class="row text-center">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-montserrat ewp-title-center ewp-title-light mb-4" data-i18n="chi_s_h2_86">Vuoi saperne di piÃ¹?</h2>
+<p class="mb-4" data-i18n="chi_s_p_87">
+                        Contattaci per una consulenza personalizzata e scopri come possiamo aiutarti a proteggere ciÃ² che piÃ¹ ami.
                     </p>
-                    <a href="mailto:info@equestrianworldprotection.com" class="btn btn-cta">CONTATTACI ORA</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+<a class="btn btn-cta" data-i18n="btn_contact_now" href="mailto:info@equestrianworldprotection.com">CONTATTACI ORA</a>
+</div>
+</div>
+</div>
+</section>
 </main>
-
-
 <!-- Footer -->
 <footer class="footer-section py-3">
-    <div class="container">
-        <div class="row align-items-start justify-content-around justify-content-md-around">
-            <!-- Logo e Partner - non mostrado da md in poi -->
-            <div class="col-5 col-md-3 text-center d-md-none">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo mb-2">
-                <p class="mb-0">Equestrian World Protection</p>
-
-            </div>
-            <!-- Logo - mostrado da md in poi -->
-            <div class="col-md-3 text-center d-none d-md-block">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo my-2">
-                <h5 class="mt-3">Equestrian World Protection</h5>
-                <p class="mb-0">We'll protect you and your horses<br class="d-md-none"> everywhere</p>
-            </div>
-            <!-- Contatti -->
-            <div class="col-5 col-md-auto offset-md-1">
-                <h5 class="text-uppercase mb-3">Contatti</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br>
-                        <a href="tel:+390550948303">+39 055 0948303</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br>
-                        <a href="tel:+393401234567">+39 340 1234567</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per
-                            contattarci</a>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navigazione Rapida (nascosta su mobile) -->
-            <div class="col-md-auto d-none d-md-block">
-                <h5 class="text-uppercase mb-3">Navigazione</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Chi_siamo_it.html">Chi Siamo</a></li>
-                    <li><a href="Servizi.html">Servizi</a></li>
-                    <li><a href="Risk_Management.html">Risk Management</a></li>
-                    <li><a href="Assicurazioni.html">Assicurazioni</a></li>
-                    <li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
-                    <li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
-                    <li><a href="Servizi_Legali.html">Servizi Legali</a></li>
-                </ul>
-            </div>
-            <!-- La nostra sede - mostrato da lg in poi -->
-            <div class="col-md-auto d-none d-lg-block">
-                <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br>
-                        <!--oppure usare questa icona class="bi bi-building" -->
-                        Borgo San Frediano 4,<br>
-                        50124 Firenze (FI)
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br>
-                        Riceviamo solo su appuntamento
-                    </li>
-                    <!--<li class="mt-2">
+<div class="container">
+<div class="row align-items-start justify-content-around justify-content-md-around">
+<!-- Logo e Partner - non mostrado da md in poi -->
+<div class="col-5 col-md-3 text-center d-md-none">
+<img alt="Logo Equestrian World Protection" class="footer-logo mb-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<p class="mb-0">Equestrian World Protection</p>
+</div>
+<!-- Logo - mostrado da md in poi -->
+<div class="col-md-3 text-center d-none d-md-block">
+<img alt="Logo Equestrian World Protection" class="footer-logo my-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<h5 class="mt-3">Equestrian World Protection</h5>
+<p class="mb-0">We'll protect you and your horses<br class="d-md-none"/> everywhere</p>
+</div>
+<!-- Contatti -->
+<div class="col-5 col-md-auto offset-md-1">
+<h5 class="text-uppercase mb-3" data-i18n="footer_contact">Contatti</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-telephone-fill"></i> <strong data-i18n="footer_landline">Recapito
+                                    Fisso:</strong></span><br/>
+<a href="tel:+390550948303">+39 055 0948303</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-phone-fill"></i> <strong data-i18n="footer_mobile">Recapito
+                                    Mobile:</strong></span><br/>
+<a href="tel:+393401234567">+39 340 1234567</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-envelope-fill"></i> <strong data-i18n="footer_email">Email:</strong></span><br/>
+<a class="d-block d-sm-none" data-i18n="footer_email_click" href="mailto:info@equestrianworldprotection.com">Clicca qui per contattarci</a>
+<a class="d-none d-sm-block" href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a>
+</li>
+</ul>
+</div>
+<!-- Navigazione Rapida (nascosta su mobile) -->
+<div class="col-md-auto d-none d-md-block">
+<h5 class="text-uppercase mb-3" data-i18n="footer_nav">Navigazione</h5>
+<ul class="list-unstyled">
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="Chi_siamo_it.html">Chi Siamo</a></li>
+<li><a data-i18n="nav_services" href="Servizi.html">Servizi</a></li>
+<li><a data-i18n="nav_risk" href="Risk_Management.html">Risk Management</a></li>
+<li><a data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a></li>
+<li><a data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a></li>
+<li><a data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
+<li><a data-i18n="nav_legal" href="Servizi_Legali.html">Servizi Legali</a></li>
+</ul>
+</div>
+<!-- La nostra sede - mostrato da lg in poi -->
+<div class="col-md-auto d-none d-lg-block">
+<h5 class="text-uppercase mb-3" data-i18n="footer_hq">La Nostra Sede</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Indirizzo:</strong></span><br/>
+<!--oppure usare questa icona class="bi bi-building" -->
+                            Borgo San Frediano 4,<br/>
+                            50124 Firenze (FI)
+                        </li>
+<li class="mt-2">
+<span><i class="bi bi-clock-fill"></i> <strong data-i18n="footer_hours">Orari:</strong></span><br/>
+<span data-i18n="footer_hours_text">Riceviamo solo su appuntamento</span>
+</li>
+<!--<li class="mt-2">
                         <span><i class="bi bi-building"></i> <strong>Sede Legale:</strong></span><br>
-                        Via [Indirizzo Legale], [Città], [CAP]
+                        Via [Indirizzo Legale], [CittÃ ], [CAP]
                     </li>-->
-                </ul>
-            </div>
-        </div>
-        <hr class="my-2">
-        <div class="row">
-            <div class="col-12 text-center">
-                <!-- Versione per desktop e tablet -->
-                <p class="mb-0 d-none d-sm-block">
-                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
-                    62923
-                </p>
-                <!-- Versione per mobile -->
-                <p class="mb-0 d-block d-sm-none">
-                    &copy; 2024 Equestrian World Protection. Tutti i diritti riservati<br>
-                    <span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
-                </p>
-            </div>
-        </div>
-    </div>
+</ul>
+</div>
+</div>
+<hr class="my-2"/>
+<div class="row">
+<div class="col-12 text-center">
+<!-- Versione per desktop e tablet -->
+<p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">
+                        Â© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
+                        62923
+                    </p>
+<!-- Versione per mobile -->
+<p class="mb-0 d-block d-sm-none">
+<span data-i18n="footer_rights_mobile_1">Â© 2024 Equestrian World Protection. Tutti i
+                            diritti riservati</span><br/>
+<span data-i18n="footer_rights_mobile_2" style="margin-top: 5px; display: block;">P.IVA:
+                            06447010486, REA FI 62923</span>
+</p>
+</div>
+</div>
+</div>
 </footer>
 <!-- End Footer -->
-
 <!-- Bootstrap JavaScript Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script file traduzioni -->
+<script src="js/translations.js"></script>
 <!-- AOS Animation Library -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-
 <script>
     // Script per la sezione Contatti
     document.addEventListener('DOMContentLoaded', function() {
         // Funzione per animare i contatori
         function animateContactCounters() {
             const counters = document.querySelectorAll('.contact-international-section .counter-number');
-            const speed = 200; // Velocità dell'animazione (più basso = più veloce)
+            const speed = 200; // VelocitÃ  dell'animazione (piÃ¹ basso = piÃ¹ veloce)
 
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-count');
@@ -773,13 +715,11 @@
             observer.observe(el);
         });
 
-        // Inizializza le funzionalità
+        // Inizializza le funzionalitÃ 
         setTimeout(animateContactCounters, 500);
         setupContactTabs();
     });
 </script>
-
-
 <!-- Script per parallax --> <!--todo migliorare codice parallasse come su index.html-->
 <script>
     let bg = document.getElementById("bg");
@@ -795,6 +735,45 @@
         logo.style.top = value * 0.4 + 'px';
     })
 </script>
+<!-- Effetto Navbar JS -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let nbar = document.getElementById("mainNavbar");
+        if(nbar) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nbar.classList.add('navbar-scrolled');
+                } else {
+                    nbar.classList.remove('navbar-scrolled');
+                }
+            });
+        }
+    });
 
+
+        // Gestione Banner Cookie
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookieBanner");
+            const acceptBtn = document.getElementById("acceptCookies");
+            
+            // Controlla se l'utente ha già accettato
+            if (!localStorage.getItem("ewp_cookie_consent")) {
+                // Piccolo ritardo per l'animazione
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 500);
+            }
+
+            // Al click su accetta
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function () {
+                    localStorage.setItem("ewp_cookie_consent", "true");
+                    cookieBanner.classList.remove("show");
+                });
+            }
+        });
+</script>
 </body>
 </html>
+
+

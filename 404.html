@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <!--INFO BROWSER-->
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pagina non trovata - Equestrian World Protection</title>
-    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
+    <meta name="author" content="Matteo MunafÃ², Emanuele Dubini">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Meta Description -->
@@ -286,7 +286,7 @@
                         <!-- Titoli -->
                         <h1 class="error-title">Pagina Non Trovata</h1>
                         <p class="error-subtitle">
-                            La pagina che stai cercando non esiste o è stata spostata.
+                            La pagina che stai cercando non esiste o Ã¨ stata spostata.
                             <br class="d-none d-md-block">
                             Ti aiutiamo a trovare quello che cerchi attraverso i nostri servizi.
                         </p>
@@ -390,7 +390,7 @@
     AOS.init();
 </script>
 
-<!-- Script personalizzato per funzionalità 404 -->
+<!-- Script personalizzato per funzionalitÃ  404 -->
 <script>
     // Animazione hover per le card
     document.querySelectorAll('.card').forEach(card => {
@@ -405,7 +405,7 @@
         });
     });
 
-    // Aggiungi un po' di interattività al numero 404
+    // Aggiungi un po' di interattivitÃ  al numero 404
     const errorNumber = document.querySelector('.error-number');
     let clickCount = 0;
 
@@ -421,9 +421,9 @@
         if (clickCount >= 3) {
             // Easter egg dopo 3 click
             const messages = [
-                "La pagina non cambierà! 😄",
-                "Sei persistente come un cavaliere! 🐎",
-                "Meglio esplorare i nostri servizi! 🐴"
+                "La pagina non cambierÃ ! ðŸ˜„",
+                "Sei persistente come un cavaliere! ðŸŽ",
+                "Meglio esplorare i nostri servizi! ðŸ´"
             ];
             alert(messages[Math.floor(Math.random() * messages.length)]);
             clickCount = 0;
@@ -437,6 +437,30 @@
     window.addEventListener('error', function(e) {
         console.warn('Error on 404 page:', e.message);
     });
+
+
+        // Gestione Banner Cookie
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookieBanner");
+            const acceptBtn = document.getElementById("acceptCookies");
+            
+            // Controlla se l'utente ha già accettato
+            if (!localStorage.getItem("ewp_cookie_consent")) {
+                // Piccolo ritardo per l'animazione
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 500);
+            }
+
+            // Al click su accetta
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function () {
+                    localStorage.setItem("ewp_cookie_consent", "true");
+                    cookieBanner.classList.remove("show");
+                });
+            }
+        });
 </script>
 </body>
 </html>
+

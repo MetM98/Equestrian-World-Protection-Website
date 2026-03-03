@@ -9,16 +9,18 @@
 /*todo togliere tutte le parti commentate che non sono usate*/
 
 /* ------------ CUSTOM PROPERTIES ------------ */
-:root{
+:root {
     /* FONT */
     --fontPlayfair: 'Playfair Display', sans-serif;
-    --fontMontserrat : 'Montserrat', sans-serif;
+    --fontMontserrat: 'Montserrat', sans-serif;
 
     /* COLORS */
     --White: #F6F6F9;
     --Black: #0c0c0c;
-    --PrimaryColor: #fffff0;/*#2a5a38;*/
-    --SecondaryColor: #6d071a; /*#391b0f;*/
+    --PrimaryColor: #fffff0;
+    /*#2a5a38;*/
+    --SecondaryColor: #6d071a;
+    /*#391b0f;*/
     --TertiaryColor: #e4d191;
 }
 
@@ -101,44 +103,44 @@ a {
 
 
 
-h2.montserrat{
+h2.montserrat {
     font-family: var(--fontMontserrat), sans-serif;
     font-weight: bold;
 }
 
-p.black{
+p.black {
     color: black;
 }
 
-li.colored{
+li.colored {
     color: var(--SecondaryColor);
 }
 
-li.black{
+li.black {
     color: black;
 }
 
-b.colored{
+b.colored {
     color: var(--SecondaryColor);
 }
 
-.secondaryColor{
+.secondaryColor {
     color: var(--SecondaryColor);
 }
 
-.bg-secondaryColor{
+.bg-secondaryColor {
     background-color: var(--SecondaryColor);
 }
 
-.montserrat{
+.montserrat {
     font-family: var(--fontMontserrat), sans-serif;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.reduced-text{
+.reduced-text {
     font-size: 0.85rem;
 }
 
@@ -209,19 +211,25 @@ b.colored{
 
 /* ------------ Navbar ------------ */
 .navbar {
-    background-color: var(--PrimaryColor)/*var(--White)*/;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--PrimaryColor);
+    box-shadow: none;
+    /* Rimossa l'ombra a inizio pagina per un look più pulito e integrato */
     max-width: 100%;
-    height: 80px;
-    margin: 20px; /*per rendere staccata la navbar è stato aggiunto il margine */
-    border-radius: 16px;
-/*ho provato ad aggiungere un bordo allo sfondo della navbar perchè quando si scrolla va a fare un brutto effetto con il bianco dello sfondo della pagina*/
-/*    border-width: 20px;
-    border-color: var(--SecondaryColor); */
-    /*padding: 0.5rem;*/
-
+    min-height: 80px;
+    margin: 0;
+    /* Rimossa l'impostazione "sospesa" */
+    border-radius: 0;
+    /* Rimossi i bordi arrotondati */
     padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
 
+/* Attivata via JS allo scroll */
+.navbar.navbar-scrolled {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Aggiunta ombra morbida allo scorrimento */
+    background-color: rgba(255, 255, 240, 0.97);
+    /* Leggermente opaco per un effetto vetro discreto */
 }
 
 .navbar-brand {
@@ -254,19 +262,22 @@ b.colored{
     font-size: 1.25rem;
 }
 
-.navbar-toggler:focus, .btn-close:focus {
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none;
     outline: none;
 }
 
 .nav-link {
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 0.9vw + 0.2rem, 1.1rem);
     color: #666777;
     font-weight: 600;
     position: relative;
+    padding: 0.5rem 0.5rem !important;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--Black);
 }
 
@@ -285,12 +296,14 @@ b.colored{
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: var(--PrimaryColor); /*todo sistemare colore*/
+        background-color: var(--PrimaryColor);
+        /*todo sistemare colore*/
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
 
-    .nav-link:hover::before, .nav-link.active::before {
+    .nav-link:hover::before,
+    .nav-link.active::before {
         background-color: var(--SecondaryColor);
         visibility: visible;
         width: 100%;
@@ -337,18 +350,23 @@ b.colored{
 }
 
 @media (max-width: 992px) {
-    .EWP-logo-container{
+    .EWP-logo-container {
         margin-top: 1.75rem;
     }
 }
 
 
 .custom-logo {
-    width: clamp(200px, 35vw, 800px); /* Min 330px, 35vw preferito per desktop, max 650px */
-    max-width: 100%;  /* Impedisce che l'immagine superi il contenitore */
-    height: auto;  /* Mantiene il rapporto d'aspetto */
-    border-radius: 24px; /* Angoli arrotondati */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /*todo capire se tenere o mettere shadow solo su mobile e tablet*/
+    width: clamp(200px, 35vw, 800px);
+    /* Min 330px, 35vw preferito per desktop, max 650px */
+    max-width: 100%;
+    /* Impedisce che l'immagine superi il contenitore */
+    height: auto;
+    /* Mantiene il rapporto d'aspetto */
+    border-radius: 24px;
+    /* Angoli arrotondati */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /*todo capire se tenere o mettere shadow solo su mobile e tablet*/
 }
 
 /* ------------ HEADER PARALLAX ------------ */
@@ -374,7 +392,7 @@ b.colored{
     pointer-events: none;
 }
 
-#header_parallax #logo{
+#header_parallax #logo {
     position: relative;
     max-width: 8em;
     max-height: 8em;
@@ -391,13 +409,14 @@ b.colored{
 #header_parallax #brand_spot {
     position: relative;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Ombra potenziata */
 }
 
 
 
 /* ----------- CARD Servizi + BUTTON ------------ */
-.service-card{
+.service-card {
     width: auto;
     height: auto;
     overflow: hidden;
@@ -405,7 +424,7 @@ b.colored{
     transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
-.service-card .img{
+.service-card .img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -414,7 +433,7 @@ b.colored{
 
 /* Media query per far sì che all'hover da desktop le card dei servizi a cui è applicata la classe serviceCard-grow si ingrandiscano*/
 @media(hover: hover) and (pointer: fine) and (min-width: 1385px) {
-    .serviceCard-grow:hover{
+    .serviceCard-grow:hover {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
@@ -424,9 +443,14 @@ b.colored{
     }
 }
 
-.card_background_trat{
-    /*background-color: rgba(0, 0, 0, 0.15);*/ /* Nero trasparente al 15% */
-    background-color: var(--SecondaryColor); /*per modificare il colore di sfondo della card*/
+.card_background_trat {
+    /*background-color: rgba(0, 0, 0, 0.15);*/
+    /* Nero trasparente al 15% */
+    background-color: var(--SecondaryColor);
+    /*per modificare il colore di sfondo della card*/
+    opacity: 0.8;
+    /* Aggiunta opacità per visualizzare l'immagine con blend */
+    mix-blend-mode: multiply;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -435,16 +459,27 @@ b.colored{
     border-radius: 5px;
 }
 
+
+
 .button-card {
-    background-color: rgba(255, 255, 255, 0.6); /* Nero trasparente al 60% */
-    color: var(--SecondaryColor); /*white;*/ /* Colore del testo bianco */
-    border: none; /* Rimuove il bordo predefinito */
-    padding: 15px 32px; /* Spazio intorno al testo */
-    text-align: center; /* Allinea il testo al centro */
-    text-decoration: none; /* Rimuove il sottolineato */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Nero trasparente al 60% */
+    color: var(--SecondaryColor);
+    /*white;*/
+    /* Colore del testo bianco */
+    border: none;
+    /* Rimuove il bordo predefinito */
+    padding: 15px 32px;
+    /* Spazio intorno al testo */
+    text-align: center;
+    /* Allinea il testo al centro */
+    text-decoration: none;
+    /* Rimuove il sottolineato */
     display: inline-block;
-    font-size: 18px; /*todo capire se bisogna definire il font in base al viewport con clamp*/
-    border-radius: 25px; /* Angoli arrotondati */
+    font-size: 18px;
+    /*todo capire se bisogna definire il font in base al viewport con clamp*/
+    border-radius: 25px;
+    /* Angoli arrotondati */
 }
 
 .button-card:hover {
@@ -453,7 +488,8 @@ b.colored{
 
 .button-card:hover::before,
 .button-card:hover::after {
-    content: ''; /* Contenuto vuoto per rendere gli pseudo-elementi visibili */
+    content: '';
+    /* Contenuto vuoto per rendere gli pseudo-elementi visibili */
     background-color: var(--PrimaryColor);
     /* Altre proprietà CSS a piacere per personalizzare gli pseudo-elementi */
 }
@@ -479,7 +515,7 @@ b.colored{
     right: 0;
     width: 40%;
     height: 100%;
-    background-image: url('images/bg_img.jpg');
+    background-image: url('../images/bg_img.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.05;
@@ -550,7 +586,8 @@ b.colored{
 }
 
 .feature-list li::before {
-    content: "\F633"; /* Bootstrap icons check-circle */
+    content: "\F633";
+    /* Bootstrap icons check-circle */
     font-family: "bootstrap-icons";
     position: absolute;
     left: 0;
@@ -666,7 +703,7 @@ b.colored{
 
 .ewp-image-text-section .section-image {
     border-radius: 0.5rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -696,7 +733,7 @@ b.colored{
 
 .ewp-image-text-section ul li {
     margin-bottom: 0.5rem;
-   /* font-size: 1.1rem;*/
+    /* font-size: 1.1rem;*/
 }
 
 /* Per controllare l'ordine delle colonne su dispositivi mobili */
@@ -704,6 +741,7 @@ b.colored{
     .ewp-image-text-section .order-md-first {
         order: -1;
     }
+
     .ewp-image-text-section .image-container {
         margin-bottom: 2rem;
     }
@@ -728,7 +766,7 @@ b.colored{
     left: 0;
     width: 30%;
     height: 100%;
-    background-image: url('images/bg_img.jpg');
+    background-image: url('../images/bg_img.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.05;
@@ -856,7 +894,9 @@ b.colored{
 
 /* Per mobile: pallini centrati */
 @media (max-width: 767.98px) {
-    .timeline-dot-left, .timeline-dot-right {
+
+    .timeline-dot-left,
+    .timeline-dot-right {
         left: 50%;
         transform: translateX(-50%);
         top: 10px;
@@ -895,7 +935,7 @@ b.colored{
 
 .wealth-feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .wealth-icon {
@@ -936,21 +976,25 @@ b.colored{
 /* Media query per tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .hexagon-inner {
-        padding: 8%; /* Riduciamo ulteriormente il padding per i tablet */
+        padding: 8%;
+        /* Riduciamo ulteriormente il padding per i tablet */
     }
 
     .hexagon-inner h4 {
-        font-size: 1.1rem; /* Riduciamo leggermente la dimensione del testo del titolo */
+        font-size: 1.1rem;
+        /* Riduciamo leggermente la dimensione del testo del titolo */
         margin-bottom: 0.5rem;
     }
 
     .hexagon-inner p.small {
-        font-size: 0.75rem; /* Riduciamo leggermente la dimensione del testo del paragrafo */
+        font-size: 0.75rem;
+        /* Riduciamo leggermente la dimensione del testo del paragrafo */
         margin-bottom: 0;
     }
 
     .wealth-icon {
-        font-size: 2rem; /* Riduciamo leggermente la dimensione dell'icona */
+        font-size: 2rem;
+        /* Riduciamo leggermente la dimensione dell'icona */
         margin-bottom: 1rem;
     }
 }
@@ -1001,7 +1045,7 @@ b.colored{
 
 .wealth-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .wealth-card-header {
@@ -1027,7 +1071,8 @@ b.colored{
 }
 
 .wealth-list li:before {
-    content: "\F633"; /* Bootstrap icons check-circle */
+    content: "\F633";
+    /* Bootstrap icons check-circle */
     font-family: "bootstrap-icons";
     position: absolute;
     left: 0;
@@ -1036,6 +1081,7 @@ b.colored{
 
 /* Media query per tablet - correzione per le card di Corporate Advisory */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
     /* Aumentiamo la larghezza delle card su tablet */
     .wealth-card {
         max-width: 100%;
@@ -1044,7 +1090,8 @@ b.colored{
     /* Adattiamo l'header delle card per ospitare il testo più lungo */
     .wealth-card-header {
         padding: 1rem 1.2rem;
-        min-height: 85px; /* Altezza minima per prevenire tagli */
+        min-height: 85px;
+        /* Altezza minima per prevenire tagli */
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -1054,9 +1101,11 @@ b.colored{
     .wealth-card-header h4.fs-5 {
         font-size: 1rem !important;
         line-height: 1.3;
-        margin-left: 10px; /* Distanziamento dall'icona */
+        margin-left: 10px;
+        /* Distanziamento dall'icona */
         flex: 1;
-        word-break: break-word; /* Permettiamo alle parole lunghe di andare a capo */
+        word-break: break-word;
+        /* Permettiamo alle parole lunghe di andare a capo */
     }
 
     /* Riduciamo leggermente la dimensione dell'icona */
@@ -1093,13 +1142,14 @@ b.colored{
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     position: relative;
     z-index: 1;
 }
 
 .testimonial-box:before {
-    content: "\F141"; /* Bootstrap icons quote */
+    content: "\F141";
+    /* Bootstrap icons quote */
     font-family: "bootstrap-icons";
     position: absolute;
     top: 10px;
@@ -1123,7 +1173,7 @@ b.colored{
 
 .finance-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
 .finance-card .bg-secondary {
@@ -1139,7 +1189,7 @@ b.colored{
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%);
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 70%);
     z-index: -1;
 }
 
@@ -1223,7 +1273,7 @@ b.colored{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 /* Media query per md e oltre (≥768px) */
@@ -1271,7 +1321,7 @@ b.colored{
 
 .finance-timeline-content:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1339,7 +1389,8 @@ b.colored{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--TertiaryColor); /* Sfondo terziario invece di bianco */
+    background-color: var(--TertiaryColor);
+    /* Sfondo terziario invece di bianco */
     padding: 15%;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transition: all 0.3s ease;
@@ -1360,23 +1411,27 @@ b.colored{
 /* Media query migliorata per tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .finance-hexagon-inner {
-        padding: 12%; /* Aumentiamo il padding sui tablet */
+        padding: 12%;
+        /* Aumentiamo il padding sui tablet */
     }
 
     .finance-hexagon-inner h4 {
-        font-size: 1rem; /* Riduciamo ulteriormente la dimensione del titolo */
+        font-size: 1rem;
+        /* Riduciamo ulteriormente la dimensione del titolo */
         margin-bottom: 0.4rem;
         line-height: 1.2;
     }
 
     .finance-hexagon-inner p.small {
-        font-size: 0.7rem; /* Riduciamo ulteriormente il testo */
+        font-size: 0.7rem;
+        /* Riduciamo ulteriormente il testo */
         margin-bottom: 0;
         line-height: 1.3;
     }
 
     .finance-hexagon-inner .wealth-icon {
-        font-size: 1.8rem; /* Riduciamo l'icona */
+        font-size: 1.8rem;
+        /* Riduciamo l'icona */
         margin-bottom: 0.8rem;
     }
 }
@@ -1398,7 +1453,7 @@ b.colored{
 
 .finance-plan-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
 .finance-plan-header {
@@ -1447,7 +1502,8 @@ b.colored{
 }
 
 .finance-plan-list li:before {
-    content: "\F633"; /* Bootstrap icons check-circle */
+    content: "\F633";
+    /* Bootstrap icons check-circle */
     font-family: "bootstrap-icons";
     position: absolute;
     left: 0;
@@ -1623,7 +1679,7 @@ b.colored{
 .legal-nav-container {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -1739,7 +1795,8 @@ b.colored{
 }
 
 .legal-list li:before {
-    content: "\F633"; /* Bootstrap icons check-circle */
+    content: "\F633";
+    /* Bootstrap icons check-circle */
     font-family: "bootstrap-icons";
     position: absolute;
     left: 0;
@@ -1783,7 +1840,7 @@ b.colored{
 
 .legal-service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
 .legal-card-icon {
@@ -1824,7 +1881,7 @@ b.colored{
 .legal-nav-card {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     padding: 20px;
     text-align: center;
     height: 100%;
@@ -1851,7 +1908,7 @@ b.colored{
 
 .legal-nav-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .legal-nav-card:hover::after {
@@ -1894,7 +1951,7 @@ b.colored{
 .legal-content-card {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 
@@ -1909,7 +1966,7 @@ b.colored{
 .legal-content-icon {
     width: 60px;
     height: 60px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1974,7 +2031,7 @@ b.colored{
 .legal-accordion .accordion-button {
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     font-weight: 600;
 }
 
@@ -1984,7 +2041,7 @@ b.colored{
 }
 
 .legal-accordion .accordion-button:not(.collapsed) .legal-accordion-icon {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
 
@@ -2001,8 +2058,15 @@ b.colored{
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media queries */
@@ -2025,9 +2089,11 @@ b.colored{
     }
 
     .legal-content-header-icon {
-        position: static; /* Rimuove il posizionamento absolute */
+        position: static;
+        /* Rimuove il posizionamento absolute */
         transform: none;
-        margin-bottom: 20px; /* Aumentiamo lo spazio sotto l'icona */
+        margin-bottom: 20px;
+        /* Aumentiamo lo spazio sotto l'icona */
         left: auto;
         top: auto;
         /* Assicuriamoci che l'icona abbia dimensioni fisse */
@@ -2095,7 +2161,7 @@ b.colored{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
@@ -2115,7 +2181,7 @@ b.colored{
 
 .legal-service-selector:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .legal-service-selector.active {
@@ -2185,6 +2251,7 @@ b.colored{
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -2195,7 +2262,7 @@ b.colored{
 .legal-content-card {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 
@@ -2204,7 +2271,7 @@ b.colored{
     padding: 25px 25px 25px 100px;
     /*background-color: #f8f9fa;*/
     background-color: var(--SecondaryColor);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .legal-content-header-icon {
@@ -2293,7 +2360,7 @@ b.colored{
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
 .legal-accordion .accordion-header {
@@ -2316,7 +2383,7 @@ b.colored{
 
 .legal-accordion .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,0.1);
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .legal-accordion .accordion-button:not(.collapsed) i {
@@ -2793,9 +2860,17 @@ b.colored{
     }
 
     @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0.4); }
-        70% { box-shadow: 0 0 0 15px rgba(109, 7, 26, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(109, 7, 26, 0); }
+        0% {
+            box-shadow: 0 0 0 0 rgba(109, 7, 26, 0.4);
+        }
+
+        70% {
+            box-shadow: 0 0 0 15px rgba(109, 7, 26, 0);
+        }
+
+        100% {
+            box-shadow: 0 0 0 0 rgba(109, 7, 26, 0);
+        }
     }
 
     .approach-step.active .approach-hexagon {
@@ -2947,7 +3022,7 @@ b.colored{
     right: 0;
     width: 30%;
     height: 100%;
-    background-image: url('images/bg_img.jpg');
+    background-image: url('../images/bg_img.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.05;
@@ -2999,8 +3074,13 @@ b.colored{
 }
 
 @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .counter-value {
@@ -3145,6 +3225,7 @@ b.colored{
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -3226,7 +3307,8 @@ b.colored{
 }
 
 .region-services li::before {
-    content: "\F633"; /* Bootstrap icons check-circle */
+    content: "\F633";
+    /* Bootstrap icons check-circle */
     font-family: "bootstrap-icons";
     position: absolute;
     left: 0;
@@ -3335,7 +3417,7 @@ b.colored{
     left: 0;
     width: 30%;
     height: 100%;
-    background-image: url('images/bg_img.jpg');
+    background-image: url('../images/bg_img.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.05;
@@ -3577,7 +3659,9 @@ b.colored{
     font-size: 1rem;
 }
 
-.footer-section p, .footer-section li, .footer-section a {
+.footer-section p,
+.footer-section li,
+.footer-section a {
     color: var(--White);
     font-size: 0.85rem;
 }
@@ -3633,22 +3717,171 @@ b.colored{
     .footer-section .col-6 {
         margin-bottom: 0;
     }
+
     .footer-section h5 {
         font-size: 0.9rem;
     }
-    .footer-section p, .footer-section li, .footer-section a {
+
+    .footer-section p,
+    .footer-section li,
+    .footer-section a {
         font-size: 0.8rem;
     }
+
     .footer-section .partner-logos {
         justify-content: flex-start;
     }
 }
 
+/* ==========================================================================
+   COOKIE BANNER E PRIVACY POPUP
+   ========================================================================== */
 
+/* Cookie Banner */
+.cookie-banner {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--PrimaryColor);
+    color: var(--SecondaryColor);
+    padding: 1.5rem;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: bottom 0.5s ease-in-out;
+    border-top: 3px solid var(--SecondaryColor);
+}
 
+.cookie-banner.show {
+    bottom: 0;
+}
 
+.cookie-content {
+    flex: 1 1 auto;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--fontMontserrat), sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
 
+.cookie-content p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
 
+.cookie-link {
+    color: var(--SecondaryColor);
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
 
+.cookie-link:hover {
+    color: var(--TertiaryColor);
+}
 
+.cookie-actions {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
 
+.btn-cookie-accept {
+    background-color: var(--SecondaryColor);
+    color: var(--White);
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-cookie-accept:hover {
+    background-color: var(--TertiaryColor);
+    color: var(--SecondaryColor);
+}
+
+/* Privacy Modal */
+.privacy-modal .modal-header {
+    background-color: var(--SecondaryColor);
+    color: var(--PrimaryColor);
+    border-bottom: none;
+}
+
+.privacy-modal .modal-title {
+    font-family: var(--fontPlayfair), sans-serif;
+    color: var(--PrimaryColor);
+}
+
+.privacy-modal .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.privacy-modal .modal-body {
+    background-color: var(--White);
+    color: var(--Black);
+    font-family: var(--fontMontserrat), sans-serif;
+    padding: 2rem;
+}
+
+.privacy-modal .modal-body h5 {
+    color: var(--SecondaryColor);
+    font-family: var(--fontPlayfair), sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.privacy-modal .modal-body h5:first-child {
+    margin-top: 0;
+}
+
+.privacy-modal .modal-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.privacy-modal .modal-footer {
+    background-color: var(--White);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.privacy-modal .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+/* Responsive per Cookie Banner */
+@media (max-width: 767px) {
+    .cookie-banner {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+    
+    .cookie-content {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .cookie-actions {
+        justify-content: center;
+    }
+    
+    .btn-cookie-accept {
+        width: 100%;
+    }
+}

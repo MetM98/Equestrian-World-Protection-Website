@@ -1,118 +1,101 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <!--INFO BROWSER-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Equestrian World Protection - Private Wealth Management</title>
-    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
-
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="private wealth management, gestione patrimoniale, servizi finanziari equestri, advisory finanziario, consulenza patrimoniale, trust, fondazioni, mandati fiduciari">
-    <!-- Meta Description -->
-    <meta name="description" content="Soluzioni di Private Wealth Management per il mondo equestre: consulenza globale, corporate advisory e tutela del patrimonio da Equestrian World Protection.">
-
-    <!-- Favicon icon -->
-    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
-
-    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Icone Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
+<!--INFO BROWSER-->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Equestrian World Protection - Private Wealth Management</title>
+<meta content="Matteo MunafÃ², Emanuele Dubini" name="author"/>
+<!-- Meta Keywords -->
+<meta content="private wealth management, gestione patrimoniale, servizi finanziari equestri, advisory finanziario, consulenza patrimoniale, trust, fondazioni, mandati fiduciari" name="keywords"/>
+<!-- Meta Description -->
+<meta content="Soluzioni di Private Wealth Management per il mondo equestre: consulenza globale, corporate advisory e tutela del patrimonio da Equestrian World Protection." name="description"/>
+<!-- Favicon icon -->
+<link href="images/logo/WEBSITELOGO.jpeg" rel="shortcut icon" type="x-icon"/>
+<!-- Link Bootstrap 5.3.3 & Jquery CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Icone Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Main CSS File -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
-
 <body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top">
-    <div class="container-fluid px-0">
-        <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
-        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Chi_siamo_it.html">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Risk_Management.html">Risk Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Private_Wealth_Management.html">Wealth Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi Finanziari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
-                    </li>
-                    <!-- Dropdown Menu for language -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
+<!-- Modificato navbar-expand-xl per evitare che vada a capo -->
+<div class="container-fluid px-0">
+<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> <!-- Cambiato in collapse normale per pulizia su bootstrap 5 -->
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Collapse Menu -->
+<div class="collapse navbar-collapse" id="offcanvasNavbar">
+<ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+<li class="nav-item">
+<a aria-current="page" class="nav-link mx-xl-1 active text-center" data-i18n="nav_home" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_about" href="Chi_siamo_it.html">Chi
+                            siamo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_services" href="Servizi.html">Servizi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_risk" href="Risk_Management.html">Risk
+                            Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_legal" href="Servizi_Legali.html">Servizi
+                            Legali</a>
+</li>
+<!-- Dropdown Menu for language -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle mx-xl-1 text-center" data-bs-toggle="dropdown" id="languageDropdown" role="button">
                             IT
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
-                            <li><a class="dropdown-item" href="#">EN</a></li>
-                        </ul>
-                    </li>
-                    <!-- End Dropdown Menu -->
-                </ul>
-            </div>
-        </div>
-        <!-- End Offcanvas Menu -->
-    </div>
+<ul aria-labelledby="languageDropdown" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" data-lang-switch="it" href="#">IT</a></li>
+<li><a class="dropdown-item" data-lang-switch="en" href="#">EN</a></li>
+</ul>
+</li>
+<!-- End Dropdown Menu -->
+</ul>
+</div>
+<!-- End Collapse Menu -->
+</div>
 </nav>
 <!-- End Navbar -->
-
 <!-- HEADER con effetto Parallasse -->
 <header id="header_parallax">
-    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Background">
-
-    <div class="container-fluid">
-        <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-12 col-lg-6">
-                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
-                     alt="World Equestrian Protection Logo">
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-12 col-lg-6">
-                    <h1 id="brand_name" class="d-none d-lg-block">Equestrian World Protection</h1>
-                    <h2 class="mt-2" id="brand_spot"><strong><b>PRIVATE WEALTH MANAGEMENT</b></strong></h2>
-                </div>
-            </div>
-        </div>
-    </div>
+<img alt="Equestrian World Protection Background" class="img-fluid" id="bg" src="images/bg_img.jpg"/>
+<div class="container-fluid">
+<div class="row justify-content-center justify-content-lg-end">
+<div class="col-12 col-lg-6">
+<img alt="World Equestrian Protection Logo" class="img-fluid mx-auto custom-logo" id="logo" src="images/logo/EWP_Logo.png" title="Link Home"/>
+</div>
+<div class="row justify-content-end">
+<div class="col-12 col-lg-6">
+<h1 class="d-none d-lg-block" data-i18n="priva_h1_1" id="brand_name">Equestrian World Protection</h1>
+<h2 class="mt-2" data-i18n="priva_h2_2" id="brand_spot"><strong><b>PRIVATE WEALTH MANAGEMENT</b></strong></h2>
+</div>
+</div>
+</div>
+</div>
 </header>
-
 <main>
-
 <!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
 <!--<section>
         <h1>
@@ -145,190 +128,175 @@
             </ul>
         </p>
 </section>-->
-
-    <!-- Sezione Introduttiva con effetto sfumato -->
-    <section class="py-5 bg-wealth">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">LA GESTIONE PATRIMONIALE ESCLUSIVA PER IL MONDO EQUESTRE</h2>
-                    <p class="lead mb-4">
+<!-- Sezione Introduttiva con effetto sfumato -->
+<section class="py-5 bg-wealth">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="priva_h2_3">LA GESTIONE PATRIMONIALE ESCLUSIVA PER IL MONDO EQUESTRE</h2>
+<p class="lead mb-4" data-i18n="priva_p_4">
                         Il nostro servizio di Private Wealth Management offre soluzioni finanziarie esclusive ritagliate
                         sulle esigenze specifiche di chi opera nel mondo equestre, garantendo un approccio personalizzato
                         alla gestione del patrimonio.
                     </p>
-                    <p class="mb-5">
+<p class="mb-5" data-i18n="priva_p_5">
                         Con un team di professionisti specializzati, combiniamo la nostra esperienza nel settore finanziario
                         con la profonda conoscenza del mondo equestre, offrendo strategie di investimento e protezione patrimoniale
-                        studiate per rispondere alle peculiarità di questo settore.
+                        studiate per rispondere alle peculiaritÃ  di questo settore.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Soluzioni Personalizzate - layout ad esagoni -->
-    <section class="py-5" style="background-color: var(--TertiaryColor);">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title secondaryColor ewp-title-center mb-4">SOLUZIONI PERSONALIZZATE</h2>
-                    <p class="mb-0">
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Soluzioni Personalizzate - layout ad esagoni -->
+<section class="py-5" style="background-color: var(--TertiaryColor);">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title secondaryColor ewp-title-center mb-4" data-i18n="priva_h2_6">SOLUZIONI PERSONALIZZATE</h2>
+<p class="mb-0" data-i18n="priva_p_7">
                         Accesso privilegiato a Primario Istituto Internazionale, con approccio sinergico alle sfere patrimoniali dei clienti e del loro nucleo familiare.
                     </p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Feature 1 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="hexagon-feature">
-                        <div class="hexagon-inner text-center">
-                            <i class="bi bi-shield-check wealth-icon"></i>
-                            <h4 class="secondaryColor mb-2">Protezione del Patrimonio</h4>
-                            <p class="small black mb-0">Strategie avanzate per salvaguardare i beni e investimenti del settore equestre</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="hexagon-feature">
-                        <div class="hexagon-inner text-center">
-                            <i class="bi bi-graph-up-arrow wealth-icon"></i>
-                            <h4 class="secondaryColor mb-2">Crescita Sostenibile</h4>
-                            <p class="small black mb-0">Investimenti mirati per far crescere il patrimonio nel rispetto dei valori del mondo equestre</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="hexagon-feature">
-                        <div class="hexagon-inner text-center">
-                            <i class="bi bi-bank wealth-icon"></i>
-                            <h4 class="secondaryColor mb-2">Istituto Internazionale</h4>
-                            <p class="small black mb-0">Relazioni privilegiate con partner finanziari d'eccellenza per un servizio di primo livello</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Sezione Consulenza Globale con immagine laterale -->
-    <section class="ewp-image-text-section py-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-around">
-                <div class="col-md-5 image-container mb-4 mb-md-0 d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/logo/EWP_Logo.png" alt="Consulenza Globale" class="section-image">
-                </div>
-                <div class="col-12 col-md-6 content-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <h2 class="ewp-section-title mb-4">CONSULENZA GLOBALE</h2>
-                    <p class="mb-4">
+</div>
+</div>
+<div class="row g-4">
+<!-- Feature 1 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="hexagon-feature">
+<div class="hexagon-inner text-center">
+<i class="bi bi-shield-check wealth-icon"></i>
+<h4 class="secondaryColor mb-2" data-i18n="priva_h4_8">Protezione del Patrimonio</h4>
+<p class="small black mb-0" data-i18n="priva_p_9">Strategie avanzate per salvaguardare i beni e investimenti del settore equestre</p>
+</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="hexagon-feature">
+<div class="hexagon-inner text-center">
+<i class="bi bi-graph-up-arrow wealth-icon"></i>
+<h4 class="secondaryColor mb-2" data-i18n="priva_h4_10">Crescita Sostenibile</h4>
+<p class="small black mb-0" data-i18n="priva_p_11">Investimenti mirati per far crescere il patrimonio nel rispetto dei valori del mondo equestre</p>
+</div>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="hexagon-feature">
+<div class="hexagon-inner text-center">
+<i class="bi bi-bank wealth-icon"></i>
+<h4 class="secondaryColor mb-2" data-i18n="priva_h4_12">Istituto Internazionale</h4>
+<p class="small black mb-0" data-i18n="priva_p_13">Relazioni privilegiate con partner finanziari d'eccellenza per un servizio di primo livello</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Consulenza Globale con immagine laterale -->
+<section class="ewp-image-text-section py-5">
+<div class="container">
+<div class="row align-items-center justify-content-around">
+<div class="col-md-5 image-container mb-4 mb-md-0 d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
+<img alt="Consulenza Globale" class="section-image" src="images/logo/EWP_Logo.png"/>
+</div>
+<div class="col-12 col-md-6 content-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<h2 class="ewp-section-title mb-4" data-i18n="priva_h2_14">CONSULENZA GLOBALE</h2>
+<p class="mb-4" data-i18n="priva_p_15">
                         Advisory Finanziario e Monitoring multidisciplinare, con offerte personalizzate.
                     </p>
-
-                    <div class="process-step">
-                        <div class="step-number d-flex align-items-center justify-content-center">1</div>
-                        <h5 class="secondaryColor">Analisi Patrimoniale</h5>
-                        <p class="black">Valutazione approfondita degli asset finanziari e reali del cliente.</p>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number d-flex align-items-center justify-content-center">2</div>
-                        <h5 class="secondaryColor">Pianificazione Strategica</h5>
-                        <p class="black">Definizione di obiettivi a breve, medio e lungo termine.</p>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number d-flex align-items-center justify-content-center">3</div>
-                        <h5 class="secondaryColor">Implementazione</h5>
-                        <p class="black">Attuazione delle strategie di investimento e protezione con monitoraggio continuo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Corporate Advisory Section - Cards with Hover Effects -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">CORPORATE ADVISORY</h2>
-                    <p class="mb-0">Supporto completo per le aziende del settore equestre in ogni fase del loro sviluppo.</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="wealth-card shadow-sm">
-                        <div class="wealth-card-header d-flex align-items-center">
-                            <div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="bi bi-rocket-takeoff text-secondary fs-4"></i>
-                            </div>
-                            <h4 class="m-0 fs-5 text-white">Start-Up</h4>
-                        </div>
-                        <div class="wealth-card-body bg-white">
-                            <p class="black">Supporto per l'avvio di nuove imprese nel settore equestre:</p>
-                            <ul class="wealth-list">
-                                <li>Business planning</li>
-                                <li>Ricerca di investitori</li>
-                                <li>Strutturazione finanziaria</li>
-                                <li>Consulenza legale e fiscale</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="wealth-card shadow-sm">
-                        <div class="wealth-card-header d-flex align-items-center">
-                            <div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="bi bi-graph-up text-secondary fs-4"></i>
-                            </div>
-                            <h4 class="m-0 fs-5 text-white">Strategie di sviluppo e consolidamento</h4>
-                        </div>
-                        <div class="wealth-card-body bg-white">
-                            <p class="black">Consulenza per imprese equestri in fase di crescita:</p>
-                            <ul class="wealth-list">
-                                <li>Ottimizzazione dei processi</li>
-                                <li>Espansione di mercato</li>
-                                <li>Acquisizioni strategiche</li>
-                                <li>Miglioramento della redditività</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="wealth-card shadow-sm">
-                        <div class="wealth-card-header d-flex align-items-center">
-                            <div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="bi bi-door-open text-secondary fs-4"></i>
-                            </div>
-                            <h4 class="m-0 fs-5 text-white">Exit opportunities</h4>
-                        </div>
-                        <div class="wealth-card-body bg-white">
-                            <p class="black">Pianificazione e supporto per passaggi generazionali o vendita:</p>
-                            <ul class="wealth-list">
-                                <li>Valorizzazione dell'impresa</li>
-                                <li>Ricerca di potenziali acquirenti</li>
-                                <li>Negoziazione dei termini di cessione</li>
-                                <li>Ottimizzazione fiscale</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+<div class="process-step">
+<div class="step-number d-flex align-items-center justify-content-center">1</div>
+<h5 class="secondaryColor" data-i18n="priva_h5_16">Analisi Patrimoniale</h5>
+<p class="black" data-i18n="priva_p_17">Valutazione approfondita degli asset finanziari e reali del cliente.</p>
+</div>
+<div class="process-step">
+<div class="step-number d-flex align-items-center justify-content-center">2</div>
+<h5 class="secondaryColor" data-i18n="priva_h5_18">Pianificazione Strategica</h5>
+<p class="black" data-i18n="priva_p_19">Definizione di obiettivi a breve, medio e lungo termine.</p>
+</div>
+<div class="process-step">
+<div class="step-number d-flex align-items-center justify-content-center">3</div>
+<h5 class="secondaryColor" data-i18n="priva_h5_20">Implementazione</h5>
+<p class="black" data-i18n="priva_p_21">Attuazione delle strategie di investimento e protezione con monitoraggio continuo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Advisory Section - Cards with Hover Effects -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="priva_h2_22">CORPORATE ADVISORY</h2>
+<p class="mb-0" data-i18n="priva_p_23">Supporto completo per le aziende del settore equestre in ogni fase del loro sviluppo.</p>
+</div>
+</div>
+<div class="row g-4">
+<!-- Card 1 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="wealth-card shadow-sm">
+<div class="wealth-card-header d-flex align-items-center">
+<div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
+<i class="bi bi-rocket-takeoff text-secondary fs-4"></i>
+</div>
+<h4 class="m-0 fs-5 text-white" data-i18n="priva_h4_24">Start-Up</h4>
+</div>
+<div class="wealth-card-body bg-white">
+<p class="black" data-i18n="priva_p_25">Supporto per l'avvio di nuove imprese nel settore equestre:</p>
+<ul class="wealth-list">
+<li data-i18n="priva_li_26">Business planning</li>
+<li data-i18n="priva_li_27">Ricerca di investitori</li>
+<li data-i18n="priva_li_28">Strutturazione finanziaria</li>
+<li data-i18n="priva_li_29">Consulenza legale e fiscale</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="wealth-card shadow-sm">
+<div class="wealth-card-header d-flex align-items-center">
+<div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
+<i class="bi bi-graph-up text-secondary fs-4"></i>
+</div>
+<h4 class="m-0 fs-5 text-white" data-i18n="priva_h4_30">Strategie di sviluppo e consolidamento</h4>
+</div>
+<div class="wealth-card-body bg-white">
+<p class="black" data-i18n="priva_p_31">Consulenza per imprese equestri in fase di crescita:</p>
+<ul class="wealth-list">
+<li data-i18n="priva_li_32">Ottimizzazione dei processi</li>
+<li data-i18n="priva_li_33">Espansione di mercato</li>
+<li data-i18n="priva_li_34">Acquisizioni strategiche</li>
+<li data-i18n="priva_li_35">Miglioramento della redditivitÃ </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="wealth-card shadow-sm">
+<div class="wealth-card-header d-flex align-items-center">
+<div class="rounded-circle bg-white d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px; min-width: 50px;">
+<i class="bi bi-door-open text-secondary fs-4"></i>
+</div>
+<h4 class="m-0 fs-5 text-white" data-i18n="priva_h4_36">Exit opportunities</h4>
+</div>
+<div class="wealth-card-body bg-white">
+<p class="black" data-i18n="priva_p_37">Pianificazione e supporto per passaggi generazionali o vendita:</p>
+<ul class="wealth-list">
+<li data-i18n="priva_li_38">Valorizzazione dell'impresa</li>
+<li data-i18n="priva_li_39">Ricerca di potenziali acquirenti</li>
+<li data-i18n="priva_li_40">Negoziazione dei termini di cessione</li>
+<li data-i18n="priva_li_41">Ottimizzazione fiscale</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!--    &lt;!&ndash; Sezione Tutela e Destinazione del Patrimonio &ndash;&gt;
     <section class="py-5">
         <div class="container">
@@ -369,7 +337,7 @@
                 <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <h2 class="ewp-section-title mb-4">TUTELA E DESTINAZIONE DEL PATRIMONIO</h2>
                     <p class="mb-4">
-                        Offriamo soluzioni avanzate per proteggere e gestire il patrimonio nel tempo, garantendo continuità e sicurezza.
+                        Offriamo soluzioni avanzate per proteggere e gestire il patrimonio nel tempo, garantendo continuitÃ  e sicurezza.
                     </p>
                     <div class="testimonial-box my-4">
                         <p class="fst-italic mb-3">
@@ -390,194 +358,188 @@
             </div>
         </div>
     </section>-->
-
-
-
-    <!-- Sezione Tutela e Destinazione del Patrimonio -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-4">
-                <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title mb-4">TUTELA E DESTINAZIONE DEL PATRIMONIO</h2>
-                    <p class="mb-4">
-                        Offriamo soluzioni avanzate per proteggere e gestire il patrimonio nel tempo, garantendo continuità e sicurezza.
+<!-- Sezione Tutela e Destinazione del Patrimonio -->
+<section class="py-5">
+<div class="container">
+<div class="row justify-content-center text-center mb-4">
+<div class="col-lg-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title mb-4" data-i18n="priva_h2_42">TUTELA E DESTINAZIONE DEL PATRIMONIO</h2>
+<p class="mb-4" data-i18n="priva_p_43">
+                        Offriamo soluzioni avanzate per proteggere e gestire il patrimonio nel tempo, garantendo continuitÃ  e sicurezza.
                     </p>
-                    <div class="testimonial-box bg-light my-4">
-                        <p class="fst-italic mb-3">
+<div class="testimonial-box bg-light my-4">
+<p class="fst-italic mb-3" data-i18n="priva_p_44">
                             "La vera forza di un patrimonio risiede nella sua protezione, non solo nella sua crescita. Il nostro approccio integra entrambi questi aspetti fondamentali."
                         </p>
-                        <p class="mb-0 text-end"><strong>- Team Private Wealth Management</strong></p>
-                    </div>
-                    <p class="mb-4">
+<p class="mb-0 text-end" data-i18n="priva_p_45"><strong>- Team Private Wealth Management</strong></p>
+</div>
+<p class="mb-4" data-i18n="priva_p_46">
                         Le nostre principali soluzioni per la tutela del patrimonio includono:
                     </p>
-                </div>
-            </div>
-
-            <!-- Cards dei servizi di protezione patrimoniale -->
-            <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
-                        <i class="bi bi-building wealth-icon"></i>
-                        <h5 class="secondaryColor mb-2">Trust</h5>
-                        <p class="black small mb-0">Strutture fiduciarie per la protezione e il trasferimento del patrimonio</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
-                        <i class="bi bi-house-heart wealth-icon"></i>
-                        <h5 class="secondaryColor mb-2">Fondazioni</h5>
-                        <p class="black small mb-0">Creazione e gestione di enti destinati a scopi specifici</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
-                        <i class="bi bi-file-earmark-text wealth-icon"></i>
-                        <h5 class="secondaryColor mb-2">Mandati Fiduciari</h5>
-                        <p class="black small mb-0">Gestione professionale di beni e affari patrimoniali</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
-                        <i class="bi bi-heart wealth-icon"></i>
-                        <h5 class="secondaryColor mb-2">Progetti Filantropici</h5>
-                        <p class="black small mb-0">Supporto per iniziative benefiche nel mondo equestre</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Servizi aggiuntivi -->
-            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                <div class="col-lg-8 text-center">
-                    <p class="mb-4">
+</div>
+</div>
+<!-- Cards dei servizi di protezione patrimoniale -->
+<div class="row g-4 mb-5">
+<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
+<i class="bi bi-building wealth-icon"></i>
+<h5 class="secondaryColor mb-2" data-i18n="priva_h5_47">Trust</h5>
+<p class="black small mb-0" data-i18n="priva_p_48">Strutture fiduciarie per la protezione e il trasferimento del patrimonio</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
+<i class="bi bi-house-heart wealth-icon"></i>
+<h5 class="secondaryColor mb-2" data-i18n="priva_h5_49">Fondazioni</h5>
+<p class="black small mb-0" data-i18n="priva_p_50">Creazione e gestione di enti destinati a scopi specifici</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
+<i class="bi bi-file-earmark-text wealth-icon"></i>
+<h5 class="secondaryColor mb-2" data-i18n="priva_h5_51">Mandati Fiduciari</h5>
+<p class="black small mb-0" data-i18n="priva_p_52">Gestione professionale di beni e affari patrimoniali</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+<div class="wealth-feature text-center p-4 shadow-sm h-100 bg-light">
+<i class="bi bi-heart wealth-icon"></i>
+<h5 class="secondaryColor mb-2" data-i18n="priva_h5_53">Progetti Filantropici</h5>
+<p class="black small mb-0" data-i18n="priva_p_54">Supporto per iniziative benefiche nel mondo equestre</p>
+</div>
+</div>
+</div>
+<!-- Servizi aggiuntivi -->
+<div class="row justify-content-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+<div class="col-lg-8 text-center">
+<p class="mb-4" data-i18n="priva_p_55">
                         Oltre alle soluzioni sopra illustrate, offriamo consulenza specializzata per:
                     </p>
-                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-3">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-3" style="width: 50px; height: 50px; min-width: 50px; min-height: 50px;">
-                            <i class="bi bi-bank text-white fs-4"></i>
-                        </div>
-                        <p class="mb-0 text-center text-md-start fw-bold">Operazioni Investment e Corporate Banking</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Call to Action -->
-    <section class="py-5" style="background-color: var(--TertiaryColor);">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-montserrat ewp-title-center ewp-title-light mb-4">CONSULENZA PERSONALIZZATA</h2>
-                    <p class="mb-4">
-                        Scopri come il nostro servizio di Private Wealth Management può aiutarti a proteggere e far crescere il tuo patrimonio nel mondo equestre.
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-center mb-3">
+<div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-3" style="width: 50px; height: 50px; min-width: 50px; min-height: 50px;">
+<i class="bi bi-bank text-white fs-4"></i>
+</div>
+<p class="mb-0 text-center text-md-start fw-bold" data-i18n="priva_p_56">Operazioni Investment e Corporate Banking</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Call to Action -->
+<section class="py-5" style="background-color: var(--TertiaryColor);">
+<div class="container">
+<div class="row text-center">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-montserrat ewp-title-center ewp-title-light mb-4" data-i18n="priva_h2_57">CONSULENZA PERSONALIZZATA</h2>
+<p class="mb-4" data-i18n="priva_p_58">
+                        Scopri come il nostro servizio di Private Wealth Management puÃ² aiutarti a proteggere e far crescere il tuo patrimonio nel mondo equestre.
                     </p>
-                    <a href="Chi_siamo_it.html#contatti" class="btn btn-cta">RICHIEDI UNA CONSULENZA</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<a class="btn btn-cta" data-i18n="btn_request_consult" href="Chi_siamo_it.html#contatti">RICHIEDI UNA CONSULENZA</a>
+</div>
+</div>
+</div>
+</section>
 </main>
-
 <!-- Footer -->
 <footer class="footer-section py-3">
-    <div class="container">
-        <div class="row align-items-start justify-content-around justify-content-md-around">
-            <!-- Logo e Partner - non mostrado da md in poi -->
-            <div class="col-5 col-md-3 text-center d-md-none">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo mb-2">
-                <p class="mb-0">Equestrian World Protection</p>
-
-            </div>
-            <!-- Logo - mostrado da md in poi -->
-            <div class="col-md-3 text-center d-none d-md-block">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo my-2">
-                <h5 class="mt-3">Equestrian World Protection</h5>
-                <p class="mb-0">We'll protect you and your horses<br class="d-md-none"> everywhere</p>
-            </div>
-            <!-- Contatti -->
-            <div class="col-5 col-md-auto offset-md-1">
-                <h5 class="text-uppercase mb-3">Contatti</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br>
-                        <a href="tel:+390550948303">+39 055 0948303</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br>
-                        <a href="tel:+393401234567">+39 340 1234567</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per contattarci</a>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navigazione Rapida (nascosta su mobile) -->
-            <div class="col-md-auto d-none d-md-block">
-                <h5 class="text-uppercase mb-3">Navigazione</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Chi_siamo_it.html">Chi Siamo</a></li>
-                    <li><a href="Servizi.html">Servizi</a></li>
-                    <li><a href="Risk_Management.html">Risk Management</a></li>
-                    <li><a href="Assicurazioni.html">Assicurazioni</a></li>
-                    <li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
-                    <li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
-                    <li><a href="Servizi_Legali.html">Servizi Legali</a></li>
-                </ul>
-            </div>
-            <!-- La nostra sede - mostrato da lg in poi -->
-            <div class="col-md-auto d-none d-lg-block">
-                <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br>
-                        <!--oppure usare questa icona class="bi bi-building" -->
-                        Borgo San Frediano 4,<br>
-                        50124 Firenze (FI)
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br>
-                        Riceviamo solo su appuntamento
-                    </li>
-                    <!--<li class="mt-2">
+<div class="container">
+<div class="row align-items-start justify-content-around justify-content-md-around">
+<!-- Logo e Partner - non mostrado da md in poi -->
+<div class="col-5 col-md-3 text-center d-md-none">
+<img alt="Logo Equestrian World Protection" class="footer-logo mb-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<p class="mb-0">Equestrian World Protection</p>
+</div>
+<!-- Logo - mostrado da md in poi -->
+<div class="col-md-3 text-center d-none d-md-block">
+<img alt="Logo Equestrian World Protection" class="footer-logo my-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<h5 class="mt-3">Equestrian World Protection</h5>
+<p class="mb-0">We'll protect you and your horses<br class="d-md-none"/> everywhere</p>
+</div>
+<!-- Contatti -->
+<div class="col-5 col-md-auto offset-md-1">
+<h5 class="text-uppercase mb-3" data-i18n="footer_contact">Contatti</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-telephone-fill"></i> <strong data-i18n="footer_landline">Recapito
+                                    Fisso:</strong></span><br/>
+<a href="tel:+390550948303">+39 055 0948303</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-phone-fill"></i> <strong data-i18n="footer_mobile">Recapito
+                                    Mobile:</strong></span><br/>
+<a href="tel:+393401234567">+39 340 1234567</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-envelope-fill"></i> <strong data-i18n="footer_email">Email:</strong></span><br/>
+<a class="d-block d-sm-none" data-i18n="footer_email_click" href="mailto:info@equestrianworldprotection.com">Clicca qui per contattarci</a>
+<a class="d-none d-sm-block" href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a>
+</li>
+</ul>
+</div>
+<!-- Navigazione Rapida (nascosta su mobile) -->
+<div class="col-md-auto d-none d-md-block">
+<h5 class="text-uppercase mb-3" data-i18n="footer_nav">Navigazione</h5>
+<ul class="list-unstyled">
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="Chi_siamo_it.html">Chi Siamo</a></li>
+<li><a data-i18n="nav_services" href="Servizi.html">Servizi</a></li>
+<li><a data-i18n="nav_risk" href="Risk_Management.html">Risk Management</a></li>
+<li><a data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a></li>
+<li><a data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a></li>
+<li><a data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
+<li><a data-i18n="nav_legal" href="Servizi_Legali.html">Servizi Legali</a></li>
+</ul>
+</div>
+<!-- La nostra sede - mostrato da lg in poi -->
+<div class="col-md-auto d-none d-lg-block">
+<h5 class="text-uppercase mb-3" data-i18n="footer_hq">La Nostra Sede</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Indirizzo:</strong></span><br/>
+<!--oppure usare questa icona class="bi bi-building" -->
+                            Borgo San Frediano 4,<br/>
+                            50124 Firenze (FI)
+                        </li>
+<li class="mt-2">
+<span><i class="bi bi-clock-fill"></i> <strong data-i18n="footer_hours">Orari:</strong></span><br/>
+<span data-i18n="footer_hours_text">Riceviamo solo su appuntamento</span>
+</li>
+<!--<li class="mt-2">
                         <span><i class="bi bi-building"></i> <strong>Sede Legale:</strong></span><br>
-                        Via [Indirizzo Legale], [Città], [CAP]
+                        Via [Indirizzo Legale], [CittÃ ], [CAP]
                     </li>-->
-                </ul>
-            </div>
-        </div>
-        <hr class="my-2">
-        <div class="row">
-            <div class="col-12 text-center">
-                <!-- Versione per desktop e tablet -->
-                <p class="mb-0 d-none d-sm-block">
-                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI 62923
-                </p>
-                <!-- Versione per mobile -->
-                <p class="mb-0 d-block d-sm-none">
-                    &copy; 2024 Equestrian World Protection. Tutti i diritti riservati<br>
-                    <span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
-                </p>
-            </div>
-        </div>
-    </div>
+</ul>
+</div>
+</div>
+<hr class="my-2"/>
+<div class="row">
+<div class="col-12 text-center">
+<!-- Versione per desktop e tablet -->
+<p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">
+                        Â© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
+                        62923
+                    </p>
+<!-- Versione per mobile -->
+<p class="mb-0 d-block d-sm-none">
+<span data-i18n="footer_rights_mobile_1">Â© 2024 Equestrian World Protection. Tutti i
+                            diritti riservati</span><br/>
+<span data-i18n="footer_rights_mobile_2" style="margin-top: 5px; display: block;">P.IVA:
+                            06447010486, REA FI 62923</span>
+</p>
+</div>
+</div>
+</div>
 </footer>
 <!-- End Footer -->
-
 <!-- Bootstrap JavaScript Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script file traduzioni -->
+<script src="js/translations.js"></script>
 <!-- AOS Animation Library -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-
 <!-- Script per parallax -->
 <script>
     let bg = document.getElementById("bg");
@@ -593,17 +555,60 @@
         logo.style.top = value * 0.4 + 'px';
     })
 </script>
+<!-- Effetto Navbar JS -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let nbar = document.getElementById("mainNavbar");
+        if(nbar) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nbar.classList.add('navbar-scrolled');
+                } else {
+                    nbar.classList.remove('navbar-scrolled');
+                }
+            });
+        }
+    });
 
+
+        // Gestione Banner Cookie
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookieBanner");
+            const acceptBtn = document.getElementById("acceptCookies");
+            
+            // Controlla se l'utente ha già accettato
+            if (!localStorage.getItem("ewp_cookie_consent")) {
+                // Piccolo ritardo per l'animazione
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 500);
+            }
+
+            // Al click su accetta
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function () {
+                    localStorage.setItem("ewp_cookie_consent", "true");
+                    cookieBanner.classList.remove("show");
+                });
+            }
+        });
+</script>
 </body>
 </html>
+<!-- Effetto Navbar JS -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let nbar = document.getElementById("mainNavbar");
+        if(nbar) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nbar.classList.add('navbar-scrolled');
+                } else {
+                    nbar.classList.remove('navbar-scrolled');
+                }
+            });
+        }
+    });
+</script>
 
 
-
-
-
-
-
-
-
-    </body>
-</html>

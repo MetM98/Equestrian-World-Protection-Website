@@ -1,888 +1,752 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <!--INFO BROWSER-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Equestrian World Protection - Servizi Finanziari</title>
-    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Equestrian World Protection - Servizi Finanziari</title>
+<meta content="Matteo MunafÃ², Emanuele Dubini" name="author"/>
 
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="servizi finanziari equestri, mutui ipotecari, convenzioni conto corrente, cauzioni investimenti, finanziamenti settore equestre">
-    <!-- Meta Description -->
-    <meta name="description" content="Scopri i servizi finanziari offerti da Equestrian World Protection: mutui ipotecari, convenzioni su conti correnti, cauzioni e investimenti personalizzati per il settore equestre.">
+<meta content="servizi finanziari equestri, mutui ipotecari, convenzioni conto corrente, cauzioni investimenti, finanziamenti settore equestre" name="keywords"/>
 
-    <!-- Favicon icon -->
-    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
+<meta content="Scopri i servizi finanziari offerti da Equestrian World Protection: mutui ipotecari, convenzioni su conti correnti, cauzioni e investimenti personalizzati per il settore equestre." name="description"/>
 
-    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="images/logo/WEBSITELOGO.jpeg" rel="shortcut icon" type="x-icon"/>
 
-    <!-- Icone Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
 
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
 
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"/>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
-
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top">
-    <div class="container-fluid px-0">
-        <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
-        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Chi_siamo_it.html">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Risk_Management.html">Risk Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Servizi_Finanziari.html">Servizi Finanziari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
-                    </li>
-                    <!-- Dropdown Menu for language -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
+
+<div class="container-fluid px-0">
+<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> 
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="offcanvasNavbar">
+<ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+<li class="nav-item">
+<a aria-current="page" class="nav-link mx-xl-1 active text-center" data-i18n="nav_home" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_about" href="Chi_siamo_it.html">Chi
+                            siamo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_services" href="Servizi.html">Servizi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_risk" href="Risk_Management.html">Risk
+                            Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_legal" href="Servizi_Legali.html">Servizi
+                            Legali</a>
+</li>
+
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle mx-xl-1 text-center" data-bs-toggle="dropdown" id="languageDropdown" role="button">
                             IT
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
-                            <li><a class="dropdown-item" href="#">EN</a></li>
-                        </ul>
-                    </li>
-                    <!-- End Dropdown Menu -->
-                </ul>
-            </div>
-        </div>
-        <!-- End Offcanvas Menu -->
-    </div>
+<ul aria-labelledby="languageDropdown" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" data-lang-switch="it" href="#">IT</a></li>
+<li><a class="dropdown-item" data-lang-switch="en" href="#">EN</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+
+</div>
 </nav>
-<!-- End Navbar -->
 
-<!-- HEADER con effetto Parallasse -->
+
 <header id="header_parallax">
-    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Background">
-
-    <div class="container-fluid">
-        <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-12 col-lg-6">
-                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
-                     alt="World Equestrian Protection Logo">
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-12 col-lg-6">
-                    <h1 id="brand_name" class="d-none d-lg-block">Equestrian World Protection</h1>
-                    <h2 class="mt-2" id="brand_spot"><strong><b>SERVIZI FINANZIARI</b></strong></h2>
-                </div>
-            </div>
-        </div>
-    </div>
+<img alt="Equestrian World Protection Background" class="img-fluid" id="bg" src="images/bg_img.jpg"/>
+<div class="container-fluid">
+<div class="row justify-content-center justify-content-lg-end">
+<div class="col-12 col-lg-6">
+<img alt="World Equestrian Protection Logo" class="img-fluid mx-auto custom-logo" id="logo" src="images/logo/EWP_Logo.png" title="Link Home"/>
+</div>
+<div class="row justify-content-end">
+<div class="col-12 col-lg-6">
+<h1 class="d-none d-lg-block" data-i18n="fin_h1_1" id="brand_name">Equestrian World Protection</h1>
+<h2 class="mt-2" data-i18n="fin_h2_2" id="brand_spot"><strong><b>SERVIZI FINANZIARI</b></strong></h2>
+</div>
+</div>
+</div>
+</div>
 </header>
-
 <main>
 
-    <!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
-    <!--<section>
-        <h1>
-            SERVIZI FINANZIARI
-        </h1>
-        <h3 style="color: orange;">MUTUI IPOTECARI</h3>
-        <p>
-            Contratto di finanziamento a medio/lungo termine per acquistare beni immobili, ristrutturarli, o per sostituire/surrogare un mutuo già esistente.
-        </p>
-        <h3 style="color: orange;">CONVENZIONI CONTO CORRENTE ASSOCIATI</h3>
-        <p>
-            Conto corrente a costi più vantaggiosi per i soggetti associati agli enti aderenti alla convenzione.
-        </p>
-        <h3 style="color: orange;">CAUZIONI INVESTIMENTI</h3>
-        <p>
-            Contratto con cui il beneficiario troverà garantito un pagamento concordato con il debitore, qualora questi non riuscisse ad erogare quanto stabilito originariamente. <br>
-            Fidejussioni (contratto con cui la Compagnia assicurativa garantisce il pagamento di canoni degli immobili dove l'assicurazione sportiva dilettantistica esercita le proprie attività).
-        </p>
-        <h3 style="color: orange;">INVESTIMENTI</h3>
-    </section>-->
 
 
-    <!-- Hero Section con sfondo a gradiente -->
-    <section class="py-5" style="background: linear-gradient(135deg, var(--PrimaryColor) 0%, #f8f9fa 100%);">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">SOLUZIONI FINANZIARIE PER IL MONDO EQUESTRE</h2>
-                    <p class="lead mb-0">
+<section class="py-5" style="background: linear-gradient(135deg, var(--PrimaryColor) 0%, #f8f9fa 100%);">
+<div class="container">
+<div class="row align-items-center justify-content-center">
+<div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="fin_h2_3">SOLUZIONI FINANZIARIE PER IL MONDO EQUESTRE</h2>
+<p class="lead mb-0" data-i18n="fin_p_4">
                         Offriamo strumenti finanziari su misura per supportare la tua passione e i tuoi investimenti nel settore equestre.
                         Dai mutui ipotecari alle convenzioni bancarie, mettiamo a tua disposizione soluzioni personalizzate per ogni esigenza.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
+</div>
+</div>
+</div>
+</section>
 
-
-    <!-- Sezione Servizi Finanziari - Layout migliorato -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-subtitle secondaryColor">I NOSTRI SERVIZI FINANZIARI</h3>
-                    <p class="mb-4">
-                        Scopri le soluzioni finanziarie che abbiamo selezionato per supportare le tue attività nel mondo equestre
+<section class="py-5">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h3 class="ewp-subtitle secondaryColor" data-i18n="fin_h3_5">I NOSTRI SERVIZI FINANZIARI</h3>
+<p class="mb-4" data-i18n="fin_p_6">
+                        Scopri le soluzioni finanziarie che abbiamo selezionato per supportare le tue attivitÃ  nel mondo equestre
                     </p>
-                </div>
-            </div>
+</div>
+</div>
+<div class="row g-4">
 
-            <div class="row g-4">
-                <!-- Card 1: Mutui Ipotecari -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="card border-0 shadow h-100 finance-card">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
-                                <i class="bi bi-house-door text-white finance-icon"></i>
-                            </div>
-                            <div class="col-md-8 d-flex flex-column">
-                                <div class="card-body text-center text-md-start">
-                                    <h4 class="card-title secondaryColor">MUTUI IPOTECARI</h4>
-                                    <p class="card-text">
-                                        Contratto di finanziamento a medio/lungo termine per acquistare beni immobili, ristrutturarli, o per sostituire/surrogare un mutuo già esistente.
+<div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="card border-0 shadow h-100 finance-card">
+<div class="row g-0 h-100">
+<div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
+<i class="bi bi-house-door text-white finance-icon"></i>
+</div>
+<div class="col-md-8 d-flex flex-column">
+<div class="card-body text-center text-md-start">
+<h4 class="card-title secondaryColor" data-i18n="fin_h4_7">MUTUI IPOTECARI</h4>
+<p class="card-text" data-i18n="fin_p_8">
+                                        Contratto di finanziamento a medio/lungo termine per acquistare beni immobili, ristrutturarli, o per sostituire/surrogare un mutuo giÃ  esistente.
                                     </p>
-                                    <div class="mt-3 text-center text-md-start">
-                                        <a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" href="#mutuiDetails" role="button">
+<div class="mt-3 text-center text-md-start">
+<a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" data-i18n="fin_miss_103" href="#mutuiDetails" role="button">
                                             Maggiori dettagli <i class="bi bi-chevron-down"></i>
-                                        </a>
-                                        <div class="collapse mt-3" id="mutuiDetails">
-                                            <div class="card card-body border-0 bg-light">
-                                                <ul class="mb-0 text-start">
-                                                    <li class="black">Finanziamenti per acquisto terreni agricoli</li>
-                                                    <li class="black">Mutui per costruzione o ampliamento di scuderie</li>
-                                                    <li class="black">Soluzioni per centri ippici e maneggi</li>
-                                                    <li class="black">Condizioni vantaggiose per soci e affiliati</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</a>
+<div class="collapse mt-3" id="mutuiDetails">
+<div class="card card-body border-0 bg-light">
+<ul class="mb-0 text-start">
+<li class="black" data-i18n="fin_li_9">Finanziamenti per acquisto terreni agricoli</li>
+<li class="black" data-i18n="fin_li_10">Mutui per costruzione o ampliamento di scuderie</li>
+<li class="black" data-i18n="fin_li_11">Soluzioni per centri ippici e maneggi</li>
+<li class="black" data-i18n="fin_li_12">Condizioni vantaggiose per soci e affiliati</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-                <!-- Card 2: Convenzioni Conto Corrente -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="card border-0 shadow h-100 finance-card">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
-                                <i class="bi bi-credit-card text-white finance-icon"></i>
-                            </div>
-                            <div class="col-md-8 d-flex flex-column">
-                                <div class="card-body text-center text-md-start">
-                                    <h4 class="card-title secondaryColor">CONVENZIONI CONTO CORRENTE ASSOCIATI</h4>
-                                    <p class="card-text">
-                                        Conto corrente a costi più vantaggiosi per i soggetti associati agli enti aderenti alla convenzione.
+<div class="col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="card border-0 shadow h-100 finance-card">
+<div class="row g-0 h-100">
+<div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
+<i class="bi bi-credit-card text-white finance-icon"></i>
+</div>
+<div class="col-md-8 d-flex flex-column">
+<div class="card-body text-center text-md-start">
+<h4 class="card-title secondaryColor" data-i18n="fin_h4_13">CONVENZIONI CONTO CORRENTE ASSOCIATI</h4>
+<p class="card-text" data-i18n="fin_p_14">
+                                        Conto corrente a costi piÃ¹ vantaggiosi per i soggetti associati agli enti aderenti alla convenzione.
                                     </p>
-                                    <div class="mt-3 text-center text-md-start">
-                                        <a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" href="#contoDetails" role="button">
+<div class="mt-3 text-center text-md-start">
+<a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" data-i18n="fin_miss_104" href="#contoDetails" role="button">
                                             Maggiori dettagli <i class="bi bi-chevron-down"></i>
-                                        </a>
-                                        <div class="collapse mt-3" id="contoDetails">
-                                            <div class="card card-body border-0 bg-light">
-                                                <ul class="mb-0 text-start">
-                                                    <li class="black">Operazioni bancarie a condizioni agevolate</li>
-                                                    <li class="black">Canone annuale ridotto</li>
-                                                    <li class="black">Servizi digitali dedicati</li>
-                                                    <li class="black">Carte di debito e credito a condizioni vantaggiose</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</a>
+<div class="collapse mt-3" id="contoDetails">
+<div class="card card-body border-0 bg-light">
+<ul class="mb-0 text-start">
+<li class="black" data-i18n="fin_li_15">Operazioni bancarie a condizioni agevolate</li>
+<li class="black" data-i18n="fin_li_16">Canone annuale ridotto</li>
+<li class="black" data-i18n="fin_li_17">Servizi digitali dedicati</li>
+<li class="black" data-i18n="fin_li_18">Carte di debito e credito a condizioni vantaggiose</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-                <!-- Card 3: Cauzioni Investimenti -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="card border-0 shadow h-100 finance-card">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
-                                <i class="bi bi-shield-lock text-white finance-icon"></i>
-                            </div>
-                            <div class="col-md-8 d-flex flex-column">
-                                <div class="card-body text-center text-md-start">
-                                    <h4 class="card-title secondaryColor">CAUZIONI INVESTIMENTI</h4>
-                                    <p class="card-text">
-                                        Contratto con cui il beneficiario troverà garantito un pagamento concordato con il debitore, qualora questi non riuscisse ad erogare quanto stabilito originariamente.
+<div class="col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="card border-0 shadow h-100 finance-card">
+<div class="row g-0 h-100">
+<div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
+<i class="bi bi-shield-lock text-white finance-icon"></i>
+</div>
+<div class="col-md-8 d-flex flex-column">
+<div class="card-body text-center text-md-start">
+<h4 class="card-title secondaryColor" data-i18n="fin_h4_19">CAUZIONI INVESTIMENTI</h4>
+<p class="card-text" data-i18n="fin_p_20">
+                                        Contratto con cui il beneficiario troverÃ  garantito un pagamento concordato con il debitore, qualora questi non riuscisse ad erogare quanto stabilito originariamente.
                                     </p>
-                                    <p class="card-text">
-                                        Fidejussioni (contratto con cui la Compagnia assicurativa garantisce il pagamento di canoni degli immobili dove l'assicurazione sportiva dilettantistica esercita le proprie attività).
+<p class="card-text" data-i18n="fin_p_21">
+                                        Fidejussioni (contratto con cui la Compagnia assicurativa garantisce il pagamento di canoni degli immobili dove l'assicurazione sportiva dilettantistica esercita le proprie attivitÃ ).
                                     </p>
-                                    <div class="mt-3 text-center text-md-start">
-                                        <a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" href="#cauzioniDetails" role="button">
+<div class="mt-3 text-center text-md-start">
+<a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" data-i18n="fin_miss_105" href="#cauzioniDetails" role="button">
                                             Maggiori dettagli <i class="bi bi-chevron-down"></i>
-                                        </a>
-                                        <div class="collapse mt-3" id="cauzioniDetails">
-                                            <div class="card card-body border-0 bg-light">
-                                                <ul class="mb-0 text-start">
-                                                    <li class="black">Garanzie per contratti di locazione</li>
-                                                    <li class="black">Cauzioni per partecipazione a gare</li>
-                                                    <li class="black">Fidejussioni per impianti sportivi</li>
-                                                    <li class="black">Coperture per strutture temporanee</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+</a>
+<div class="collapse mt-3" id="cauzioniDetails">
+<div class="card card-body border-0 bg-light">
+<ul class="mb-0 text-start">
+<li class="black" data-i18n="fin_li_22">Garanzie per contratti di locazione</li>
+<li class="black" data-i18n="fin_li_23">Cauzioni per partecipazione a gare</li>
+<li class="black" data-i18n="fin_li_24">Fidejussioni per impianti sportivi</li>
+<li class="black" data-i18n="fin_li_25">Coperture per strutture temporanee</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-                <!-- Card 4: Investimenti -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="card border-0 shadow h-100 finance-card">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
-                                <i class="bi bi-graph-up-arrow text-white finance-icon"></i>
-                            </div>
-                            <div class="col-md-8 d-flex flex-column">
-                                <div class="card-body text-center text-md-start">
-                                    <h4 class="card-title secondaryColor">INVESTIMENTI</h4>
-                                    <p class="card-text">
+<div class="col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+<div class="card border-0 shadow h-100 finance-card">
+<div class="row g-0 h-100">
+<div class="col-md-4 bg-secondary d-flex align-items-center justify-content-center">
+<i class="bi bi-graph-up-arrow text-white finance-icon"></i>
+</div>
+<div class="col-md-8 d-flex flex-column">
+<div class="card-body text-center text-md-start">
+<h4 class="card-title secondaryColor" data-i18n="fin_h4_26">INVESTIMENTI</h4>
+<p class="card-text" data-i18n="fin_p_27">
                                         Soluzioni di investimento personalizzate per operatori del settore equestre, con focus sulla crescita sostenibile e la tutela del capitale.
                                     </p>
-                                    <div class="mt-3 text-center text-md-start">
-                                        <a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" href="#investimentiDetails" role="button">
+<div class="mt-3 text-center text-md-start">
+<a class="btn btn-outline-secondary finance-btn" data-bs-toggle="collapse" data-i18n="fin_miss_106" href="#investimentiDetails" role="button">
                                             Maggiori dettagli <i class="bi bi-chevron-down"></i>
-                                        </a>
-                                        <div class="collapse mt-3" id="investimentiDetails">
-                                            <div class="card card-body border-0 bg-light">
-                                                <ul class="mb-0 text-start">
-                                                    <li class="black">Piani di investimento personalizzati</li>
-                                                    <li class="black">Soluzioni per la diversificazione del rischio</li>
-                                                    <li class="black">Consulenza finanziaria specializzata</li>
-                                                    <li class="black">Monitoraggio costante del portafoglio</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</a>
+<div class="collapse mt-3" id="investimentiDetails">
+<div class="card card-body border-0 bg-light">
+<ul class="mb-0 text-start">
+<li class="black" data-i18n="fin_li_28">Piani di investimento personalizzati</li>
+<li class="black" data-i18n="fin_li_29">Soluzioni per la diversificazione del rischio</li>
+<li class="black" data-i18n="fin_li_30">Consulenza finanziaria specializzata</li>
+<li class="black" data-i18n="fin_li_31">Monitoraggio costante del portafoglio</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-
-
-    <!-- Sezione Infografica con Timeline Verticale -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-subtitle">IL NOSTRO PROCESSO FINANZIARIO</h3>
-                    <p class="mb-0">
-                        Un percorso strutturato per garantirti la soluzione più adatta alle tue esigenze
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h3 class="ewp-subtitle" data-i18n="fin_h3_32">IL NOSTRO PROCESSO FINANZIARIO</h3>
+<p class="mb-0" data-i18n="fin_p_33">
+                        Un percorso strutturato per garantirti la soluzione piÃ¹ adatta alle tue esigenze
                     </p>
-                </div>
-            </div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
-                    <!-- Timeline finanziaria -->
-                    <div class="finance-timeline">
-                        <!-- Fase 1 - destra -->
-                        <div class="finance-timeline-item finance-timeline-item-right">
-                            <div class="finance-timeline-indicator">1</div>
-                            <div class="finance-timeline-content">
-                                <h4 class="secondaryColor">Analisi delle Esigenze</h4>
-                                <p>
-                                    Ascoltiamo e analizziamo le tue necessità finanziarie specifiche, considerando la tua situazione attuale e i tuoi obiettivi futuri nel settore equestre.
+<div class="finance-timeline">
+
+<div class="finance-timeline-item finance-timeline-item-right">
+<div class="finance-timeline-indicator">1</div>
+<div class="finance-timeline-content">
+<h4 class="secondaryColor" data-i18n="fin_h4_34">Analisi delle Esigenze</h4>
+<p data-i18n="fin_p_35">
+                                    Ascoltiamo e analizziamo le tue necessitÃ  finanziarie specifiche, considerando la tua situazione attuale e i tuoi obiettivi futuri nel settore equestre.
                                 </p>
-                            </div>
-                        </div>
+</div>
+</div>
 
-                        <!-- Fase 2 - sinistra -->
-                        <div class="finance-timeline-item finance-timeline-item-left">
-                            <div class="finance-timeline-indicator">2</div>
-                            <div class="finance-timeline-content">
-                                <h4 class="secondaryColor">Valutazione delle Opzioni</h4>
-                                <p>
-                                    Identifichiamo le soluzioni finanziarie più adeguate, valutando vantaggi e svantaggi di ciascuna opzione in relazione alle tue specifiche necessità.
+<div class="finance-timeline-item finance-timeline-item-left">
+<div class="finance-timeline-indicator">2</div>
+<div class="finance-timeline-content">
+<h4 class="secondaryColor" data-i18n="fin_h4_36">Valutazione delle Opzioni</h4>
+<p data-i18n="fin_p_37">
+                                    Identifichiamo le soluzioni finanziarie piÃ¹ adeguate, valutando vantaggi e svantaggi di ciascuna opzione in relazione alle tue specifiche necessitÃ .
                                 </p>
-                            </div>
-                        </div>
+</div>
+</div>
 
-                        <!-- Fase 3 - destra -->
-                        <div class="finance-timeline-item finance-timeline-item-right">
-                            <div class="finance-timeline-indicator">3</div>
-                            <div class="finance-timeline-content">
-                                <h4 class="secondaryColor">Proposta Personalizzata</h4>
-                                <p>
+<div class="finance-timeline-item finance-timeline-item-right">
+<div class="finance-timeline-indicator">3</div>
+<div class="finance-timeline-content">
+<h4 class="secondaryColor" data-i18n="fin_h4_38">Proposta Personalizzata</h4>
+<p data-i18n="fin_p_39">
                                     Elaboriamo una proposta dettagliata con le soluzioni finanziarie selezionate, completa di condizioni e simulazioni pratiche.
                                 </p>
-                            </div>
-                        </div>
+</div>
+</div>
 
-                        <!-- Fase 4 - sinistra -->
-                        <div class="finance-timeline-item finance-timeline-item-left">
-                            <div class="finance-timeline-indicator">4</div>
-                            <div class="finance-timeline-content">
-                                <h4 class="secondaryColor">Implementazione</h4>
-                                <p>
+<div class="finance-timeline-item finance-timeline-item-left">
+<div class="finance-timeline-indicator">4</div>
+<div class="finance-timeline-content">
+<h4 class="secondaryColor" data-i18n="fin_h4_40">Implementazione</h4>
+<p data-i18n="fin_p_41">
                                     Ti supportiamo in tutte le fasi del processo, dalla raccolta documentale alla finalizzazione dell'operazione finanziaria.
                                 </p>
-                            </div>
-                        </div>
+</div>
+</div>
 
-                        <!-- Fase 5 - destra -->
-                        <div class="finance-timeline-item finance-timeline-item-right">
-                            <div class="finance-timeline-indicator">5</div>
-                            <div class="finance-timeline-content">
-                                <h4 class="secondaryColor">Monitoraggio e Assistenza</h4>
-                                <p>
+<div class="finance-timeline-item finance-timeline-item-right">
+<div class="finance-timeline-indicator">5</div>
+<div class="finance-timeline-content">
+<h4 class="secondaryColor" data-i18n="fin_h4_42">Monitoraggio e Assistenza</h4>
+<p data-i18n="fin_p_43">
                                     Restiamo al tuo fianco con un servizio di monitoraggio costante e assistenza continua per ottimizzare le tue soluzioni finanziarie.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-
-
-
-
-
-
-    <!-- Sezione Quote/Testimonial con sfondo colorato -->
-    <section class="py-5" style="background-color: var(--TertiaryColor);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="financial-quote">
-                        <div class="financial-quote-icon">
-                            <i class="bi bi-quote"></i>
-                        </div>
-                        <blockquote class="financial-quote-text">
-                            <p class="fs-3 fw-light">
-                                Il giusto finanziamento è quello che ti permette di realizzare i tuoi progetti nel mondo equestre senza compromettere la tua stabilità finanziaria. La nostra missione è trovare questo equilibrio perfetto.
+<section class="py-5" style="background-color: var(--TertiaryColor);">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
+<div class="financial-quote">
+<div class="financial-quote-icon">
+<i class="bi bi-quote"></i>
+</div>
+<blockquote class="financial-quote-text">
+<p class="fs-3 fw-light" data-i18n="fin_p_44">
+                                Il giusto finanziamento Ã¨ quello che ti permette di realizzare i tuoi progetti nel mondo equestre senza compromettere la tua stabilitÃ  finanziaria. La nostra missione Ã¨ trovare questo equilibrio perfetto.
                             </p>
-                            <footer class="blockquote-footer mt-3 text-end">
-                                <cite>Team Servizi Finanziari</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer class="blockquote-footer mt-3 text-end">
+<cite>Team Servizi Finanziari</cite>
+</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-
-
-
-    <!-- Sezione Vantaggi con Cards a Esagono -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-subtitle">I VANTAGGI DEI NOSTRI SERVIZI FINANZIARI</h3>
-                    <p class="mb-0">
-                        Scopri perché le nostre soluzioni finanziarie rappresentano la scelta ideale per il tuo percorso nel mondo equestre
+<section class="py-5">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h3 class="ewp-subtitle" data-i18n="fin_h3_45">I VANTAGGI DEI NOSTRI SERVIZI FINANZIARI</h3>
+<p class="mb-0" data-i18n="fin_p_46">
+                        Scopri perchÃ© le nostre soluzioni finanziarie rappresentano la scelta ideale per il tuo percorso nel mondo equestre
                     </p>
-                </div>
-            </div>
+</div>
+</div>
+<div class="row g-4 justify-content-center">
 
-            <div class="row g-4 justify-content-center">
-                <!-- Vantaggio 1 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="finance-hexagon-feature">
-                        <div class="finance-hexagon-inner text-center">
-                            <i class="bi bi-star wealth-icon"></i>
-                            <h4 class="secondaryColor mb-2">Esperienza Specializzata</h4>
-                            <p class="small black mb-0">Conosciamo a fondo le necessità finanziarie del settore equestre e offriamo soluzioni veramente su misura</p>
-                        </div>
-                    </div>
-                </div>
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="finance-hexagon-feature">
+<div class="finance-hexagon-inner text-center">
+<i class="bi bi-star wealth-icon"></i>
+<h4 class="secondaryColor mb-2" data-i18n="fin_h4_47">Esperienza Specializzata</h4>
+<p class="small black mb-0" data-i18n="fin_p_48">Conosciamo a fondo le necessitÃ  finanziarie del settore equestre e offriamo soluzioni veramente su misura</p>
+</div>
+</div>
+</div>
 
-                <!-- Vantaggio 2 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="finance-hexagon-feature">
-                        <div class="finance-hexagon-inner text-center">
-                            <i class="bi bi-person-check wealth-icon"></i>
-                            <h4 class="secondaryColor mb-2">Consulenza Personalizzata</h4>
-                            <p class="small black mb-0">Un consulente dedicato ti accompagna in ogni fase, dalla scelta alla gestione delle soluzioni finanziarie</p>
-                        </div>
-                    </div>
-                </div>
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="finance-hexagon-feature">
+<div class="finance-hexagon-inner text-center">
+<i class="bi bi-person-check wealth-icon"></i>
+<h4 class="secondaryColor mb-2" data-i18n="fin_h4_49">Consulenza Personalizzata</h4>
+<p class="small black mb-0" data-i18n="fin_p_50">Un consulente dedicato ti accompagna in ogni fase, dalla scelta alla gestione delle soluzioni finanziarie</p>
+</div>
+</div>
+</div>
 
-                <!-- Vantaggio 3 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="finance-hexagon-feature">
-                        <div class="finance-hexagon-inner text-center">
-                            <i class="bi bi-bank wealth-icon"></i>
-                            <h4 class="secondaryColor mb-2">Partnership Bancarie</h4>
-                            <p class="small black mb-0">Collaboriamo con primari istituti finanziari per garantirti le migliori condizioni disponibili sul mercato</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="finance-hexagon-feature">
+<div class="finance-hexagon-inner text-center">
+<i class="bi bi-bank wealth-icon"></i>
+<h4 class="secondaryColor mb-2" data-i18n="fin_h4_51">Partnership Bancarie</h4>
+<p class="small black mb-0" data-i18n="fin_p_52">Collaboriamo con primari istituti finanziari per garantirti le migliori condizioni disponibili sul mercato</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-
-
-    <!-- Sezione FAQ con accordions -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-subtitle">DOMANDE FREQUENTI</h3>
-                    <p class="mb-0">
-                        Rispondiamo alle domande più comuni sui nostri servizi finanziari
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h3 class="ewp-subtitle" data-i18n="fin_h3_53">DOMANDE FREQUENTI</h3>
+<p class="mb-0" data-i18n="fin_p_54">
+                        Rispondiamo alle domande piÃ¹ comuni sui nostri servizi finanziari
                     </p>
-                </div>
-            </div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
+<div class="accordion" id="financialFAQs">
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="accordion" id="financialFAQs">
-                        <!-- FAQ 1 -->
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <strong>Quali documenti servono per richiedere un mutuo ipotecario?</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#financialFAQs">
-                                <div class="accordion-body">
-                                    <p>
+<div class="accordion-item border-0 mb-3 shadow-sm">
+<h2 class="accordion-header" data-i18n="fin_h2_55" id="headingOne">
+<button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+<strong>Quali documenti servono per richiedere un mutuo ipotecario?</strong>
+</button>
+</h2>
+<div aria-labelledby="headingOne" class="accordion-collapse collapse" data-bs-parent="#financialFAQs" id="collapseOne">
+<div class="accordion-body">
+<p data-i18n="fin_p_56">
                                         Per richiedere un mutuo ipotecario sono generalmente necessari:
                                     </p>
-                                    <ul>
-                                        <li class="black">Documento d'identità e codice fiscale</li>
-                                        <li class="black">Documentazione reddituale (ultime dichiarazioni dei redditi)</li>
-                                        <li class="black">Documentazione relativa all'immobile da acquistare</li>
-                                        <li class="black">Eventuali documenti relativi ad altri finanziamenti in corso</li>
-                                    </ul>
-                                    <p>
-                                        Il nostro team ti assisterà nella preparazione di tutta la documentazione necessaria.
+<ul>
+<li class="black" data-i18n="fin_li_57">Documento d'identitÃ  e codice fiscale</li>
+<li class="black" data-i18n="fin_li_58">Documentazione reddituale (ultime dichiarazioni dei redditi)</li>
+<li class="black" data-i18n="fin_li_59">Documentazione relativa all'immobile da acquistare</li>
+<li class="black" data-i18n="fin_li_60">Eventuali documenti relativi ad altri finanziamenti in corso</li>
+</ul>
+<p data-i18n="fin_p_61">
+                                        Il nostro team ti assisterÃ  nella preparazione di tutta la documentazione necessaria.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+</div>
+</div>
+</div>
 
-                        <!-- FAQ 2 -->
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <strong>Come funzionano le convenzioni per conti correnti?</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#financialFAQs">
-                                <div class="accordion-body">
-                                    <p>
+<div class="accordion-item border-0 mb-3 shadow-sm">
+<h2 class="accordion-header" data-i18n="fin_h2_62" id="headingTwo">
+<button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+<strong>Come funzionano le convenzioni per conti correnti?</strong>
+</button>
+</h2>
+<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#financialFAQs" id="collapseTwo">
+<div class="accordion-body">
+<p data-i18n="fin_p_63">
                                         Le convenzioni per conti correnti sono accordi stipulati con istituti bancari che permettono ai nostri associati di accedere a condizioni vantaggiose. Questi benefici possono includere:
                                     </p>
-                                    <ul>
-                                        <li class="black">Riduzione o azzeramento del canone mensile</li>
-                                        <li class="black">Operazioni gratuite o a costo ridotto</li>
-                                        <li class="black">Tassi di interesse più favorevoli</li>
-                                        <li class="black">Servizi aggiuntivi inclusi</li>
-                                    </ul>
-                                    <p>
-                                        Per accedere a queste convenzioni è sufficiente essere associati a Equestrian World Protection o a uno degli enti convenzionati.
+<ul>
+<li class="black" data-i18n="fin_li_64">Riduzione o azzeramento del canone mensile</li>
+<li class="black" data-i18n="fin_li_65">Operazioni gratuite o a costo ridotto</li>
+<li class="black" data-i18n="fin_li_66">Tassi di interesse piÃ¹ favorevoli</li>
+<li class="black" data-i18n="fin_li_67">Servizi aggiuntivi inclusi</li>
+</ul>
+<p data-i18n="fin_p_68">
+                                        Per accedere a queste convenzioni Ã¨ sufficiente essere associati a Equestrian World Protection o a uno degli enti convenzionati.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+</div>
+</div>
+</div>
 
-                        <!-- FAQ 3 -->
-                        <div class="accordion-item border-0 mb-3 shadow-sm">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <strong>Quali sono i tempi medi per l'ottenimento di una fideiussione?</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#financialFAQs">
-                                <div class="accordion-body">
-                                    <p>
+<div class="accordion-item border-0 mb-3 shadow-sm">
+<h2 class="accordion-header" data-i18n="fin_h2_69" id="headingThree">
+<button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+<strong>Quali sono i tempi medi per l'ottenimento di una fideiussione?</strong>
+</button>
+</h2>
+<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#financialFAQs" id="collapseThree">
+<div class="accordion-body">
+<p data-i18n="fin_p_70">
                                         I tempi per l'ottenimento di una fideiussione possono variare in base a diversi fattori, tra cui:
                                     </p>
-                                    <ul>
-                                        <li class="black">La completezza della documentazione fornita</li>
-                                        <li class="black">L'importo della garanzia richiesta</li>
-                                        <li class="black">La complessità dell'operazione</li>
-                                    </ul>
-                                    <p>
+<ul>
+<li class="black" data-i18n="fin_li_71">La completezza della documentazione fornita</li>
+<li class="black" data-i18n="fin_li_72">L'importo della garanzia richiesta</li>
+<li class="black" data-i18n="fin_li_73">La complessitÃ  dell'operazione</li>
+</ul>
+<p data-i18n="fin_p_74">
                                         Mediamente, con una documentazione completa, i tempi variano da 5 a 15 giorni lavorativi. Il nostro team lavora per accelerare il processo e garantire tempi di risposta rapidi.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+</div>
+</div>
+</div>
 
-                        <!-- FAQ 4 -->
-                        <div class="accordion-item border-0 shadow-sm">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <strong>Come scegliere la soluzione di investimento più adatta?</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#financialFAQs">
-                                <div class="accordion-body">
-                                    <p>
-                                        La scelta della soluzione di investimento più adatta dipende da diversi fattori personali:
+<div class="accordion-item border-0 shadow-sm">
+<h2 class="accordion-header" data-i18n="fin_h2_75" id="headingFour">
+<button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+<strong>Come scegliere la soluzione di investimento piÃ¹ adatta?</strong>
+</button>
+</h2>
+<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#financialFAQs" id="collapseFour">
+<div class="accordion-body">
+<p data-i18n="fin_p_76">
+                                        La scelta della soluzione di investimento piÃ¹ adatta dipende da diversi fattori personali:
                                     </p>
-                                    <ul>
-                                        <li class="black">Obiettivi finanziari di breve, medio e lungo termine</li>
-                                        <li class="black">Propensione al rischio e orizzonte temporale</li>
-                                        <li class="black">Situazione finanziaria complessiva</li>
-                                        <li class="black">Esigenze di liquidità</li>
-                                    </ul>
-                                    <p>
-                                        I nostri consulenti svolgono un'analisi approfondita del tuo profilo finanziario per suggerirti le soluzioni più in linea con le tue esigenze specifiche nel settore equestre.
+<ul>
+<li class="black" data-i18n="fin_li_77">Obiettivi finanziari di breve, medio e lungo termine</li>
+<li class="black" data-i18n="fin_li_78">Propensione al rischio e orizzonte temporale</li>
+<li class="black" data-i18n="fin_li_79">Situazione finanziaria complessiva</li>
+<li class="black" data-i18n="fin_li_80">Esigenze di liquiditÃ </li>
+</ul>
+<p data-i18n="fin_p_81">
+                                        I nostri consulenti svolgono un'analisi approfondita del tuo profilo finanziario per suggerirti le soluzioni piÃ¹ in linea con le tue esigenze specifiche nel settore equestre.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Call to Action con grafico interattivo -->
-<!--    <section class="py-5">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-subtitle">PIANIFICA IL TUO FUTURO FINANZIARIO</h3>
-                    <p class="mb-4">
-                        Le decisioni finanziarie di oggi determinano le opportunità di domani. Affidati alla nostra esperienza per costruire un percorso finanziario solido e sostenibile nel tempo.
-                    </p>
-                    <p class="mb-4">
-                        I nostri consulenti sono pronti ad ascoltare le tue esigenze e a guidarti verso le soluzioni più adatte al tuo profilo e ai tuoi obiettivi nel mondo equestre.
-                    </p>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <i class="bi bi-check-lg text-white"></i>
-                        </div>
-                        <p class="mb-0 fw-bold">Assistenza personalizzata</p>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <i class="bi bi-check-lg text-white"></i>
-                        </div>
-                        <p class="mb-0 fw-bold">Condizioni esclusive</p>
-                    </div>
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <i class="bi bi-check-lg text-white"></i>
-                        </div>
-                        <p class="mb-0 fw-bold">Soluzioni innovative</p>
-                    </div>
-                    <a href="#" class="btn btn-cta">RICHIEDI UNA CONSULENZA</a>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body p-4">
-                            <h4 class="card-title secondaryColor text-center mb-4">Simulazione di Crescita Finanziaria</h4>
-                            <div class="chart-container" style="position: relative; height: 300px;">
-                                &lt;!&ndash; Qui inserire un'immagine rappresentativa di un grafico finanziario &ndash;&gt;
-                                <img src="images/logo/EWP_Logo.png" alt="Simulazione di crescita finanziaria" class="img-fluid" style="max-height: 300px; display: block; margin: 0 auto;">
-                            </div>
-                            <p class="text-center mt-3">
-                                <small class="text-muted">Esempio di proiezione finanziaria. Contattaci per una simulazione personalizzata.</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
-    <!-- Sezione Pianificazione Finanziaria con Steps Interattivi -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="ewp-subtitle">PIANIFICA IL TUO FUTURO FINANZIARIO</h3>
-                    <p class="mb-0">
+
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h3 class="ewp-subtitle" data-i18n="fin_h3_82">PIANIFICA IL TUO FUTURO FINANZIARIO</h3>
+<p class="mb-0" data-i18n="fin_p_83">
                         Un percorso personalizzato per le tue esigenze nel mondo equestre
                     </p>
-                </div>
-            </div>
+</div>
+</div>
+<div class="row g-4">
 
-            <div class="row g-4">
-                <!-- Step Cards -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="card finance-plan-card h-100 border-0 shadow">
-                        <div class="card-body p-0">
-                            <div class="finance-plan-header">
-                                <div class="finance-plan-icon">
-                                    <span>1</span>
-                                </div>
-                                <h4>Analisi iniziale</h4>
-                            </div>
-                            <div class="finance-plan-content p-4">
-                                <p>Esaminiamo la tua situazione finanziaria attuale, con particolare attenzione alle esigenze specifiche legate al mondo equestre.</p>
-                                <ul class="finance-plan-list">
-                                    <li>Valutazione completa degli asset</li>
-                                    <li>Analisi dei flussi di cassa</li>
-                                    <li>Identificazione di obiettivi chiari</li>
-                                </ul>
-                                <div class="finance-plan-progress">
-                                    <div class="progress rounded-pill">
-                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="card finance-plan-card h-100 border-0 shadow">
+<div class="card-body p-0">
+<div class="finance-plan-header">
+<div class="finance-plan-icon">
+<span>1</span>
+</div>
+<h4 data-i18n="fin_h4_84">Analisi iniziale</h4>
+</div>
+<div class="finance-plan-content p-4">
+<p data-i18n="fin_p_85">Esaminiamo la tua situazione finanziaria attuale, con particolare attenzione alle esigenze specifiche legate al mondo equestre.</p>
+<ul class="finance-plan-list">
+<li data-i18n="fin_li_86">Valutazione completa degli asset</li>
+<li data-i18n="fin_li_87">Analisi dei flussi di cassa</li>
+<li data-i18n="fin_li_88">Identificazione di obiettivi chiari</li>
+</ul>
+<div class="finance-plan-progress">
+<div class="progress rounded-pill">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="33" class="progress-bar bg-secondary" role="progressbar" style="width: 33%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="card finance-plan-card h-100 border-0 shadow">
+<div class="card-body p-0">
+<div class="finance-plan-header">
+<div class="finance-plan-icon">
+<span>2</span>
+</div>
+<h4 data-i18n="fin_h4_89">Strategia personalizzata</h4>
+</div>
+<div class="finance-plan-content p-4">
+<p data-i18n="fin_p_90">Sviluppiamo un piano finanziario su misura che combina protezione, crescita e ottimizzazione fiscale per le tue attivitÃ  equestri.</p>
+<ul class="finance-plan-list">
+<li data-i18n="fin_li_91">Soluzioni di investimento dedicate</li>
+<li data-i18n="fin_li_92">Strategie di protezione patrimoniale</li>
+<li data-i18n="fin_li_93">Pianificazione della successione</li>
+</ul>
+<div class="finance-plan-progress">
+<div class="progress rounded-pill">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="66" class="progress-bar bg-secondary" role="progressbar" style="width: 66%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="card finance-plan-card h-100 border-0 shadow">
+<div class="card-body p-0">
+<div class="finance-plan-header">
+<div class="finance-plan-icon">
+<span>3</span>
+</div>
+<h4 data-i18n="fin_h4_94">Implementazione e monitoraggio</h4>
+</div>
+<div class="finance-plan-content p-4">
+<p data-i18n="fin_p_95">Ti supportiamo nell'attuazione della strategia adattando il piano all'evoluzione del mercato e delle tue esigenze.</p>
+<ul class="finance-plan-list">
+<li data-i18n="fin_li_96">Assistenza nell'implementazione</li>
+<li data-i18n="fin_li_97">Revisioni periodiche</li>
+<li data-i18n="fin_li_98">Aggiustamenti strategici</li>
+</ul>
+<div class="finance-plan-progress">
+<div class="progress rounded-pill">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar bg-secondary" role="progressbar" style="width: 100%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="card finance-plan-card h-100 border-0 shadow">
-                        <div class="card-body p-0">
-                            <div class="finance-plan-header">
-                                <div class="finance-plan-icon">
-                                    <span>2</span>
-                                </div>
-                                <h4>Strategia personalizzata</h4>
-                            </div>
-                            <div class="finance-plan-content p-4">
-                                <p>Sviluppiamo un piano finanziario su misura che combina protezione, crescita e ottimizzazione fiscale per le tue attività equestri.</p>
-                                <ul class="finance-plan-list">
-                                    <li>Soluzioni di investimento dedicate</li>
-                                    <li>Strategie di protezione patrimoniale</li>
-                                    <li>Pianificazione della successione</li>
-                                </ul>
-                                <div class="finance-plan-progress">
-                                    <div class="progress rounded-pill">
-                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="row mt-5 g-4">
+<div class="col-lg-7" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+<div class="finance-visual-card">
+<div class="finance-visual-wrapper">
+<div class="finance-chart-container">
 
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="card finance-plan-card h-100 border-0 shadow">
-                        <div class="card-body p-0">
-                            <div class="finance-plan-header">
-                                <div class="finance-plan-icon">
-                                    <span>3</span>
-                                </div>
-                                <h4>Implementazione e monitoraggio</h4>
-                            </div>
-                            <div class="finance-plan-content p-4">
-                                <p>Ti supportiamo nell'attuazione della strategia adattando il piano all'evoluzione del mercato e delle tue esigenze.</p>
-                                <ul class="finance-plan-list">
-                                    <li>Assistenza nell'implementazione</li>
-                                    <li>Revisioni periodiche</li>
-                                    <li>Aggiustamenti strategici</li>
-                                </ul>
-                                <div class="finance-plan-progress">
-                                    <div class="progress rounded-pill">
-                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Visualization and CTA Row -->
-            <div class="row mt-5 g-4">
-                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="finance-visual-card">
-                        <div class="finance-visual-wrapper">
-                            <div class="finance-chart-container">
-                                <!-- Visual elements -->
-                                <div class="finance-line"></div>
-
-                                <div class="finance-point" style="left: 20%; top: 70%;">
-                                    <div class="finance-point-dot"></div>
-                                    <div class="finance-point-label">Investimento iniziale</div>
-                                </div>
-
-                                <div class="finance-point" style="left: 40%; top: 55%;">
-                                    <div class="finance-point-dot"></div>
-                                    <div class="finance-point-label">Crescita strutture</div>
-                                </div>
-
-                                <div class="finance-point" style="left: 60%; top: 40%;">
-                                    <div class="finance-point-dot"></div>
-                                    <div class="finance-point-label">Sviluppo attività</div>
-                                </div>
-
-                                <div class="finance-point" style="left: 80%; top: 25%;">
-                                    <div class="finance-point-dot"></div>
-                                    <div class="finance-point-label">Obiettivi futuri</div>
-                                </div>
-                            </div>
-                            <div class="finance-visual-overlay">
-                                <p class="finance-visual-text">
+<div class="finance-line"></div>
+<div class="finance-point" style="left: 20%; top: 70%;">
+<div class="finance-point-dot"></div>
+<div class="finance-point-label" data-i18n="fin_miss_107">Investimento iniziale</div>
+</div>
+<div class="finance-point" style="left: 40%; top: 55%;">
+<div class="finance-point-dot"></div>
+<div class="finance-point-label" data-i18n="fin_miss_108">Crescita strutture</div>
+</div>
+<div class="finance-point" style="left: 60%; top: 40%;">
+<div class="finance-point-dot"></div>
+<div class="finance-point-label" data-i18n="fin_miss_109">Sviluppo attivitÃ </div>
+</div>
+<div class="finance-point" style="left: 80%; top: 25%;">
+<div class="finance-point-dot"></div>
+<div class="finance-point-label" data-i18n="fin_miss_110">Obiettivi futuri</div>
+</div>
+</div>
+<div class="finance-visual-overlay">
+<p class="finance-visual-text" data-i18n="fin_p_99">
                                     Visualizzazione indicativa del percorso di crescita finanziaria nel settore equestre
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <div class="finance-cta-card h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="secondaryColor mb-4">Costruisci oggi il tuo domani</h4>
-                            <p class="mb-4">
-                                Le decisioni finanziarie di oggi determinano le opportunità di domani. Affidati alla nostra esperienza per costruire un percorso finanziario solido e sostenibile nel tempo.
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+<div class="finance-cta-card h-100 d-flex flex-column justify-content-between">
+<div>
+<h4 class="secondaryColor mb-4" data-i18n="fin_h4_100">Costruisci oggi il tuo domani</h4>
+<p class="mb-4" data-i18n="fin_p_101">
+                                Le decisioni finanziarie di oggi determinano le opportunitÃ  di domani. Affidati alla nostra esperienza per costruire un percorso finanziario solido e sostenibile nel tempo.
                             </p>
-                            <p class="mb-4">
-                                I nostri consulenti sono pronti ad ascoltare le tue esigenze e a guidarti verso le soluzioni più adatte al tuo profilo e ai tuoi obiettivi nel mondo equestre.
+<p class="mb-4" data-i18n="fin_p_102">
+                                I nostri consulenti sono pronti ad ascoltare le tue esigenze e a guidarti verso le soluzioni piÃ¹ adatte al tuo profilo e ai tuoi obiettivi nel mondo equestre.
                             </p>
-                        </div>
-                        <div class="text-center">
-                            <a href="Chi_siamo_it.html#contatti" class="btn btn-cta px-4 py-2">Richiedi una consulenza gratuita</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+</div>
+<div class="text-center">
+<a class="btn btn-cta px-4 py-2" data-i18n="btn_request_free_consult" href="Chi_siamo_it.html#contatti">Richiedi una consulenza gratuita</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 </main>
 
-<!-- Footer -->
 <footer class="footer-section py-3">
-    <div class="container">
-        <div class="row align-items-start justify-content-around justify-content-md-around">
-            <!-- Logo e Partner - non mostrado da md in poi -->
-            <div class="col-5 col-md-3 text-center d-md-none">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo mb-2">
-                <p class="mb-0">Equestrian World Protection</p>
+<div class="container">
+<div class="row align-items-start justify-content-around justify-content-md-around">
 
-            </div>
-            <!-- Logo - mostrado da md in poi -->
-            <div class="col-md-3 text-center d-none d-md-block">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo my-2">
-                <h5 class="mt-3">Equestrian World Protection</h5>
-                <p class="mb-0">We'll protect you and your horses<br class="d-md-none"> everywhere</p>
-            </div>
-            <!-- Contatti -->
-            <div class="col-5 col-md-auto offset-md-1">
-                <h5 class="text-uppercase mb-3">Contatti</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br>
-                        <a href="tel:+390550948303">+39 055 0948303</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br>
-                        <a href="tel:+393401234567">+39 340 1234567</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per contattarci</a>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navigazione Rapida (nascosta su mobile) -->
-            <div class="col-md-auto d-none d-md-block">
-                <h5 class="text-uppercase mb-3">Navigazione</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Chi_siamo_it.html">Chi Siamo</a></li>
-                    <li><a href="Servizi.html">Servizi</a></li>
-                    <li><a href="Risk_Management.html">Risk Management</a></li>
-                    <li><a href="Assicurazioni.html">Assicurazioni</a></li>
-                    <li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
-                    <li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
-                    <li><a href="Servizi_Legali.html">Servizi Legali</a></li>
-                </ul>
-            </div>
-            <!-- La nostra sede - mostrato da lg in poi -->
-            <div class="col-md-auto d-none d-lg-block">
-                <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br>
-                        Borgo San Frediano 4,<br>
+<div class="col-5 col-md-3 text-center d-md-none">
+<img alt="Logo Equestrian World Protection" class="footer-logo mb-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<p class="mb-0">Equestrian World Protection</p>
+</div>
+
+<div class="col-md-3 text-center d-none d-md-block">
+<img alt="Logo Equestrian World Protection" class="footer-logo my-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<h5 class="mt-3">Equestrian World Protection</h5>
+<p class="mb-0" data-i18n="fin_miss_111">We'll protect you and your horses<br class="d-md-none"/> everywhere</p>
+</div>
+
+<div class="col-5 col-md-auto offset-md-1">
+<h5 class="text-uppercase mb-3" data-i18n="fin_miss_112">Contatti</h5>
+<ul class="list-unstyled">
+<li data-i18n="fin_miss_113">
+<span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br/>
+<a href="tel:+390550948303">+39 055 0948303</a>
+</li>
+<li class="mt-2" data-i18n="fin_miss_114">
+<span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br/>
+<a href="tel:+393401234567">+39 340 1234567</a>
+</li>
+<li class="mt-2" data-i18n="fin_miss_115">
+<span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br/>
+<a class="d-block d-sm-none" href="mailto:info@equestrianworldprotection.com">Clicca qui per contattarci</a>
+<a class="d-none d-sm-block" href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a>
+</li>
+</ul>
+</div>
+
+<div class="col-md-auto d-none d-md-block">
+<h5 class="text-uppercase mb-3" data-i18n="fin_miss_116">Navigazione</h5>
+<ul class="list-unstyled">
+<li data-i18n="fin_miss_117"><a href="index.html">Home</a></li>
+<li data-i18n="fin_miss_118"><a href="Chi_siamo_it.html">Chi Siamo</a></li>
+<li data-i18n="fin_miss_119"><a href="Servizi.html">Servizi</a></li>
+<li data-i18n="fin_miss_120"><a href="Risk_Management.html">Risk Management</a></li>
+<li data-i18n="fin_miss_121"><a href="Assicurazioni.html">Assicurazioni</a></li>
+<li data-i18n="fin_miss_122"><a href="Private_Wealth_Management.html">Wealth Management</a></li>
+<li data-i18n="fin_miss_123"><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
+<li data-i18n="fin_miss_124"><a href="Servizi_Legali.html">Servizi Legali</a></li>
+</ul>
+</div>
+
+<div class="col-md-auto d-none d-lg-block">
+<h5 class="text-uppercase mb-3" data-i18n="fin_miss_125">La Nostra Sede</h5>
+<ul class="list-unstyled">
+<li data-i18n="fin_miss_126">
+<span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br/>
+                        Borgo San Frediano 4,<br/>
                         50124 Firenze (FI)
                     </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br>
+<li class="mt-2" data-i18n="fin_miss_127">
+<span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br/>
                         Riceviamo solo su appuntamento
                     </li>
-                </ul>
-            </div>
-        </div>
-        <hr class="my-2">
-        <div class="row">
-            <div class="col-12 text-center">
-                <!-- Versione per desktop e tablet -->
-                <p class="mb-0 d-none d-sm-block">
-                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI 62923
+</ul>
+</div>
+</div>
+<hr class="my-2"/>
+<div class="row">
+<div class="col-12 text-center">
+
+<p class="mb-0 d-none d-sm-block" data-i18n="fin_miss_128">
+                    Â© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI 62923
                 </p>
-                <!-- Versione per mobile -->
-                <p class="mb-0 d-block d-sm-none">
-                    &copy; 2024 Equestrian World Protection. Tutti i diritti riservati<br>
-                    <span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
-                </p>
-            </div>
-        </div>
-    </div>
+
+<p class="mb-0 d-block d-sm-none" data-i18n="fin_miss_129">
+                    Â© 2024 Equestrian World Protection. Tutti i diritti riservati<br/>
+<span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
+</p>
+</div>
+</div>
+</div>
 </footer>
 
-<!-- Bootstrap JavaScript Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- AOS Animation Library -->
+<script src="js/translations.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 
-<!-- Script per parallax -->
 <script>
     let bg = document.getElementById("bg");
     let brand_name = document.getElementById("brand_name");
@@ -898,5 +762,43 @@
     })
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let nbar = document.getElementById("mainNavbar");
+        if(nbar) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nbar.classList.add('navbar-scrolled');
+                } else {
+                    nbar.classList.remove('navbar-scrolled');
+                }
+            });
+        }
+    });
+
+
+        // Gestione Banner Cookie
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookieBanner");
+            const acceptBtn = document.getElementById("acceptCookies");
+            
+            // Controlla se l'utente ha già accettato
+            if (!localStorage.getItem("ewp_cookie_consent")) {
+                // Piccolo ritardo per l'animazione
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 500);
+            }
+
+            // Al click su accetta
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function () {
+                    localStorage.setItem("ewp_cookie_consent", "true");
+                    cookieBanner.classList.remove("show");
+                });
+            }
+        });
+</script>
 </body>
 </html>
+

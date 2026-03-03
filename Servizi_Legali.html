@@ -1,147 +1,123 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <!--INFO BROWSER-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Equestrian World Protection - Servizi Legali</title>
-    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
-
-    <!-- Meta Keywords -->
-    <meta name="keywords"
-          content="diritto equestre, servizi legali equitazione, consulenza legale cavalli, contrattualistica equestre, responsabilità civile equestre, assistenza legale veterinari">
-    <!-- Meta Description -->
-    <meta name="description"
-          content="Scopri i servizi legali specializzati di Equestrian World Protection: consulenza in diritto equestre, contrattualistica, responsabilità civile e assistenza legale nel settore equestre.">
-
-    <!-- Favicon icon -->
-    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
-
-    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Icone Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--INFO BROWSER-->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Equestrian World Protection - Servizi Legali</title>
+<meta content="Matteo MunafÃ², Emanuele Dubini" name="author"/>
+<!-- Meta Keywords -->
+<meta content="diritto equestre, servizi legali equitazione, consulenza legale cavalli, contrattualistica equestre, responsabilitÃ  civile equestre, assistenza legale veterinari" name="keywords"/>
+<!-- Meta Description -->
+<meta content="Scopri i servizi legali specializzati di Equestrian World Protection: consulenza in diritto equestre, contrattualistica, responsabilitÃ  civile e assistenza legale nel settore equestre." name="description"/>
+<!-- Favicon icon -->
+<link href="images/logo/WEBSITELOGO.jpeg" rel="shortcut icon" type="x-icon"/>
+<!-- Link Bootstrap 5.3.3 & Jquery CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Icone Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Main CSS File -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
-
-
 <body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top">
-    <div class="container-fluid px-0">
-        <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
-        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Chi_siamo_it.html">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi.html">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Risk_Management.html">Risk Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth
+<nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
+<!-- Modificato navbar-expand-xl per evitare che vada a capo -->
+<div class="container-fluid px-0">
+<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> <!-- Cambiato in collapse normale per pulizia su bootstrap 5 -->
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Collapse Menu -->
+<div class="collapse navbar-collapse" id="offcanvasNavbar">
+<ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+<li class="nav-item">
+<a aria-current="page" class="nav-link mx-xl-1 active text-center" data-i18n="nav_home" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_about" href="Chi_siamo_it.html">Chi
+                            siamo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_services" href="Servizi.html">Servizi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_risk" href="Risk_Management.html">Risk
                             Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi
-                            Finanziari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
-                    </li>
-                    <!-- Dropdown Menu for language -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown"
-                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_legal" href="Servizi_Legali.html">Servizi
+                            Legali</a>
+</li>
+<!-- Dropdown Menu for language -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle mx-xl-1 text-center" data-bs-toggle="dropdown" id="languageDropdown" role="button">
                             IT
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
-                            <li><a class="dropdown-item" href="#">EN</a></li>
-                        </ul>
-                    </li>
-                    <!-- End Dropdown Menu -->
-                </ul>
-            </div>
-        </div>
-        <!-- End Offcanvas Menu -->
-    </div>
+<ul aria-labelledby="languageDropdown" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" data-lang-switch="it" href="#">IT</a></li>
+<li><a class="dropdown-item" data-lang-switch="en" href="#">EN</a></li>
+</ul>
+</li>
+<!-- End Dropdown Menu -->
+</ul>
+</div>
+<!-- End Collapse Menu -->
+</div>
 </nav>
 <!-- End Navbar -->
-
 <!-- HEADER con effetto Parallasse -->
 <header id="header_parallax">
-    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Background">
-
-    <div class="container-fluid">
-        <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-12 col-lg-6">
-                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
-                     alt="World Equestrian Protection Logo">
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-12 col-lg-6">
-                    <h1 id="brand_name" class="d-none d-lg-block">Equestrian World Protection</h1>
-                    <h2 class="mt-2" id="brand_spot"><strong><b>SERVIZI LEGALI</b></strong></h2>
-                </div>
-            </div>
-        </div>
-    </div>
+<img alt="Equestrian World Protection Background" class="img-fluid" id="bg" src="images/bg_img.jpg"/>
+<div class="container-fluid">
+<div class="row justify-content-center justify-content-lg-end">
+<div class="col-12 col-lg-6">
+<img alt="World Equestrian Protection Logo" class="img-fluid mx-auto custom-logo" id="logo" src="images/logo/EWP_Logo.png" title="Link Home"/>
+</div>
+<div class="row justify-content-end">
+<div class="col-12 col-lg-6">
+<h1 class="d-none d-lg-block" data-i18n="leg_h1_1" id="brand_name">Equestrian World Protection</h1>
+<h2 class="mt-2" data-i18n="leg_h2_2" id="brand_spot"><strong><b>SERVIZI LEGALI</b></strong></h2>
+</div>
+</div>
+</div>
+</div>
 </header>
-
 <main>
-
-    <!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
-   <!-- <section>
+<!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
+<!-- <section>
         <h1>
             Servizi legali
         </h1>
         <p>
-            In tutte le professioni e attività lavorative, più o meno rilevanti, tante cause legali lunghe e costose
-            potrebbero essere evitate utilizzando analisi e prevenzioni dei rischi che tali attività comportano. <br>
-            Avere un centro ippico non è diverso. <br>
+            In tutte le professioni e attivitÃ  lavorative, piÃ¹ o meno rilevanti, tante cause legali lunghe e costose
+            potrebbero essere evitate utilizzando analisi e prevenzioni dei rischi che tali attivitÃ  comportano. <br>
+            Avere un centro ippico non Ã¨ diverso. <br>
             Attenzione andrebbe posta sulla prevenzione dei rischi che nascono per inosservanza della normativa inerente
             la sicurezza, o dei cd. Rischi contrattuali, compresa la mancata predisposizione di adeguate misure rivolte
-            alla limitazione e/o all'esonero della responsabilità da parte di chi opera nel settore. <br>
+            alla limitazione e/o all'esonero della responsabilitÃ  da parte di chi opera nel settore. <br>
             <br>
-            Il <b>DIRITTO EQUESTRE</b> (o "equine law") è una materia di matrice anglosassone riguardante gli aspetti
-            giuridici legati al mondo dello sport dell'equitazione e più in generale di tutto ciò che ruota intorno al
+            Il <b>DIRITTO EQUESTRE</b> (o "equine law") Ã¨ una materia di matrice anglosassone riguardante gli aspetti
+            giuridici legati al mondo dello sport dell'equitazione e piÃ¹ in generale di tutto ciÃ² che ruota intorno al
             cavallo. <br>
             In particolare tale specializzazione si occupa di offrire agli operatori del settore (gestori e proprietari
             di maneggio, sportivi professionisti e dilettanti, proprietari di cavalli, amanti del settore, dottori
             veterinari, ecc...) una serie di consulenze legali, sia giudiziali che stragiudiziali, a vari livelli
             (giustizia civile, penale, amministrativa e sportiva). <br>
             Consulenza e assistenza legale sono effettuate da specialisti del settore, coadiuvati da giuristi di
-            madrelingua inglese, francese, araba che assistono i clienti a 360 gradi nell'attività burocratica in Italia
+            madrelingua inglese, francese, araba che assistono i clienti a 360 gradi nell'attivitÃ  burocratica in Italia
             e all'Estero. <br>
             Qui di seguito sono elencate alcune delle problematiche trattate:
         </p>
@@ -156,10 +132,10 @@
         </details>
         <details>
             <summary>
-                <b style="color: orange;">RESPONSABILITÀ CIVILE</b>
+                <b style="color: orange;">RESPONSABILITÃ€ CIVILE</b>
             </summary>
             <p>
-                Prevenzione dei rischi e gestione dei contenziosi. Pratiche di responsabilità civile professionale di
+                Prevenzione dei rischi e gestione dei contenziosi. Pratiche di responsabilitÃ  civile professionale di
                 tutte le figure coinvolte nel mondo equestre:
             <ul>
                 <li>Centri ippici</li>
@@ -197,7 +173,7 @@
             <P>
                 Rispetto a ciascuna tipologia di rischio, inerente il settore equestre, analisi e montaggio dei
                 contratti vigenti nel settore. <br>
-                Li aggiorniamo perchè, nel tempo, abbiamo contenuti sempre attuali, in base allo sviluppo delle attività
+                Li aggiorniamo perchÃ¨, nel tempo, abbiamo contenuti sempre attuali, in base allo sviluppo delle attivitÃ 
                 garantite, all'aumentare o diminuire dei rischi e all'evoluzione delle disposizioni legislative.
             </P>
         </details>
@@ -215,7 +191,7 @@
                 <b style="color: orange;">VETERINARI</b>
             </summary>
             <P>
-                Assistenza legale ai medici veterinari nelle questioni derivanti da responsabilità professionale e nella
+                Assistenza legale ai medici veterinari nelle questioni derivanti da responsabilitÃ  professionale e nella
                 predisposizione dei moduli di consenso informato.
             </P>
         </details>
@@ -225,7 +201,7 @@
             </summary>
             <P>
                 Consulenza e supporto nella gestione di problematiche derivanti dalla normativa in materia di trasporti
-                di equidi, anche con riferimento alle responsabilità assicurative e penali. <br>
+                di equidi, anche con riferimento alle responsabilitÃ  assicurative e penali. <br>
                 Gestione dei contenziosi con pubbliche amministrazioni e compagnie assicurative.
             </P>
         </details>
@@ -235,7 +211,7 @@
             </summary>
             <P>
                 Assistenza e supporto nella regolarizzazione delle pratiche di intestazione e di identificazione dei
-                cavalli presso APA, MIPAF e dei passaporti sportivi FISE, FE e nei passaggi di proprietà degli equidi.
+                cavalli presso APA, MIPAF e dei passaporti sportivi FISE, FE e nei passaggi di proprietÃ  degli equidi.
             </P>
         </details>
         <details>
@@ -257,11 +233,11 @@
         </details>
         <details>
             <summary>
-                <b style="color: orange;">ACCORDI DI COMPROPRIETÀ</b>
+                <b style="color: orange;">ACCORDI DI COMPROPRIETÃ€</b>
             </summary>
             <P>
-                Predisposizione e negoziazione di contratti di comproprietà tra proprietari, cavalieri, allevatori,
-                società sportive e sponsor.
+                Predisposizione e negoziazione di contratti di comproprietÃ  tra proprietari, cavalieri, allevatori,
+                societÃ  sportive e sponsor.
             </P>
         </details>
         <details>
@@ -291,15 +267,15 @@
                 <div class="col-lg-8 mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="ewp-section-title ewp-title-center mb-4">DIRITTO EQUESTRE: COMPETENZA E PREVENZIONE</h2>
                     <p class="legal-intro">
-                        In tutte le professioni ed attività lavorative, più o meno rilevanti, tante cause legali lunghe
+                        In tutte le professioni ed attivitÃ  lavorative, piÃ¹ o meno rilevanti, tante cause legali lunghe
                         e costose potrebbero essere evitate utilizzando analisi e prevenzioni dei rischi che tali
-                        attività comportano.
+                        attivitÃ  comportano.
                     </p>
                     <p class="legal-intro">
-                        (Avere un centro ippico non è diverso ??).L'Attenzione andrebbe posta sulla prevenzione dei
+                        (Avere un centro ippico non Ã¨ diverso ??).L'Attenzione andrebbe posta sulla prevenzione dei
                         rischi che nascono per inosservanza della normativa inerente la sicurezza, o dei cd. Rischi
                         contrattuali, compresa la mancata predisposizione di adeguate misure rivolte alla limitazione
-                        e/o all'esonero della responsabilità da parte di chi opera nel settore.
+                        e/o all'esonero della responsabilitÃ  da parte di chi opera nel settore.
                     </p>
                 </div>
             </div>
@@ -314,9 +290,9 @@
                             </div>
                             <div class="col-md-11">
                                 <p class="mb-0 fs-5 fst-italic">
-                                    Il <strong>DIRITTO EQUESTRE</strong> (o "equin law") è una materia di matrice
+                                    Il <strong>DIRITTO EQUESTRE</strong> (o "equin law") Ã¨ una materia di matrice
                                     anglosassone riguardante gli aspetti giuridici legati al mondo dello sport
-                                    dell'equitazione e più in generale di tutto ciò che ruota intorno al cavallo.
+                                    dell'equitazione e piÃ¹ in generale di tutto ciÃ² che ruota intorno al cavallo.
                                 </p>
                             </div>
                         </div>
@@ -335,523 +311,471 @@
                     <p>
                         Consulenza e assistenza legale sono effettuate da specialisti del settore, coadiuvati da
                         giuristi di madrelingua inglese, francese e araba che assistono i clienti a 360 gradi
-                        nell'attività burocratica in Italia e all'Estero.
+                        nell'attivitÃ  burocratica in Italia e all'Estero.
                     </p>
                 </div>
             </div>
         </div>
     </section>-->
-
-
-    <!-- Sezione Servizi Legali con Navigazione a Tab -->
-    <section class="legal-services-section py-5 bg-light">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">I NOSTRI SERVIZI LEGALI</h2>
-                    <p class="w-lg-75 mx-auto">
+<!-- Sezione Servizi Legali con Navigazione a Tab -->
+<section class="legal-services-section py-5 bg-light">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="leg_h2_3">I NOSTRI SERVIZI LEGALI</h2>
+<p class="w-lg-75 mx-auto" data-i18n="leg_p_4">
                         Qui di seguito sono elencate alcune delle problematiche trattate dai nostri esperti di diritto
                         equestre
                     </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <!-- Card-style service selector instead of tabs -->
-                    <div class="legal-services-grid mb-5">
-                        <div class="legal-service-selector active" data-service="contrattualistica">
-                            <div class="legal-service-icon">
-                                <i class="bi bi-file-earmark-text"></i>
-                            </div>
-                            <h5>Contrattualistica</h5>
-                        </div>
-
-                        <div class="legal-service-selector" data-service="responsabilita">
-                            <div class="legal-service-icon">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <h5>Responsabilità Civile</h5>
-                        </div>
-
-                        <div class="legal-service-selector" data-service="contenziosi">
-                            <div class="legal-service-icon">
-                                <i class="bi bi-cart"></i>
-                            </div>
-                            <h5>Contenziosi</h5>
-                        </div>
-
-                        <div class="legal-service-selector" data-service="giustizia">
-                            <div class="legal-service-icon">
-                                <i class="bi bi-trophy"></i>
-                            </div>
-                            <h5>Giustizia Sportiva</h5>
-                        </div>
-
-                        <div class="legal-service-selector" data-service="assicurazioni">
-                            <div class="legal-service-icon">
-                                <i class="bi bi-umbrella"></i>
-                            </div>
-                            <h5>Assicurazioni</h5>
-                        </div>
-
-                        <div class="legal-service-selector" data-service="altri">
-                            <div class="legal-service-icon">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h5>Altri Servizi</h5>
-                        </div>
-                    </div>
-
-                    <!-- Service content container - shows the selected service -->
-                    <div class="legal-service-content">
-                        <!-- Contrattualistica Content -->
-                        <div id="contrattualistica" class="legal-content-item active">
-                            <div class="legal-content-card">
-                                <div class="legal-content-header">
-                                    <div class="legal-content-header-icon">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <h3 class="ewp-title-light">CONTRATTUALISTICA</h3>
-                                </div>
-                                <div class="legal-content-body">
-                                    <p>
+</div>
+</div>
+<div class="row">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<!-- Card-style service selector instead of tabs -->
+<div class="legal-services-grid mb-5">
+<div class="legal-service-selector active" data-service="contrattualistica">
+<div class="legal-service-icon">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+<h5 data-i18n="leg_h5_5">Contrattualistica</h5>
+</div>
+<div class="legal-service-selector" data-service="responsabilita">
+<div class="legal-service-icon">
+<i class="bi bi-shield-check"></i>
+</div>
+<h5 data-i18n="leg_h5_6">ResponsabilitÃ  Civile</h5>
+</div>
+<div class="legal-service-selector" data-service="contenziosi">
+<div class="legal-service-icon">
+<i class="bi bi-cart"></i>
+</div>
+<h5 data-i18n="leg_h5_7">Contenziosi</h5>
+</div>
+<div class="legal-service-selector" data-service="giustizia">
+<div class="legal-service-icon">
+<i class="bi bi-trophy"></i>
+</div>
+<h5 data-i18n="leg_h5_8">Giustizia Sportiva</h5>
+</div>
+<div class="legal-service-selector" data-service="assicurazioni">
+<div class="legal-service-icon">
+<i class="bi bi-umbrella"></i>
+</div>
+<h5 data-i18n="leg_h5_9">Assicurazioni</h5>
+</div>
+<div class="legal-service-selector" data-service="altri">
+<div class="legal-service-icon">
+<i class="bi bi-people"></i>
+</div>
+<h5 data-i18n="leg_h5_10">Altri Servizi</h5>
+</div>
+</div>
+<!-- Service content container - shows the selected service -->
+<div class="legal-service-content">
+<!-- Contrattualistica Content -->
+<div class="legal-content-item active" id="contrattualistica">
+<div class="legal-content-card">
+<div class="legal-content-header">
+<div class="legal-content-header-icon">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+<h3 class="ewp-title-light" data-i18n="leg_h3_11">CONTRATTUALISTICA</h3>
+</div>
+<div class="legal-content-body">
+<p data-i18n="leg_p_12">
                                         Negoziazione e redazione di contratti tipici del settore come compravendita,
                                         contratto di pensione, contratto di sponsorizzazione, fida, mezza fida, leasing,
                                         permuta, ecc...
                                     </p>
-                                    <div class="row mt-4">
-                                        <div class="col-md-6">
-                                            <div class="legal-feature d-flex align-items-start">
-                                                <i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
-                                                <span>Compravendita di cavalli</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-feature d-flex align-items-start">
-                                                <i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
-                                                <span>Contratti di pensione</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-feature d-flex align-items-start">
-                                                <i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
-                                                <span>Contratti di sponsorizzazione</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-feature d-flex align-items-start">
-                                                <i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
-                                                <span>Contratti di fida e mezza fida</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-feature d-flex align-items-start">
-                                                <i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
-                                                <span>Leasing di cavalli</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-feature d-flex align-items-start">
-                                                <i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
-                                                <span>Contratti di permuta</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Responsabilità Civile Content -->
-                        <div id="responsabilita" class="legal-content-item">
-                            <div class="legal-content-card">
-                                <div class="legal-content-header">
-                                    <div class="legal-content-header-icon">
-                                        <i class="bi bi-shield-check"></i>
-                                    </div>
-                                    <h3 class="ewp-title-light">RESPONSABILITÀ CIVILE</h3>
-                                </div>
-                                <div class="legal-content-body">
-                                    <p>
-                                        Prevenzione dei rischi e gestione dei contenziosi. Pratiche di responsabilità
+<div class="row mt-4">
+<div class="col-md-6">
+<div class="legal-feature d-flex align-items-start">
+<i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
+<span data-i18n="leg_span_13">Compravendita di cavalli</span>
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-feature d-flex align-items-start">
+<i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
+<span data-i18n="leg_span_14">Contratti di pensione</span>
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-feature d-flex align-items-start">
+<i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
+<span data-i18n="leg_span_15">Contratti di sponsorizzazione</span>
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-feature d-flex align-items-start">
+<i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
+<span data-i18n="leg_span_16">Contratti di fida e mezza fida</span>
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-feature d-flex align-items-start">
+<i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
+<span data-i18n="leg_span_17">Leasing di cavalli</span>
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-feature d-flex align-items-start">
+<i class="bi bi-check-circle-fill text-secondary me-2 mt-1"></i>
+<span data-i18n="leg_span_18">Contratti di permuta</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ResponsabilitÃ  Civile Content -->
+<div class="legal-content-item" id="responsabilita">
+<div class="legal-content-card">
+<div class="legal-content-header">
+<div class="legal-content-header-icon">
+<i class="bi bi-shield-check"></i>
+</div>
+<h3 class="ewp-title-light" data-i18n="leg_h3_19">RESPONSABILITÃ€ CIVILE</h3>
+</div>
+<div class="legal-content-body">
+<p data-i18n="leg_p_20">
+                                        Prevenzione dei rischi e gestione dei contenziosi. Pratiche di responsabilitÃ 
                                         civile professionale di tutte le figure coinvolte nel mondo equestre.
                                     </p>
-                                    <div class="legal-entities-grid mt-4">
-                                        <div class="legal-entity">
-                                            <i class="bi bi-building"></i>
-                                            <span>Centri ippici</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-person"></i>
-                                            <span>Proprietari di cavalli</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-heart-pulse"></i>
-                                            <span>Veterinari</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-mortarboard"></i>
-                                            <span>Istruttori</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-hammer"></i>
-                                            <span>Maniscalchi</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-trophy"></i>
-                                            <span>Cavalieri</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-flower1"></i>
-                                            <span>Allevatori</span>
-                                        </div>
-                                        <div class="legal-entity">
-                                            <i class="bi bi-umbrella"></i>
-                                            <span>Assicuratori</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Contenziosi Content -->
-                        <div id="contenziosi" class="legal-content-item">
-                            <div class="legal-content-card">
-                                <div class="legal-content-header">
-                                    <div class="legal-content-header-icon">
-                                        <i class="bi bi-cart"></i>
-                                    </div>
-                                    <h3 class="ewp-title-light">CONTENZIOSI DA COMPRAVENDITA</h3>
-                                </div>
-                                <div class="legal-content-body">
-                                    <p>
+<div class="legal-entities-grid mt-4">
+<div class="legal-entity">
+<i class="bi bi-building"></i>
+<span data-i18n="leg_span_21">Centri ippici</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-person"></i>
+<span data-i18n="leg_span_22">Proprietari di cavalli</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-heart-pulse"></i>
+<span data-i18n="leg_span_23">Veterinari</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-mortarboard"></i>
+<span data-i18n="leg_span_24">Istruttori</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-hammer"></i>
+<span data-i18n="leg_span_25">Maniscalchi</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-trophy"></i>
+<span data-i18n="leg_span_26">Cavalieri</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-flower1"></i>
+<span data-i18n="leg_span_27">Allevatori</span>
+</div>
+<div class="legal-entity">
+<i class="bi bi-umbrella"></i>
+<span data-i18n="leg_span_28">Assicuratori</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contenziosi Content -->
+<div class="legal-content-item" id="contenziosi">
+<div class="legal-content-card">
+<div class="legal-content-header">
+<div class="legal-content-header-icon">
+<i class="bi bi-cart"></i>
+</div>
+<h3 class="ewp-title-light" data-i18n="leg_h3_29">CONTENZIOSI DA COMPRAVENDITA</h3>
+</div>
+<div class="legal-content-body">
+<p data-i18n="leg_p_30">
                                         Assistenza e consulenza del cliente nei contenziosi relativi alla compravendita
                                         di cavalli.
                                     </p>
-                                    <div class="row mt-4">
-                                        <div class="col-md-6">
-                                            <div class="legal-process-step">
-                                                <div class="legal-process-number">1</div>
-                                                <h5 class="secondaryColor">Analisi Contrattuale</h5>
-                                                <p>Valutazione approfondita dei contratti e della documentazione
+<div class="row mt-4">
+<div class="col-md-6">
+<div class="legal-process-step">
+<div class="legal-process-number">1</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_31">Analisi Contrattuale</h5>
+<p data-i18n="leg_p_32">Valutazione approfondita dei contratti e della documentazione
                                                     relativa alla compravendita</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-process-step">
-                                                <div class="legal-process-number">2</div>
-                                                <h5 class="secondaryColor">Gestione Contestazioni</h5>
-                                                <p>Gestione delle contestazioni relative a vizi, difetti o inadempimenti
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-process-step">
+<div class="legal-process-number">2</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_33">Gestione Contestazioni</h5>
+<p data-i18n="leg_p_34">Gestione delle contestazioni relative a vizi, difetti o inadempimenti
                                                     contrattuali</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-process-step">
-                                                <div class="legal-process-number">3</div>
-                                                <h5 class="secondaryColor">Perizie Tecniche</h5>
-                                                <p>Coordinamento con veterinari specializzati per perizie tecniche</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="legal-process-step">
-                                                <div class="legal-process-number">4</div>
-                                                <h5 class="secondaryColor">Risoluzione Controversie</h5>
-                                                <p>Assistenza in sede giudiziale o stragiudiziale per la risoluzione
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-process-step">
+<div class="legal-process-number">3</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_35">Perizie Tecniche</h5>
+<p data-i18n="leg_p_36">Coordinamento con veterinari specializzati per perizie tecniche</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="legal-process-step">
+<div class="legal-process-number">4</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_37">Risoluzione Controversie</h5>
+<p data-i18n="leg_p_38">Assistenza in sede giudiziale o stragiudiziale per la risoluzione
                                                     delle controversie</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Giustizia Sportiva Content -->
-                        <div id="giustizia" class="legal-content-item">
-                            <div class="legal-content-card">
-                                <div class="legal-content-header">
-                                    <div class="legal-content-header-icon">
-                                        <i class="bi bi-trophy"></i>
-                                    </div>
-                                    <h3 class="ewp-title-light">ANTIDOPING E GIUSTIZIA SPORTIVA</h3>
-                                </div>
-                                <div class="legal-content-body">
-                                    <p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Giustizia Sportiva Content -->
+<div class="legal-content-item" id="giustizia">
+<div class="legal-content-card">
+<div class="legal-content-header">
+<div class="legal-content-header-icon">
+<i class="bi bi-trophy"></i>
+</div>
+<h3 class="ewp-title-light" data-i18n="leg_h3_39">ANTIDOPING E GIUSTIZIA SPORTIVA</h3>
+</div>
+<div class="legal-content-body">
+<p data-i18n="leg_p_40">
                                         Predisposizione di ricorsi ed istanze per tutelare le varie figure soggette alla
                                         Giustizia Sportiva specialmente sulla normativa anti-doping.
                                     </p>
-                                    <div class="bg-light rounded-3 p-4 mt-4">
-                                        <h5 class="secondaryColor mb-3">Aree di intervento:</h5>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <ul class="legal-list">
-                                                    <li>Consulenza sulla normativa antidoping</li>
-                                                    <li>Assistenza durante i controlli</li>
-                                                    <li>Difesa in procedimenti disciplinari</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul class="legal-list">
-                                                    <li>Ricorsi presso organi di giustizia sportiva</li>
-                                                    <li>Controversie relative a squalifiche</li>
-                                                    <li>Tutela del benessere animale</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Assicurazioni Content -->
-                        <div id="assicurazioni" class="legal-content-item">
-                            <div class="legal-content-card">
-                                <div class="legal-content-header">
-                                    <div class="legal-content-header-icon">
-                                        <i class="bi bi-umbrella"></i>
-                                    </div>
-                                    <h3 class="ewp-title-light">ASSICURAZIONI</h3>
-                                </div>
-                                <div class="legal-content-body">
-                                    <p>
+<div class="bg-light rounded-3 p-4 mt-4">
+<h5 class="secondaryColor mb-3" data-i18n="leg_h5_41">Aree di intervento:</h5>
+<div class="row">
+<div class="col-md-6">
+<ul class="legal-list">
+<li data-i18n="leg_li_42">Consulenza sulla normativa antidoping</li>
+<li data-i18n="leg_li_43">Assistenza durante i controlli</li>
+<li data-i18n="leg_li_44">Difesa in procedimenti disciplinari</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="legal-list">
+<li data-i18n="leg_li_45">Ricorsi presso organi di giustizia sportiva</li>
+<li data-i18n="leg_li_46">Controversie relative a squalifiche</li>
+<li data-i18n="leg_li_47">Tutela del benessere animale</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Assicurazioni Content -->
+<div class="legal-content-item" id="assicurazioni">
+<div class="legal-content-card">
+<div class="legal-content-header">
+<div class="legal-content-header-icon">
+<i class="bi bi-umbrella"></i>
+</div>
+<h3 class="ewp-title-light" data-i18n="leg_h3_48">ASSICURAZIONI</h3>
+</div>
+<div class="legal-content-body">
+<p data-i18n="leg_p_49">
                                         Rispetto a ciascuna tipologia di rischio, inerente il settore equestre, analisi
                                         e montaggio dei contratti vigenti nel settore.
                                     </p>
-                                    <p>
-                                        Li aggiorniamo perchè, nel tempo, abbiano contenuti sempre attuali, in base allo
-                                        sviluppo delle attività garantite, all'aumentare o diminuire dei rischi e
+<p data-i18n="leg_p_50">
+                                        Li aggiorniamo perchÃ¨, nel tempo, abbiano contenuti sempre attuali, in base allo
+                                        sviluppo delle attivitÃ  garantite, all'aumentare o diminuire dei rischi e
                                         all'evoluzione delle disposizioni legislative.
                                     </p>
-                                    <div class="legal-benefits mt-4">
-                                        <div class="legal-benefit-item">
-                                            <div class="legal-benefit-icon">
-                                                <i class="bi bi-search"></i>
-                                            </div>
-                                            <div class="legal-benefit-text">
-                                                <h5 class="secondaryColor">Analisi dei Rischi</h5>
-                                                <p>Valutazione approfondita dei rischi specifici del settore
+<div class="legal-benefits mt-4">
+<div class="legal-benefit-item">
+<div class="legal-benefit-icon">
+<i class="bi bi-search"></i>
+</div>
+<div class="legal-benefit-text">
+<h5 class="secondaryColor" data-i18n="leg_h5_51">Analisi dei Rischi</h5>
+<p data-i18n="leg_p_52">Valutazione approfondita dei rischi specifici del settore
                                                     equestre</p>
-                                            </div>
-                                        </div>
-                                        <div class="legal-benefit-item">
-                                            <div class="legal-benefit-icon">
-                                                <i class="bi bi-file-earmark-text"></i>
-                                            </div>
-                                            <div class="legal-benefit-text">
-                                                <h5 class="secondaryColor">Verifica Contrattuale</h5>
-                                                <p>Analisi e revisione delle polizze assicurative esistenti</p>
-                                            </div>
-                                        </div>
-                                        <div class="legal-benefit-item">
-                                            <div class="legal-benefit-icon">
-                                                <i class="bi bi-shield-check"></i>
-                                            </div>
-                                            <div class="legal-benefit-text">
-                                                <h5 class="secondaryColor">Aggiornamento Continuo</h5>
-                                                <p>Monitoraggio e adeguamento alle normative in evoluzione</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Altri Servizi Content -->
-                        <div id="altri" class="legal-content-item">
-                            <div class="legal-content-card">
-                                <div class="legal-content-header">
-                                    <div class="legal-content-header-icon">
-                                        <i class="bi bi-people"></i>
-                                    </div>
-                                    <h3 class="ewp-title-light">ALTRI SERVIZI LEGALI</h3>
-                                </div>
-                                <div class="legal-content-body">
-                                    <div class="accordion legal-accordion" id="altriServiziAccordion">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
-                                                    <i class="bi bi-person-workspace me-2"></i> GESTIONE DEL RAPPORTO DI
+</div>
+</div>
+<div class="legal-benefit-item">
+<div class="legal-benefit-icon">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+<div class="legal-benefit-text">
+<h5 class="secondaryColor" data-i18n="leg_h5_53">Verifica Contrattuale</h5>
+<p data-i18n="leg_p_54">Analisi e revisione delle polizze assicurative esistenti</p>
+</div>
+</div>
+<div class="legal-benefit-item">
+<div class="legal-benefit-icon">
+<i class="bi bi-shield-check"></i>
+</div>
+<div class="legal-benefit-text">
+<h5 class="secondaryColor" data-i18n="leg_h5_55">Aggiornamento Continuo</h5>
+<p data-i18n="leg_p_56">Monitoraggio e adeguamento alle normative in evoluzione</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Altri Servizi Content -->
+<div class="legal-content-item" id="altri">
+<div class="legal-content-card">
+<div class="legal-content-header">
+<div class="legal-content-header-icon">
+<i class="bi bi-people"></i>
+</div>
+<h3 class="ewp-title-light" data-i18n="leg_h3_57">ALTRI SERVIZI LEGALI</h3>
+</div>
+<div class="legal-content-body">
+<div class="accordion legal-accordion" id="altriServiziAccordion">
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_58" id="headingOne">
+<button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+<i class="bi bi-person-workspace me-2"></i> GESTIONE DEL RAPPORTO DI
                                                     LAVORO
                                                 </button>
-                                            </h2>
-                                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                                 aria-labelledby="headingOne" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Predisposizione e revisione dei contratti di lavoro in scuderia e
-                                                        nelle aziende agricole.<br>
+</h2>
+<div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#altriServiziAccordion" id="collapseOne">
+<div class="accordion-body">
+<p data-i18n="leg_p_59">Predisposizione e revisione dei contratti di lavoro in scuderia e
+                                                        nelle aziende agricole.<br/>
                                                         Strategie di prevenzione e gestione dei conflitti.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                        aria-expanded="false" aria-controls="collapseTwo">
-                                                    <i class="bi bi-heart-pulse me-2"></i> VETERINARI
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_60" id="headingTwo">
+<button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+<i class="bi bi-heart-pulse me-2"></i> VETERINARI
                                                 </button>
-                                            </h2>
-                                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingTwo" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Assistenza legale ai medici veterinari nelle questioni derivanti
-                                                        da responsabilità professionale e nella predisposizione dei
+</h2>
+<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseTwo">
+<div class="accordion-body">
+<p data-i18n="leg_p_61">Assistenza legale ai medici veterinari nelle questioni derivanti
+                                                        da responsabilitÃ  professionale e nella predisposizione dei
                                                         moduli di consenso informato.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                        aria-expanded="false" aria-controls="collapseThree">
-                                                    <i class="bi bi-truck me-2"></i> TRASPORTO DI EQUIDI
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_62" id="headingThree">
+<button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+<i class="bi bi-truck me-2"></i> TRASPORTO DI EQUIDI
                                                 </button>
-                                            </h2>
-                                            <div id="collapseThree" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingThree" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Consulenza e supporto nella gestione di problematiche derivanti
+</h2>
+<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseThree">
+<div class="accordion-body">
+<p data-i18n="leg_p_63">Consulenza e supporto nella gestione di problematiche derivanti
                                                         dalla normativa in materia di trasporti di equidi, anche con
-                                                        riferimento alle responsabilità assicurative e penali.<br>
+                                                        riferimento alle responsabilitÃ  assicurative e penali.<br/>
                                                         Gestione dei contenziosi con pubbliche amministrazioni e
                                                         compagnie assicurative.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingFour">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                        aria-expanded="false" aria-controls="collapseFour">
-                                                    <i class="bi bi-card-checklist me-2"></i> PRATICHE INTESTAZIONE
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_64" id="headingFour">
+<button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+<i class="bi bi-card-checklist me-2"></i> PRATICHE INTESTAZIONE
                                                     CAVALLI
                                                 </button>
-                                            </h2>
-                                            <div id="collapseFour" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingFour" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Assistenza e supporto nella regolarizzazione delle pratiche di
+</h2>
+<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseFour">
+<div class="accordion-body">
+<p data-i18n="leg_p_65">Assistenza e supporto nella regolarizzazione delle pratiche di
                                                         intestazione e di identificazione dei cavalli presso APA, MIPAF
-                                                        e dei passaporti sportivi FISE, FE e nei passaggi di proprietà
+                                                        e dei passaporti sportivi FISE, FE e nei passaggi di proprietÃ 
                                                         degli equidi.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingFive">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                        aria-expanded="false" aria-controls="collapseFour">
-                                                    <i class="bi bi-card-checklist me-2"></i> RISORSE UMANE - PERSONALE
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_66" id="headingFive">
+<button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+<i class="bi bi-card-checklist me-2"></i> RISORSE UMANE - PERSONALE
                                                 </button>
-                                            </h2>
-                                            <div id="collapseFive" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingFive" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Gestione delle risorse umane e del personale in tutti i suoi
+</h2>
+<div aria-labelledby="headingFive" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseFive">
+<div class="accordion-body">
+<p data-i18n="leg_p_67">Gestione delle risorse umane e del personale in tutti i suoi
                                                         ambiti.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingSix">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                                        aria-expanded="false" aria-controls="collapseFive">
-                                                    <i class="bi bi-file-earmark-text me-2"></i> STATUTI ED ATTI
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_68" id="headingSix">
+<button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseSix" data-bs-toggle="collapse" type="button">
+<i class="bi bi-file-earmark-text me-2"></i> STATUTI ED ATTI
                                                     COSTITUTIVI
                                                 </button>
-                                            </h2>
-                                            <div id="collapseSix" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingSix" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Consulenza nella predisposizione e nella revisione degli statuti
+</h2>
+<div aria-labelledby="headingSix" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseSix">
+<div class="accordion-body">
+<p data-i18n="leg_p_69">Consulenza nella predisposizione e nella revisione degli statuti
                                                         e degli atti costitutivi dei Circoli Ippici e delle A.S.D. al
                                                         fine di contenere i numerosi rischi a carico di gestori e
                                                         amministratori.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingSeven">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                                                        aria-expanded="false" aria-controls="collapseFive">
-                                                    <i class="bi bi-file-earmark-text me-2"></i> ACCORDI DI COMPROPRIETÀ
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_70" id="headingSeven">
+<button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseSeven" data-bs-toggle="collapse" type="button">
+<i class="bi bi-file-earmark-text me-2"></i> ACCORDI DI COMPROPRIETÃ€
                                                 </button>
-                                            </h2>
-                                            <div id="collapseSeven" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingSeven" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Predisposizione e negoziazione di contratti di comproprietà tra
-                                                        proprietari, cavalieri, allevatori, società sportive e
+</h2>
+<div aria-labelledby="headingSeven" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseSeven">
+<div class="accordion-body">
+<p data-i18n="leg_p_71">Predisposizione e negoziazione di contratti di comproprietÃ  tra
+                                                        proprietari, cavalieri, allevatori, societÃ  sportive e
                                                         sponsor.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingEight">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseEight"
-                                                        aria-expanded="false" aria-controls="collapseFive">
-                                                    <i class="bi bi-file-earmark-text me-2"></i> SEMINARI FORMATIVI
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_72" id="headingEight">
+<button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseEight" data-bs-toggle="collapse" type="button">
+<i class="bi bi-file-earmark-text me-2"></i> SEMINARI FORMATIVI
                                                     PERSONALIZZATI
                                                 </button>
-                                            </h2>
-                                            <div id="collapseEight" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingEight" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Organizzazione di seminari personalizzati per professionisti,
+</h2>
+<div aria-labelledby="headingEight" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseEight">
+<div class="accordion-body">
+<p data-i18n="leg_p_73">Organizzazione di seminari personalizzati per professionisti,
                                                         associazioni ed enti sportivi del settore.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingNine">
-                                                <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseNine"
-                                                        aria-expanded="false" aria-controls="collapseFive">
-                                                    <i class="bi bi-file-earmark-text me-2"></i> ARBITRATI
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" data-i18n="leg_h2_74" id="headingNine">
+<button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseNine" data-bs-toggle="collapse" type="button">
+<i class="bi bi-file-earmark-text me-2"></i> ARBITRATI
                                                 </button>
-                                            </h2>
-                                            <div id="collapseNine" class="accordion-collapse collapse"
-                                                 aria-labelledby="headingNine" data-bs-parent="#altriServiziAccordion">
-                                                <div class="accordion-body">
-                                                    <p>Consulenza e assistenza per procedure di arbitrato relative a
+</h2>
+<div aria-labelledby="headingNine" class="accordion-collapse collapse" data-bs-parent="#altriServiziAccordion" id="collapseNine">
+<div class="accordion-body">
+<p data-i18n="leg_p_75">Consulenza e assistenza per procedure di arbitrato relative a
                                                         qualsiasi controversia inerente l'equitazione e i cavalli.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!--&lt;!&ndash; Sezione Processo Legale - Timeline verticale &ndash;&gt;
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--&lt;!&ndash; Sezione Processo Legale - Timeline verticale &ndash;&gt;
     <section class="legal-process-section py-5">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="ewp-section-title ewp-title-center mb-4">IL NOSTRO APPROCCIO</h2>
                     <p class="w-lg-75 mx-auto">
-                        L'approccio preventivo è fondamentale: la consulenza legale tempestiva permette di evitare contenziosi lunghi e costosi
+                        L'approccio preventivo Ã¨ fondamentale: la consulenza legale tempestiva permette di evitare contenziosi lunghi e costosi
                     </p>
                 </div>
             </div>
@@ -870,7 +794,7 @@
                             </div>
                             <h4 class="secondaryColor">Prevenzione</h4>
                             <p>
-                                Analizziamo i rischi specifici della tua attività nel settore equestre e predisponiamo le misure preventive necessarie, sia contrattuali che operative.
+                                Analizziamo i rischi specifici della tua attivitÃ  nel settore equestre e predisponiamo le misure preventive necessarie, sia contrattuali che operative.
                             </p>
                         </div>
                     </div>
@@ -884,7 +808,7 @@
                             </div>
                             <h4 class="secondaryColor">Consulenza</h4>
                             <p>
-                                Offriamo consulenza specialistica in tutti gli aspetti legali del settore equestre, dalla contrattualistica alla responsabilità civile, dalla giustizia sportiva alla normativa sul trasporto.
+                                Offriamo consulenza specialistica in tutti gli aspetti legali del settore equestre, dalla contrattualistica alla responsabilitÃ  civile, dalla giustizia sportiva alla normativa sul trasporto.
                             </p>
                         </div>
                     </div>
@@ -920,152 +844,138 @@
             </div>
         </div>
     </section>-->
-
-
-    <!-- Sezione Il nostro Approccio - con elementi quadrati interattivi -->
-    <section class="legal-approach-section ">
-        <div class="container pt-5">
-            <div class="row mb-5">
-                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">IL NOSTRO APPROCCIO</h2>
-                    <p class="w-lg-75 mx-auto">
-                        L'approccio preventivo è fondamentale: la consulenza legale tempestiva permette di evitare
+<!-- Sezione Il nostro Approccio - con elementi quadrati interattivi -->
+<section class="legal-approach-section">
+<div class="container pt-5">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="leg_h2_76">IL NOSTRO APPROCCIO</h2>
+<p class="w-lg-75 mx-auto" data-i18n="leg_p_77">
+                        L'approccio preventivo Ã¨ fondamentale: la consulenza legale tempestiva permette di evitare
                         contenziosi lunghi e costosi
                     </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <!-- Processo interattivo con esagoni -->
-                    <div class="approach-process-container">
-                        <div class="approach-process-flow">
-                            <!-- Linee di connessione -->
-                            <div class="approach-connection-lines"></div>
-
-                            <!-- Step 1: Prevenzione -->
-                            <div class="approach-step" data-step="1">
-                                <div class="approach-hexagon">
-                                    <div class="approach-hexagon-inner">
-                                        <div class="approach-icon-wrapper">
-                                            <i class="bi bi-shield-check"></i>
-                                        </div>
-                                        <h4>Prevenzione</h4>
-                                    </div>
-                                </div>
-                                <div class="approach-content">
-                                    <p>Analizziamo i rischi specifici della tua attività nel settore equestre e
+</div>
+</div>
+<div class="row">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<!-- Processo interattivo con esagoni -->
+<div class="approach-process-container">
+<div class="approach-process-flow">
+<!-- Linee di connessione -->
+<div class="approach-connection-lines"></div>
+<!-- Step 1: Prevenzione -->
+<div class="approach-step" data-step="1">
+<div class="approach-hexagon">
+<div class="approach-hexagon-inner">
+<div class="approach-icon-wrapper">
+<i class="bi bi-shield-check"></i>
+</div>
+<h4 data-i18n="leg_h4_78">Prevenzione</h4>
+</div>
+</div>
+<div class="approach-content">
+<p data-i18n="leg_p_79">Analizziamo i rischi specifici della tua attivitÃ  nel settore equestre e
                                         predisponiamo le misure preventive necessarie, sia contrattuali che
                                         operative.</p>
-                                    <ul class="approach-features">
-                                        <li><i class="bi bi-check-circle-fill"></i> Analisi dei rischi</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Predisposizione contratti</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Misure organizzative</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Step 2: Consulenza -->
-                            <div class="approach-step" data-step="2">
-                                <div class="approach-hexagon">
-                                    <div class="approach-hexagon-inner">
-                                        <div class="approach-icon-wrapper">
-                                            <i class="bi bi-file-earmark-text"></i>
-                                        </div>
-                                        <h4>Consulenza</h4>
-                                    </div>
-                                </div>
-                                <div class="approach-content">
-                                    <p>Offriamo consulenza specialistica in tutti gli aspetti legali del settore
-                                        equestre, dalla contrattualistica alla responsabilità civile, dalla giustizia
+<ul class="approach-features">
+<li data-i18n="leg_li_80"><i class="bi bi-check-circle-fill"></i> Analisi dei rischi</li>
+<li data-i18n="leg_li_81"><i class="bi bi-check-circle-fill"></i> Predisposizione contratti</li>
+<li data-i18n="leg_li_82"><i class="bi bi-check-circle-fill"></i> Misure organizzative</li>
+</ul>
+</div>
+</div>
+<!-- Step 2: Consulenza -->
+<div class="approach-step" data-step="2">
+<div class="approach-hexagon">
+<div class="approach-hexagon-inner">
+<div class="approach-icon-wrapper">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+<h4 data-i18n="leg_h4_83">Consulenza</h4>
+</div>
+</div>
+<div class="approach-content">
+<p data-i18n="leg_p_84">Offriamo consulenza specialistica in tutti gli aspetti legali del settore
+                                        equestre, dalla contrattualistica alla responsabilitÃ  civile, dalla giustizia
                                         sportiva alla normativa sul trasporto.</p>
-                                    <ul class="approach-features">
-                                        <li><i class="bi bi-check-circle-fill"></i> Assistenza specializzata</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Normativa settoriale</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Competenza multilinguistica</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Step 3: Assistenza -->
-                            <div class="approach-step" data-step="3">
-                                <div class="approach-hexagon">
-                                    <div class="approach-hexagon-inner">
-                                        <div class="approach-icon-wrapper">
-                                            <i class="bi bi-clipboard-check"></i>
-                                        </div>
-                                        <h4>Assistenza</h4>
-                                    </div>
-                                </div>
-                                <div class="approach-content">
-                                    <p>In caso di controversie o contenziosi, ti assistiamo sia in fase stragiudiziale
+<ul class="approach-features">
+<li data-i18n="leg_li_85"><i class="bi bi-check-circle-fill"></i> Assistenza specializzata</li>
+<li data-i18n="leg_li_86"><i class="bi bi-check-circle-fill"></i> Normativa settoriale</li>
+<li data-i18n="leg_li_87"><i class="bi bi-check-circle-fill"></i> Competenza multilinguistica</li>
+</ul>
+</div>
+</div>
+<!-- Step 3: Assistenza -->
+<div class="approach-step" data-step="3">
+<div class="approach-hexagon">
+<div class="approach-hexagon-inner">
+<div class="approach-icon-wrapper">
+<i class="bi bi-clipboard-check"></i>
+</div>
+<h4 data-i18n="leg_h4_88">Assistenza</h4>
+</div>
+</div>
+<div class="approach-content">
+<p data-i18n="leg_p_89">In caso di controversie o contenziosi, ti assistiamo sia in fase stragiudiziale
                                         che giudiziale, con l'obiettivo di risolvere efficacemente ogni
                                         problematica.</p>
-                                    <ul class="approach-features">
-                                        <li><i class="bi bi-check-circle-fill"></i> Risoluzione stragiudiziale</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Assistenza in giudizio</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Coordinamento con consulenti tecnici
+<ul class="approach-features">
+<li data-i18n="leg_li_90"><i class="bi bi-check-circle-fill"></i> Risoluzione stragiudiziale</li>
+<li data-i18n="leg_li_91"><i class="bi bi-check-circle-fill"></i> Assistenza in giudizio</li>
+<li data-i18n="leg_li_92"><i class="bi bi-check-circle-fill"></i> Coordinamento con consulenti tecnici
                                         </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Step 4: Formazione -->
-                            <div class="approach-step" data-step="4">
-                                <div class="approach-hexagon">
-                                    <div class="approach-hexagon-inner">
-                                        <div class="approach-icon-wrapper">
-                                            <i class="bi bi-book"></i>
-                                        </div>
-                                        <h4>Formazione</h4>
-                                    </div>
-                                </div>
-                                <div class="approach-content">
-                                    <p>Organizziamo seminari formativi personalizzati per professionisti e operatori del
+</ul>
+</div>
+</div>
+<!-- Step 4: Formazione -->
+<div class="approach-step" data-step="4">
+<div class="approach-hexagon">
+<div class="approach-hexagon-inner">
+<div class="approach-icon-wrapper">
+<i class="bi bi-book"></i>
+</div>
+<h4 data-i18n="leg_h4_93">Formazione</h4>
+</div>
+</div>
+<div class="approach-content">
+<p data-i18n="leg_p_94">Organizziamo seminari formativi personalizzati per professionisti e operatori del
                                         settore, per diffondere la cultura della prevenzione legale nel mondo
                                         equestre.</p>
-                                    <ul class="approach-features">
-                                        <li><i class="bi bi-check-circle-fill"></i> Seminari personalizzati</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Materiale informativo</li>
-                                        <li><i class="bi bi-check-circle-fill"></i> Aggiornamenti normativi</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Sezione Quote -->
-    <section class="py-5" style="background-color: var(--TertiaryColor);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="legal-big-quote">
-                        <i class="bi bi-quote legal-big-quote-icon"></i>
-                        <blockquote class="legal-big-quote-text">
-                            <p class="fs-3 fw-light">
-                                In tutte le professioni ed attività, tante cause legali lunghe e costose potrebbero
+<ul class="approach-features">
+<li data-i18n="leg_li_95"><i class="bi bi-check-circle-fill"></i> Seminari personalizzati</li>
+<li data-i18n="leg_li_96"><i class="bi bi-check-circle-fill"></i> Materiale informativo</li>
+<li data-i18n="leg_li_97"><i class="bi bi-check-circle-fill"></i> Aggiornamenti normativi</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Quote -->
+<section class="py-5" style="background-color: var(--TertiaryColor);">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10" data-aos="fade-up" data-aos-duration="1000">
+<div class="legal-big-quote">
+<i class="bi bi-quote legal-big-quote-icon"></i>
+<blockquote class="legal-big-quote-text">
+<p class="fs-3 fw-light" data-i18n="leg_p_98">
+                                In tutte le professioni ed attivitÃ , tante cause legali lunghe e costose potrebbero
                                 essere evitate utilizzando analisi e prevenzione dei rischi.
                             </p>
-                            <footer class="blockquote-footer mt-3 text-end">
-                                <cite>Team Servizi Legali</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!--&lt;!&ndash; Sezione Competenza Internazionale Migliorata &ndash;&gt;
+<footer class="blockquote-footer mt-3 text-end">
+<cite>Team Servizi Legali</cite>
+</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--&lt;!&ndash; Sezione Competenza Internazionale Migliorata &ndash;&gt;
     <section class="legal-international-section py-5">
         <div class="container">
             <div class="row">
@@ -1074,7 +984,7 @@
                     <p class="w-lg-75 mx-auto">
                         La nostra consulenza e assistenza legale sono effettuate da specialisti del settore,
                         coadiuvati da giuristi di madrelingua inglese, francese e araba che assistono i clienti
-                        a 360 gradi nell'attività burocratica in Italia ed all'Estero.
+                        a 360 gradi nell'attivitÃ  burocratica in Italia ed all'Estero.
                     </p>
                 </div>
             </div>
@@ -1214,7 +1124,7 @@
                                     </div>
                                     <div class="feature-content">
                                         <h5 class="secondaryColor">Documentazione Internazionale</h5>
-                                        <p>Gestione completa della documentazione legale in più lingue, conforme alle normative locali.</p>
+                                        <p>Gestione completa della documentazione legale in piÃ¹ lingue, conforme alle normative locali.</p>
                                     </div>
                                 </div>
 
@@ -1234,10 +1144,7 @@
             </div>
         </div>
     </section>-->
-
-
-
-    <!--&lt;!&ndash; Sezione Competenza Internazionale Semplificata &ndash;&gt;
+<!--&lt;!&ndash; Sezione Competenza Internazionale Semplificata &ndash;&gt;
     <section class="legal-international-section py-5">
         <div class="container">
             <div class="row">
@@ -1246,7 +1153,7 @@
                     <p class="w-lg-75 mx-auto">
                         La nostra consulenza e assistenza legale sono effettuate da specialisti del settore,
                         coadiuvati da giuristi di madrelingua inglese, francese e araba che assistono i clienti
-                        a 360 gradi nell'attività burocratica in Italia ed all'Estero.
+                        a 360 gradi nell'attivitÃ  burocratica in Italia ed all'Estero.
                     </p>
                 </div>
             </div>
@@ -1305,7 +1212,7 @@
                             </div>
                             <div>
                                 <h5>Documentazione Internazionale</h5>
-                                <p>Gestione completa della documentazione legale in più lingue, conforme alle normative locali.</p>
+                                <p>Gestione completa della documentazione legale in piÃ¹ lingue, conforme alle normative locali.</p>
                             </div>
                         </div>
                     </div>
@@ -1347,7 +1254,7 @@
                                 <div class="image-caption">Sede di Firenze</div>
                             </div>
                             <div class="region-description">
-                                <p>La nostra sede principale in Italia offre una gamma completa di servizi legali specializzati nel settore equestre. Il nostro team di esperti coordina tutte le attività internazionali, garantendo un servizio di qualità in tutto il mondo.</p>
+                                <p>La nostra sede principale in Italia offre una gamma completa di servizi legali specializzati nel settore equestre. Il nostro team di esperti coordina tutte le attivitÃ  internazionali, garantendo un servizio di qualitÃ  in tutto il mondo.</p>
 
                                 <div class="region-services">
                                     <h5>Servizi principali:</h5>
@@ -1423,376 +1330,343 @@
             </div>
         </div>
     </section>-->
-
-
-
-    <!-- Sezione Competenza Internazionale Ibrida -->
-    <section class="legal-international-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title mb-4">COMPETENZA INTERNAZIONALE</h2>
-                    <p class="w-lg-75 mx-auto">
+<!-- Sezione Competenza Internazionale Ibrida -->
+<section class="legal-international-section py-5">
+<div class="container">
+<div class="row">
+<div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title mb-4" data-i18n="leg_h2_99">COMPETENZA INTERNAZIONALE</h2>
+<p class="w-lg-75 mx-auto" data-i18n="leg_p_100">
                         La nostra consulenza e assistenza legale sono effettuate da specialisti del settore,
                         coadiuvati da giuristi di madrelingua inglese, francese e araba che assistono i clienti
-                        a 360 gradi nell'attività burocratica in Italia ed all'Estero.
+                        a 360 gradi nell'attivitÃ  burocratica in Italia ed all'Estero.
                     </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- PARTE SINISTRA: Contatori statistici animati e card feature (originale) -->
-                <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="international-stats-container">
-                        <!-- Contatori statistici animati -->
-                        <div class="international-counter-row">
-                            <div class="international-counter-item">
-                                <div class="counter-circle">
-                                    <div class="counter-value">
-                                        <span class="counter-number" data-count="15">0</span>
-                                        <span class="counter-plus">+</span>
+</div>
+</div>
+<div class="row">
+<!-- PARTE SINISTRA: Contatori statistici animati e card feature (originale) -->
+<div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
+<div class="international-stats-container">
+<!-- Contatori statistici animati -->
+<div class="international-counter-row">
+<div class="international-counter-item">
+<div class="counter-circle">
+<div class="counter-value">
+<span class="counter-number" data-count="15">0</span>
+<span class="counter-plus">+</span>
+</div>
+</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_101">Paesi Serviti</h5>
+</div>
+<div class="international-counter-item">
+<div class="counter-circle">
+<div class="counter-value">
+<span class="counter-number" data-count="8">0</span>
+<span class="counter-plus">+</span>
+</div>
+</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_102">Lingue</h5>
+</div>
+<div class="international-counter-item">
+<div class="counter-circle">
+<div class="counter-value">
+<span class="counter-number" data-count="120">0</span>
+<span class="counter-plus">+</span>
+</div>
+</div>
+<h5 class="secondaryColor" data-i18n="leg_h5_103">Partner</h5>
+</div>
+</div>
+<!-- Caratteristiche del servizio internazionale -->
+<div class="international-features">
+<div class="international-feature-row">
+<div class="international-feature">
+<div class="feature-icon">
+<i class="bi bi-globe2"></i>
+</div>
+<div class="feature-content">
+<h5 class="secondaryColor" data-i18n="leg_h5_104">Supporto Multilingue</h5>
+<p data-i18n="leg_p_105">Assistenza legale in italiano, inglese, francese e arabo per una comunicazione efficace e senza barriere.</p>
+</div>
+</div>
+<div class="international-feature">
+<div class="feature-icon">
+<i class="bi bi-briefcase"></i>
+</div>
+<div class="feature-content">
+<h5 class="secondaryColor" data-i18n="leg_h5_106">Normative Internazionali</h5>
+<p data-i18n="leg_p_107">Conoscenza approfondita delle normative equestri e del diritto commerciale internazionale.</p>
+</div>
+</div>
+<div class="international-feature">
+<div class="feature-icon">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+<div class="feature-content">
+<h5 class="secondaryColor" data-i18n="leg_h5_108">Documentazione Internazionale</h5>
+<p data-i18n="leg_p_109">Gestione completa della documentazione legale in piÃ¹ lingue, conforme alle normative locali.</p>
+</div>
+</div>
+<div class="international-feature">
+<div class="feature-icon">
+<i class="bi bi-people"></i>
+</div>
+<div class="feature-content">
+<h5 class="secondaryColor" data-i18n="leg_h5_110">Network Globale</h5>
+<p data-i18n="leg_p_111">Rete di professionisti qualificati in diversi paesi per assistenza locale specializzata.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PARTE DESTRA: Tab navigation -->
+<div class="col-lg-7 order-lg-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="simple-tab-container">
+<!-- Tab navigation -->
+<div class="simple-tab-nav">
+<div class="row">
+<div class="col-4">
+<button class="simple-tab-button active" data-target="italia">
+<div class="tab-icon"><i class="bi bi-building"></i></div>
+<div class="tab-label">Italia</div>
+</button>
+</div>
+<div class="col-4">
+<button class="simple-tab-button" data-target="europa">
+<div class="tab-icon"><i class="bi bi-globe-europe-africa"></i></div>
+<div class="tab-label">Europa</div>
+</button>
+</div>
+<div class="col-4">
+<button class="simple-tab-button" data-target="mena">
+<div class="tab-icon"><i class="bi bi-sun"></i></div>
+<div class="tab-label">MENA</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Contenuto dei tab -->
+<div class="simple-tab-content">
+<div class="tab-pane active" id="italia">
+<div class="region-header">
+<h4 data-i18n="leg_h4_112">Italia <span class="region-badge" data-i18n="leg_span_113">Sede Principale</span></h4>
+</div>
+<div class="region-image">
+<img alt="Italia - Sede Principale" class="img-fluid" src="images/bg_img.jpg"/>
+<div class="image-caption">Sede di Firenze</div>
+</div>
+<div class="region-description">
+<p data-i18n="leg_p_114">La nostra sede principale in Italia offre una gamma completa di servizi legali specializzati nel settore equestre. Il nostro team di esperti coordina tutte le attivitÃ  internazionali, garantendo un servizio di qualitÃ  in tutto il mondo.</p>
+<div class="region-services">
+<h5 data-i18n="leg_h5_115">Servizi principali:</h5>
+<ul>
+<li data-i18n="leg_li_116">Centro di eccellenza legale</li>
+<li data-i18n="leg_li_117">Esperti di diritto equestre</li>
+<li data-i18n="leg_li_118">Assistenza completa in italiano</li>
+<li data-i18n="leg_li_119">Coordinamento internazionale</li>
+</ul>
+</div>
+<div class="region-contact">
+<i class="bi bi-geo-alt"></i> Borgo San Frediano 4, 50124 Firenze (FI)
                                     </div>
-                                </div>
-                                <h5 class="secondaryColor">Paesi Serviti</h5>
-                            </div>
-                            <div class="international-counter-item">
-                                <div class="counter-circle">
-                                    <div class="counter-value">
-                                        <span class="counter-number" data-count="8">0</span>
-                                        <span class="counter-plus">+</span>
+</div>
+</div>
+<div class="tab-pane" id="europa">
+<div class="region-header">
+<h4 data-i18n="leg_h4_120">Europa <span class="region-badge" data-i18n="leg_span_121">Partner Europei</span></h4>
+</div>
+<div class="region-image">
+<img alt="Europa - Partner Europei" class="img-fluid" src="images/bg_img.jpg"/>
+<div class="image-caption">Rete Europea</div>
+</div>
+<div class="region-description">
+<p data-i18n="leg_p_122">La nostra rete europea di partner legali garantisce assistenza completa in tutti i principali paesi dell'Unione Europea, con particolare competenza nelle normative transfrontaliere del settore equestre.</p>
+<div class="region-services">
+<h5 data-i18n="leg_h5_123">Servizi principali:</h5>
+<ul>
+<li data-i18n="leg_li_124">Competenza nelle normative UE</li>
+<li data-i18n="leg_li_125">Assistenza multilingue</li>
+<li data-i18n="leg_li_126">Rete di partner europei</li>
+<li data-i18n="leg_li_127">Coordinamento transfrontaliero</li>
+</ul>
+</div>
+<div class="region-contact">
+<i class="bi bi-globe"></i> Presente nei principali paesi europei
                                     </div>
-                                </div>
-                                <h5 class="secondaryColor">Lingue</h5>
-                            </div>
-                            <div class="international-counter-item">
-                                <div class="counter-circle">
-                                    <div class="counter-value">
-                                        <span class="counter-number" data-count="120">0</span>
-                                        <span class="counter-plus">+</span>
+</div>
+</div>
+<div class="tab-pane" id="mena">
+<div class="region-header">
+<h4 data-i18n="leg_h4_128">MENA <span class="region-badge" data-i18n="leg_span_129">Partner Internazionali</span></h4>
+</div>
+<div class="region-image">
+<img alt="MENA - Partner Internazionali" class="img-fluid" src="images/bg_img.jpg"/>
+<div class="image-caption">Medio Oriente e Nord Africa</div>
+</div>
+<div class="region-description">
+<p data-i18n="leg_p_130">La nostra presenza nel Medio Oriente e Nord Africa permette di offrire servizi legali specializzati in mercati in rapida crescita per il settore equestre, con supporto linguistico e conoscenza approfondita delle normative locali.</p>
+<div class="region-services">
+<h5 data-i18n="leg_h5_131">Servizi principali:</h5>
+<ul>
+<li data-i18n="leg_li_132">Supporto in lingua araba</li>
+<li data-i18n="leg_li_133">Consulenti specializzati</li>
+<li data-i18n="leg_li_134">Conoscenza norme locali</li>
+<li data-i18n="leg_li_135">Partnership strategiche</li>
+</ul>
+</div>
+<div class="region-contact">
+<i class="bi bi-geo-alt"></i> ??? Esempio:Dubai, Emirati Arabi Uniti????
                                     </div>
-                                </div>
-                                <h5 class="secondaryColor">Partner</h5>
-                            </div>
-                        </div>
-
-                        <!-- Caratteristiche del servizio internazionale -->
-                        <div class="international-features">
-                            <div class="international-feature-row">
-                                <div class="international-feature">
-                                    <div class="feature-icon">
-                                        <i class="bi bi-globe2"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h5 class="secondaryColor">Supporto Multilingue</h5>
-                                        <p>Assistenza legale in italiano, inglese, francese e arabo per una comunicazione efficace e senza barriere.</p>
-                                    </div>
-                                </div>
-
-                                <div class="international-feature">
-                                    <div class="feature-icon">
-                                        <i class="bi bi-briefcase"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h5 class="secondaryColor">Normative Internazionali</h5>
-                                        <p>Conoscenza approfondita delle normative equestri e del diritto commerciale internazionale.</p>
-                                    </div>
-                                </div>
-
-                                <div class="international-feature">
-                                    <div class="feature-icon">
-                                        <i class="bi bi-file-earmark-text"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h5 class="secondaryColor">Documentazione Internazionale</h5>
-                                        <p>Gestione completa della documentazione legale in più lingue, conforme alle normative locali.</p>
-                                    </div>
-                                </div>
-
-                                <div class="international-feature">
-                                    <div class="feature-icon">
-                                        <i class="bi bi-people"></i>
-                                    </div>
-                                    <div class="feature-content">
-                                        <h5 class="secondaryColor">Network Globale</h5>
-                                        <p>Rete di professionisti qualificati in diversi paesi per assistenza locale specializzata.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PARTE DESTRA: Tab navigation -->
-                <div class="col-lg-7 order-lg-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="simple-tab-container">
-                        <!-- Tab navigation -->
-                        <div class="simple-tab-nav">
-                            <div class="row">
-                                <div class="col-4">
-                                    <button class="simple-tab-button active" data-target="italia">
-                                        <div class="tab-icon"><i class="bi bi-building"></i></div>
-                                        <div class="tab-label">Italia</div>
-                                    </button>
-                                </div>
-                                <div class="col-4">
-                                    <button class="simple-tab-button" data-target="europa">
-                                        <div class="tab-icon"><i class="bi bi-globe-europe-africa"></i></div>
-                                        <div class="tab-label">Europa</div>
-                                    </button>
-                                </div>
-                                <div class="col-4">
-                                    <button class="simple-tab-button" data-target="mena">
-                                        <div class="tab-icon"><i class="bi bi-sun"></i></div>
-                                        <div class="tab-label">MENA</div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Contenuto dei tab -->
-                        <div class="simple-tab-content">
-                            <div class="tab-pane active" id="italia">
-                                <div class="region-header">
-                                    <h4>Italia <span class="region-badge">Sede Principale</span></h4>
-                                </div>
-                                <div class="region-image">
-                                    <img src="images/bg_img.jpg" alt="Italia - Sede Principale" class="img-fluid">
-                                    <div class="image-caption">Sede di Firenze</div>
-                                </div>
-                                <div class="region-description">
-                                    <p>La nostra sede principale in Italia offre una gamma completa di servizi legali specializzati nel settore equestre. Il nostro team di esperti coordina tutte le attività internazionali, garantendo un servizio di qualità in tutto il mondo.</p>
-
-                                    <div class="region-services">
-                                        <h5>Servizi principali:</h5>
-                                        <ul>
-                                            <li>Centro di eccellenza legale</li>
-                                            <li>Esperti di diritto equestre</li>
-                                            <li>Assistenza completa in italiano</li>
-                                            <li>Coordinamento internazionale</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="region-contact">
-                                        <i class="bi bi-geo-alt"></i> Borgo San Frediano 4, 50124 Firenze (FI)
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane" id="europa">
-                                <div class="region-header">
-                                    <h4>Europa <span class="region-badge">Partner Europei</span></h4>
-                                </div>
-                                <div class="region-image">
-                                    <img src="images/bg_img.jpg" alt="Europa - Partner Europei" class="img-fluid">
-                                    <div class="image-caption">Rete Europea</div>
-                                </div>
-                                <div class="region-description">
-                                    <p>La nostra rete europea di partner legali garantisce assistenza completa in tutti i principali paesi dell'Unione Europea, con particolare competenza nelle normative transfrontaliere del settore equestre.</p>
-
-                                    <div class="region-services">
-                                        <h5>Servizi principali:</h5>
-                                        <ul>
-                                            <li>Competenza nelle normative UE</li>
-                                            <li>Assistenza multilingue</li>
-                                            <li>Rete di partner europei</li>
-                                            <li>Coordinamento transfrontaliero</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="region-contact">
-                                        <i class="bi bi-globe"></i> Presente nei principali paesi europei
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane" id="mena">
-                                <div class="region-header">
-                                    <h4>MENA <span class="region-badge">Partner Internazionali</span></h4>
-                                </div>
-                                <div class="region-image">
-                                    <img src="images/bg_img.jpg" alt="MENA - Partner Internazionali" class="img-fluid">
-                                    <div class="image-caption">Medio Oriente e Nord Africa</div>
-                                </div>
-                                <div class="region-description">
-                                    <p>La nostra presenza nel Medio Oriente e Nord Africa permette di offrire servizi legali specializzati in mercati in rapida crescita per il settore equestre, con supporto linguistico e conoscenza approfondita delle normative locali.</p>
-
-                                    <div class="region-services">
-                                        <h5>Servizi principali:</h5>
-                                        <ul>
-                                            <li>Supporto in lingua araba</li>
-                                            <li>Consulenti specializzati</li>
-                                            <li>Conoscenza norme locali</li>
-                                            <li>Partnership strategiche</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="region-contact">
-                                        <i class="bi bi-geo-alt"></i> ??? Esempio:Dubai, Emirati Arabi Uniti????
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <!-- Sezione Call to Action  -->
-    <section class="cta-section py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title mb-4">CONSULENZA LEGALE SPECIALIZZATA</h2>
-                    <p class="mb-4">
-                        I nostri esperti sono pronti ad assisterti con competenza e professionalità per rispondere
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Call to Action  -->
+<section class="cta-section py-5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title mb-4" data-i18n="leg_h2_136">CONSULENZA LEGALE SPECIALIZZATA</h2>
+<p class="mb-4" data-i18n="leg_p_137">
+                        I nostri esperti sono pronti ad assisterti con competenza e professionalitÃ  per rispondere
                         alle tue specifiche esigenze legali nel settore equestre.
                     </p>
-
-                    <div class="cta-features">
-                        <div class="cta-feature">
-                            <div class="cta-icon-wrapper">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                            <p class="mb-0">Protezione legale completa</p>
-                        </div>
-
-                        <div class="cta-feature">
-                            <div class="cta-icon-wrapper">
-                                <i class="bi bi-person-check"></i>
-                            </div>
-                            <p class="mb-0">Specialisti del diritto equestre</p>
-                        </div>
-
-                        <div class="cta-feature">
-                            <div class="cta-icon-wrapper">
-                                <i class="bi bi-globe"></i>
-                            </div>
-                            <p class="mb-0">Assistenza internazionale</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="cta-card">
-                        <div class="cta-card-content">
-                            <h3 class="text-center mb-4">Pronto a proteggere il tuo mondo equestre?</h3>
-                            <p class="text-center mb-4">
+<div class="cta-features">
+<div class="cta-feature">
+<div class="cta-icon-wrapper">
+<i class="bi bi-shield-check"></i>
+</div>
+<p class="mb-0" data-i18n="leg_p_138">Protezione legale completa</p>
+</div>
+<div class="cta-feature">
+<div class="cta-icon-wrapper">
+<i class="bi bi-person-check"></i>
+</div>
+<p class="mb-0" data-i18n="leg_p_139">Specialisti del diritto equestre</p>
+</div>
+<div class="cta-feature">
+<div class="cta-icon-wrapper">
+<i class="bi bi-globe"></i>
+</div>
+<p class="mb-0" data-i18n="leg_p_140">Assistenza internazionale</p>
+</div>
+</div>
+</div>
+<div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="cta-card">
+<div class="cta-card-content">
+<h3 class="text-center mb-4" data-i18n="leg_h3_141">Pronto a proteggere il tuo mondo equestre?</h3>
+<p class="text-center mb-4" data-i18n="leg_p_142">
                                 Contattaci per una consulenza personalizzata e scopri come i nostri servizi legali specializzati
-                                possono fare la differenza per te e la tua attività.
+                                possono fare la differenza per te e la tua attivitÃ .
                             </p>
-                            <div class="text-center">
-                                <a href="Chi_siamo_it.html#contatti" class="btn btn-cta btn-lg">CONTATTACI ORA</a>
-                            </div>
-                        </div>
-                        <div class="cta-card-decorator"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="text-center">
+<a class="btn btn-cta btn-lg" data-i18n="btn_contact_now" href="Chi_siamo_it.html#contatti">CONTATTACI ORA</a>
+</div>
+</div>
+<div class="cta-card-decorator"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 </main>
-
 <!-- Footer -->
 <footer class="footer-section py-3">
-    <div class="container">
-        <div class="row align-items-start justify-content-around justify-content-md-around">
-            <!-- Logo e Partner - non mostrado da md in poi -->
-            <div class="col-5 col-md-3 text-center d-md-none">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo mb-2">
-                <p class="mb-0">Equestrian World Protection</p>
-
-            </div>
-            <!-- Logo - mostrado da md in poi -->
-            <div class="col-md-3 text-center d-none d-md-block">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo my-2">
-                <h5 class="mt-3">Equestrian World Protection</h5>
-                <p class="mb-0">We'll protect you and your horses<br class="d-md-none"> everywhere</p>
-            </div>
-            <!-- Contatti -->
-            <div class="col-5 col-md-auto offset-md-1">
-                <h5 class="text-uppercase mb-3">Contatti</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br>
-                        <a href="tel:+390550948303">+39 055 0948303</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br>
-                        <a href="tel:+393401234567">+39 340 1234567</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per
+<div class="container">
+<div class="row align-items-start justify-content-around justify-content-md-around">
+<!-- Logo e Partner - non mostrado da md in poi -->
+<div class="col-5 col-md-3 text-center d-md-none">
+<img alt="Logo Equestrian World Protection" class="footer-logo mb-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<p class="mb-0">Equestrian World Protection</p>
+</div>
+<!-- Logo - mostrado da md in poi -->
+<div class="col-md-3 text-center d-none d-md-block">
+<img alt="Logo Equestrian World Protection" class="footer-logo my-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<h5 class="mt-3">Equestrian World Protection</h5>
+<p class="mb-0">We'll protect you and your horses<br class="d-md-none"/> everywhere</p>
+</div>
+<!-- Contatti -->
+<div class="col-5 col-md-auto offset-md-1">
+<h5 class="text-uppercase mb-3">Contatti</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br/>
+<a href="tel:+390550948303">+39 055 0948303</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br/>
+<a href="tel:+393401234567">+39 340 1234567</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br/>
+<a class="d-block d-sm-none" href="mailto:info@equestrianworldprotection.com">Clicca qui per
                             contattarci</a>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navigazione Rapida (nascosta su mobile) -->
-            <div class="col-md-auto d-none d-md-block">
-                <h5 class="text-uppercase mb-3">Navigazione</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Chi_siamo_it.html">Chi Siamo</a></li>
-                    <li><a href="Servizi.html">Servizi</a></li>
-                    <li><a href="Risk_Management.html">Risk Management</a></li>
-                    <li><a href="Assicurazioni.html">Assicurazioni</a></li>
-                    <li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
-                    <li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
-                    <li><a href="Servizi_Legali.html">Servizi Legali</a></li>
-                </ul>
-            </div>
-            <!-- La nostra sede - mostrato da lg in poi -->
-            <div class="col-md-auto d-none d-lg-block">
-                <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br>
-                        Borgo San Frediano 4,<br>
+<a class="d-none d-sm-block" href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a>
+</li>
+</ul>
+</div>
+<!-- Navigazione Rapida (nascosta su mobile) -->
+<div class="col-md-auto d-none d-md-block">
+<h5 class="text-uppercase mb-3">Navigazione</h5>
+<ul class="list-unstyled">
+<li><a href="index.html">Home</a></li>
+<li><a href="Chi_siamo_it.html">Chi Siamo</a></li>
+<li><a href="Servizi.html">Servizi</a></li>
+<li><a href="Risk_Management.html">Risk Management</a></li>
+<li><a href="Assicurazioni.html">Assicurazioni</a></li>
+<li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
+<li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
+<li><a href="Servizi_Legali.html">Servizi Legali</a></li>
+</ul>
+</div>
+<!-- La nostra sede - mostrato da lg in poi -->
+<div class="col-md-auto d-none d-lg-block">
+<h5 class="text-uppercase mb-3">La Nostra Sede</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br/>
+                        Borgo San Frediano 4,<br/>
                         50124 Firenze (FI)
                     </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br>
+<li class="mt-2">
+<span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br/>
                         Riceviamo solo su appuntamento
                     </li>
-                </ul>
-            </div>
-        </div>
-        <hr class="my-2">
-        <div class="row">
-            <div class="col-12 text-center">
-                <!-- Versione per desktop e tablet -->
-                <p class="mb-0 d-none d-sm-block">
-                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
+</ul>
+</div>
+</div>
+<hr class="my-2"/>
+<div class="row">
+<div class="col-12 text-center">
+<!-- Versione per desktop e tablet -->
+<p class="mb-0 d-none d-sm-block">
+                    Â© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
                     62923
                 </p>
-                <!-- Versione per mobile -->
-                <p class="mb-0 d-block d-sm-none">
-                    &copy; 2024 Equestrian World Protection. Tutti i diritti riservati<br>
-                    <span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
-                </p>
-            </div>
-        </div>
-    </div>
+<!-- Versione per mobile -->
+<p class="mb-0 d-block d-sm-none">
+                    Â© 2024 Equestrian World Protection. Tutti i diritti riservati<br/>
+<span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
+</p>
+</div>
+</div>
+</div>
 </footer>
-
 <!-- Bootstrap JavaScript Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script file traduzioni -->
+<script src="js/translations.js"></script>
 <!-- AOS Animation Library -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-
 <!-- Script per gestire i tab -->
 <script>
     function openTab(tabId) {
@@ -1815,8 +1689,6 @@
         document.getElementById(tabId + "-btn").classList.add("active");
     }
 </script>
-
-
 <script>
     // Script per la gestione dei servizi legali
     document.addEventListener('DOMContentLoaded', function () {
@@ -1845,7 +1717,6 @@
         });
     });
 </script>
-
 <script>
     // Script per animare gli elementi della sezione "Il nostro Approccio"
     document.addEventListener('DOMContentLoaded', function () {
@@ -1920,18 +1791,14 @@
         }
     });
 </script>
-
-
-
-
 <script>
-    // Script per gestire l'interattività della sezione Competenza Internazionale
+    // Script per gestire l'interattivitÃ  della sezione Competenza Internazionale
     // Script per la sezione internazionale ibrida
     document.addEventListener('DOMContentLoaded', function() {
         // Funzione per animare i contatori
         function animateCounters() {
             const counters = document.querySelectorAll('.counter-number');
-            const speed = 200; // Velocità dell'animazione (più basso = più veloce)
+            const speed = 200; // VelocitÃ  dell'animazione (piÃ¹ basso = piÃ¹ veloce)
 
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-count');
@@ -1979,7 +1846,7 @@
             });
         }
 
-        // Inizializza le funzionalità
+        // Inizializza le funzionalitÃ 
         function initializeFeatures() {
             // Animazione contatori
             setTimeout(animateCounters, 500);
@@ -2012,11 +1879,6 @@
         });
     });
 </script>
-
-
-
-
-
 <!-- Script per parallax -->
 <script>
     let bg = document.getElementById("bg");
@@ -2032,6 +1894,44 @@
         logo.style.top = value * 0.4 + 'px';
     })
 </script>
+<!-- Effetto Navbar JS -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let nbar = document.getElementById("mainNavbar");
+        if(nbar) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nbar.classList.add('navbar-scrolled');
+                } else {
+                    nbar.classList.remove('navbar-scrolled');
+                }
+            });
+        }
+    });
 
+
+        // Gestione Banner Cookie
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookieBanner");
+            const acceptBtn = document.getElementById("acceptCookies");
+            
+            // Controlla se l'utente ha già accettato
+            if (!localStorage.getItem("ewp_cookie_consent")) {
+                // Piccolo ritardo per l'animazione
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 500);
+            }
+
+            // Al click su accetta
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function () {
+                    localStorage.setItem("ewp_cookie_consent", "true");
+                    cookieBanner.classList.remove("show");
+                });
+            }
+        });
+</script>
 </body>
 </html>
+

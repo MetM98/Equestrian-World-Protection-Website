@@ -1,128 +1,107 @@
-<!--Da mettere sempre sulle pagine HTML-->
+﻿<!--Da mettere sempre sulle pagine HTML-->
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <!--INFO BROWSER-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Equestrian World Protection - Protezione e Servizi per il Mondo Equestre</title> <!--todo completare-->
-    <meta name="author" content="Matteo Munafò, Emanuele Dubini">
-
-    <!-- Meta Keywords --> <!--todo completare-->
-    <meta name="keywords" content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione">
-    <!-- Meta Description --> <!--todo completare-->
-    <meta name="description" content="Equestrian World Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre.">
-    <!--<meta name="description" content="Scopri i servizi offerti da Equestrian World Protection: analisi dei rischi, servizi assicurativi, finanziari e legali per il mondo equestre.">-->
-
-
-    <!-- Favicon icon -->
-    <link rel="shortcut icon" type="x-icon" href="images/logo/WEBSITELOGO.jpeg">
-    <!--todo controllare se funziona correttamente e inserire formato icon o png-->
-
-
-
-    <!-- Link Bootstrap 5.3.3 & Jquery CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Icone Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--INFO BROWSER-->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Equestrian World Protection - Protezione e Servizi per il Mondo Equestre</title> <!--todo completare-->
+<meta content="Matteo MunafÃ², Emanuele Dubini" name="author"/>
+<!-- Meta Keywords --> <!--todo completare-->
+<meta content="assicurazioni cavalli, risk management, servizi equestri, wealth management, servizi finanziari, servizi legali, equitazione" name="keywords"/>
+<!-- Meta Description --> <!--todo completare-->
+<meta content="Equestrian World Protection offre assicurazioni per cavalli, servizi di risk management, wealth management e servizi legali per il settore equestre." name="description"/>
+<!--<meta name="description" content="Scopri i servizi offerti da Equestrian World Protection: analisi dei rischi, servizi assicurativi, finanziari e legali per il mondo equestre.">-->
+<!-- Favicon icon -->
+<link href="images/logo/WEBSITELOGO.jpeg" rel="shortcut icon" type="x-icon"/>
+<!--todo controllare se funziona correttamente e inserire formato icon o png-->
+<!-- Link Bootstrap 5.3.3 & Jquery CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Icone Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+<!-- Main CSS File -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
-
-
 <body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-xxl fixed-top"> <!--todo la navbar deve diventare in versione mobile a 1500px oppure 1784px in base a come si preferisce il comportamento-->
-    <div class="container-fluid px-0">
-        <a class="navbar-brand me-2 me-lg-5" href="#">Equestrian World Protection</a>
-        <button class="navbar-toggler px-0 pe-md-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Equestrian World Protection</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Chi_siamo_it.html">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 active text-xxl-center" href="Servizi.html">Servizi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Risk_Management.html">Risk Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Assicurazioni.html">Assicurazioni</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Private_Wealth_Management.html">Wealth Management</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Finanziari.html">Servizi Finanziari</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-lg-2 text-xxl-center" href="Servizi_Legali.html">Servizi Legali</a>
-                    </li>
-                    <!-- Dropdown Menu for language -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-lg-2 text-xxl-center" id="assicurazioniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
+<!-- Modificato navbar-expand-xl per evitare che vada a capo -->
+<div class="container-fluid px-0">
+<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> <!-- Cambiato in collapse normale per pulizia su bootstrap 5 -->
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Collapse Menu -->
+<div class="collapse navbar-collapse" id="offcanvasNavbar">
+<ul class="navbar-nav justify-content-end align-items-center flex-grow-1">
+<li class="nav-item">
+<a aria-current="page" class="nav-link mx-xl-1 active text-center" data-i18n="nav_home" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_about" href="Chi_siamo_it.html">Chi
+                            siamo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_services" href="Servizi.html">Servizi</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_risk" href="Risk_Management.html">Risk
+                            Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a>
+</li>
+<li class="nav-item">
+<a class="nav-link mx-xl-1 text-center" data-i18n="nav_legal" href="Servizi_Legali.html">Servizi
+                            Legali</a>
+</li>
+<!-- Dropdown Menu for language -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle mx-xl-1 text-center" data-bs-toggle="dropdown" id="languageDropdown" role="button">
                             IT
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="assicurazioniDropdown">
-                            <li><a class="dropdown-item" href="#">EN</a></li> <!--todo inserire pagine in href-->
-                        </ul>
-                    </li>
-                    <!-- End Dropdown Menu -->
-                </ul>
-            </div>
-        </div>
-        <!-- End Offcanvas Menu -->
-    </div>
+<ul aria-labelledby="languageDropdown" class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" data-lang-switch="it" href="#">IT</a></li>
+<li><a class="dropdown-item" data-lang-switch="en" href="#">EN</a></li>
+</ul>
+</li>
+<!-- End Dropdown Menu -->
+</ul>
+</div>
+<!-- End Collapse Menu -->
+</div>
 </nav>
 <!-- End Navbar -->
-
-
 <!--CONTENUTO-->
-
 <!-- HEADER con effetto Parallasse -->
 <header id="header_parallax">
-    <img src="images/bg_img.jpg" id="bg" class="img-fluid" alt="Equestrian World Protection Background">
-
-    <div class="container-fluid">
-        <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-12 col-lg-6">
-                <img class="img-fluid mx-auto custom-logo" title="Link Home" id="logo" src="images/logo/EWP_Logo.png"
-                     alt="World Equestrian Protection Logo">
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-12 col-lg-6">
-                    <h1 id="brand_name" class="d-none d-lg-block">Equestrian World Protection</h1>
-                    <h2 class="mt-2" id="brand_spot"><strong><b>I NOSTRI SERVIZI</b></strong></h2>
-                </div>
-            </div>
-        </div>
-    </div>
+<img alt="Equestrian World Protection Background" class="img-fluid" id="bg" src="images/bg_img.jpg"/>
+<div class="container-fluid">
+<div class="row justify-content-center justify-content-lg-end">
+<div class="col-12 col-lg-6">
+<img alt="World Equestrian Protection Logo" class="img-fluid mx-auto custom-logo" id="logo" src="images/logo/EWP_Logo.png" title="Link Home"/>
+</div>
+<div class="row justify-content-end">
+<div class="col-12 col-lg-6">
+<h1 class="d-none d-lg-block" data-i18n="serv_h1_1" id="brand_name">Equestrian World Protection</h1>
+<h2 class="mt-2" data-i18n="serv_h2_2" id="brand_spot"><strong><b>I NOSTRI SERVIZI</b></strong></h2>
+</div>
+</div>
+</div>
+</div>
 </header>
-
 <main>
-    <!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
-    <!--<section class="mt-5 pt-5">
+<!--SEZIONE CHE CONTENEVA IL TESTO DI RIFERIMENTO PER CREARE LA PAGINA-->
+<!--<section class="mt-5 pt-5">
         &lt;!&ndash;TEXT INTRO&ndash;&gt;
 		<div class="container-fluid">
         		<div class="row px-2 px-md-2 mb-2 mt-lg-2 text-center">
@@ -131,18 +110,18 @@
             					SERVIZI
         				</h2>
         				<p>
-            					Il cavallo è un animale maestoso, dotato di straordinaria forza fisica. Quest'aspetto determina a volte dei risvolti pratici non sempre positivi. <br>
+            					Il cavallo Ã¨ un animale maestoso, dotato di straordinaria forza fisica. Quest'aspetto determina a volte dei risvolti pratici non sempre positivi. <br>
 
             					Ad esempio, per allontanare un insetto molesto, il cavallo potrebbe, pur senza volere, ferire con un calcio, in modo persino letale, un essere umano. <br>
 
             					Anche le cadute, indipendentemente dalla natura amatoriale o professionale dell'equitazione svolta, possono comportare lesioni gravi. <br>
 
-            					Inoltre, un'eventuale fuga in strada può determinare danni a cose e/o persone, con conseguenti obblighi risarcitori a carico. <br>
+            					Inoltre, un'eventuale fuga in strada puÃ² determinare danni a cose e/o persone, con conseguenti obblighi risarcitori a carico. <br>
 
-            					Non è un caso, infine, che l'equitazione sia considerata dalla nostra giurisprudenza quale attività sportiva potenzialmente pericolosa. <br>
+            					Non Ã¨ un caso, infine, che l'equitazione sia considerata dalla nostra giurisprudenza quale attivitÃ  sportiva potenzialmente pericolosa. <br>
 
             					Come sopra evidenziato, l'amore per questi splendidi animali comporta, quindi, tutta una serie di rischi in relazione ai quali Vi renderemo edotti e da cui intendiamo proteggerVi mediante la collaborazione ed il supporto di figure professionali diverse, in ambito assicurativo, legale, contabile e veterinario. <br>
-            					A titolo esemplificativo, non esaustivo, di seguito riportiamo alcune delle nostre attività circa: <br>
+            					A titolo esemplificativo, non esaustivo, di seguito riportiamo alcune delle nostre attivitÃ  circa: <br>
                         </p>
             					<ul>
                 					<li class="colored"><b>Analisi</b> e <b>gestioni rischi</b> inerenti il mondo equestre</li>
@@ -159,355 +138,331 @@
 			</div>
 		</div>
     </section>-->
-
-
-
-    <!-- Sezione Introduttiva -->
-    <section class="mt-2 pt-5">
-        <div class="container">
-            <div class="row px-2 px-md-2 mb-5 mt-lg-2 text-center">
-                <div class="col-12 py-2" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">IL MONDO EQUESTRE E I SUOI RISCHI</h2>
-                    <p class="mb-4">
-                        Il cavallo è un animale maestoso, dotato di straordinaria forza fisica. Quest'aspetto determina a volte
+<!-- Sezione Introduttiva -->
+<section class="mt-2 pt-5">
+<div class="container">
+<div class="row px-2 px-md-2 mb-5 mt-lg-2 text-center">
+<div class="col-12 py-2" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="serv_h2_3">IL MONDO EQUESTRE E I SUOI RISCHI</h2>
+<p class="mb-4" data-i18n="serv_p_4">
+                        Il cavallo Ã¨ un animale maestoso, dotato di straordinaria forza fisica. Quest'aspetto determina a volte
                         dei risvolti pratici non sempre positivi.
                     </p>
-                    <p class="mb-4">
+<p class="mb-4" data-i18n="serv_p_5">
                         Ad esempio, per allontanare un insetto molesto, il cavallo potrebbe, pur senza volere, ferire con un calcio,
                         in modo persino letale, un essere umano. Anche le cadute, indipendentemente dalla natura amatoriale o
                         professionale dell'equitazione svolta, possono comportare lesioni gravi.
                     </p>
-                    <p class="mb-4">
-                        Inoltre, un'eventuale fuga in strada può determinare danni a cose e/o persone, con conseguenti obblighi risarcitori a carico.
-                        Non è un caso, infine, che l'equitazione sia considerata dalla nostra giurisprudenza quale attività sportiva potenzialmente pericolosa.
+<p class="mb-4" data-i18n="serv_p_6">
+                        Inoltre, un'eventuale fuga in strada puÃ² determinare danni a cose e/o persone, con conseguenti obblighi risarcitori a carico.
+                        Non Ã¨ un caso, infine, che l'equitazione sia considerata dalla nostra giurisprudenza quale attivitÃ  sportiva potenzialmente pericolosa.
                     </p>
-                    <p class="">
+<p class="" data-i18n="serv_p_7">
                         Come sopra evidenziato, l'amore per questi splendidi animali comporta, quindi, tutta una serie di rischi in relazione
                         ai quali Vi renderemo edotti e da cui intendiamo proteggerVi mediante la collaborazione ed il supporto di figure
                         professionali diverse, in ambito assicurativo, legale, contabile e veterinario.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Sezione Servizi Principali --> <!--todo verificare se centrare il testo delle card-->
-    <section class="why-choose-us py-5">
-        <div class="container">
-            <div class="row mb-5 text-center">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-light ewp-title-center mb-4">I NOSTRI SERVIZI PRINCIPALI</h2>
-                    <p class="mb-0">
-                        A titolo esemplificativo, non esaustivo, di seguito riportiamo alcune delle nostre attività che svolgiamo
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Servizi Principali --> <!--todo verificare se centrare il testo delle card-->
+<section class="why-choose-us py-5">
+<div class="container">
+<div class="row mb-5 text-center">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-light ewp-title-center mb-4" data-i18n="serv_h2_8">I NOSTRI SERVIZI PRINCIPALI</h2>
+<p class="mb-0" data-i18n="serv_p_9">
+                        A titolo esemplificativo, non esaustivo, di seguito riportiamo alcune delle nostre attivitÃ  che svolgiamo
                         a livello internazionale, con particolare riferimento all'UE, al Medio Oriente ed al Nord Africa.
                     </p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="feature-card h-100 p-4 d-flex flex-column">
-                        <div class="feature-icon-wrapper text-center mb-3">
-                            <div class="feature-icon-bg mx-auto">
-                                <i class="bi bi-search"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title mb-3">Analisi e Gestione Rischi</h4>
-                        <p class="flex-grow-1">
+</div>
+</div>
+<div class="row g-4">
+<!-- Card 1 -->
+<div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="feature-card h-100 p-4 d-flex flex-column">
+<div class="feature-icon-wrapper text-center mb-3">
+<div class="feature-icon-bg mx-auto">
+<i class="bi bi-search"></i>
+</div>
+</div>
+<h4 class="ewp-card-title mb-3" data-i18n="serv_h4_10">Analisi e Gestione Rischi</h4>
+<p class="flex-grow-1" data-i18n="serv_p_11">
                             Identifichiamo, analizziamo e gestiamo tutti i rischi inerenti al mondo equestre, offrendo soluzioni
-                            personalizzate per ogni tipo di attività o necessità.
+                            personalizzate per ogni tipo di attivitÃ  o necessitÃ .
                         </p>
-                        <div class="mt-auto">
-                            <a href="Risk_Management.html" class="btn btn-cta w-100">Scopri di più</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="feature-card h-100 p-4 d-flex flex-column">
-                        <div class="feature-icon-wrapper text-center mb-3">
-                            <div class="feature-icon-bg mx-auto">
-                                <i class="bi bi-shield-check"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title mb-3">Servizi Assicurativi</h4>
-                        <p class="flex-grow-1">
+<div class="mt-auto">
+<a class="btn btn-cta w-100" data-i18n="btn_discover_services" href="Risk_Management.html">Scopri di piÃ¹</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="feature-card h-100 p-4 d-flex flex-column">
+<div class="feature-icon-wrapper text-center mb-3">
+<div class="feature-icon-bg mx-auto">
+<i class="bi bi-shield-check"></i>
+</div>
+</div>
+<h4 class="ewp-card-title mb-3" data-i18n="serv_h4_12">Servizi Assicurativi</h4>
+<p class="flex-grow-1" data-i18n="serv_p_13">
                             Offriamo una vasta gamma di coperture assicurative specializzate per cavalli, cavalieri,
                             strutture equestri e manifestazioni del settore.
                         </p>
-                        <div class="mt-auto">
-                            <a href="Assicurazioni.html" class="btn btn-cta w-100">Scopri di più</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 - Servizi Finanziari -->
-                <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="feature-card h-100 p-4 d-flex flex-column">
-                        <div class="feature-icon-wrapper text-center mb-3">
-                            <div class="feature-icon-bg mx-auto">
-                                <i class="bi bi-cash-coin"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title mb-3">Servizi Finanziari</h4>
-                        <p class="flex-grow-1">
+<div class="mt-auto">
+<a class="btn btn-cta w-100" data-i18n="btn_discover_services" href="Assicurazioni.html">Scopri di piÃ¹</a>
+</div>
+</div>
+</div>
+<!-- Card 3 - Servizi Finanziari -->
+<div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="feature-card h-100 p-4 d-flex flex-column">
+<div class="feature-icon-wrapper text-center mb-3">
+<div class="feature-icon-bg mx-auto">
+<i class="bi bi-cash-coin"></i>
+</div>
+</div>
+<h4 class="ewp-card-title mb-3" data-i18n="serv_h4_14">Servizi Finanziari</h4>
+<p class="flex-grow-1" data-i18n="serv_p_15">
                             Soluzioni finanziarie specializzate per il settore equestre: mutui ipotecari per strutture e terreni,
-                            investimenti mirati, gestione patrimoniale e strumenti di garanzia per le tue attività equestri.
+                            investimenti mirati, gestione patrimoniale e strumenti di garanzia per le tue attivitÃ  equestri.
                         </p>
-                        <div class="mt-auto">
-                            <a href="Servizi_Finanziari.html" class="btn btn-cta w-100">Scopri di più</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="feature-card h-100 p-4 d-flex flex-column">
-                        <div class="feature-icon-wrapper text-center mb-3">
-                            <div class="feature-icon-bg mx-auto">
-                                <i class="bi bi-file-earmark-text"></i>
-                            </div>
-                        </div>
-                        <h4 class="ewp-card-title mb-3">Servizi Legali</h4>
-                        <p class="flex-grow-1">
+<div class="mt-auto">
+<a class="btn btn-cta w-100" data-i18n="btn_discover_services" href="Servizi_Finanziari.html">Scopri di piÃ¹</a>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="col-12 col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+<div class="feature-card h-100 p-4 d-flex flex-column">
+<div class="feature-icon-wrapper text-center mb-3">
+<div class="feature-icon-bg mx-auto">
+<i class="bi bi-file-earmark-text"></i>
+</div>
+</div>
+<h4 class="ewp-card-title mb-3" data-i18n="serv_h4_16">Servizi Legali</h4>
+<p class="flex-grow-1" data-i18n="serv_p_17">
                             Consulenza specializzata nel diritto equestre: dalla contrattualistica alla gestione delle controversie,
                             fino alla tutela legale completa per operatori del settore.
                         </p>
-                        <div class="mt-auto">
-                            <a href="Servizi_Legali.html" class="btn btn-cta w-100">Scopri di più</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Sezione Rischi e Prevenzione -->
-    <section class="ewp-image-text-section py-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-around">
-                <div class="col-md-5 image-container mb-4 mb-md-0 d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="images/logo/EWP_Logo.png" alt="Rischi e Prevenzione" class="section-image">
-                </div>
-
-                <div class="col-12 col-md-5 content-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <h2 class="ewp-section-title">PREVENZIONE E PROTEZIONE</h2>
-                    <p> <!--class="mb-4"-->
+<div class="mt-auto">
+<a class="btn btn-cta w-100" data-i18n="btn_discover_services" href="Servizi_Legali.html">Scopri di piÃ¹</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Rischi e Prevenzione -->
+<section class="ewp-image-text-section py-5">
+<div class="container">
+<div class="row align-items-center justify-content-around">
+<div class="col-md-5 image-container mb-4 mb-md-0 d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
+<img alt="Rischi e Prevenzione" class="section-image" src="images/logo/EWP_Logo.png"/>
+</div>
+<div class="col-12 col-md-5 content-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<h2 class="ewp-section-title" data-i18n="serv_h2_18">PREVENZIONE E PROTEZIONE</h2>
+<p data-i18n="serv_p_19"> <!--class="mb-4"-->
                         La nostra filosofia si basa su un approccio integrato che unisce prevenzione e protezione. Non ci limitiamo a
                         fornire soluzioni assicurative, ma lavoriamo per identificare e ridurre i rischi alla fonte.
                     </p>
-                    <p> <!--class="mb-4"-->
+<p data-i18n="serv_p_20"> <!--class="mb-4"-->
                         Grazie alla collaborazione con figure professionali diverse in ambito assicurativo, legale, contabile e veterinario,
                         siamo in grado di offrire un servizio completo che tutela veramente i nostri clienti e i loro cavalli.
                     </p>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <i class="bi bi-check-lg text-white"></i>
-                        </div>
-                        <p class="mb-0 fw-bold">Analisi preliminare dei rischi</p>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <i class="bi bi-check-lg text-white"></i>
-                        </div>
-                        <p class="mb-0 fw-bold">Consulenza personalizzata</p>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <i class="bi bi-check-lg text-white"></i>
-                        </div>
-                        <p class="mb-0 fw-bold">Soluzioni integrate di protezione</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Ambiti di Intervento -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-center mb-4">AMBITI DI INTERVENTO</h2>
-                    <p class="">
+<div class="d-flex align-items-center mb-3">
+<div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+<i class="bi bi-check-lg text-white"></i>
+</div>
+<p class="mb-0 fw-bold" data-i18n="serv_p_21">Analisi preliminare dei rischi</p>
+</div>
+<div class="d-flex align-items-center mb-3">
+<div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+<i class="bi bi-check-lg text-white"></i>
+</div>
+<p class="mb-0 fw-bold" data-i18n="serv_p_22">Consulenza personalizzata</p>
+</div>
+<div class="d-flex align-items-center">
+<div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+<i class="bi bi-check-lg text-white"></i>
+</div>
+<p class="mb-0 fw-bold" data-i18n="serv_p_23">Soluzioni integrate di protezione</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Ambiti di Intervento -->
+<section class="py-5 bg-light">
+<div class="container">
+<div class="row text-center mb-5">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-center mb-4" data-i18n="serv_h2_24">AMBITI DI INTERVENTO</h2>
+<p class="" data-i18n="serv_p_25">
                         I nostri servizi si rivolgono a tutti gli operatori e appassionati del mondo equestre, offrendo soluzioni
-                        specifiche per ogni necessità.
+                        specifiche per ogni necessitÃ .
                     </p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <!-- Ambito 1 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4 d-flex flex-column">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                <i class="bi bi-person-fill text-white" style="font-size: 40px;"></i>
-                            </div>
-                            <h4 class="card-title mb-3">Proprietari di Cavalli</h4>
-                            <p class="card-text flex-grow-1">Soluzioni assicurative personalizzate per proteggere i vostri cavalli e gestire i rischi
-                                legati alla loro proprietà e utilizzo quotidiano.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ambito 2 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4 d-flex flex-column">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                <i class="bi bi-building text-white" style="font-size: 40px;"></i>
-                            </div>
-                            <h4 class="card-title mb-3">Centri Ippici</h4>
-                            <p class="card-text flex-grow-1">Servizi integrati per la gestione del rischio, coperture assicurative specifiche
-                                e consulenza legale per la gestione sicura delle attività equestri.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ambito 3 -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="card border-0 shadow-sm h-100">
-                        <div class="card-body text-center p-4 d-flex flex-column">
-                            <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                                <i class="bi bi-calendar-event text-white" style="font-size: 40px;"></i>
-                            </div>
-                            <h4 class="card-title mb-3">Eventi e Manifestazioni</h4>
-                            <p class="card-text flex-grow-1">Coperture specifiche per l'organizzazione di fiere, concorsi e manifestazioni equestri,
+</div>
+</div>
+<div class="row g-4">
+<!-- Ambito 1 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="card-body text-center p-4 d-flex flex-column">
+<div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+<i class="bi bi-person-fill text-white" style="font-size: 40px;"></i>
+</div>
+<h4 class="card-title mb-3" data-i18n="serv_h4_26">Proprietari di Cavalli</h4>
+<p class="card-text flex-grow-1" data-i18n="serv_p_27">Soluzioni assicurative personalizzate per proteggere i vostri cavalli e gestire i rischi
+                                legati alla loro proprietÃ  e utilizzo quotidiano.</p>
+</div>
+</div>
+</div>
+<!-- Ambito 2 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="card-body text-center p-4 d-flex flex-column">
+<div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+<i class="bi bi-building text-white" style="font-size: 40px;"></i>
+</div>
+<h4 class="card-title mb-3" data-i18n="serv_h4_28">Centri Ippici</h4>
+<p class="card-text flex-grow-1" data-i18n="serv_p_29">Servizi integrati per la gestione del rischio, coperture assicurative specifiche
+                                e consulenza legale per la gestione sicura delle attivitÃ  equestri.</p>
+</div>
+</div>
+</div>
+<!-- Ambito 3 -->
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+<div class="card border-0 shadow-sm h-100">
+<div class="card-body text-center p-4 d-flex flex-column">
+<div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+<i class="bi bi-calendar-event text-white" style="font-size: 40px;"></i>
+</div>
+<h4 class="card-title mb-3" data-i18n="serv_h4_30">Eventi e Manifestazioni</h4>
+<p class="card-text flex-grow-1" data-i18n="serv_p_31">Coperture specifiche per l'organizzazione di fiere, concorsi e manifestazioni equestri,
                                 con soluzioni per la gestione del rischio e la tutela dei partecipanti.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sezione Call to Action -->
-    <section class="py-5" style="background-color: var(--TertiaryColor);">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="ewp-section-title ewp-title-montserrat ewp-title-center ewp-title-light mb-4">PROTEZIONE SU MISURA PER TE E I TUOI CAVALLI</h2>
-                    <p class="mb-4">
-                        Contattaci per una consulenza personalizzata e scopri come possiamo aiutarti a proteggere ciò che più ami.
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sezione Call to Action -->
+<section class="py-5" style="background-color: var(--TertiaryColor);">
+<div class="container">
+<div class="row text-center">
+<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+<h2 class="ewp-section-title ewp-title-montserrat ewp-title-center ewp-title-light mb-4" data-i18n="serv_h2_32">PROTEZIONE SU MISURA PER TE E I TUOI CAVALLI</h2>
+<p class="mb-4" data-i18n="serv_p_33">
+                        Contattaci per una consulenza personalizzata e scopri come possiamo aiutarti a proteggere ciÃ² che piÃ¹ ami.
                     </p>
-                    <a href="Chi_siamo_it.html#contatti" class="btn btn-cta">CONTATTACI ORA</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
+<a class="btn btn-cta" data-i18n="btn_contact_now" href="Chi_siamo_it.html#contatti">CONTATTACI ORA</a>
+</div>
+</div>
+</div>
+</section>
 </main>
-
-
-
-
 <!-- Footer -->
 <footer class="footer-section py-3">
-    <div class="container">
-        <div class="row align-items-start justify-content-around justify-content-md-around">
-            <!-- Logo e Partner - non mostrado da md in poi -->
-            <div class="col-5 col-md-3 text-center d-md-none">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo mb-2">
-                <p class="mb-0">Equestrian World Protection</p>
-
-            </div>
-            <!-- Logo - mostrado da md in poi -->
-            <div class="col-md-3 text-center d-none d-md-block">
-                <img src="images/logo/WEBSITELOGO.jpeg" alt="Logo Equestrian World Protection" class="footer-logo my-2">
-                <h5 class="mt-3">Equestrian World Protection</h5>
-                <p class="mb-0">We'll protect you and your horses<br class="d-md-none"> everywhere</p>
-            </div>
-            <!-- Contatti -->
-            <div class="col-5 col-md-auto offset-md-1">
-                <h5 class="text-uppercase mb-3">Contatti</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-telephone-fill"></i> <strong>Recapito Fisso:</strong></span><br>
-                        <a href="tel:+390550948303">+39 055 0948303</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-phone-fill"></i> <strong>Recapito Mobile:</strong></span><br>
-                        <a href="tel:+393401234567">+39 340 1234567</a>
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-envelope-fill"></i> <strong>Email:</strong></span><br>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-block d-sm-none">Clicca qui per contattarci</a>
-                        <a href="mailto:info@equestrianworldprotection.com" class="d-none d-sm-block">info@equestrianworldprotection.com</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Navigazione Rapida (nascosta su mobile) -->
-            <div class="col-md-auto d-none d-md-block">
-                <h5 class="text-uppercase mb-3">Navigazione</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Chi_siamo_it.html">Chi Siamo</a></li>
-                    <li><a href="Servizi.html">Servizi</a></li>
-                    <li><a href="Risk_Management.html">Risk Management</a></li>
-                    <li><a href="Assicurazioni.html">Assicurazioni</a></li>
-                    <li><a href="Private_Wealth_Management.html">Wealth Management</a></li>
-                    <li><a href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
-                    <li><a href="Servizi_Legali.html">Servizi Legali</a></li>
-                </ul>
-            </div>
-            <!-- La nostra sede - mostrato da lg in poi -->
-            <div class="col-md-auto d-none d-lg-block">
-                <h5 class="text-uppercase mb-3">La Nostra Sede</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <span><i class="bi bi-geo-alt-fill"></i> <strong>Indirizzo:</strong></span><br> <!--oppure usare questa icona class="bi bi-building" -->
-                        Borgo San Frediano 4,<br>
-                        50124 Firenze (FI)
-                    </li>
-                    <li class="mt-2">
-                        <span><i class="bi bi-clock-fill"></i> <strong>Orari:</strong></span><br>
-                        Riceviamo solo su appuntamento
-                    </li>
-                    <!--<li class="mt-2">
+<div class="container">
+<div class="row align-items-start justify-content-around justify-content-md-around">
+<!-- Logo e Partner - non mostrado da md in poi -->
+<div class="col-5 col-md-3 text-center d-md-none">
+<img alt="Logo Equestrian World Protection" class="footer-logo mb-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<p class="mb-0">Equestrian World Protection</p>
+</div>
+<!-- Logo - mostrado da md in poi -->
+<div class="col-md-3 text-center d-none d-md-block">
+<img alt="Logo Equestrian World Protection" class="footer-logo my-2" src="images/logo/WEBSITELOGO.jpeg"/>
+<h5 class="mt-3">Equestrian World Protection</h5>
+<p class="mb-0">We'll protect you and your horses<br class="d-md-none"/> everywhere</p>
+</div>
+<!-- Contatti -->
+<div class="col-5 col-md-auto offset-md-1">
+<h5 class="text-uppercase mb-3" data-i18n="footer_contact">Contatti</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-telephone-fill"></i> <strong data-i18n="footer_landline">Recapito
+                                    Fisso:</strong></span><br/>
+<a href="tel:+390550948303">+39 055 0948303</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-phone-fill"></i> <strong data-i18n="footer_mobile">Recapito
+                                    Mobile:</strong></span><br/>
+<a href="tel:+393401234567">+39 340 1234567</a>
+</li>
+<li class="mt-2">
+<span><i class="bi bi-envelope-fill"></i> <strong data-i18n="footer_email">Email:</strong></span><br/>
+<a class="d-block d-sm-none" data-i18n="footer_email_click" href="mailto:info@equestrianworldprotection.com">Clicca qui per contattarci</a>
+<a class="d-none d-sm-block" href="mailto:info@equestrianworldprotection.com">info@equestrianworldprotection.com</a>
+</li>
+</ul>
+</div>
+<!-- Navigazione Rapida (nascosta su mobile) -->
+<div class="col-md-auto d-none d-md-block">
+<h5 class="text-uppercase mb-3" data-i18n="footer_nav">Navigazione</h5>
+<ul class="list-unstyled">
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="Chi_siamo_it.html">Chi Siamo</a></li>
+<li><a data-i18n="nav_services" href="Servizi.html">Servizi</a></li>
+<li><a data-i18n="nav_risk" href="Risk_Management.html">Risk Management</a></li>
+<li><a data-i18n="nav_insurance" href="Assicurazioni.html">Assicurazioni</a></li>
+<li><a data-i18n="nav_wealth" href="Private_Wealth_Management.html">Wealth Management</a></li>
+<li><a data-i18n="nav_financial" href="Servizi_Finanziari.html">Servizi Finanziari</a></li>
+<li><a data-i18n="nav_legal" href="Servizi_Legali.html">Servizi Legali</a></li>
+</ul>
+</div>
+<!-- La nostra sede - mostrato da lg in poi -->
+<div class="col-md-auto d-none d-lg-block">
+<h5 class="text-uppercase mb-3" data-i18n="footer_hq">La Nostra Sede</h5>
+<ul class="list-unstyled">
+<li>
+<span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Indirizzo:</strong></span><br/>
+<!--oppure usare questa icona class="bi bi-building" -->
+                            Borgo San Frediano 4,<br/>
+                            50124 Firenze (FI)
+                        </li>
+<li class="mt-2">
+<span><i class="bi bi-clock-fill"></i> <strong data-i18n="footer_hours">Orari:</strong></span><br/>
+<span data-i18n="footer_hours_text">Riceviamo solo su appuntamento</span>
+</li>
+<!--<li class="mt-2">
                         <span><i class="bi bi-building"></i> <strong>Sede Legale:</strong></span><br>
-                        Via [Indirizzo Legale], [Città], [CAP]
+                        Via [Indirizzo Legale], [CittÃ ], [CAP]
                     </li>-->
-                </ul>
-            </div>
-        </div>
-        <hr class="my-2">
-        <div class="row">
-            <div class="col-12 text-center">
-                <!-- Versione per desktop e tablet -->
-                <p class="mb-0 d-none d-sm-block">
-                    &copy; 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI 62923
-                </p>
-                <!-- Versione per mobile -->
-                <p class="mb-0 d-block d-sm-none">
-                    &copy; 2024 Equestrian World Protection. Tutti i diritti riservati<br>
-                    <span style="margin-top: 5px; display: block;">P.IVA: 06447010486, REA FI 62923</span>
-                </p>
-            </div>
-        </div>
-    </div>
+</ul>
+</div>
+</div>
+<hr class="my-2"/>
+<div class="row">
+<div class="col-12 text-center">
+<!-- Versione per desktop e tablet -->
+<p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">
+                        Â© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 06447010486, REA FI
+                        62923
+                    </p>
+<!-- Versione per mobile -->
+<p class="mb-0 d-block d-sm-none">
+<span data-i18n="footer_rights_mobile_1">Â© 2024 Equestrian World Protection. Tutti i
+                            diritti riservati</span><br/>
+<span data-i18n="footer_rights_mobile_2" style="margin-top: 5px; display: block;">P.IVA:
+                            06447010486, REA FI 62923</span>
+</p>
+</div>
+</div>
+</div>
 </footer>
 <!-- End Footer -->
-
 <!-- Bootstrap JavaScript Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script file traduzioni -->
+<script src="js/translations.js"></script>
 <!-- AOS Animation Library -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
-
-
 <!-- Script per parallax --><!--todo mettere lo stesso script su ogni pagina-->
 <script>
     let bg = document.getElementById("bg");
@@ -523,6 +478,45 @@
         logo.style.top = value * 0.4 + 'px';
     })
 </script>
+<!-- Effetto Navbar JS -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let nbar = document.getElementById("mainNavbar");
+        if(nbar) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nbar.classList.add('navbar-scrolled');
+                } else {
+                    nbar.classList.remove('navbar-scrolled');
+                }
+            });
+        }
+    });
 
+
+        // Gestione Banner Cookie
+        document.addEventListener("DOMContentLoaded", function () {
+            const cookieBanner = document.getElementById("cookieBanner");
+            const acceptBtn = document.getElementById("acceptCookies");
+            
+            // Controlla se l'utente ha già accettato
+            if (!localStorage.getItem("ewp_cookie_consent")) {
+                // Piccolo ritardo per l'animazione
+                setTimeout(() => {
+                    cookieBanner.classList.add("show");
+                }, 500);
+            }
+
+            // Al click su accetta
+            if (acceptBtn) {
+                acceptBtn.addEventListener("click", function () {
+                    localStorage.setItem("ewp_cookie_consent", "true");
+                    cookieBanner.classList.remove("show");
+                });
+            }
+        });
+</script>
 </body>
 </html>
+
+
