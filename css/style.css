@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@500&display=swap');
 
-/*todo togliere over delle card su mobile*/
-/*todo su mobile capire come orientare il testo delle varie pagine, se che parte da sinistra oppure centrato*/
-/*todo effettuare pulizia delle classi css che non sono usate*/
-/*todo tutti i componenti <li> sono associati alla classe black, capire se vanno resi dello stesso colore del testo p o vanno bene neri*/
-/*todo togliere tutte le parti commentate che non sono usate*/
+
+
+
+
+
 
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root {
@@ -297,7 +297,7 @@ b.colored {
         width: 0;
         height: 2px;
         background-color: var(--PrimaryColor);
-        /*todo sistemare colore*/
+        
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -366,7 +366,7 @@ b.colored {
     border-radius: 24px;
     /* Angoli arrotondati */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    /*todo capire se tenere o mettere shadow solo su mobile e tablet*/
+    
 }
 
 /* ------------ HEADER PARALLAX ------------ */
@@ -477,7 +477,7 @@ b.colored {
     /* Rimuove il sottolineato */
     display: inline-block;
     font-size: 18px;
-    /*todo capire se bisogna definire il font in base al viewport con clamp*/
+    
     border-radius: 25px;
     /* Angoli arrotondati */
 }
