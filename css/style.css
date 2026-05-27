@@ -36,7 +36,7 @@
 
 /* ------------ ASSEGNAZIONE FONTS E DIMENSIONI CARATTERI ------------ */
 
-html {
+html, body {
     font-family: var(--fontMontserrat), sans-serif;
 }
 
@@ -86,14 +86,14 @@ p {
 }
 
 li {
-    /*font-family: var(--fontMontserrat), sans-serif;*/
+    font-family: var(--fontMontserrat), sans-serif;
     font-size: clamp(1rem, 0.5vw + 0.75rem, 1.25rem);
     line-height: 1.5;
     color: var(--PrimaryColor);
 }
 
 a {
-    /*font-family: var(--fontMontserrat), sans-serif;*/
+    font-family: var(--fontMontserrat), sans-serif;
     font-size: clamp(1rem, 0.5vw + 0.75rem, 1.25rem);
     color: var(--PrimaryColor);
 }
@@ -269,11 +269,34 @@ b.colored {
 }
 
 .nav-link {
-    font-size: clamp(0.9rem, 0.9vw + 0.2rem, 1.1rem);
+    font-size: clamp(0.85rem, 0.7vw + 0.2rem, 1rem);
     color: #666777;
     font-weight: 600;
     position: relative;
-    padding: 0.5rem 0.5rem !important;
+    padding: 0.5rem 0.3rem !important;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .navbar-brand {
+        font-size: 1.15rem !important;
+    }
+    .nav-link {
+        font-size: 0.78rem !important;
+        padding-left: 0.2rem !important;
+        padding-right: 0.2rem !important;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .navbar-brand {
+        font-size: 1.35rem !important;
+    }
+    .nav-link {
+        font-size: 0.85rem !important;
+        padding-left: 0.35rem !important;
+        padding-right: 0.35rem !important;
+    }
 }
 
 .nav-link:hover,
