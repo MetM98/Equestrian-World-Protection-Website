@@ -3908,3 +3908,10 @@ b.colored {
         width: 100%;
     }
 }
+
+/* Spostamento sfondo parallasse su mobile per rendere visibile il cavallo senza sovrapposizioni */
+@media (max-width: 767px) {
+    #header_parallax img {
+        object-position: 75% center !important;
+    }
+}
