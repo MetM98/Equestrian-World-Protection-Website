@@ -845,12 +845,16 @@ b.colored {
 .contact-text p {
     margin-bottom: 0;
     color: #555;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .contact-text a {
     color: #555;
     text-decoration: none;
     transition: color 0.3s ease;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .contact-text a:hover {
