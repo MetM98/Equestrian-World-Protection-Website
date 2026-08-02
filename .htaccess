@@ -1,0 +1,14 @@
+# Pagina di errore personalizzata: senza questa riga il server mostra
+# la pagina "Not Found" standard dell'hosting al posto della nostra.
+ErrorDocument 404 /404.html
+
+# --- Redirect verso https e www ---
+# Da attivare SOLO dopo aver verificato che il sito funziona:
+# togliere il cancelletto dalle righe qui sotto e ricontrollare subito.
+# Se il sito smette di rispondere o entra in loop, rimettere i cancelletti.
+#
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^(.*)$ https://www.equestrianworldprotection.com/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.equestrianworldprotection.com/$1 [R=301,L]

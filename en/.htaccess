@@ -1,0 +1,2 @@
+# Chi sbaglia indirizzo dentro la sezione inglese vede la 404 in inglese.
+ErrorDocument 404 /en/404.html
