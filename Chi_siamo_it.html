@@ -33,6 +33,7 @@
     <meta property="og:image" content="https://www.equestrianworldprotection.com/images/logo/WEBSITELOGO.jpeg">
     <meta property="og:url" content="https://www.equestrianworldprotection.com/Chi_siamo_it.html">
     <meta property="og:type" content="website">
+    <link rel="canonical" href="https://www.equestrianworldprotection.com/Chi_siamo_it.html" />
     <link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Chi_siamo_it.html" />
     <link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Chi_siamo_it.html" />
     <!-- End SEO -->
@@ -42,7 +43,7 @@
 <nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
 <!-- Modificato navbar-expand-xl per evitare che vada a capo -->
 <div class="container-fluid px-0">
-<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<a class="navbar-brand me-2 me-lg-4" href="index.html">Equestrian World Protection</a>
 <button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> <!-- Cambiato in collapse normale per pulizia su bootstrap 5 -->
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -284,9 +285,9 @@
 <i class="bi bi-geo-alt-fill"></i>
 </div>
 <div class="contact-text">
-<h5 class="secondaryColor" data-i18n="chi_s_h5_57">Indirizzo</h5>
-<p data-i18n="chi_s_p_58">Borgo San Fedriano 4,<br>
-                            50121, Firenze (FI)</p>
+<h5 class="secondaryColor" data-i18n="chi_s_h5_57">Sede legale</h5>
+<p data-i18n="chi_s_p_58">Via Pratese 13,<br>
+                            50145 Firenze (FI)</p>
 </div>
 </div>
 <div class="contact-info-item">
@@ -294,8 +295,8 @@
 <i class="bi bi-geo-alt-fill"></i>
 </div>
 <div class="contact-text">
-<h5 class="secondaryColor">Milano</h5>
-<p>Piazzale Susa 1,<br/>20133 Milano (MI)</p>
+<h5 class="secondaryColor">Uffici</h5>
+<p>Borgo San Fedriano 4,<br/>50121 Firenze (FI)</p>
 </div>
 </div>
 <div class="contact-info-item">
@@ -522,14 +523,14 @@
                     <h5 class="text-uppercase mb-3" data-i18n="footer_hq">La nostra sede</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Indirizzo:</strong></span><br>
-                            Borgo San Fedriano 4,<br>
-                            50121, Firenze (FI)
+                            <span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Sede legale:</strong></span><br>
+                            Via Pratese 13,<br>
+                            50145 Firenze (FI)
                         </li>
                         <li class="mt-2">
-                            <span><i class="bi bi-geo-alt-fill"></i> <strong>Milano:</strong></span><br>
-                            Piazzale Susa 1,<br>
-                            20133 Milano (MI)
+                            <span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_offices">Uffici:</strong></span><br>
+                            Borgo San Fedriano 4,<br>
+                            50121 Firenze (FI)
                         </li>
                         <li class="mt-2">
                             <span><i class="bi bi-clock-fill"></i> <strong data-i18n="footer_hours">Orario:</strong></span><br>
@@ -541,10 +542,10 @@
             <hr class="my-2">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 07505670484, REA: FI-708226</p>
+                    <p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">© 2025 Equestrian World Protection. Tutti i diritti riservati - P.IVA: 07505670484, REA: FI-708226, Capitale Sociale: Euro 10.000</p>
                     <p class="mb-0 d-block d-sm-none">
-                        <span data-i18n="footer_rights_mobile_1">© 2024 Equestrian World Protection. Tutti i diritti riservati</span><br>
-                        <span style="margin-top: 5px; display: block;" data-i18n="footer_rights_mobile_2">P.IVA: 07505670484, REA: FI-708226</span>
+                        <span data-i18n="footer_rights_mobile_1">© 2025 Equestrian World Protection. Tutti i diritti riservati</span><br>
+                        <span style="margin-top: 5px; display: block;" data-i18n="footer_rights_mobile_2">P.IVA: 07505670484, REA: FI-708226, Capitale Sociale: Euro 10.000</span>
                     </p>
                 </div>
             </div>
@@ -675,7 +676,7 @@
             const acceptBtn = document.getElementById("acceptCookies");
             
             // Controlla se l'utente ha già accettato
-            if (!localStorage.getItem("ewp_cookie_consent")) {
+            if (cookieBanner && !localStorage.getItem("ewp_cookie_consent")) {
                 // Piccolo ritardo per l'animazione
                 setTimeout(() => {
                     cookieBanner.classList.add("show");
@@ -683,7 +684,7 @@
             }
 
             // Al click su accetta
-            if (acceptBtn) {
+            if (acceptBtn && cookieBanner) {
                 acceptBtn.addEventListener("click", function () {
                     localStorage.setItem("ewp_cookie_consent", "true");
                     cookieBanner.classList.remove("show");

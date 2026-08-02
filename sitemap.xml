@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.equestrianworldprotection.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/index.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Chi_siamo_it.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Servizi.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Risk_Management.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Assicurazioni.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Private_Wealth_Management.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Servizi_Finanziari.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/Servizi_Legali.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/index.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Chi_siamo_it.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Servizi.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Risk_Management.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Assicurazioni.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Private_Wealth_Management.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Servizi_Finanziari.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.equestrianworldprotection.com/en/Servizi_Legali.html</loc><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.equestrianworldprotection.com/index.html</loc><lastmod>2026-08-02</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/index.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Chi_siamo_it.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Chi_siamo_it.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Chi_siamo_it.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Servizi.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Servizi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Servizi.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Risk_Management.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Risk_Management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Risk_Management.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Assicurazioni.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Assicurazioni.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Assicurazioni.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Private_Wealth_Management.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Private_Wealth_Management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Private_Wealth_Management.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Servizi_Finanziari.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Servizi_Finanziari.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Servizi_Finanziari.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/Servizi_Legali.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Servizi_Legali.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Servizi_Legali.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/privacy-policy.html</loc><lastmod>2026-08-02</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/privacy-policy.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/cookie-policy.html</loc><lastmod>2026-08-02</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/cookie-policy.html"/></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/index.html</loc><lastmod>2026-08-02</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Chi_siamo_it.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Servizi.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Risk_Management.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Assicurazioni.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Private_Wealth_Management.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Servizi_Finanziari.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/Servizi_Legali.html</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/privacy-policy.html</loc><lastmod>2026-08-02</lastmod><priority>0.3</priority></url>
+  <url><loc>https://www.equestrianworldprotection.com/en/cookie-policy.html</loc><lastmod>2026-08-02</lastmod><priority>0.3</priority></url>
 </urlset>

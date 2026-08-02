@@ -29,6 +29,7 @@
     <meta property="og:type" content="website">
     
     <!-- Hreflang tags -->
+    <link rel="canonical" href="https://www.equestrianworldprotection.com/en/Risk_Management.html" />
     <link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/Risk_Management.html">
     <link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/Risk_Management.html">
 </head>
@@ -36,7 +37,7 @@
 <nav class="navbar navbar-expand-xl fixed-top" id="mainNavbar">
 <!-- Modificato navbar-expand-xl per evitare che vada a capo -->
 <div class="container-fluid px-0">
-<a class="navbar-brand me-2 me-lg-4" href="#">Equestrian World Protection</a>
+<a class="navbar-brand me-2 me-lg-4" href="index.html">Equestrian World Protection</a>
 <button aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler px-0 pe-md-3" data-bs-target="#offcanvasNavbar" data-bs-toggle="collapse" type="button"> <!-- Cambiato in collapse normale per pulizia su bootstrap 5 -->
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -269,14 +270,14 @@
                     <h5 class="text-uppercase mb-3" data-i18n="footer_hq">Our Headquarters</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Address:</strong></span><br>
-                            Borgo San Fedriano 4,<br>
-                            50121, Firenze (FI)
+                            <span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_address">Registered office:</strong></span><br>
+                            Via Pratese 13,<br>
+                            50145 Firenze (FI)
                         </li>
                         <li class="mt-2">
-                            <span><i class="bi bi-geo-alt-fill"></i> <strong>Milano:</strong></span><br>
-                            Piazzale Susa 1,<br>
-                            20133 Milano (MI)
+                            <span><i class="bi bi-geo-alt-fill"></i> <strong data-i18n="footer_offices">Offices:</strong></span><br>
+                            Borgo San Fedriano 4,<br>
+                            50121 Firenze (FI)
                         </li>
                         <li class="mt-2">
                             <span><i class="bi bi-clock-fill"></i> <strong data-i18n="footer_hours">Hours:</strong></span><br>
@@ -288,10 +289,10 @@
             <hr class="my-2">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">© 2025 Equestrian World Protection. All rights reserved - VAT: 07505670484, REA: FI-708226</p>
+                    <p class="mb-0 d-none d-sm-block" data-i18n="footer_rights_desktop">© 2025 Equestrian World Protection. All rights reserved - VAT: 07505670484, REA: FI-708226, Share Capital: Euro 10,000</p>
                     <p class="mb-0 d-block d-sm-none">
-                        <span data-i18n="footer_rights_mobile_1">© 2024 Equestrian World Protection. All rights reserved</span><br>
-                        <span style="margin-top: 5px; display: block;" data-i18n="footer_rights_mobile_2">VAT: 07505670484, REA: FI-708226</span>
+                        <span data-i18n="footer_rights_mobile_1">© 2025 Equestrian World Protection. All rights reserved</span><br>
+                        <span style="margin-top: 5px; display: block;" data-i18n="footer_rights_mobile_2">VAT: 07505670484, REA: FI-708226, Share Capital: Euro 10,000</span>
                     </p>
                 </div>
             </div>
@@ -343,7 +344,7 @@
             const acceptBtn = document.getElementById("acceptCookies");
             
             // Controlla se l'utente ha già accettato
-            if (!localStorage.getItem("ewp_cookie_consent")) {
+            if (cookieBanner && !localStorage.getItem("ewp_cookie_consent")) {
                 // Piccolo ritardo per l'animazione
                 setTimeout(() => {
                     cookieBanner.classList.add("show");
@@ -351,7 +352,7 @@
             }
 
             // Al click su accetta
-            if (acceptBtn) {
+            if (acceptBtn && cookieBanner) {
                 acceptBtn.addEventListener("click", function () {
                     localStorage.setItem("ewp_cookie_consent", "true");
                     cookieBanner.classList.remove("show");

@@ -3920,3 +3920,9 @@ b.colored {
         object-position: 75% center !important;
     }
 }
+/* Gli URL lunghi delle pagine privacy e cookie policy devono andare a capo:
+   senza questo la pagina scorre in orizzontale sugli schermi stretti */
+main p a[href^="http"] {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}

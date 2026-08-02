@@ -7,6 +7,7 @@
     <meta property="og:type" content="website">
     
     <!-- Hreflang tags -->
+    <link rel="canonical" href="https://www.equestrianworldprotection.com/en/404.html" />
     <link rel="alternate" hreflang="it" href="https://www.equestrianworldprotection.com/404.html">
     <link rel="alternate" hreflang="en" href="https://www.equestrianworldprotection.com/en/404.html">
     </head><body>﻿
@@ -453,7 +454,7 @@
             const acceptBtn = document.getElementById("acceptCookies");
             
             // Controlla se l'utente ha già accettato
-            if (!localStorage.getItem("ewp_cookie_consent")) {
+            if (cookieBanner && !localStorage.getItem("ewp_cookie_consent")) {
                 // Piccolo ritardo per l'animazione
                 setTimeout(() => {
                     cookieBanner.classList.add("show");
@@ -461,7 +462,7 @@
             }
 
             // Al click su accetta
-            if (acceptBtn) {
+            if (acceptBtn && cookieBanner) {
                 acceptBtn.addEventListener("click", function () {
                     localStorage.setItem("ewp_cookie_consent", "true");
                     cookieBanner.classList.remove("show");
